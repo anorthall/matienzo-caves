@@ -1,0 +1,119 @@
+# Plan status
+
+Tracks the approved plan against what is actually built. Update it when a phase
+checkpoint is met or an assumption turns out to be wrong.
+
+## Where things stand
+
+| Phase | Estimate | State | Checkpoint |
+| --- | --- | --- | --- |
+| 0 · Skeleton + decode | ½ day | **Done** | `matienzo decode --audit` → 5,507 ASCII / 32 UTF-8 / 18 CP1252, 0 errors |
+| 1 · Segmentation | 1 day | **Done** | `matienzo segment --audit` → title on 5,557; 3 stubs lack a header; 0 leaks |
+| 2 · Parsers + models | 3–4 days | **~40%** | title + header done; footer, updated, body outstanding |
+| 3 · Schema + load | 2 days | Not started | |
+| 4 · Review queue | 1–2 days | Not started | anomaly/confidence infrastructure already exists |
+| 5 · Chunking + FTS + CLI | 1 day | Not started | |
+| 6 · Embeddings + hybrid | 1–2 days | Not started | |
+| 7 · MCP server | 1 day | Not started | |
+
+133 tests pass; `ruff check` clean; ~3,400 lines across `matienzo/` and `tests/`.
+
+### Phase 2 detail
+
+| Parser | State | Notes |
+| --- | --- | --- |
+| `parse/title.py` | Done, 25 tests | 5,557/5,557 parse. Nested-paren alias scan, de-inverted sort keys. |
+| `parse/header.py` | Done, 30 tests | 5,482 pages with coordinates + lat/lon; 3,568 numeric lengths (64%); 61 prose lengths decomposed into system membership. |
+| `parse/footer.py` | **Not written** | Citations, resource links, the `;`-vs-entity trap, split anchors. |
+| `parse/updated.py` | **Not written** | Segmented already; dates not parsed. |
+| `parse/body.py` | **Not written** | The hard one — see risks. |
+| `ParsedSite` assembly | **Not written** | Models defined; nothing composes them yet. |
+| Golden files | **Not written** | 66 fixtures copied to `tests/fixtures/`; goldens need a complete `ParsedSite`. |
+
+## Verdict: the plan holds, with amendments
+
+The architecture survived contact with the corpus. Three decisions in particular
+earned their keep and should not be revisited:
+
+- **Anomalies as data rather than exceptions.** Every surprise so far — an
+  upstream typo, an unrecorded coordinate, a prose measurement — landed as a
+  queryable row instead of a crash or a silent `None`.
+- **Locating the footer before the header.** Non-obvious, and `5528` breaks any
+  other ordering.
+- **`Quantity` carrying an interpretation kind.** 61 prose lengths yielded 22
+  system-membership facts and dozens of cross-references that a `float | None`
+  column would have discarded.
+
+No new plan is needed. The following amendments are.
+
+### 1 · The threshold invariants must be generated, not asserted
+
+The plan's §6 table (distinct citations 700–720, hyperlink xrefs 1,240–1,270,
+areas 55–65, …) came from reconnaissance on a **partial corpus while the scrape
+was still running**. Every figure re-measured so far has moved — see the
+corrections table at the end of `design.md`. Writing those numbers into tests as
+given would bake in wrong expectations.
+
+**Change:** derive the threshold table from the finished parser at the end of
+Phase 2, review it by eye once, then freeze it. Treat every number still
+unverified — citation totals, xref counts, area counts — as provisional.
+
+### 2 · Split Phase 2 into three checkpoints
+
+Title and header were the regular parts of the page. What remains is not.
+Footer/citations carries the entity-versus-separator trap and the 234
+split-anchor citations; the body carries section detection, which is the plan's
+own risk #2 and the place where a silent corruption is most likely. Bundling
+them into one checkpoint means the risky work has no independent gate.
+
+| Sub-phase | Deliverable | Checkpoint |
+| --- | --- | --- |
+| 2a | `parse/footer.py`, `parse/citations.py` | citation count stable under two independent counting methods; no `Fern&aacute` fragments; the 234 split-anchor pages yield one citation each |
+| 2b | `parse/updated.py` | 2,615 update lines yield dates; the month/year back-fill within `;` groups verified on `0105` and `0381` |
+| 2c | `parse/body.py`, `ParsedSite`, goldens | all 66 goldens reviewed by eye; section headings hand-verified on every long page |
+
+### 3 · Move the corpus audit-diff forward into Phase 3
+
+`pages/` is now gitignored, so the repository can no longer prove which bytes a
+result came from. The plan treated `source_file.content_sha256` and
+`matienzo audit --diff` as a Phase 6 testing concern. With no committed corpus
+they are the *only* mechanism that can tell a parser regression apart from an
+upstream edit.
+
+**Change:** `source_file` with its content hash lands in the first schema, and
+`matienzo audit --diff` ships with Phase 3 rather than Phase 6.
+
+### 4 · Carry two known-bad upstream records as pinned exceptions
+
+Both are real errors on the site, not parse failures, and both are already
+asserted as exact sets so that a *new* occurrence fails rather than hiding:
+
+- `5255.htm` is headed `5254: cave (2955 (French: SCD))`; its `<title>` and
+  filename both say 5255. The filename wins.
+- `4968`'s northing of 4,901,207 puts it 96 km north of every other site.
+
+Both want a `data/overrides/*.toml` entry in Phase 4.
+
+### 5 · Known weak spot to fix in 2c
+
+`parse/header.py::_parse_prose` extracts `target_names` with a loose
+capitalised-word regex that has not been validated against the corpus. It is the
+least trustworthy code in the package. The body parser needs proper cave-name
+recognition anyway; do both together and drop the regex.
+
+## Revised estimate
+
+Roughly **8–11 days** remaining, against the original 10.5–14 total. Phases 0
+and 1 ran to estimate.
+
+## Open decision: ship an interim metadata database?
+
+Title and header parsing alone already yield site number, name, aliases, area,
+per-entrance coordinates with lat/lon, altitudes, and measurements — enough to
+answer "where are the caves", "how deep", "which system does this belong to" and
+to draw a map. That is a genuinely useful artefact and it is available now, a
+week before the full pipeline.
+
+Bringing a cut-down Phase 3 forward would ship that value early, at the cost of
+one schema migration when descriptions and citations arrive. Deferring keeps the
+schema settled but leaves everything unusable until Phase 2c lands. Not decided.

@@ -1,0 +1,5 @@
+# Test fixtures are byte-exact copies of scraped pages. The decode tests assert
+# on their SHA-256 and byte size, and several exist precisely to pin down odd
+# bytes (CP1252 curly quotes, CRLF line endings, raw UTF-8). Any normalisation
+# git applied here would silently change the thing under test.
+tests/fixtures/*.htm -text -diff

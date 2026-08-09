@@ -1,0 +1,49 @@
+[project]
+name = "matienzo"
+version = "0.1.0"
+description = "Extract, structure and search the Matienzo Caves site descriptions"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "lxml>=5.3",
+    "pydantic>=2.10",
+    "cyclopts>=3.1",
+    "rich>=13.9",
+    "utm>=0.8",
+]
+
+[project.optional-dependencies]
+embed = ["fastembed>=0.5", "sqlite-vec>=0.1.6"]
+mcp = ["mcp>=1.2"]
+
+[project.scripts]
+matienzo = "matienzo.cli:main"
+matienzo-mcp = "matienzo.mcp_server:main"
+
+[dependency-groups]
+dev = ["pytest>=8.3", "ruff>=0.9"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["matienzo"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+# The corpus is full of Spanish accents and CP1252 curly quotes, and tests assert
+# on those exact characters. "Ambiguous unicode" is the subject matter here.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+# Vendored-in-spirit: a standalone PEP-723 script, kept working and unchanged.
+"download_htm.py" = ["B904"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: whole-corpus invariant checks"]
