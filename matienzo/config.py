@@ -27,15 +27,16 @@ def page_path(site_number: int) -> Path:
 class CorpusMissingError(RuntimeError):
     """`pages/` is absent or empty.
 
-    Raised rather than returning an empty list: `pages/` is gitignored, so a
-    fresh clone has no corpus, and every audit in this package would otherwise
-    report a cheerful "0 pages" and exit zero.
+    Raised rather than returning an empty list, so that a missing corpus fails
+    loudly instead of every audit reporting a cheerful "0 pages" and exiting
+    zero.
     """
 
     def __init__(self) -> None:
         super().__init__(
-            f"No pages found in {PAGES_DIR}. The corpus is not committed — "
-            f"fetch it with:\n    uv run download_htm.py"
+            f"No pages found in {PAGES_DIR}. The corpus is committed, so this "
+            f"usually means a partial checkout; otherwise re-fetch it with:\n"
+            f"    uv run download_htm.py"
         )
 
 

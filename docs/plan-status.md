@@ -74,11 +74,17 @@ them into one checkpoint means the risky work has no independent gate.
 
 ### 3 · Move the corpus audit-diff forward into Phase 3
 
-`pages/` is now gitignored, so the repository can no longer prove which bytes a
-result came from. The plan treated `source_file.content_sha256` and
-`matienzo audit --diff` as a Phase 6 testing concern. With no committed corpus
-they are the *only* mechanism that can tell a parser regression apart from an
-upstream edit.
+`pages/` is committed byte-exactly, which settles the plan's open question. The
+`-text` attribute is load-bearing, not cosmetic: 5,556 of the 5,557 pages use
+CRLF, and a global `core.autocrlf=input` silently stripped it on the first
+attempt to commit them. Since every parsed record is keyed by the SHA-256 of its
+source bytes, and override staleness is decided by comparing those hashes,
+normalised bytes would have made provenance disagree between clones.
+
+The upstream site is still hand-edited, so the corpus will drift from what the
+parsers were written against. That makes `source_file.content_sha256` and
+`matienzo audit --diff` the mechanism for telling a parser regression apart from
+an upstream edit — worth having from the first build rather than at the end.
 
 **Change:** `source_file` with its content hash lands in the first schema, and
 `matienzo audit --diff` ships with Phase 3 rather than Phase 6.

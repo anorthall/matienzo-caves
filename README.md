@@ -8,7 +8,7 @@ queryable SQLite database with full-text and semantic search.
 
 | Path | What it is |
 | --- | --- |
-| `pages/` | The scraped corpus. Source of truth, but **not committed** — see below. |
+| `pages/` | The scraped corpus, 5,557 pages. Source of truth, committed byte-exactly. |
 | `data/vocab/` | Hand-curated canonical names (areas, authors, systems). |
 | `data/overrides/` | Per-site corrections applied to parser output. |
 | `matienzo/` | The pipeline: decode → parse → normalise → load → chunk → embed → search. |
@@ -21,17 +21,23 @@ queryable SQLite database with full-text and semantic search.
 artefact — which is why corrections live in `data/overrides/*.toml` rather than
 as database writes, and so survive a rebuild.
 
-## Getting the corpus
+## The corpus
 
-`pages/` is gitignored, so a fresh clone has no corpus. Fetch it:
+`pages/` is committed, so a clone has everything needed to reproduce a build.
+It is stored with `-text` in `.gitattributes` so git never normalises line
+endings: 5,556 of the 5,557 pages use CRLF, every parsed record is keyed by the
+SHA-256 of its source bytes, and override staleness is decided by comparing
+those hashes. Bytes that change between clones would make that provenance lie.
+
+To re-fetch from the live site:
 
 ```bash
 uv run download_htm.py
 ```
 
-The upstream site is live and hand-edited, so a re-fetch may differ from the one
-this code was written against. Every parsed record carries the SHA-256 of the
-bytes it came from precisely so that drift is detectable rather than silent.
+The site is hand-edited and still maintained, so a re-fetch may differ from what
+this code was written against. `matienzo audit --diff` reports which pages
+changed and re-parses them, rather than letting the drift go unnoticed.
 
 ## Usage
 
