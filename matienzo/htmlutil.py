@@ -38,7 +38,12 @@ ATTR_RE = re.compile(
 
 #: Block-level markup that ends a paragraph. `<P>` is unclosed on all but ~105
 #: pages, so opening tags — not closing ones — are the break signal.
-BREAK_RE = re.compile(r"<(?:/?p|br|hr|/?div|/?tr|/?li|/?table)\b[^>]*>", re.IGNORECASE)
+#:
+#: `<div>` is deliberately absent. Five pages wrap their description in
+#: `<div data-speak>` blocks for a text-to-speech widget, and those open and
+#: close mid-sentence; treating them as breaks would shred those paragraphs.
+#: The divs carry no authored meaning, so they are simply transparent.
+BREAK_RE = re.compile(r"<(?:/?p|br|hr|/?tr|/?li|/?table)\b[^>]*>", re.IGNORECASE)
 
 #: Three or more non-breaking spaces, used as a paragraph indent on 281 pages.
 #: In files like `0081` this is a *more* reliable paragraph marker than the tags.
@@ -120,15 +125,23 @@ def iter_anchors(html: str, offset: int = 0) -> Iterator[Anchor]:
         )
 
 
-def split_blocks(html: str) -> list[str]:
-    """Split a fragment into paragraph-ish blocks.
+def split_block_html(html: str) -> list[str]:
+    """Split a fragment into paragraph-ish blocks, keeping their markup.
 
     Bare newlines are *not* separators — source lines are hard-wrapped at ~72
     characters by a legacy editor, so treating `\\n` as a break would shred every
     sentence. Breaks come from block tags and from the `&nbsp;&nbsp;&nbsp;`
-    indent convention.
+    indent convention, which 281 pages use to mark a new paragraph and which is
+    a more reliable signal than the tags on some of them.
+
+    Markup is retained because heading detection needs it: whether a block is a
+    section title depends on it being wholly wrapped in `<B>` or `<U>`, which is
+    invisible once the tags are gone.
     """
-    marked = INDENT_RE.sub("\x00", html)
-    marked = BREAK_RE.sub("\x00", marked)
-    blocks = [strip_tags(part) for part in marked.split("\x00")]
-    return [block for block in blocks if block]
+    marked = BREAK_RE.sub("\x00", INDENT_RE.sub("\x00", html))
+    return [part for part in marked.split("\x00") if strip_tags(part)]
+
+
+def split_blocks(html: str) -> list[str]:
+    """Plain-text blocks. See `split_block_html` for how the splitting works."""
+    return [strip_tags(part) for part in split_block_html(html)]

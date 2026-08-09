@@ -1,0 +1,392 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A 5m wide hole enters a 2m high passage full of excreta leading to a second entrance."
+      }
+    ],
+    "char_count": 85,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:fbf2bed12e4e2f6e (96 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A 5m wide hole enters a 2m high passage full of excreta leading to a second entrance."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1983s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1983b (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1983b (logbook)",
+        "year": 1983
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1989s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1989 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1989 (logbook)",
+        "year": 1989
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1999s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1999c (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1999c (logbook)",
+        "year": 1999
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2009a (Easter logbook)",
+        "year": 2009
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1983s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1983b (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1989s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1989 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1999s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1999c (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1983b (logbook) ; anon., 1989 (logbook) ; anon., 1999c (logbook) ; anon., 2009a (Easter logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0478-2009e.htm",
+            "is_range": true,
+            "target_site": 478,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0478.htm",
+            "is_range": false,
+            "target_site": 478,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "References : anon., 1983b (logbook) ; anon., 1989 (logbook) ; anon., 1999c (logbook) ; anon., 2009a (Easter logbook) Entrance picture : yes Underground picture(s) : yes Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Mullir",
+    "coordinates": [
+      {
+        "accuracy_code": "A",
+        "altitude_m": 640.0,
+        "datum": "ETRS89",
+        "easting": 455438,
+        "entrance_site_number": null,
+        "label": "South entrance",
+        "latitude": 43.3141304,
+        "longitude": -3.5495242,
+        "northing": 4795846,
+        "raw": "30T 455438 4795846",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      },
+      {
+        "accuracy_code": null,
+        "altitude_m": 640.0,
+        "datum": null,
+        "easting": 455578,
+        "entrance_site_number": null,
+        "label": "N entrance is at",
+        "latitude": 43.3161556,
+        "longitude": -3.5478159,
+        "northing": 4796070,
+        "raw": "30T 0455578 4796070",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      },
+      {
+        "accuracy_code": null,
+        "altitude_m": null,
+        "datum": null,
+        "easting": 455476,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3142677,
+        "longitude": -3.5490568,
+        "northing": 4795861,
+        "raw": "30T 455476 4795861",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "20m",
+        "unit_stated": true,
+        "value_m": 20.0
+      }
+    ],
+    "raw": "Mullir South entrance 30T 455438 4795846 (Datum: ETRS89. Accuracy code: A ) Altitude 640m The N entrance is at 30T 0455578 4796070 altitude 640m; ETRS89: 30T 455476 4795861. Length 20m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "coord_multiple",
+        "detail": "3 coordinates — a multi-entrance site",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 2089,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "8eb17d505e73a87f0b6987062b52fe3bf32e7eb073ba718525e2a7fc467d0f01",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 478
+  },
+  "site_number": 478,
+  "title": {
+    "aliases": [
+      {
+        "kind": "entrance_qualifier",
+        "site_number": null,
+        "text": "S entrance"
+      }
+    ],
+    "name": "cave",
+    "name_sort": "cave",
+    "raw": "0478: cave (S entrance)",
+    "separator": "colon",
+    "site_number": 478,
+    "site_type": "cave"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1999-12-17",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "17th December 1999"
+    },
+    {
+      "attribution": null,
+      "date": "2001-02-23",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "23rd February 2001"
+    },
+    {
+      "attribution": null,
+      "date": "2009-05-04",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "4th May 2009"
+    }
+  ]
+}

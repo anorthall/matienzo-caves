@@ -1,0 +1,4385 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "January 2023 : For admin purposes, cataloguing all \"holes in the ground\", all three entrances are now coded as:"
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "#0713 - this top entrance, where cavers dive and explore upstream;"
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "#5452 - the middle entrance;"
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "#5453 - the entrance at the car park. All information for the whole system is found on this #0713 page."
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The cave is the major resurgence for the area and a large diameter pipe removes water for public consumption, supplying Santander. Information gleaned from the Dirección General de Obras Hidráulicas y Ciclo Integral del Agua in 2005 shows an average water flow from the resurgence over the previous 20 or so years of 951 litres per second. (For comparison, the resurgence at Los Boyones (fed by catchments above Cueva Vallina, Matienzo and Riaño) emits 650 litres per second on average."
+      },
+      {
+        "index": 5,
+        "kind": "section_heading",
+        "section_index": 0,
+        "text": "Hydrology"
+      },
+      {
+        "index": 6,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "An optical brightener test from the end of the Sumidero de Cobadal ( 1930 ) over Easter 2006 gave a positive result after 5 - 7 days during medium to medium-high flow. During the 6 or so visits over a fortnight the water levels were slow to react after some heavy rain, and even then only rose by approx. 7cm. Los Boyones rose by 120cm much more rapidly. The details of the test are found here . There is a possiblity that water from the Sumidero might drain to Torca La Vaca during low to normal flow, only passing over into Fuente Aguanaz during high stage. Some suggestions regarding water sources for Aguanaz are detailed here . In 2009 these possibilities were outdated when an inlet, apparently from La Gatuna, was explored."
+      },
+      {
+        "index": 7,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "An optical brightener trace over March / April 2016 from the Duck Pond Sink ( site 1976 ) near Barrio de Arriba gave a positive result at Aguanaz (#5452) after 4 - 7 days."
+      },
+      {
+        "index": 8,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "An optical brightener trace over April / May 2017 from El Cubillón ( site 2538 ) gave a positive result at Aguanaz (#5452) after 6 - 8 days. More details are shown here ."
+      },
+      {
+        "index": 9,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Over Easter 2018, optical brightener was injected into site 1969 near Alisas and detected between 2 and 3 days later at Fuente Aguanaz (in heavy flood conditions). Other caves checked for OBA included Comellantes , La Riega and Wild Mare . These all proved negative. (Details of the water trace can be found here .)"
+      },
+      {
+        "index": 10,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "A summary of all water traces with a map can be found on the Water Tracing Investigations page."
+      },
+      {
+        "index": 11,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Optical brightener fluorocapteurs have also been placed in the resurgence for other water traces, eg"
+      },
+      {
+        "index": 12,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "- the 2016 Hoyón ( site 567 ) trace which was successfully detected at Comediante - site 0040 ."
+      },
+      {
+        "index": 13,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "- OBA was put into a stream in a Moncobe site being explored by the GE Pistruellos. The water was traced to La Riega ."
+      },
+      {
+        "index": 14,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "The resurgence can emit large quantities of water, flooding the low lying ground around Entrambasaguas and beyond. One effect of the Whit 2008 flood was to jam leaves around the door of the new pumping station, which is probably 7m above the normal water level. A smaller flood in October of the same year was shown on national TVE news. (Photos here )."
+      },
+      {
+        "index": 15,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "After a very dry summer, the Diario Montañés (22/8/2012) reported a flow of 0.1 cumecs. Another very dry summer saw the water level below the extraction pipe at the main entrance. (See Entrance pictures, summer 2022 and 360° photos from the autumn, below)"
+      },
+      {
+        "index": 16,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "In August 2019, as reported in the Diario Montañés ( 10/8/2012 & 23/8/2019 ), Fuente Aguanaz was heavily contaminated by farm slurry. As a result, the water was prevented from entering the public supply; agents of Seprona (the environmental branch - or Nature Protection Service - of the Guardia Civil) investigated, and a particular farmer became a prime suspect."
+      },
+      {
+        "index": 17,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "The resurgence area no longer (2022) has an outdoor interpretation centre with 4 boards explaining about water and the environment, due to vandalism. Further boards are in the old pump houses. But by the summer 2022 this area had also been cleaned-up, with the old pump house removed and coloured, patterned concrete laid. (See Entrance pictures, summer 2022, below)"
+      },
+      {
+        "index": 18,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "The water level at the bottom entrance (# 5453 ) is at about 55m altitude and is reached by walking down concrete steps. Sixty metres up behind this - reached by a rising track setting off on the right of the car park - is a hole below a scar in a depression which is where the pipe reaches to abstract the water (#5452). Upstream from here is out-of-depth water to a boulder choke."
+      },
+      {
+        "index": 19,
+        "kind": "section_heading",
+        "section_index": 1,
+        "text": "Main, upper cave"
+      },
+      {
+        "index": 20,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "In April 2022, it was noted that the once obscure route to the top entrance was now a \"good path\"."
+      },
+      {
+        "index": 21,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "A small, 4m long cave in a gully above the Aguanaz cavers' entrance was maypoled into in the summer, 2009."
+      },
+      {
+        "index": 22,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The entrance starts as a route between boulders. The grid reference for this entrance was altered in 2008 and is that shown in the heading. Just below the top of the rope climb, a hole was opened up in 2009, heading west. This turned out to be an alternative way down to the stream rather than any high level development. A sketch shows the sumps in the cave (August 2018). The entrance constriction was removed in August 2018, making the exit for tired divers much less wearisome. A further consolidation of the route occurred on Christmas Day 2018, with more gardening at the pitch head and new bolts placed to make a \"comfortable\" ladder pitch. In July 2023, a fixed, 12ft, aluminium ladder was installed at the \"gorge\" climb in the main streamway before sump 1. A hand line was also installed to help in high water level."
+      },
+      {
+        "index": 23,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "In August 2023, the line through sump 1 was twice found broken and a new one was installed. The opportunity was taken to thoroughly (re)examine the underwater route but only alcoves were seen."
+      },
+      {
+        "index": 24,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The site is mainly swimming. Half way through, the water can be left and there is an inlet on the western side. This was pushed and resurveyed in the summer, 2009."
+      },
+      {
+        "index": 25,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Beyond the aven the inlet stream continues through an choke to two short ducks and a continuing stream passage which lowers to a flat out crawl with a slight draught. Before this, a climb out enters a large chamber / passage which may continue south beyond an unexplored pitch down. The area was reinvestigated and pushed on one trip at Easter 2010. \" Had a good look round in the boulder choke. Could not find the main way on but found plenty of high level passage with deep holes in the floor. Possible ways on? About 250m unsurveyed? \" About 150m were surveyed to 40m above the stream where the high level passage lies. See photos taken on this trip."
+      },
+      {
+        "index": 26,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "An inlet on the east was also explored, summer 2009, for 70m and ending at a too tight rift with no draught. A aven was free climbed 9m after a tight squeeze up to where it continued up out of sight."
+      },
+      {
+        "index": 27,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "In 2014, the 2009/10 extensions were re-examined - in the chamber with 2 avens, the one at the top of the slope looked the better climbing prospect."
+      },
+      {
+        "index": 28,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The streamway up to sump 1 was re-explored in the summer 2013 and all side passages at water level were found to be undercuts or blind air bells. The line was also repaired. In August 2014, in low water conditions, a \"lovely swim to the sump and back\" was aided by thick wetsuits, fins and a bouyant tackle bag."
+      },
+      {
+        "index": 29,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The southern sump was dived at Whit 1995 and was passed in 5 to 6m visibility, after 35m, at a maximum 5m depth to a large sump pool on the other side. De- kitting occurs on a mud and boulder bank on the left. The main stream continuation was then fully explored for 500m during the summer of that year and consisted of swimming and wading until the passage climbs several cascades to meet the unexpected sump 2."
+      },
+      {
+        "index": 30,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "In April 2026 , a small alcove on the true left of the streamway (when travelling upstream from the rapids by approximately 50 meters) was enlarged and entry gained into a large chamber with multiple ways on, and a cool draught. This area was explored over 2 trips."
+      },
+      {
+        "index": 31,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "A way through a boulder choke in the roof leads to more boulder chokes and a large fossil passage. Walking south, the passage enlarges and passes several small avens before ending at a draughting sediment choke. This has been worked on and it is worthy of a few hours with some capping kit to remove a large boulder and allow further excavation of the sediment."
+      },
+      {
+        "index": 32,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "One of the avens has been freeclimbed and a small continuation of vadose stream passage is visible. This carrys a very small amount of water, and had some germinated seeds growing in a puddle at the bottom. Bolting the traverse across the top of the aven leads to the continuing passage which ends in a sand choke with no obvious draught after only around 4m."
+      },
+      {
+        "index": 33,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Back in the main passage, going the opposite way passes several areas of good flowstone floor and helictites, and enters the bottom of a large, clean washed rift going upwards with a strong draught. This is heavily calcited, with a small area of false floor. There appears to be a larger area of the rift visible approximately 10 metres up. The first few metres would require some bolts and an etrier, but beyond there it is an easy freeclimb."
+      },
+      {
+        "index": 34,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "(Batch 0713-26-02, L=133.5m)"
+      },
+      {
+        "index": 35,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The draught is generally going upwards in this whole section of cave - either to the surface or to a higher level of development. The mud choke is heading towards Sarah Jean passage. The base of the more promising aven is a good 35m up from stream level, making it a much more attractive location to begin a bolt climb compared to other avens in the main stream."
+      },
+      {
+        "index": 36,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Sarah Jean Inlet (see 2023 paragraph below)"
+      },
+      {
+        "index": 37,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "At Easter 2017, beyond sump 1 and on the true left of the passage just north of a 0.5m waterfall, the Sarah Jean Inlet was explored by Jim Lister and Dan Hibberts for 770m heading west-southwest, passing through a small sump and finishing at an over-tight hole up between boulders into larger passage. (Batch 0713-17-01). Links to video of this exploration are shown below."
+      },
+      {
+        "index": 38,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Sarah Jean was extended by Jim Lister and Mark Smith in April 2018 when the way on was found at stream level below the choke. Here, a flat-out crawl with 4\" airspace leads to walking passage in good rock. The streamway ends in a large sump. (Batch 18-01, length 73m). Further exploration by Jim Lister passed sump 3B (which varies between 3 and 15m in length) to walking passage (with a possible tight slot in the wall with a good echo) and sump 4B (which had disappeared in drier conditions) with more walking passage beyond to sump 5B, dived for a short distance. (Batches 18-02 and 18-03, lengths 17m and 73m). A video of this extension is linked below."
+      },
+      {
+        "index": 39,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The boulder choke area was tidied up and consolidated after a collapse at Easter 2019. A chamber above is sketched on thye survey in red."
+      },
+      {
+        "index": 40,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "All these dives were carried out in zero visibility due to wood pulp washed in from forestry works on the surface. (A letter, maps and a sample of the contamination (60cm deep in the sumps) were delivered to the Consejería del Medio Rural, Pesca y Alimentación on 25th April, 2018 and replied 18th May. Both advisory letter and reply are in the Easter 2018 logbook. Another letter was received (dated 29th October, 2018) basically stating that no problems had been found when holes over the pollution site were inspected and no further action was to be taken. This letter can be seen in the Autumn 2018 logbook. This screenshot shows Sarah Jean Inlet passing close to eucalyptus forest that, around Easter 2018, was being felled - on both sides of the valley that drops to Cueva de Regato, site 3494 .)"
+      },
+      {
+        "index": 41,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Summer 2018 explorations Diving continued as Jim Lister and Mark Smith, not finding their way through the \"final\" sump 5B, explored passage to the right. A climb up leads to rift passage that intersects an aven (12-15m or \"at least 20m\" high) with a shower of water coming down. The aven rock is a very light grey colour with many fossils - very different from the smooth brown walls on the way leading to it. A climb to the left of the aven closes in. A climb on the right, under an arch, leads two-thirds of the way up the shaft. Carrying on under the arch, the passage continues as a rift to a stal, where exploration stopped at a \"reasonably small rift but still has a stream\". This extension was surveyed as batch 18-04, length 172m)."
+      },
+      {
+        "index": 42,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Sump 5B was passed by Jim Lister on a solo trip and described as \"roomy but contains much silt and cross rifts\". The sump ends in a 30m wide cross rift where the right hand side has an inlet passage 2m wide and 3m high heading off just above water level. Above the diver's guide line, a short climb up leads to 3m of large passage ending in a 15m wide, draughting aven ( Gwynt O'r Hefoedd (Wind from the Heights) - or GH Aven for short!) where the top cannot be seen, being beyond the range of a Scurion light. (August 2023: an emergency survival poncho and fins along with brew kit have been left at downstream sump 5B and a full dive reel and snoopy loops at upstream sump 5B.)"
+      },
+      {
+        "index": 43,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Easter & summer 2019 explorations and survey Jim Lister and Mark Smith surveyed batches 19-01 and 19-03 giving 722m + 236m, total=958m. The passage descriptions below are edited from logbook entries."
+      },
+      {
+        "index": 44,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "After the steep climb up to GH Aven , a DistoX reading was taken up the curved aven. The reading had to be taken off the wall which was \"only\" 43 meters. The aven is 6m diameter. The aven has been bolted up 17m to a 2ft wide ledge, where a permanent traverse line is installed, giving access to a suitable rigging point to install a free hanging permanent rope. (August 2023: an emergency \"Blizzard\" bag - 4 season tinfoil sleeping bag - left at bottom of GH Aven.)"
+      },
+      {
+        "index": 45,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Summer 2025 explorations A number of tiring solo dives by Jim Lister transported a fixed ladder, dive and bolting equipment into Sarah Jean Inlet . With the final objective being the ascent of GH Aven , the crawl under the bouldery chamber leading to sump 3 was bypassed. The loose climb up was stabilised with scaffold poles and straps, while the descent to sump 3 was made easier with the fixed aluminium ladder. GH Aven was bolted to a ledge 35m up and looks promising above. An aven at sump 5 was also bolted to +11m but this choked. Some of the 2025 work is shown in this video ."
+      },
+      {
+        "index": 46,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "4 passages off Sarah Jean Inlet were solo surveyed but there were apparent directional issues with the collected data and only only batch could be used, 0713-25-04. However, the lengths from all the other batches -01, -02, -03 (total length = 288m) has been included (but not shown on the centre line.) There is further discussion on pages 48-49 of the logbook ."
+      },
+      {
+        "index": 47,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Further (re)survey work was carried out in April 2026 (after heavy rain prevented access) but, again, there were issues with the software / hardware."
+      },
+      {
+        "index": 48,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "The inlet beyond GH Aven - at the moment - is the main exploration route. This passage starts a couple of meters wide and has a gravel floor and a stream emitting from it. It meanders along with stalagmites suspended from the ceiling and some areas being very well decorated. The passage then splits at a 4-way junction called Junction 75 after the station number. ( GH Aven and the first exploration up this passage to Junction 75 can be seen on video .)"
+      },
+      {
+        "index": 49,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "• The right hand inlet continues with the rock changing and becoming more eroded. A few deep pools are encountered and passed until a tight vertical slot is reached. This is best passed by lifting your legs up and floating through on your side. The passage goes for some distance until it changed to a hands and knee crawl where the survey finishes and the streamway continues."
+      },
+      {
+        "index": 50,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "• The passage leading off to the left (west then southwest), going up stream at Junction 75 , is the main streamway for Sarah Jean Inlet . The passage starts off wide with a good ankle to knee deep stream running over a gravel floor. It then divides at a further junction, the right hand side becomes shoulder width wide but higher. The rock is light grey in colour and has a rough, wetsuit abrading surface. The stream runs beneath, down a tight slot out of sight. The passage then becomes wider and straighter with right angle bends. It gives a good echo and, eventually, a cascade can be heard in the distance. The way on here was originally barred by a band of sharp and brittle, dark brown rock which filled the passage almost completely! It looked like the end but Jim was able to climb up the sides of the passage which was 9m(?) high. Enough of the brittle rock was knocked off to squeeze through. After an unpleasant climb down the other side, there is a chamber with a cascade tumbling down the left hand wall. This is again climbed up horrible brown rock to an ongoing stream way with a big void above. There is a bigger route through and, at the top of the cascade, there is a pleasant, wide, walking passage of good proportions! This ends in a boulder choke just after an elbow. There is a gap going into large, continuing passage but it needs capping. [On the way out, Jim fell as the foothold he was using failed and he fell on his back winding himself. No major damage was done but it’s a warning that the dark rock is lethal.]"
+      },
+      {
+        "index": 51,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Capping occurred in August 2019 to avoid climbing up the loose sides, and Jim (solo) was able to enter and survey The Hippodrome and beyond as batch 19-05, 178m. A tight, capped squeeze through the vertical boulders leads into a well proportioned passage running at right angles to the passage leading in. Turning left (east) leads up a boulder slope to a choke. Turning right leads to a downwards slope which ends at a clay floor which needs further investigation around the edges. Staight across from the breakthrough point, a passage continues under the wall and steeply down a boulder slope. A junction is reached and the stream can be seen leading off on the right. The left passage was followed and a chamber reached. At the far end, a 3m climb up is avoided by an excavated crawl on the right. A small chamber is reached where the cave changes character and becomes gnarly. After twists and bends a short, flat out restriction is passed into a stooping passage which shortly reaches a climb down on loose, sharp rock to a chamber with a stream entering from the left. This is probably the main way on. Rocks need to be moved for access. Going straight ahead a sandy passage behind boulders closes down after 4m. To the right, going downstream for several metres, a junction is met - the left hand is an inlet that looks promising (but chert would need to be knocked off at one point to enable access. The left hand downstream passage passes an awkward arch before ending in a low sump which probably joins the unexplored passage described on the left on the way in. [Description of the Hippodrome and beyond by Jim Lister, logbook entry, 6/8/2019.]"
+      },
+      {
+        "index": 52,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "• The final, southeast-heading route out from Junction 75 . The passage gets wide before going back to its average dimensions. A sandy crawl is passed on the right which is not surveyed but goes after a short distance to a aven which is well decorated although, looking up, there is no obvious way on. However, the bottom of the aven 4 meters below may have? Continuing along the main passage it splits into two. The left hand passage continues unexplored but looks promising. The right hand passage narrows and becomes taller before widening again. A further junction is met with two passages leading off - the passage at floor level is a hands and knees crawl to low air space; the passage above is an awkward 2m climb to a sandy floored walking / stooping passage. The passage lowers and widens out and, just past some large diameter stals, a climb down leads to a hands and knees crawl through thick and smelly sludge, The Sewer . This ends at a reasonable sized walking stream way, with both a down stream passage to the right and an upstream passage to the left. The right hand passage soon widens and lowers to a flooded passage with very limited air space and is believed to join the simpler passage mentioned earlier. The right hand passage continues for some distance eventually going through a duck and then, 10 minutes later, ending in a body-sized sump (sump 6b)."
+      },
+      {
+        "index": 53,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "A climb up the left hand side of the chamber has been excavated through sand to gain access to a good sized chamber. The far left hand side has an aven which has water falling down it from an impenetrable slot. There is no apparent way on from the chamber. However, the far end does have a interesting 3m wide bedding with a sand floor and roof that disappears into the distance. Sadly, the 20cm height stops any progress but it may be a promising dig?"
+      },
+      {
+        "index": 54,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "• In August 2023 , Jim and Mark, on an overnight trip, pushed the extensions at the end of the Sarah Jean Inlet ( logbook , 3rd August, pp32-33). The open roof passage near station 75 was found to be an oxbow that bypassed the ducks and was surveyed as batch 23-01 - a 38m extension. The muddy crawl to sump 6b was found to be giving off \"bad air\". At the Hippodrome, where the high level choke may be a future dig, the southern-most question mark was pushed for a few metres and the 2 sumps were found to connect after the water turned \"green and smelly\" - another case of illegal dumping of farm waste? The best lead in SJ is now thought to be the climb in GH Aven (see summer 2025 account above)."
+      },
+      {
+        "index": 55,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Aerial panoramas and video fly-overs were taken over the 2018 end of Sarah Jean Inlet . These can be found on the Aerial Panoramic Photos and Videos page - 5 photos under the SanAntonio-south heading and 2 videos with the Fuente Aguanaz (SJ) heading."
+      },
+      {
+        "index": 56,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "Back in the main passage , the 25m long sump 2 was passed to approximately 300m of passage, ending at a boulder choke with a slight draught and one potential digging site. An extremely small, sharp sump continues at stream level. This was entered at Easter 2001 to an airbell to the right of the sump and then pushed in the summer to a \"quite tight close down\", 5m from the previous limit. Running water could be heard from the rockfall above. At Easter 2006, this seems to have been dived again."
+      },
+      {
+        "index": 57,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "There is a climb above sump 2 which needs attacking. The descriptions of the sump before the choke, the choke and the final upstream sump was confirmed by Jim Lister in August 2017. At Easter 2018, Jim and Mark Smith pushed the final sump, knocking off rock pendants to access an air surface with a left hand passage leading off for 3m to a sharp right hand bend where the sound of running water could be heard in the distance."
+      },
+      {
+        "index": 58,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "In the summer 2018, 5m progress was made after a duck under the left hand wall. Several rocks were capped to gain another 4m but the choke continued. This may be further pushed when water levels are lower to allow capping."
+      },
+      {
+        "index": 59,
+        "kind": "paragraph",
+        "section_index": 1,
+        "text": "In the summer 2024, the area at the upstream end was re-examined by Jim and Mark and there was thought to be no possibility of extending the cave here. The logbook reads: \"The team carefully inspected the cave for leads in the terminal bolder choke, both above and below the water. Several large flakes of rock were moved from the end of sump 3 below the choke, but further digging was futile and the team believe passing the choke here is unviable. The area leading up to the choke was also searched with no success.\""
+      },
+      {
+        "index": 60,
+        "kind": "section_heading",
+        "section_index": 2,
+        "text": "Eastern Inlet"
+      },
+      {
+        "index": 61,
+        "kind": "paragraph",
+        "section_index": 2,
+        "text": "\"The inlet on the left\" after the second sump was pushed at Easter 2001. The passage continues tight through a few short climbs. A small chamber leads to a larger one with mud and boulder walls. A stream enters through the ceiling. The place smells of \"outside\". This also appears to have been entered at Easter 2018 where it was followed for 90m to a rift which was climbed following the water to a tight window. A chamber with a good echo could be seen beyond but capping is necessary to gain access. This was capped in August 2018 to enter a \"modest chamber\" and a 3m climb up to a crawl and a slightly larger chamber with a 5-6m climb to a passage with a small stream. (As this was being climbed, a handhold gave way and Mark Smith fell face down onto a rock. The chamber was named Rudolf Chamber and the passageway out, Galería de Vampire . The Eastern Inlet was later surveyed as batch 18-06, length 81m."
+      },
+      {
+        "index": 62,
+        "kind": "section_heading",
+        "section_index": 3,
+        "text": "Summer '24 Inlet"
+      },
+      {
+        "index": 63,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The entry point to this 523m inlet series, explored by Jim and Mark, is about 2/3rds of the way towards Sarah Jean Inlet from sump 1. Two versions of the final drawing are available: pdf and svg with some different labels. The following description is based on 7 extensive logbook entries by Jim Lister."
+      },
+      {
+        "index": 64,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The inlet passage sets off on the true right hand side, climbing over some big boulders before dropping back down to the gravel stream bed, 4 to 5 metres further along. The passage here is a comfortable walking size being a metre wide and 3 metres tall, The passage then starts to meander until the first junction is met."
+      },
+      {
+        "index": 65,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The stream way continues to the left and is a comfortable walking size although smaller than the passage leading up to it. It can be followed as walking and crawling sized passage with a rock floor and a small active stream. The passage meandered for a distance of around 100 metres were it ended in a small chamber 4 metres by 4 metres in size. A waterfall, 2.9 metres high, fall from a passage partially blocked by antler rock. It could be seen continuing, but a lump hammer would be needed to enable access."
+      },
+      {
+        "index": 66,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "A small side passage near the start was investigated, but terminated at a very small pool / sump, a short way along."
+      },
+      {
+        "index": 67,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Back at the first junction , the passage to the right is of similar proportions but is sloping upwards and the floor is of sand and occasionally gravel, it meanders along and then descends slightly. Water from upstream descends down a gravel sink. The next feature is a chamber where sharp, brittle, sand-coloured rock has to be negotiated. This is soon passed and another chamber is reached which has a sand bank and a rock outcrop with a baseball sized rock balanced on top, hence its name \" Wobble Rock Chamber \". Looking backwards above you, it is possible to see a passage leading off in the roof above the passage were you entered."
+      },
+      {
+        "index": 68,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The way on is by following some hands on knees crawls to \" Three Way Chamber \" which has a near vertical passage in the roof and a blind passage to the right. The way on is to the far left up a sand slope which leads to walking size passage. A very deep impenetrable slot in the floor is then passed on the left, it emits a loud rumbling sound."
+      },
+      {
+        "index": 69,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "A junction is then met. The right hand passage continues for more than 100m and is extremely tall but narrow. The floor is soiled rock or mud covered rock. A slot is passed in the floor that emits a loud roaring noise. Further along, a passage drops down in the floor heading back under you but would need capping."
+      },
+      {
+        "index": 70,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The very narrow, smooth passage then meets a blockage at the western end, with some air movement. The block was later capped and the route can be followed for 30m (unsurveyed) and ends in a small chamber."
+      },
+      {
+        "index": 71,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Back at the previous junction , a rock blockage on the left has been removed with a lump hammer and the \" Journey to Kerplunk \" entered. After a short distance, a chamber is reached. At the end, the passage meanders before a hole in the floor is seen. This is not big enough to enter, but a walking sized passage with a cobbled floor can been seen 3 to 4 metres below. The passage then meets a big chamber with a 4 metre climb down to reach the floor. An impenetrable crack beneath the climb emits the sound of a streamway. The chamber is then crossed by climbing over boulders to get to the far end. (There is a route under them but it's safer to go over the top?). A passage the size of the entrant passage leads off a roof height, but the main way on seems to be a 4m climb up to a walking size passage (\" Babybel Cheese Passage \") that ends at a squeeze through fallen clay and rocks. This was enlarged to reach a void. Above, with a good draught, is a slot to a large space in the roof which was blocked by a boulder. After a few hours of capping, the bottom of an aven was accessed."
+      },
+      {
+        "index": 72,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The right hand side has a sand and bolder slope which can be climbed to a ledge. After careful looking around on full light beam, a side passage is seen. This was originally bolted to, and another hour was spent capping it. Good progress was made but the team ran out of caps! The passage has a strong draught and looks a lot larger a few metres in."
+      },
+      {
+        "index": 73,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "On the next trip, the this passage at the top of the aven was capped, working off etriers. After 5 metres the capped route enters a 5 metre by 3 metre high passage (\" Thunder Passage \"), the floor being made of boulders with a 10 metre drop between many of them. This passage continues to a shaft, the height of which cannot be seen, but appears to be 10 metres deep, the base being flat, water washed gravel. Opposite, at the same height as the entrance passage, is a streamway, being 3 metres wide by 5 metres high. It has a small stream emitting from it which falls to the gravel below. This passage can be seen heading off for some way, the rock changing from a brown colour to a dark grey with what looks like fossils embedded in it."
+      },
+      {
+        "index": 74,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "The next trip saw the pitch in the floor being traversed and the pitch could be seen to be blind, with the water sinking into the gravel floor at its base. The passage on the other side ends after a few metres in an aven approximately 16 metres high. This was bolted to a height of 9 metres before the team ran out of through bolts. (See photos below.)"
+      },
+      {
+        "index": 75,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "At the top of the aven, the stream passage can be followed 10 metres to a large boulder choke. The route upward enters a large void with a steeply ascending, unstable, bolder ramp to the right hand side - \" Kerplunk \". To the left a comparatively narrow 1.5 metre wide slot descends, presumably back to the top of the climbed aven. Two passages can be seen at the top. The right hand one has been bolted as it emits the water. Just beyond the slot in the floor, a solid passage seems to end at a blank wall, although a passage in the roof looks big. Access would require bolting 3 to 4 metres."
+      },
+      {
+        "index": 76,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Kerplunk , the large, loose, boulder choke ramp has been climbed, not without unwanted excitement due to it being very loose. A number of large voids have been entered and passed. Around 15 metres of height have been gained until a climb up is reached onto a caravan-sized boulder wedged 3 metres up. Above this, a big aven (\" Starlight Aven \") continues up 60m+ with water falling."
+      },
+      {
+        "index": 77,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "NOTES : Further progress could have been made but was not undertaken, as the Kerplunk choke is very unstable. Rescue from such a large and unstable choke in such a remote location, would be very unlikely. The team (Jim and Mark) will not be returning to the choke. On the way out on the final trip, another solid section of cave (chamber with pitch) could be seen and would need to be entered by descending a 3 metre slot. However, a very unstable section of choke would need to be passed by anyone intending to do this! Further \"thoughts\" are divulged on page 12 of the logbook ."
+      },
+      {
+        "index": 78,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Compared to Torca La Vaca , about 1.5km to the east, Fuente Aguanaz is a disappointment. There would appear to be no reason why this cave should not have (a number of) high levels. Perhaps the western extensions in 2009 have started to reveal these. More climbing up from the stream level and investigating avens is required."
+      },
+      {
+        "index": 79,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Middle entrance (# 5452 )"
+      },
+      {
+        "index": 80,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "There was apparently no account of the upstream passage from the middle entrance being explored until the summer 2013. Some photos were taken near the downstream end; more photos have now been taken and the passage surveyed . The upstream sump was inspected at the end of July 2014, but no dive was made."
+      },
+      {
+        "index": 81,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "A small hole on the east bank of the resurgence is the entrance to Invisible Cave , site 3283, a stream passage apparently not connected to Fuente Aguanaz but probably connected in the past as an inlet, before Fuente Aguanaz entrance cut back."
+      },
+      {
+        "index": 82,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "A diagram of the hydrology of the San Antonio - Hornedo - Cobadal area drawn after Easter 2011 can be found here ."
+      },
+      {
+        "index": 83,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Over three days in July 2011, the supposed upstream course of Fuente Aguanaz (or, at least, part of it) was dowsed. The furthest point reached was a small sink close to the entrance of the Sumidero de Cobadal. A number of inlets and sinks were also highlighted. See the links below."
+      },
+      {
+        "index": 84,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Hollie London carried out some biological sampling in the streamway in April 2026."
+      },
+      {
+        "index": 85,
+        "kind": "paragraph",
+        "section_index": 3,
+        "text": "Link to entry in the Cave Diving Sump Index ."
+      }
+    ],
+    "char_count": 32276,
+    "cross_refs": [
+      {
+        "context": "Los Boyones",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0117.htm",
+        "kind": "hyperlink",
+        "link_text": "Los Boyones",
+        "target_site": 117
+      },
+      {
+        "context": "1930",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1930.htm",
+        "kind": "hyperlink",
+        "link_text": "1930",
+        "target_site": 1930
+      },
+      {
+        "context": "Torca La Vaca",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "2889.htm",
+        "kind": "hyperlink",
+        "link_text": "Torca La Vaca",
+        "target_site": 2889
+      },
+      {
+        "context": "site 1976",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1976.htm",
+        "kind": "hyperlink",
+        "link_text": "site 1976",
+        "target_site": 1976
+      },
+      {
+        "context": "site 2538",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "2538.htm",
+        "kind": "hyperlink",
+        "link_text": "site 2538",
+        "target_site": 2538
+      },
+      {
+        "context": "site 1969",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1969.htm",
+        "kind": "hyperlink",
+        "link_text": "site 1969",
+        "target_site": 1969
+      },
+      {
+        "context": "Comellantes",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0040.htm",
+        "kind": "hyperlink",
+        "link_text": "Comellantes",
+        "target_site": 40
+      },
+      {
+        "context": "La Riega",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0551.htm",
+        "kind": "hyperlink",
+        "link_text": "La Riega",
+        "target_site": 551
+      },
+      {
+        "context": "Wild Mare",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0767.htm",
+        "kind": "hyperlink",
+        "link_text": "Wild Mare",
+        "target_site": 767
+      },
+      {
+        "context": "site 567",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0567.htm",
+        "kind": "hyperlink",
+        "link_text": "site 567",
+        "target_site": 567
+      },
+      {
+        "context": "5453",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "5453.htm",
+        "kind": "hyperlink",
+        "link_text": "5453",
+        "target_site": 5453
+      },
+      {
+        "context": "site 3494",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "3494.htm",
+        "kind": "hyperlink",
+        "link_text": "site 3494",
+        "target_site": 3494
+      },
+      {
+        "context": "5452",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "5452.htm",
+        "kind": "hyperlink",
+        "link_text": "5452",
+        "target_site": 5452
+      },
+      {
+        "context": "Invisible Cave",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "3283.htm",
+        "kind": "hyperlink",
+        "link_text": "Invisible Cave",
+        "target_site": 3283
+      },
+      {
+        "context": "pared to other avens in the main stream. Sarah Jean Inlet (see 2023 paragraph below) At Easter 2017, beyond sump 1 and on the",
+        "fragment": null,
+        "from_zone": "body",
+        "href": null,
+        "kind": "plaintext",
+        "link_text": null,
+        "target_site": 2023
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": "0713-26-02",
+        "day": null,
+        "kind": "survey_batch",
+        "month": null,
+        "raw": "0713-26-02",
+        "season": null,
+        "year": null
+      },
+      {
+        "batch_code": "0713-17-01",
+        "day": null,
+        "kind": "survey_batch",
+        "month": null,
+        "raw": "0713-17-01",
+        "season": null,
+        "year": null
+      },
+      {
+        "batch_code": "0713-25-04",
+        "day": null,
+        "kind": "survey_batch",
+        "month": null,
+        "raw": "0713-25-04",
+        "season": null,
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": 22,
+        "kind": "dmy",
+        "month": 8,
+        "raw": "22/8/2012",
+        "season": null,
+        "year": 2012
+      },
+      {
+        "batch_code": null,
+        "day": 10,
+        "kind": "dmy",
+        "month": 8,
+        "raw": "10/8/2012",
+        "season": null,
+        "year": 2012
+      },
+      {
+        "batch_code": null,
+        "day": 23,
+        "kind": "dmy",
+        "month": 8,
+        "raw": "23/8/2019",
+        "season": null,
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": 6,
+        "kind": "dmy",
+        "month": 8,
+        "raw": "6/8/2019",
+        "season": null,
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2006",
+        "season": "Easter",
+        "year": 2006
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2018",
+        "season": "Easter",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Whit 2008",
+        "season": "Whit",
+        "year": 2008
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2022",
+        "season": "summer",
+        "year": 2022
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "autumn",
+        "season": "autumn",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2022",
+        "season": "summer",
+        "year": 2022
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2022",
+        "season": "summer",
+        "year": 2022
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "Christmas",
+        "season": "Christmas",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2010",
+        "season": "Easter",
+        "year": 2010
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2009",
+        "season": "summer",
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2013",
+        "season": "summer",
+        "year": 2013
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Whit 1995",
+        "season": "Whit",
+        "year": 1995
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2017",
+        "season": "Easter",
+        "year": 2017
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2019",
+        "season": "Easter",
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2018",
+        "season": "Easter",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Autumn 2018",
+        "season": "autumn",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2018",
+        "season": "Easter",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Summer 2018",
+        "season": "summer",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "Easter",
+        "season": "Easter",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2019",
+        "season": "summer",
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Summer 2025",
+        "season": "summer",
+        "year": 2025
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2025",
+        "season": "summer",
+        "year": 2025
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2001",
+        "season": "Easter",
+        "year": 2001
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2006",
+        "season": "Easter",
+        "year": 2006
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2018",
+        "season": "Easter",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2018",
+        "season": "summer",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2024",
+        "season": "summer",
+        "year": 2024
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2001",
+        "season": "Easter",
+        "year": 2001
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2018",
+        "season": "Easter",
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "Summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2013",
+        "season": "summer",
+        "year": 2013
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2011",
+        "season": "Easter",
+        "year": 2011
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 1,
+        "raw": "January 2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 4,
+        "raw": "April 2016",
+        "season": null,
+        "year": 2016
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 5,
+        "raw": "May 2017",
+        "season": null,
+        "year": 2017
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2019",
+        "season": null,
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 4,
+        "raw": "April 2022",
+        "season": null,
+        "year": 2022
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 7,
+        "raw": "July 2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2014",
+        "season": null,
+        "year": 2014
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 4,
+        "raw": "April 2026",
+        "season": null,
+        "year": 2026
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 4,
+        "raw": "April 2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 4,
+        "raw": "April 2026",
+        "season": null,
+        "year": 2026
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2019",
+        "season": null,
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2017",
+        "season": null,
+        "year": 2017
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 7,
+        "raw": "July 2014",
+        "season": null,
+        "year": 2014
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 7,
+        "raw": "July 2011",
+        "season": null,
+        "year": 2011
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 4,
+        "raw": "April 2026",
+        "season": null,
+        "year": 2026
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2005",
+        "season": null,
+        "year": 2005
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1930",
+        "season": null,
+        "year": 1930
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2016",
+        "season": null,
+        "year": 2016
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2022",
+        "season": null,
+        "year": 2022
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2008",
+        "season": null,
+        "year": 2008
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2014",
+        "season": null,
+        "year": 2014
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2025",
+        "season": null,
+        "year": 2025
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2018",
+        "season": null,
+        "year": 2018
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [
+      {
+        "confidence": 0.8,
+        "evidence": "by_pattern",
+        "name_canonical": null,
+        "name_raw": "Jim Lister"
+      },
+      {
+        "confidence": 0.8,
+        "evidence": "by_pattern",
+        "name_canonical": null,
+        "name_raw": "Dan Hibberts"
+      },
+      {
+        "confidence": 0.8,
+        "evidence": "by_pattern",
+        "name_canonical": null,
+        "name_raw": "Mark Smith"
+      }
+    ],
+    "raw_html": "sha256:1e1aff7763db6d5f (37165 chars)",
+    "sections": [
+      {
+        "block_first": 5,
+        "block_last": 18,
+        "canonical": "hydrology",
+        "heading": "Hydrology",
+        "heading_kind": "bold",
+        "index": 0
+      },
+      {
+        "block_first": 19,
+        "block_last": 59,
+        "canonical": null,
+        "heading": "Main, upper cave",
+        "heading_kind": "bold",
+        "index": 1
+      },
+      {
+        "block_first": 60,
+        "block_last": 61,
+        "canonical": null,
+        "heading": "Eastern Inlet",
+        "heading_kind": "bold",
+        "index": 2
+      },
+      {
+        "block_first": 62,
+        "block_last": 85,
+        "canonical": null,
+        "heading": "Summer '24 Inlet",
+        "heading_kind": "bold",
+        "index": 3
+      }
+    ],
+    "tables": [],
+    "text": "January 2023 : For admin purposes, cataloguing all \"holes in the ground\", all three entrances are now coded as:\n\n#0713 - this top entrance, where cavers dive and explore upstream;\n\n#5452 - the middle entrance;\n\n#5453 - the entrance at the car park. All information for the whole system is found on this #0713 page.\n\nThe cave is the major resurgence for the area and a large diameter pipe removes water for public consumption, supplying Santander. Information gleaned from the Dirección General de Obras Hidráulicas y Ciclo Integral del Agua in 2005 shows an average water flow from the resurgence over the previous 20 or so years of 951 litres per second. (For comparison, the resurgence at Los Boyones (fed by catchments above Cueva Vallina, Matienzo and Riaño) emits 650 litres per second on average.\n\nHydrology\n\nAn optical brightener test from the end of the Sumidero de Cobadal ( 1930 ) over Easter 2006 gave a positive result after 5 - 7 days during medium to medium-high flow. During the 6 or so visits over a fortnight the water levels were slow to react after some heavy rain, and even then only rose by approx. 7cm. Los Boyones rose by 120cm much more rapidly. The details of the test are found here . There is a possiblity that water from the Sumidero might drain to Torca La Vaca during low to normal flow, only passing over into Fuente Aguanaz during high stage. Some suggestions regarding water sources for Aguanaz are detailed here . In 2009 these possibilities were outdated when an inlet, apparently from La Gatuna, was explored.\n\nAn optical brightener trace over March / April 2016 from the Duck Pond Sink ( site 1976 ) near Barrio de Arriba gave a positive result at Aguanaz (#5452) after 4 - 7 days.\n\nAn optical brightener trace over April / May 2017 from El Cubillón ( site 2538 ) gave a positive result at Aguanaz (#5452) after 6 - 8 days. More details are shown here .\n\nOver Easter 2018, optical brightener was injected into site 1969 near Alisas and detected between 2 and 3 days later at Fuente Aguanaz (in heavy flood conditions). Other caves checked for OBA included Comellantes , La Riega and Wild Mare . These all proved negative. (Details of the water trace can be found here .)\n\nA summary of all water traces with a map can be found on the Water Tracing Investigations page.\n\nOptical brightener fluorocapteurs have also been placed in the resurgence for other water traces, eg\n\n- the 2016 Hoyón ( site 567 ) trace which was successfully detected at Comediante - site 0040 .\n\n- OBA was put into a stream in a Moncobe site being explored by the GE Pistruellos. The water was traced to La Riega .\n\nThe resurgence can emit large quantities of water, flooding the low lying ground around Entrambasaguas and beyond. One effect of the Whit 2008 flood was to jam leaves around the door of the new pumping station, which is probably 7m above the normal water level. A smaller flood in October of the same year was shown on national TVE news. (Photos here ).\n\nAfter a very dry summer, the Diario Montañés (22/8/2012) reported a flow of 0.1 cumecs. Another very dry summer saw the water level below the extraction pipe at the main entrance. (See Entrance pictures, summer 2022 and 360° photos from the autumn, below)\n\nIn August 2019, as reported in the Diario Montañés ( 10/8/2012 & 23/8/2019 ), Fuente Aguanaz was heavily contaminated by farm slurry. As a result, the water was prevented from entering the public supply; agents of Seprona (the environmental branch - or Nature Protection Service - of the Guardia Civil) investigated, and a particular farmer became a prime suspect.\n\nThe resurgence area no longer (2022) has an outdoor interpretation centre with 4 boards explaining about water and the environment, due to vandalism. Further boards are in the old pump houses. But by the summer 2022 this area had also been cleaned-up, with the old pump house removed and coloured, patterned concrete laid. (See Entrance pictures, summer 2022, below)\n\nThe water level at the bottom entrance (# 5453 ) is at about 55m altitude and is reached by walking down concrete steps. Sixty metres up behind this - reached by a rising track setting off on the right of the car park - is a hole below a scar in a depression which is where the pipe reaches to abstract the water (#5452). Upstream from here is out-of-depth water to a boulder choke.\n\nMain, upper cave\n\nIn April 2022, it was noted that the once obscure route to the top entrance was now a \"good path\".\n\nA small, 4m long cave in a gully above the Aguanaz cavers' entrance was maypoled into in the summer, 2009.\n\nThe entrance starts as a route between boulders. The grid reference for this entrance was altered in 2008 and is that shown in the heading. Just below the top of the rope climb, a hole was opened up in 2009, heading west. This turned out to be an alternative way down to the stream rather than any high level development. A sketch shows the sumps in the cave (August 2018). The entrance constriction was removed in August 2018, making the exit for tired divers much less wearisome. A further consolidation of the route occurred on Christmas Day 2018, with more gardening at the pitch head and new bolts placed to make a \"comfortable\" ladder pitch. In July 2023, a fixed, 12ft, aluminium ladder was installed at the \"gorge\" climb in the main streamway before sump 1. A hand line was also installed to help in high water level.\n\nIn August 2023, the line through sump 1 was twice found broken and a new one was installed. The opportunity was taken to thoroughly (re)examine the underwater route but only alcoves were seen.\n\nThe site is mainly swimming. Half way through, the water can be left and there is an inlet on the western side. This was pushed and resurveyed in the summer, 2009.\n\nBeyond the aven the inlet stream continues through an choke to two short ducks and a continuing stream passage which lowers to a flat out crawl with a slight draught. Before this, a climb out enters a large chamber / passage which may continue south beyond an unexplored pitch down. The area was reinvestigated and pushed on one trip at Easter 2010. \" Had a good look round in the boulder choke. Could not find the main way on but found plenty of high level passage with deep holes in the floor. Possible ways on? About 250m unsurveyed? \" About 150m were surveyed to 40m above the stream where the high level passage lies. See photos taken on this trip.\n\nAn inlet on the east was also explored, summer 2009, for 70m and ending at a too tight rift with no draught. A aven was free climbed 9m after a tight squeeze up to where it continued up out of sight.\n\nIn 2014, the 2009/10 extensions were re-examined - in the chamber with 2 avens, the one at the top of the slope looked the better climbing prospect.\n\nThe streamway up to sump 1 was re-explored in the summer 2013 and all side passages at water level were found to be undercuts or blind air bells. The line was also repaired. In August 2014, in low water conditions, a \"lovely swim to the sump and back\" was aided by thick wetsuits, fins and a bouyant tackle bag.\n\nThe southern sump was dived at Whit 1995 and was passed in 5 to 6m visibility, after 35m, at a maximum 5m depth to a large sump pool on the other side. De- kitting occurs on a mud and boulder bank on the left. The main stream continuation was then fully explored for 500m during the summer of that year and consisted of swimming and wading until the passage climbs several cascades to meet the unexpected sump 2.\n\nIn April 2026 , a small alcove on the true left of the streamway (when travelling upstream from the rapids by approximately 50 meters) was enlarged and entry gained into a large chamber with multiple ways on, and a cool draught. This area was explored over 2 trips.\n\nA way through a boulder choke in the roof leads to more boulder chokes and a large fossil passage. Walking south, the passage enlarges and passes several small avens before ending at a draughting sediment choke. This has been worked on and it is worthy of a few hours with some capping kit to remove a large boulder and allow further excavation of the sediment.\n\nOne of the avens has been freeclimbed and a small continuation of vadose stream passage is visible. This carrys a very small amount of water, and had some germinated seeds growing in a puddle at the bottom. Bolting the traverse across the top of the aven leads to the continuing passage which ends in a sand choke with no obvious draught after only around 4m.\n\nBack in the main passage, going the opposite way passes several areas of good flowstone floor and helictites, and enters the bottom of a large, clean washed rift going upwards with a strong draught. This is heavily calcited, with a small area of false floor. There appears to be a larger area of the rift visible approximately 10 metres up. The first few metres would require some bolts and an etrier, but beyond there it is an easy freeclimb.\n\n(Batch 0713-26-02, L=133.5m)\n\nThe draught is generally going upwards in this whole section of cave - either to the surface or to a higher level of development. The mud choke is heading towards Sarah Jean passage. The base of the more promising aven is a good 35m up from stream level, making it a much more attractive location to begin a bolt climb compared to other avens in the main stream.\n\nSarah Jean Inlet (see 2023 paragraph below)\n\nAt Easter 2017, beyond sump 1 and on the true left of the passage just north of a 0.5m waterfall, the Sarah Jean Inlet was explored by Jim Lister and Dan Hibberts for 770m heading west-southwest, passing through a small sump and finishing at an over-tight hole up between boulders into larger passage. (Batch 0713-17-01). Links to video of this exploration are shown below.\n\nSarah Jean was extended by Jim Lister and Mark Smith in April 2018 when the way on was found at stream level below the choke. Here, a flat-out crawl with 4\" airspace leads to walking passage in good rock. The streamway ends in a large sump. (Batch 18-01, length 73m). Further exploration by Jim Lister passed sump 3B (which varies between 3 and 15m in length) to walking passage (with a possible tight slot in the wall with a good echo) and sump 4B (which had disappeared in drier conditions) with more walking passage beyond to sump 5B, dived for a short distance. (Batches 18-02 and 18-03, lengths 17m and 73m). A video of this extension is linked below.\n\nThe boulder choke area was tidied up and consolidated after a collapse at Easter 2019. A chamber above is sketched on thye survey in red.\n\nAll these dives were carried out in zero visibility due to wood pulp washed in from forestry works on the surface. (A letter, maps and a sample of the contamination (60cm deep in the sumps) were delivered to the Consejería del Medio Rural, Pesca y Alimentación on 25th April, 2018 and replied 18th May. Both advisory letter and reply are in the Easter 2018 logbook. Another letter was received (dated 29th October, 2018) basically stating that no problems had been found when holes over the pollution site were inspected and no further action was to be taken. This letter can be seen in the Autumn 2018 logbook. This screenshot shows Sarah Jean Inlet passing close to eucalyptus forest that, around Easter 2018, was being felled - on both sides of the valley that drops to Cueva de Regato, site 3494 .)\n\nSummer 2018 explorations Diving continued as Jim Lister and Mark Smith, not finding their way through the \"final\" sump 5B, explored passage to the right. A climb up leads to rift passage that intersects an aven (12-15m or \"at least 20m\" high) with a shower of water coming down. The aven rock is a very light grey colour with many fossils - very different from the smooth brown walls on the way leading to it. A climb to the left of the aven closes in. A climb on the right, under an arch, leads two-thirds of the way up the shaft. Carrying on under the arch, the passage continues as a rift to a stal, where exploration stopped at a \"reasonably small rift but still has a stream\". This extension was surveyed as batch 18-04, length 172m).\n\nSump 5B was passed by Jim Lister on a solo trip and described as \"roomy but contains much silt and cross rifts\". The sump ends in a 30m wide cross rift where the right hand side has an inlet passage 2m wide and 3m high heading off just above water level. Above the diver's guide line, a short climb up leads to 3m of large passage ending in a 15m wide, draughting aven ( Gwynt O'r Hefoedd (Wind from the Heights) - or GH Aven for short!) where the top cannot be seen, being beyond the range of a Scurion light. (August 2023: an emergency survival poncho and fins along with brew kit have been left at downstream sump 5B and a full dive reel and snoopy loops at upstream sump 5B.)\n\nEaster & summer 2019 explorations and survey Jim Lister and Mark Smith surveyed batches 19-01 and 19-03 giving 722m + 236m, total=958m. The passage descriptions below are edited from logbook entries.\n\nAfter the steep climb up to GH Aven , a DistoX reading was taken up the curved aven. The reading had to be taken off the wall which was \"only\" 43 meters. The aven is 6m diameter. The aven has been bolted up 17m to a 2ft wide ledge, where a permanent traverse line is installed, giving access to a suitable rigging point to install a free hanging permanent rope. (August 2023: an emergency \"Blizzard\" bag - 4 season tinfoil sleeping bag - left at bottom of GH Aven.)\n\nSummer 2025 explorations A number of tiring solo dives by Jim Lister transported a fixed ladder, dive and bolting equipment into Sarah Jean Inlet . With the final objective being the ascent of GH Aven , the crawl under the bouldery chamber leading to sump 3 was bypassed. The loose climb up was stabilised with scaffold poles and straps, while the descent to sump 3 was made easier with the fixed aluminium ladder. GH Aven was bolted to a ledge 35m up and looks promising above. An aven at sump 5 was also bolted to +11m but this choked. Some of the 2025 work is shown in this video .\n\n4 passages off Sarah Jean Inlet were solo surveyed but there were apparent directional issues with the collected data and only only batch could be used, 0713-25-04. However, the lengths from all the other batches -01, -02, -03 (total length = 288m) has been included (but not shown on the centre line.) There is further discussion on pages 48-49 of the logbook .\n\nFurther (re)survey work was carried out in April 2026 (after heavy rain prevented access) but, again, there were issues with the software / hardware.\n\nThe inlet beyond GH Aven - at the moment - is the main exploration route. This passage starts a couple of meters wide and has a gravel floor and a stream emitting from it. It meanders along with stalagmites suspended from the ceiling and some areas being very well decorated. The passage then splits at a 4-way junction called Junction 75 after the station number. ( GH Aven and the first exploration up this passage to Junction 75 can be seen on video .)\n\n• The right hand inlet continues with the rock changing and becoming more eroded. A few deep pools are encountered and passed until a tight vertical slot is reached. This is best passed by lifting your legs up and floating through on your side. The passage goes for some distance until it changed to a hands and knee crawl where the survey finishes and the streamway continues.\n\n• The passage leading off to the left (west then southwest), going up stream at Junction 75 , is the main streamway for Sarah Jean Inlet . The passage starts off wide with a good ankle to knee deep stream running over a gravel floor. It then divides at a further junction, the right hand side becomes shoulder width wide but higher. The rock is light grey in colour and has a rough, wetsuit abrading surface. The stream runs beneath, down a tight slot out of sight. The passage then becomes wider and straighter with right angle bends. It gives a good echo and, eventually, a cascade can be heard in the distance. The way on here was originally barred by a band of sharp and brittle, dark brown rock which filled the passage almost completely! It looked like the end but Jim was able to climb up the sides of the passage which was 9m(?) high. Enough of the brittle rock was knocked off to squeeze through. After an unpleasant climb down the other side, there is a chamber with a cascade tumbling down the left hand wall. This is again climbed up horrible brown rock to an ongoing stream way with a big void above. There is a bigger route through and, at the top of the cascade, there is a pleasant, wide, walking passage of good proportions! This ends in a boulder choke just after an elbow. There is a gap going into large, continuing passage but it needs capping. [On the way out, Jim fell as the foothold he was using failed and he fell on his back winding himself. No major damage was done but it’s a warning that the dark rock is lethal.]\n\nCapping occurred in August 2019 to avoid climbing up the loose sides, and Jim (solo) was able to enter and survey The Hippodrome and beyond as batch 19-05, 178m. A tight, capped squeeze through the vertical boulders leads into a well proportioned passage running at right angles to the passage leading in. Turning left (east) leads up a boulder slope to a choke. Turning right leads to a downwards slope which ends at a clay floor which needs further investigation around the edges. Staight across from the breakthrough point, a passage continues under the wall and steeply down a boulder slope. A junction is reached and the stream can be seen leading off on the right. The left passage was followed and a chamber reached. At the far end, a 3m climb up is avoided by an excavated crawl on the right. A small chamber is reached where the cave changes character and becomes gnarly. After twists and bends a short, flat out restriction is passed into a stooping passage which shortly reaches a climb down on loose, sharp rock to a chamber with a stream entering from the left. This is probably the main way on. Rocks need to be moved for access. Going straight ahead a sandy passage behind boulders closes down after 4m. To the right, going downstream for several metres, a junction is met - the left hand is an inlet that looks promising (but chert would need to be knocked off at one point to enable access. The left hand downstream passage passes an awkward arch before ending in a low sump which probably joins the unexplored passage described on the left on the way in. [Description of the Hippodrome and beyond by Jim Lister, logbook entry, 6/8/2019.]\n\n• The final, southeast-heading route out from Junction 75 . The passage gets wide before going back to its average dimensions. A sandy crawl is passed on the right which is not surveyed but goes after a short distance to a aven which is well decorated although, looking up, there is no obvious way on. However, the bottom of the aven 4 meters below may have? Continuing along the main passage it splits into two. The left hand passage continues unexplored but looks promising. The right hand passage narrows and becomes taller before widening again. A further junction is met with two passages leading off - the passage at floor level is a hands and knees crawl to low air space; the passage above is an awkward 2m climb to a sandy floored walking / stooping passage. The passage lowers and widens out and, just past some large diameter stals, a climb down leads to a hands and knees crawl through thick and smelly sludge, The Sewer . This ends at a reasonable sized walking stream way, with both a down stream passage to the right and an upstream passage to the left. The right hand passage soon widens and lowers to a flooded passage with very limited air space and is believed to join the simpler passage mentioned earlier. The right hand passage continues for some distance eventually going through a duck and then, 10 minutes later, ending in a body-sized sump (sump 6b).\n\nA climb up the left hand side of the chamber has been excavated through sand to gain access to a good sized chamber. The far left hand side has an aven which has water falling down it from an impenetrable slot. There is no apparent way on from the chamber. However, the far end does have a interesting 3m wide bedding with a sand floor and roof that disappears into the distance. Sadly, the 20cm height stops any progress but it may be a promising dig?\n\n• In August 2023 , Jim and Mark, on an overnight trip, pushed the extensions at the end of the Sarah Jean Inlet ( logbook , 3rd August, pp32-33). The open roof passage near station 75 was found to be an oxbow that bypassed the ducks and was surveyed as batch 23-01 - a 38m extension. The muddy crawl to sump 6b was found to be giving off \"bad air\". At the Hippodrome, where the high level choke may be a future dig, the southern-most question mark was pushed for a few metres and the 2 sumps were found to connect after the water turned \"green and smelly\" - another case of illegal dumping of farm waste? The best lead in SJ is now thought to be the climb in GH Aven (see summer 2025 account above).\n\nAerial panoramas and video fly-overs were taken over the 2018 end of Sarah Jean Inlet . These can be found on the Aerial Panoramic Photos and Videos page - 5 photos under the SanAntonio-south heading and 2 videos with the Fuente Aguanaz (SJ) heading.\n\nBack in the main passage , the 25m long sump 2 was passed to approximately 300m of passage, ending at a boulder choke with a slight draught and one potential digging site. An extremely small, sharp sump continues at stream level. This was entered at Easter 2001 to an airbell to the right of the sump and then pushed in the summer to a \"quite tight close down\", 5m from the previous limit. Running water could be heard from the rockfall above. At Easter 2006, this seems to have been dived again.\n\nThere is a climb above sump 2 which needs attacking. The descriptions of the sump before the choke, the choke and the final upstream sump was confirmed by Jim Lister in August 2017. At Easter 2018, Jim and Mark Smith pushed the final sump, knocking off rock pendants to access an air surface with a left hand passage leading off for 3m to a sharp right hand bend where the sound of running water could be heard in the distance.\n\nIn the summer 2018, 5m progress was made after a duck under the left hand wall. Several rocks were capped to gain another 4m but the choke continued. This may be further pushed when water levels are lower to allow capping.\n\nIn the summer 2024, the area at the upstream end was re-examined by Jim and Mark and there was thought to be no possibility of extending the cave here. The logbook reads: \"The team carefully inspected the cave for leads in the terminal bolder choke, both above and below the water. Several large flakes of rock were moved from the end of sump 3 below the choke, but further digging was futile and the team believe passing the choke here is unviable. The area leading up to the choke was also searched with no success.\"\n\nEastern Inlet\n\n\"The inlet on the left\" after the second sump was pushed at Easter 2001. The passage continues tight through a few short climbs. A small chamber leads to a larger one with mud and boulder walls. A stream enters through the ceiling. The place smells of \"outside\". This also appears to have been entered at Easter 2018 where it was followed for 90m to a rift which was climbed following the water to a tight window. A chamber with a good echo could be seen beyond but capping is necessary to gain access. This was capped in August 2018 to enter a \"modest chamber\" and a 3m climb up to a crawl and a slightly larger chamber with a 5-6m climb to a passage with a small stream. (As this was being climbed, a handhold gave way and Mark Smith fell face down onto a rock. The chamber was named Rudolf Chamber and the passageway out, Galería de Vampire . The Eastern Inlet was later surveyed as batch 18-06, length 81m.\n\nSummer '24 Inlet\n\nThe entry point to this 523m inlet series, explored by Jim and Mark, is about 2/3rds of the way towards Sarah Jean Inlet from sump 1. Two versions of the final drawing are available: pdf and svg with some different labels. The following description is based on 7 extensive logbook entries by Jim Lister.\n\nThe inlet passage sets off on the true right hand side, climbing over some big boulders before dropping back down to the gravel stream bed, 4 to 5 metres further along. The passage here is a comfortable walking size being a metre wide and 3 metres tall, The passage then starts to meander until the first junction is met.\n\nThe stream way continues to the left and is a comfortable walking size although smaller than the passage leading up to it. It can be followed as walking and crawling sized passage with a rock floor and a small active stream. The passage meandered for a distance of around 100 metres were it ended in a small chamber 4 metres by 4 metres in size. A waterfall, 2.9 metres high, fall from a passage partially blocked by antler rock. It could be seen continuing, but a lump hammer would be needed to enable access.\n\nA small side passage near the start was investigated, but terminated at a very small pool / sump, a short way along.\n\nBack at the first junction , the passage to the right is of similar proportions but is sloping upwards and the floor is of sand and occasionally gravel, it meanders along and then descends slightly. Water from upstream descends down a gravel sink. The next feature is a chamber where sharp, brittle, sand-coloured rock has to be negotiated. This is soon passed and another chamber is reached which has a sand bank and a rock outcrop with a baseball sized rock balanced on top, hence its name \" Wobble Rock Chamber \". Looking backwards above you, it is possible to see a passage leading off in the roof above the passage were you entered.\n\nThe way on is by following some hands on knees crawls to \" Three Way Chamber \" which has a near vertical passage in the roof and a blind passage to the right. The way on is to the far left up a sand slope which leads to walking size passage. A very deep impenetrable slot in the floor is then passed on the left, it emits a loud rumbling sound.\n\nA junction is then met. The right hand passage continues for more than 100m and is extremely tall but narrow. The floor is soiled rock or mud covered rock. A slot is passed in the floor that emits a loud roaring noise. Further along, a passage drops down in the floor heading back under you but would need capping.\n\nThe very narrow, smooth passage then meets a blockage at the western end, with some air movement. The block was later capped and the route can be followed for 30m (unsurveyed) and ends in a small chamber.\n\nBack at the previous junction , a rock blockage on the left has been removed with a lump hammer and the \" Journey to Kerplunk \" entered. After a short distance, a chamber is reached. At the end, the passage meanders before a hole in the floor is seen. This is not big enough to enter, but a walking sized passage with a cobbled floor can been seen 3 to 4 metres below. The passage then meets a big chamber with a 4 metre climb down to reach the floor. An impenetrable crack beneath the climb emits the sound of a streamway. The chamber is then crossed by climbing over boulders to get to the far end. (There is a route under them but it's safer to go over the top?). A passage the size of the entrant passage leads off a roof height, but the main way on seems to be a 4m climb up to a walking size passage (\" Babybel Cheese Passage \") that ends at a squeeze through fallen clay and rocks. This was enlarged to reach a void. Above, with a good draught, is a slot to a large space in the roof which was blocked by a boulder. After a few hours of capping, the bottom of an aven was accessed.\n\nThe right hand side has a sand and bolder slope which can be climbed to a ledge. After careful looking around on full light beam, a side passage is seen. This was originally bolted to, and another hour was spent capping it. Good progress was made but the team ran out of caps! The passage has a strong draught and looks a lot larger a few metres in.\n\nOn the next trip, the this passage at the top of the aven was capped, working off etriers. After 5 metres the capped route enters a 5 metre by 3 metre high passage (\" Thunder Passage \"), the floor being made of boulders with a 10 metre drop between many of them. This passage continues to a shaft, the height of which cannot be seen, but appears to be 10 metres deep, the base being flat, water washed gravel. Opposite, at the same height as the entrance passage, is a streamway, being 3 metres wide by 5 metres high. It has a small stream emitting from it which falls to the gravel below. This passage can be seen heading off for some way, the rock changing from a brown colour to a dark grey with what looks like fossils embedded in it.\n\nThe next trip saw the pitch in the floor being traversed and the pitch could be seen to be blind, with the water sinking into the gravel floor at its base. The passage on the other side ends after a few metres in an aven approximately 16 metres high. This was bolted to a height of 9 metres before the team ran out of through bolts. (See photos below.)\n\nAt the top of the aven, the stream passage can be followed 10 metres to a large boulder choke. The route upward enters a large void with a steeply ascending, unstable, bolder ramp to the right hand side - \" Kerplunk \". To the left a comparatively narrow 1.5 metre wide slot descends, presumably back to the top of the climbed aven. Two passages can be seen at the top. The right hand one has been bolted as it emits the water. Just beyond the slot in the floor, a solid passage seems to end at a blank wall, although a passage in the roof looks big. Access would require bolting 3 to 4 metres.\n\nKerplunk , the large, loose, boulder choke ramp has been climbed, not without unwanted excitement due to it being very loose. A number of large voids have been entered and passed. Around 15 metres of height have been gained until a climb up is reached onto a caravan-sized boulder wedged 3 metres up. Above this, a big aven (\" Starlight Aven \") continues up 60m+ with water falling.\n\nNOTES : Further progress could have been made but was not undertaken, as the Kerplunk choke is very unstable. Rescue from such a large and unstable choke in such a remote location, would be very unlikely. The team (Jim and Mark) will not be returning to the choke. On the way out on the final trip, another solid section of cave (chamber with pitch) could be seen and would need to be entered by descending a 3 metre slot. However, a very unstable section of choke would need to be passed by anyone intending to do this! Further \"thoughts\" are divulged on page 12 of the logbook .\n\nCompared to Torca La Vaca , about 1.5km to the east, Fuente Aguanaz is a disappointment. There would appear to be no reason why this cave should not have (a number of) high levels. Perhaps the western extensions in 2009 have started to reveal these. More climbing up from the stream level and investigating avens is required.\n\nMiddle entrance (# 5452 )\n\nThere was apparently no account of the upstream passage from the middle entrance being explored until the summer 2013. Some photos were taken near the downstream end; more photos have now been taken and the passage surveyed . The upstream sump was inspected at the end of July 2014, but no dive was made.\n\nA small hole on the east bank of the resurgence is the entrance to Invisible Cave , site 3283, a stream passage apparently not connected to Fuente Aguanaz but probably connected in the past as an inlet, before Fuente Aguanaz entrance cut back.\n\nA diagram of the hydrology of the San Antonio - Hornedo - Cobadal area drawn after Easter 2011 can be found here .\n\nOver three days in July 2011, the supposed upstream course of Fuente Aguanaz (or, at least, part of it) was dowsed. The furthest point reached was a small sink close to the entrance of the Sumidero de Cobadal. A number of inlets and sinks were also highlighted. See the links below.\n\nHollie London carried out some biological sampling in the streamway in April 2026.\n\nLink to entry in the Cave Diving Sump Index ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "Cawthorne R",
+        "authors": [
+          "Cawthorne R"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1987-da-plymouthcg.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Cawthorne R, 1987",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Cawthorne R, 1987",
+        "year": 1987
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1988s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1988 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1988 (logbook)",
+        "year": 1988
+      },
+      {
+        "attachments": [],
+        "author_raw": null,
+        "authors": [],
+        "disambiguator": null,
+        "kind": "provenance",
+        "links": [],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "material in file",
+        "year": null
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1989s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1989 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1989 (logbook)",
+        "year": 1989
+      },
+      {
+        "attachments": [],
+        "author_raw": "Davis J and Corrin J",
+        "authors": [
+          "Davis J",
+          "Corrin J"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1988-c_c-44.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Davis J and Corrin J, 1989",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Davis J and Corrin J, 1989",
+        "year": 1989
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J",
+        "authors": [
+          "Corrin J"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1989-c_c-49.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1990",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 5,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J, 1990",
+        "year": 1990
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J",
+        "authors": [
+          "Corrin J"
+        ],
+        "disambiguator": "b",
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1992-bp-actas.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1992b",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Corrin J, 1992b (survey)",
+        "year": 1992
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J",
+        "authors": [
+          "Corrin J"
+        ],
+        "disambiguator": "b",
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1994-c_c-66.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1994b",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 7,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Corrin J, 1994b (survey)",
+        "year": 1994
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1995w-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1995b (Whit logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 8,
+        "qualifier": "Whit logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1995b (Whit logbook)",
+        "year": 1995
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1995s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1995c (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 9,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1995c (logbook)",
+        "year": 1995
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "a",
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1995-c_c-70.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1995a",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 10,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Corrin Juan, 1995a (survey)",
+        "year": 1995
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1996-fj-bce12.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1996",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 11,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Corrin Juan, 1996 (survey)",
+        "year": 1996
+      },
+      {
+        "attachments": [],
+        "author_raw": "García José León",
+        "authors": [
+          "García José León"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [],
+        "ordinal": 12,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "García José León, 1997 (survey)",
+        "year": 1997
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "c",
+        "kind": "publication",
+        "links": [],
+        "ordinal": 13,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 1997c",
+        "year": 1997
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2001e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2001a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 14,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2001a (Easter logbook)",
+        "year": 2001
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2001s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2001c (Summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 15,
+        "qualifier": "Summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2001c (Summer logbook)",
+        "year": 2001
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "a",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2001-spel-02.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2003a",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 16,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2003a",
+        "year": 2003
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "c",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2003-es-0065.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2003c",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 17,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2003c",
+        "year": 2003
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2005c (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 18,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2005c (autumn logbook)",
+        "year": 2005
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "a",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2005-spel-07.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2006a",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 19,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2006a",
+        "year": 2006
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 20,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2006b (Easter logbook)",
+        "year": 2006
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2006-spel-09.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2007",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 21,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2007",
+        "year": 2007
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan and Smith Peter",
+        "authors": [
+          "Corrin Juan",
+          "Smith Peter"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2007-bce16-fd.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan and Smith Peter, 2007",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 22,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan and Smith Peter, 2007",
+        "year": 2007
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "e",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2008s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2008e (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 23,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2008e (summer logbook)",
+        "year": 2008
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "f",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2008a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2008f (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 24,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2008f (autumn logbook)",
+        "year": 2008
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2008-spel-13.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2009",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 25,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2009",
+        "year": 2009
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 26,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2009a (Easter logbook)",
+        "year": 2009
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009w-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009b (Whit logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 27,
+        "qualifier": "Whit logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2009b (Whit logbook)",
+        "year": 2009
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2009-spel-16.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2010",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 28,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2010",
+        "year": 2010
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2010e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2010b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 29,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2010b (Easter logbook)",
+        "year": 2010
+      },
+      {
+        "attachments": [],
+        "author_raw": "León García José",
+        "authors": [
+          "León García José"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "cantab",
+            "href": "../cantab/cantasub2010-vol1.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Volume 1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "cantab",
+            "href": "../cantab/cantasub2010-vol2.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Volume 2",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 30,
+        "qualifier": "Volume 1 and Volume 2",
+        "qualifier_is_known": true,
+        "raw": "León García José, 2010 ( Volume 1 and Volume 2 ) (survey)",
+        "year": 2010
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2010-spel-17.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2011",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 31,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2011",
+        "year": 2011
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2011s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2011d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 32,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2011d (summer logbook)",
+        "year": 2011
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo J and Muñoz Fernández E",
+        "authors": [
+          "Ruiz Cobo J",
+          "Muñoz Fernández E"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 33,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Ruiz Cobo J and Muñoz Fernández E, 2013",
+        "year": 2013
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2013s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2013d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 34,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2013d (summer logbook)",
+        "year": 2013
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2014s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2014c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 35,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2014c (summer logbook)",
+        "year": 2014
+      },
+      {
+        "attachments": [],
+        "author_raw": "Papard Philip, Corrin Juan and Smith Peter",
+        "authors": [
+          "Papard Philip, Corrin Juan",
+          "Smith Peter"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2014-sedeck-gh.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Papard Philip, Corrin Juan and Smith Peter, 2014",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 36,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Papard Philip, Corrin Juan and Smith Peter, 2014",
+        "year": 2014
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 37,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2016b (Easter logbook)",
+        "year": 2016
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016d (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 38,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2016d (autumn logbook)",
+        "year": 2016
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2017e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2017b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 39,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2017b (Easter logbook)",
+        "year": 2017
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2017s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2017c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 40,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2017c (summer logbook)",
+        "year": 2017
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 41,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2018b (Easter logbook)",
+        "year": 2018
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 42,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2018c (summer logbook)",
+        "year": 2018
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018d (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 43,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2018d (autumn logbook)",
+        "year": 2018
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon., anon.",
+        "authors": [
+          "anon., anon."
+        ],
+        "disambiguator": "e",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018e (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 44,
+        "qualifier": "Christmas logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., anon., 2018e (Christmas logbook)",
+        "year": 2018
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2019e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2019b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 45,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2019b (Easter logbook)",
+        "year": 2019
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2019s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2019d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 46,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2019d (summer logbook)",
+        "year": 2019
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2022e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2022b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 47,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2022b (Easter logbook)",
+        "year": 2022
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2022s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2022c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 48,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2022c (summer logbook)",
+        "year": 2022
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2022a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2022d (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 49,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2022d (autumn logbook)",
+        "year": 2022
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 50,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2023c (summer logbook)",
+        "year": 2023
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 51,
+        "qualifier": "January, February logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024a (January, February logbook)",
+        "year": 2024
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 52,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024d (summer logbook)",
+        "year": 2024
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "f",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024f (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 53,
+        "qualifier": "Christmas logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024f (Christmas logbook)",
+        "year": 2024
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2025s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2025b (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 54,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2025b (summer logbook)",
+        "year": 2025
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1987-da-plymouthcg.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Cawthorne R, 1987",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1988s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1988 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1989s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1989 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1988-c_c-44.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Davis J and Corrin J, 1989",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1989-c_c-49.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1990",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1992-bp-actas.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1992b",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1994-c_c-66.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1994b",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1995w-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1995b (Whit logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1995s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1995c (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1995-c_c-70.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1995a",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1996-fj-bce12.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1996",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2001e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2001a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2001s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2001c (Summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2001-spel-02.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2003a",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2003-es-0065.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2003c",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2005c (autumn logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2005-spel-07.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2006a",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2006-spel-09.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2007",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2007-bce16-fd.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan and Smith Peter, 2007",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2008s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2008e (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2008a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2008f (autumn logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2008-spel-13.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2009",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009w-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009b (Whit logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2009-spel-16.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2010",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2010e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2010b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "cantab",
+            "href": "../cantab/cantasub2010-vol1.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Volume 1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "cantab",
+            "href": "../cantab/cantasub2010-vol2.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Volume 2",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2010-spel-17.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2011",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2011s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2011d (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2013s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2013d (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2014s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2014c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2014-sedeck-gh.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Papard Philip, Corrin Juan and Smith Peter, 2014",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016d (autumn logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2017e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2017b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2017s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2017c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018d (autumn logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018e (Christmas logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2019e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2019b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2019s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2019d (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2022e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2022b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2022s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2022c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2022a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2022d (autumn logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024d (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024f (Christmas logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2025s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2025b (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Cawthorne R, 1987 ; anon., 1988 (logbook) ; material in file; anon., 1989 (logbook) ; Davis J and Corrin J, 1989 ; Corrin J, 1990 ; Corrin J, 1992b (survey); Corrin J, 1994b (survey); anon., 1995b (Whit logbook) ; anon., 1995c (logbook) ; Corrin Juan, 1995a (survey); Corrin Juan, 1996 (survey); García José León, 1997 (survey); Corrin Juan, 1997c; anon., 2001a (Easter logbook) ; anon., 2001c (Summer logbook) ; Corrin Juan, 2003a ; Corrin Juan, 2003c ; anon., 2005c (autumn logbook) ; Corrin Juan, 2006a ; anon., 2006b (Easter logbook) ; Corrin Juan, 2007 ; Corrin Juan and Smith Peter, 2007 ; anon., 2008e (summer logbook) ; anon., 2008f (autumn logbook) ; Corrin Juan, 2009 ; anon., 2009a (Easter logbook) ; anon., 2009b (Whit logbook) ; Corrin Juan, 2010 ; anon., 2010b (Easter logbook) ; León García José, 2010 ( Volume 1 and Volume 2 ) (survey); Corrin Juan, 2011 ; anon., 2011d (summer logbook) ; Ruiz Cobo J and Muñoz Fernández E, 2013; anon., 2013d (summer logbook) ; anon., 2014c (summer logbook) ; Papard Philip, Corrin Juan and Smith Peter, 2014 ; anon., 2016b (Easter logbook) ; anon., 2016d (autumn logbook) ; anon., 2017b (Easter logbook) ; anon., 2017c (summer logbook) ; anon., 2018b (Easter logbook) ; anon., 2018c (summer logbook) ; anon., 2018d (autumn logbook) ; anon., anon., 2018e (Christmas logbook) ; anon., 2019b (Easter logbook) ; anon., 2019d (summer logbook) ; anon., 2022b (Easter logbook) ; anon., 2022c (summer logbook) ; anon., 2022d (autumn logbook) ; anon., 2023c (summer logbook) ; anon., 2024a (January, February logbook) ; anon., 2024d (summer logbook) ; anon., 2024f (Christmas logbook) ; anon., 2025b (summer logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713.htm",
+            "is_range": false,
+            "target_site": 713,
+            "text": "batch 1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713-2013s.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "batch 2",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713top.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "top entrance",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713top-2018.htm",
+            "is_range": false,
+            "target_site": 2018,
+            "text": "top entrance (2018)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713bottom.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "bottom entrance",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713-2016e.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "while water tracing, Easter 2016",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713-2018e.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "graffiti and water levels, April 2018",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713-2022s.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "summer 2022",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713-360-2022a.htm",
+            "is_range": false,
+            "target_site": 713,
+            "text": "360° photos, autumn 2022",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0713-2023c.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "January 2024",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "middle entrance batch 1 : batch 2 : top entrance : top entrance (2018) : bottom entrance : while water tracing, Easter 2016 : graffiti and water levels, April 2018 : summer 2022 : 360° photos, autumn 2022 January 2024"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713.htm",
+            "is_range": false,
+            "target_site": 713,
+            "text": "yes",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-OBtest.htm",
+            "is_range": false,
+            "target_site": 713,
+            "text": "optical brightener test 2006",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2009s-fossils.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "fossils 2009",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2009s-middle.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "upstream from the middle entrance 2009",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2010e.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "western inlet extensions Easter 2010",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2013s.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "upstream and downstream from the middle entrance 2013",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2018e.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "Sarah Jean Inlet extension, April 2018",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2024s.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "2024 summer",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0713-2025s-01.htm",
+            "is_range": true,
+            "target_site": 713,
+            "text": "2025 summer",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "yes : optical brightener test 2006 : fossils 2009 : upstream from the middle entrance 2009 : western inlet extensions Easter 2010 upstream and downstream from the middle entrance 2013 : Sarah Jean Inlet extension, April 2018 : 2024 summer : 2025 summer"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_file",
+            "href": "../videos/0713generalA.wmv",
+            "is_range": false,
+            "target_site": null,
+            "text": "Resurgence and information boards",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/0713OBA2006_0001.wmv",
+            "is_range": false,
+            "target_site": null,
+            "text": "Exchanging cotton wool detectors",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "http://youtu.be/I__pIYHc8WI",
+            "is_range": false,
+            "target_site": null,
+            "text": "Upstream of resurgence and middle entrance",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "http://youtu.be/mwzGRFHapxk",
+            "is_range": false,
+            "target_site": null,
+            "text": "moderate flood at San Antonio",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/mK2o2iEWuLA",
+            "is_range": false,
+            "target_site": null,
+            "text": "Equipment test at sump 5B",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/PYlwLRDPzFY",
+            "is_range": false,
+            "target_site": null,
+            "text": "1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/mz1na1uKEqI",
+            "is_range": false,
+            "target_site": null,
+            "text": "2",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/wxsE-5mEkyE",
+            "is_range": false,
+            "target_site": null,
+            "text": "3",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/quaaZb3VekU",
+            "is_range": false,
+            "target_site": null,
+            "text": "4",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/iw925wsE4eI",
+            "is_range": false,
+            "target_site": null,
+            "text": "5",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/oyzBnrXByr4",
+            "is_range": false,
+            "target_site": null,
+            "text": "6",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/BmDthTkiwZY",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter 2018 extension to Sarah Jean Inlet",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/BSJyoZGo-J4",
+            "is_range": false,
+            "target_site": null,
+            "text": "Flooding at the entrance, April 2018",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/0FLQdVduaRA",
+            "is_range": false,
+            "target_site": null,
+            "text": "Pushing at the southern choke area",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/eQZb52tOKBU",
+            "is_range": false,
+            "target_site": null,
+            "text": "Eastern Inlet - Vampire Passage",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/kUFZF5Yiivg",
+            "is_range": false,
+            "target_site": null,
+            "text": "Line problems at sump 5B, Sarah Jean Passage",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/J4E47MCQ-Zk",
+            "is_range": false,
+            "target_site": null,
+            "text": "Aven @ western extremity",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/89WTw-RxBa4",
+            "is_range": false,
+            "target_site": null,
+            "text": "top entrance, 2018(YouTube)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/_Io6LgTt7e0",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter 2019 - First exploration between GH Aven and Junction 75",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/5FXK1E6VtHU",
+            "is_range": false,
+            "target_site": null,
+            "text": "entrance, moderate flow December 2023",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/_IdZYHRtBko",
+            "is_range": false,
+            "target_site": null,
+            "text": "Summer 2025, extensive stabilising then partially bolting GH aven",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/aKjZ1FqLgyQ",
+            "is_range": false,
+            "target_site": null,
+            "text": "longer version of the video",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "Resurgence and information boards : Exchanging cotton wool detectors during an OBA test : Upstream of resurgence and middle entrance (YouTube) : moderate flood at San Antonio (YouTube) : Equipment test at sump 5B (YouTube) Exploration Easter 2017 by Jim Lister with Dan Hibberts (YouTube) 1 : 2 : 3 : 4 : 5 : 6 Easter 2018 extension to Sarah Jean Inlet (YouTube): Flooding at the entrance, April 2018 (YouTube) 2018 summer (YouTube) : Pushing at the southern choke area : Eastern Inlet - Vampire Passage : Line problems at sump 5B, Sarah Jean Passage : Aven @ western extremity top entrance, 2018(YouTube) : Easter 2019 - First exploration between GH Aven and Junction 75 (YouTube) : entrance, moderate flow December 2023 (YouTube) : Summer 2025, extensive stabilising then partially bolting GH aven and the longer version of the video"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0713.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "1:1000",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-2013s.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "passage upstream of the resurgence, 2013",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-2017e.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "complete system after Easter 2017 extensions",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-pp-2018sv2.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "after summer 2018 extensions",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-pp-2019j-labels-JLi.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "further labelling, January 2019",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-pp-2019e-v9.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "after Easter 2019",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-pp-2019s-v2.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "after summer 2019",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-pp-2024sv5-A.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "after summer 2024",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-24-03.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "pdf",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0713-final-sketch.svg",
+            "is_range": false,
+            "target_site": null,
+            "text": "svg",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-pp-2025sv5.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "after summer 2025",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 4,
+        "text": "1:1000 (notes from 2009, 2010 to be drawn up) : passage upstream of the resurgence, 2013 : complete system after Easter 2017 extensions after summer 2018 extensions : further labelling, January 2019 : after Easter 2019 : after summer 2019 : after summer 2024 Original drawings (with some differing labels) of the summer 2024 inlet beyond sump 1 - pdf and svg (zoom out to view) after summer 2025 : after Easter 2026 (in hand)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [
+          {
+            "bucket": "other",
+            "href": "../matmap.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "on whole area survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 5,
+        "text": "on whole area survey"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/hornedo.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "Survex 3d file",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-jwl-dowsing-2011s.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Dowsing reactions close to this cave",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0713-catchment-dowsing-jwl-2011s.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "All dowsing reactions in the supposed Fuente Aguanaz catchment.",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "other",
+            "href": "../dowsing/index.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "here",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_other",
+            "href": "../surveys/2889-3380-2011c.zip",
+            "is_range": false,
+            "target_site": null,
+            "text": "beneath a 3D landscape",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "Survex 3d file showing Hornedo and San Antonio areas (after summer 2019) Dowsing reactions close to this cave : All dowsing reactions in the supposed Fuente Aguanaz catchment. (Article about the dowsing carried out in July 2011 can be found here .) : beneath a 3D landscape (Therion file, January 2012)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0713.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "2026e",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 7,
+        "text": "2026e (after Easter 2026) (Amended magnetic declination December 2013 to align with Eur79 grid.)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "rose_diagram",
+        "label_raw": "Passage direction rose diagram",
+        "links": [
+          {
+            "bucket": "rose_diagram",
+            "href": "../rose-diags/0713_rose.png",
+            "is_range": false,
+            "target_site": null,
+            "text": "30/6/2018",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 8,
+        "text": "30/6/2018"
+      }
+    ],
+    "raw": "References : Cawthorne R, 1987 ; anon., 1988 (logbook) ; material in file; anon., 1989 (logbook) ; Davis J and Corrin J, 1989 ; Corrin J, 1990 ; Corrin J, 1992b (survey); Corrin J, 1994b (survey); anon., 1995b (Whit logbook) ; anon., 1995c (logbook) ; Corrin Juan, 1995a (survey); Corrin Juan, 1996 (survey); García José León, 1997 (survey); Corrin Juan, 1997c; anon., 2001a (Easter logbook) ; anon., 2001c (Summer logbook) ; Corrin Juan, 2003a ; Corrin Juan, 2003c ; anon., 2005c (autumn logbook) ; Corrin Juan, 2006a ; anon., 2006b (Easter logbook) ; Corrin Juan, 2007 ; Corrin Juan and Smith Peter, 2007 ; anon., 2008e (summer logbook) ; anon., 2008f (autumn logbook) ; Corrin Juan, 2009 ; anon., 2009a (Easter logbook) ; anon., 2009b (Whit logbook) ; Corrin Juan, 2010 ; anon., 2010b (Easter logbook) ; León García José, 2010 ( Volume 1 and Volume 2 ) (survey); Corrin Juan, 2011 ; anon., 2011d (summer logbook) ; Ruiz Cobo J and Muñoz Fernández E, 2013; anon., 2013d (summer logbook) ; anon., 2014c (summer logbook) ; Papard Philip, Corrin Juan and Smith Peter, 2014 ; anon., 2016b (Easter logbook) ; anon., 2016d (autumn logbook) ; anon., 2017b (Easter logbook) ; anon., 2017c (summer logbook) ; anon., 2018b (Easter logbook) ; anon., 2018c (summer logbook) ; anon., 2018d (autumn logbook) ; anon., anon., 2018e (Christmas logbook) ; anon., 2019b (Easter logbook) ; anon., 2019d (summer logbook) ; anon., 2022b (Easter logbook) ; anon., 2022c (summer logbook) ; anon., 2022d (autumn logbook) ; anon., 2023c (summer logbook) ; anon., 2024a (January, February logbook) ; anon., 2024d (summer logbook) ; anon., 2024f (Christmas logbook) ; anon., 2025b (summer logbook) Entrance pictures : middle entrance batch 1 : batch 2 : top entrance : top entrance (2018) : bottom entrance : while water tracing, Easter 2016 : graffiti and water levels, April 2018 : summer 2022 : 360° photos, autumn 2022 January 2024 Underground picture(s) : yes : optical brightener test 2006 : fossils 2009 : upstream from the middle entrance 2009 : western inlet extensions Easter 2010 upstream and downstream from the middle entrance 2013 : Sarah Jean Inlet extension, April 2018 : 2024 summer : 2025 summer Video: Resurgence and information boards : Exchanging cotton wool detectors during an OBA test : Upstream of resurgence and middle entrance (YouTube) : moderate flood at San Antonio (YouTube) : Equipment test at sump 5B (YouTube) Exploration Easter 2017 by Jim Lister with Dan Hibberts (YouTube) 1 : 2 : 3 : 4 : 5 : 6 Easter 2018 extension to Sarah Jean Inlet (YouTube): Flooding at the entrance, April 2018 (YouTube) 2018 summer (YouTube) : Pushing at the southern choke area : Eastern Inlet - Vampire Passage : Line problems at sump 5B, Sarah Jean Passage : Aven @ western extremity top entrance, 2018(YouTube) : Easter 2019 - First exploration between GH Aven and Junction 75 (YouTube) : entrance, moderate flow December 2023 (YouTube) : Summer 2025, extensive stabilising then partially bolting GH aven and the longer version of the video Detailed Survey : 1:1000 (notes from 2009, 2010 to be drawn up) : passage upstream of the resurgence, 2013 : complete system after Easter 2017 extensions after summer 2018 extensions : further labelling, January 2019 : after Easter 2019 : after summer 2019 : after summer 2024 Original drawings (with some differing labels) of the summer 2024 inlet beyond sump 1 - pdf and svg (zoom out to view) after summer 2025 : after Easter 2026 (in hand) Line Survey : on whole area survey On area survey : Survex 3d file showing Hornedo and San Antonio areas (after summer 2019) Dowsing reactions close to this cave : All dowsing reactions in the supposed Fuente Aguanaz catchment. (Article about the dowsing carried out in July 2011 can be found here .) : beneath a 3D landscape (Therion file, January 2012) Survex file : 2026e (after Easter 2026) (Amended magnetic declination December 2013 to align with Eur79 grid.) Passage direction rose diagram : 30/6/2018",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "San Antonio",
+    "coordinates": [
+      {
+        "accuracy_code": "A",
+        "altitude_m": 78.0,
+        "datum": "ETRS89",
+        "easting": 446482,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3638246,
+        "longitude": -3.6605049,
+        "northing": 4801430,
+        "raw": "30T 446482 4801430",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "5721m",
+        "unit_stated": true,
+        "value_m": 5721.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "-43m",
+        "unit_stated": true,
+        "value_m": -43.0
+      }
+    ],
+    "raw": "San Antonio 30T 446482 4801430 (Datum: ETRS89. Accuracy code: A ) Altitude 78m Length 5721m Depth -43m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "citation_split_anchors",
+        "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey)' spans 2 anchors",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "xref_self_reference",
+        "detail": "link to its own page: '../ugpics/0713-2010e.htm'",
+        "excerpt": null,
+        "field_path": "body.cross_refs",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "xref_self_reference",
+        "detail": "link to its own page: '../ugpics/0713-2009s-middle.htm'",
+        "excerpt": null,
+        "field_path": "body.cross_refs",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "xref_self_reference",
+        "detail": "link to its own page: '../ugpics/0713-2013s.htm'",
+        "excerpt": null,
+        "field_path": "body.cross_refs",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 50576,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "11e698e0109feaae3666df2287e8b3ba36e1fe641a6cba9909e8d5692f9246e9",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 713
+  },
+  "site_number": 713,
+  "title": {
+    "aliases": [
+      {
+        "kind": "entrance_qualifier",
+        "site_number": null,
+        "text": "top entrance"
+      }
+    ],
+    "name": "Aguanaz, Fuente",
+    "name_sort": "fuente aguanaz",
+    "raw": "0713: Aguanaz, Fuente (top entrance)",
+    "separator": "colon",
+    "site_number": 713,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1999-02-19",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "19th February 1999"
+    },
+    {
+      "attribution": null,
+      "date": "2001-05-06",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "6th May"
+    },
+    {
+      "attribution": null,
+      "date": "2001-10-16",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "16th October 2001"
+    },
+    {
+      "attribution": null,
+      "date": "2005-11-05",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "5th November 2005"
+    },
+    {
+      "attribution": null,
+      "date": "2006-05-15",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "15th May"
+    },
+    {
+      "attribution": null,
+      "date": "2006-06-15",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "15th June 2006"
+    },
+    {
+      "attribution": null,
+      "date": "2007-10-27",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "27th October 2007"
+    },
+    {
+      "attribution": null,
+      "date": "2008-10-01",
+      "end_date": null,
+      "group_index": 5,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "1st October"
+    },
+    {
+      "attribution": null,
+      "date": "2008-11-08",
+      "end_date": null,
+      "group_index": 5,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "8th"
+    },
+    {
+      "attribution": null,
+      "date": "2008-11-19",
+      "end_date": null,
+      "group_index": 5,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "19th"
+    },
+    {
+      "attribution": null,
+      "date": "2008-11-30",
+      "end_date": null,
+      "group_index": 5,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "30th November 2008"
+    },
+    {
+      "attribution": null,
+      "date": "2009-05-06",
+      "end_date": null,
+      "group_index": 6,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "6th May"
+    },
+    {
+      "attribution": null,
+      "date": "2009-11-02",
+      "end_date": null,
+      "group_index": 6,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "2nd"
+    },
+    {
+      "attribution": null,
+      "date": "2009-11-18",
+      "end_date": null,
+      "group_index": 6,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "18th November 2009"
+    },
+    {
+      "attribution": null,
+      "date": "2010-06-26",
+      "end_date": null,
+      "group_index": 7,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "26th June 2010"
+    },
+    {
+      "attribution": null,
+      "date": "2011-01-06",
+      "end_date": null,
+      "group_index": 8,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "6th January"
+    },
+    {
+      "attribution": null,
+      "date": "2011-05-27",
+      "end_date": null,
+      "group_index": 8,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "27th May"
+    },
+    {
+      "attribution": null,
+      "date": "2011-10-05",
+      "end_date": null,
+      "group_index": 8,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "5th October 2011"
+    },
+    {
+      "attribution": null,
+      "date": "2012-08-22",
+      "end_date": null,
+      "group_index": 9,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "22nd August 2012"
+    },
+    {
+      "attribution": null,
+      "date": "2013-09-15",
+      "end_date": null,
+      "group_index": 10,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "15th"
+    },
+    {
+      "attribution": null,
+      "date": "2013-09-16",
+      "end_date": null,
+      "group_index": 10,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "16th September 2013"
+    },
+    {
+      "attribution": null,
+      "date": "2014-09-19",
+      "end_date": null,
+      "group_index": 11,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "19th September 2014"
+    },
+    {
+      "attribution": null,
+      "date": "2016-02-19",
+      "end_date": null,
+      "group_index": 12,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "19th February"
+    },
+    {
+      "attribution": null,
+      "date": "2016-04-22",
+      "end_date": null,
+      "group_index": 12,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "22nd April"
+    },
+    {
+      "attribution": null,
+      "date": "2016-11-29",
+      "end_date": null,
+      "group_index": 12,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "29th November 2016"
+    },
+    {
+      "attribution": null,
+      "date": "2017-05-21",
+      "end_date": null,
+      "group_index": 13,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "21st May"
+    },
+    {
+      "attribution": null,
+      "date": "2017-09-17",
+      "end_date": null,
+      "group_index": 13,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "17th September 2017"
+    },
+    {
+      "attribution": null,
+      "date": "2018-05-06",
+      "end_date": null,
+      "group_index": 14,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "6th"
+    },
+    {
+      "attribution": null,
+      "date": "2018-05-30",
+      "end_date": null,
+      "group_index": 14,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "30th May"
+    },
+    {
+      "attribution": null,
+      "date": "2018-06-30",
+      "end_date": null,
+      "group_index": 14,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "30th June"
+    },
+    {
+      "attribution": null,
+      "date": "2018-09-22",
+      "end_date": null,
+      "group_index": 14,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "22nd September"
+    },
+    {
+      "attribution": null,
+      "date": "2018-12-11",
+      "end_date": null,
+      "group_index": 14,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "11th December 2018"
+    },
+    {
+      "attribution": null,
+      "date": "2019-01-28",
+      "end_date": null,
+      "group_index": 15,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "28th January 2019"
+    },
+    {
+      "attribution": null,
+      "date": "2019-05-13",
+      "end_date": null,
+      "group_index": 16,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "13th May"
+    },
+    {
+      "attribution": null,
+      "date": "2019-06-01",
+      "end_date": null,
+      "group_index": 16,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "1st"
+    },
+    {
+      "attribution": null,
+      "date": "2019-06-04",
+      "end_date": null,
+      "group_index": 16,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "4th June"
+    },
+    {
+      "attribution": null,
+      "date": "2019-09-13",
+      "end_date": null,
+      "group_index": 16,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "13th September 2019"
+    },
+    {
+      "attribution": null,
+      "date": "2022-05-05",
+      "end_date": null,
+      "group_index": 17,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "5th May"
+    },
+    {
+      "attribution": null,
+      "date": "2022-09-09",
+      "end_date": null,
+      "group_index": 17,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "9th September"
+    },
+    {
+      "attribution": null,
+      "date": "2022-11-12",
+      "end_date": null,
+      "group_index": 17,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "12th November 2022"
+    },
+    {
+      "attribution": null,
+      "date": "2023-09-20",
+      "end_date": null,
+      "group_index": 18,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "20th September 2023"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-22",
+      "end_date": null,
+      "group_index": 19,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "22nd"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-30",
+      "end_date": null,
+      "group_index": 19,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "30th January"
+    },
+    {
+      "attribution": null,
+      "date": "2024-09-24",
+      "end_date": null,
+      "group_index": 19,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "24th"
+    },
+    {
+      "attribution": null,
+      "date": "2024-09-27",
+      "end_date": null,
+      "group_index": 19,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "27th September"
+    },
+    {
+      "attribution": null,
+      "date": "2024-12-06",
+      "end_date": null,
+      "group_index": 19,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "6th December 2024"
+    },
+    {
+      "attribution": null,
+      "date": "2025-01-28",
+      "end_date": null,
+      "group_index": 20,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "28th January"
+    },
+    {
+      "attribution": null,
+      "date": "2025-10-03",
+      "end_date": null,
+      "group_index": 20,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "3rd October 2025"
+    },
+    {
+      "attribution": null,
+      "date": "2026-05-16",
+      "end_date": null,
+      "group_index": 21,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "16th May 2026"
+    }
+  ]
+}

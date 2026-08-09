@@ -1,0 +1,180 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "No description yet."
+      }
+    ],
+    "char_count": 19,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:15824c421d221088 (28 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "No description yet."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": null,
+        "authors": [],
+        "disambiguator": null,
+        "kind": "provenance",
+        "links": [],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "pers comm",
+        "year": null
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [],
+        "order": 0,
+        "text": "pers comm"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/1775.htm",
+            "is_range": false,
+            "target_site": 1775,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : pers comm Entrance picture : yes Underground picture(s) : Detailed survey : Line survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Enaso",
+    "coordinates": [],
+    "duplicate_labels": [],
+    "field_order": [],
+    "quantities": [],
+    "raw": "Enaso below shaft 1295 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "title_tag_order_swapped",
+        "detail": "heading nests <B><BIG> rather than <BIG><B>",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "coord_missing",
+        "detail": "no coordinates",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "info"
+      }
+    ],
+    "byte_size": 844,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 0.85,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "header": [
+        "-0.15 no coordinates"
+      ]
+    },
+    "content_sha256": "e950f8898033f3e5ba1c74b644bed68e972225db3eeba49d7ee7e9f6c72e74cf",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 1775
+  },
+  "site_number": 1775,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "1775: shaft",
+    "separator": "colon",
+    "site_number": 1775,
+    "site_type": "shaft"
+  },
+  "updated": []
+}

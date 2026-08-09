@@ -1,0 +1,352 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A fenced and undescended shaft that appears about 4m deep. In January 2024, a small shaft was found at this location, about 4m deep, but requires capping to enter. It wasn’t fenced off but a flattened barbed wire fence was in the undergrowth above it."
+      }
+    ],
+    "char_count": 251,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 1,
+        "raw": "January 2024",
+        "season": null,
+        "year": 2024
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:d0c281ba19cd1e6c (260 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A fenced and undescended shaft that appears about 4m deep. In January 2024, a small shaft was found at this location, about 4m deep, but requires capping to enter. It wasn’t fenced off but a flattened barbed wire fence was in the undergrowth above it."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2000s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2000c (Summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2000c (Summer logbook)",
+        "year": 2000
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "e",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023e (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "Christmas logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2023e (Christmas logbook)",
+        "year": 2023
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "January, February logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024a (January, February logbook)",
+        "year": 2024
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2000s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2000c (Summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023e (Christmas logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2000c (Summer logbook) ; anon., 2023e (Christmas logbook) ; anon., 2024a (January, February logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/1551-2023c.htm",
+            "is_range": true,
+            "target_site": 1551,
+            "text": "January 2024",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "January 2024"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/8Z1qYcOK-tI",
+            "is_range": false,
+            "target_site": null,
+            "text": "January 2024",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "January 2024 (YouTube)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/1551.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "January 2023",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 7,
+        "text": "January 2023"
+      }
+    ],
+    "raw": "References : anon., 2000c (Summer logbook) ; anon., 2023e (Christmas logbook) ; anon., 2024a (January, February logbook) Entrance pictures : January 2024 Underground picture(s) : Video : January 2024 (YouTube) Detailed survey : Line survey : On area survey : Survex file : January 2023",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "La Secada",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 297.0,
+        "datum": "ETRS89",
+        "easting": 452792,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3374427,
+        "longitude": -3.5823764,
+        "northing": 4798453,
+        "raw": "30T 452792 4798453",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "4m",
+        "unit_stated": true,
+        "value_m": 4.0
+      }
+    ],
+    "raw": "La Secada 30T 452792 4798453 (Datum: ETRS89. Accuracy code: G ) Altitude 297m Depth 4m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "cp1252_fallback",
+        "detail": "not valid UTF-8; decoded as CP1252",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      }
+    ],
+    "byte_size": 2153,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "c79cbdf33bf65d7c40f7896a072605cac9d94ee8ba8bd15976b661893a1421e0",
+    "encoding_used": "cp1252",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 1551
+  },
+  "site_number": 1551,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "1551: shaft",
+    "separator": "colon",
+    "site_number": 1551,
+    "site_type": "shaft"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2024-01-06",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "6th"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-23",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "23rd"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-31",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "31st January 2024"
+    }
+  ]
+}

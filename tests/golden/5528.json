@@ -1,0 +1,164 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [],
+    "char_count": 0,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:eda80af21bf25f03 (16 chars)",
+    "sections": [],
+    "tables": [],
+    "text": ""
+  },
+  "footer": {
+    "citations": [],
+    "fields": [
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [],
+        "order": 0,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground pictures",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : Entrance pictures : Underground pictures : Video : Detailed survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": null,
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "no_header_small",
+        "detail": "no <SMALL> info line between the heading and the footer",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "no_body_tag",
+        "detail": "document has no <BODY> tag",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "title_name_empty",
+        "detail": "heading has a number but no name ('-')",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "body_empty",
+        "detail": "description is empty",
+        "excerpt": null,
+        "field_path": "body",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 670,
+    "confidence": {
+      "body": 0.8,
+      "footer": 1.0,
+      "header": 0.5,
+      "title": 0.6,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "body": [
+        "-0.2 empty description"
+      ],
+      "header": [
+        "-0.5 no info line"
+      ],
+      "title": [
+        "-0.4 heading has no name"
+      ]
+    },
+    "content_sha256": "9713261847dd4c95852cc9546129b9420b55bebf39497a3fd56916d5848c7c76",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": false,
+      "footer": true,
+      "header": false,
+      "modal": true,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 5528
+  },
+  "site_number": 5528,
+  "title": {
+    "aliases": [],
+    "name": "-",
+    "name_sort": "-",
+    "raw": "5528: -",
+    "separator": "colon",
+    "site_number": 5528,
+    "site_type": null
+  },
+  "updated": []
+}

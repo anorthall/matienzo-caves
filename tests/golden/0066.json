@@ -1,0 +1,366 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "An elliptical shaft with a hazel tree. A 23m deep, 15m diameter shaft leads to a boulder slope at the base of which is a small hole and the second pitch of 18m. A boulder floor slopes down to a possible dig. \"Upstream\" quickly chokes."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Marked 596 with orange tape."
+      }
+    ],
+    "char_count": 264,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:08562c062a2c9b18 (277 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "An elliptical shaft with a hazel tree. A 23m deep, 15m diameter shaft leads to a boulder slope at the base of which is a small hole and the second pitch of 18m. A boulder floor slopes down to a possible dig. \"Upstream\" quickly chokes.\n\nMarked 596 with orange tape."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "Kendal Caving Club and Manchester University Speleological Society",
+        "authors": [
+          "Kendal Caving Club",
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "85/ anon.",
+        "authors": [
+          "85/ anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1998e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1998a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "85/ anon., 1998a (Easter logbook)",
+        "year": 1998
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1998-c_c-83.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1999",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 1999",
+        "year": 1999
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1998e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1998a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1998-c_c-83.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1999",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Kendal Caving Club and Manchester University Speleological Society, 1975 ; Corrin J S and Smith P, 1981 ; 85/ anon., 1998a (Easter logbook) ; Corrin Juan, 1999"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0066a.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "from the west",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0066b.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "from the north",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "from the west from the north"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0066.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "1:200",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "1:200"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0066.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "yes (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)"
+      }
+    ],
+    "raw": "References: Kendal Caving Club and Manchester University Speleological Society, 1975 ; Corrin J S and Smith P, 1981 ; 85/ anon., 1998a (Easter logbook) ; Corrin Juan, 1999 Entrance picture : from the west from the north Underground picture(s): Detailed Survey : 1:200 Line Survey : On area survey : Survex file : yes (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Coteron las Llanas",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 487.0,
+        "datum": "ETRS89",
+        "easting": 450404,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3321566,
+        "longitude": -3.6117826,
+        "northing": 4797883,
+        "raw": "30T 450404 4797883",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "70m",
+        "unit_stated": true,
+        "value_m": 70.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "50m",
+        "unit_stated": true,
+        "value_m": 50.0
+      }
+    ],
+    "raw": "Coteron las Llanas 30T 450404 4797883 (Datum: ETRS89. Accuracy code: G ) Altitude 487m Length 70m Depth 50m"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 2443,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "bb6bc5d17bf1571ab05f9f75d5c96dfc6b67538c258a0eea902900fdeb8e9e7c",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 66
+  },
+  "site_number": 66,
+  "title": {
+    "aliases": [],
+    "name": "Cruz Llorada, Torca de la",
+    "name_sort": "torca de la cruz llorada",
+    "raw": "0066: Cruz Llorada, Torca de la",
+    "separator": "colon",
+    "site_number": 66,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1998-07-01",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "month",
+      "raw": "July 1998"
+    }
+  ]
+}

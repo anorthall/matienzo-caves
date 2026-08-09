@@ -1,0 +1,237 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Two horizontal passages about 1.5m in diameter."
+      }
+    ],
+    "char_count": 47,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:08b03d92eb0bf699 (56 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Two horizontal passages about 1.5m in diameter."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1981s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1981a (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1981a (logbook)",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J",
+        "authors": [
+          "Corrin J"
+        ],
+        "disambiguator": "c",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981and1982matienzoexpeditions.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1983c",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J, 1983c",
+        "year": 1983
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1981s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1981a (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981and1982matienzoexpeditions.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1983c",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1981a (logbook) ; Corrin J, 1983c"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "References : anon., 1981a (logbook) ; Corrin J, 1983c Entrance picture : Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Mullir",
+    "coordinates": [
+      {
+        "accuracy_code": "M",
+        "altitude_m": 583.0,
+        "datum": "ETRS89",
+        "easting": 455718,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3158127,
+        "longitude": -3.5460864,
+        "northing": 4796031,
+        "raw": "30T 455718 4796031",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "compound",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [
+          5.0,
+          5.0
+        ],
+        "prose": null,
+        "raw": "5 & 5m",
+        "unit_stated": true,
+        "value_m": 10.0
+      }
+    ],
+    "raw": "Mullir 30T 455718 4796031 (Datum: ETRS89. Accuracy code: M ) Altitude 583m Length 5 & 5m"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 1577,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "16556a92f888c20aad3569607424e33d7258d27fb5700034a0eff55a2cd78fc7",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 325
+  },
+  "site_number": 325,
+  "title": {
+    "aliases": [],
+    "name": "caves - 2",
+    "name_sort": "caves - 2",
+    "raw": "0325: caves - 2",
+    "separator": "colon",
+    "site_number": 325,
+    "site_type": "caves"
+  },
+  "updated": []
+}

@@ -1,0 +1,367 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The shaft entrance into Cueva Coquisera, 0039 ."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The following description comes from pp20-21 of the report of the 2025 Campaign by the Colectivo Piezo, linked below."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "As the second entrance to Codisera, it is relatively little known. It consists of a 42m shaft, divided into two sections of ramps containing loose rocks. Shortly into the descent, several high openings can be seen letting in daylight—perhaps where its name comes from."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "At the bottom, we found the access point that reaches the white flowstone of the '400 Pesetas Passage.' A small but constant flow of water feeds this formation. From the other section, after a small 3m drop, you enter a high, narrow, and highly polished meander, which provides access to the intermittent lake in the '400 Pesetas Passage.'"
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "There is a photo looking up the shaft on page 21."
+      }
+    ],
+    "char_count": 828,
+    "cross_refs": [
+      {
+        "context": "0039",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0039.htm",
+        "kind": "hyperlink",
+        "link_text": "0039",
+        "target_site": 39
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2025",
+        "season": null,
+        "year": 2025
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:38471b522db029ab (969 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "The shaft entrance into Cueva Coquisera, 0039 .\n\nThe following description comes from pp20-21 of the report of the 2025 Campaign by the Colectivo Piezo, linked below.\n\nAs the second entrance to Codisera, it is relatively little known. It consists of a 42m shaft, divided into two sections of ramps containing loose rocks. Shortly into the descent, several high openings can be seen letting in daylight—perhaps where its name comes from.\n\nAt the bottom, we found the access point that reaches the white flowstone of the '400 Pesetas Passage.' A small but constant flow of water feeds this formation. From the other section, after a small 3m drop, you enter a high, narrow, and highly polished meander, which provides access to the intermittent lake in the '400 Pesetas Passage.'\n\nThere is a photo looking up the shaft on page 21."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2026e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2026a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2026a (Easter logbook)",
+        "year": 2026
+      },
+      {
+        "attachments": [],
+        "author_raw": "Colectivo Piezo y Colaboradores",
+        "authors": [
+          "Colectivo Piezo y Colaboradores"
+        ],
+        "disambiguator": "a",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "other",
+            "href": "../history/Memoria-de-campaña-Codisera-2025.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Colectivo Piezo y Colaboradores, 2026a",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Colectivo Piezo y Colaboradores, 2026a",
+        "year": 2026
+      },
+      {
+        "attachments": [],
+        "author_raw": "Colectivo Piezo y Colaboradores",
+        "authors": [
+          "Colectivo Piezo y Colaboradores"
+        ],
+        "disambiguator": "b",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "other",
+            "href": "../history/Codisera-Campaign-2025-English-translation.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Colectivo Piezo y Colaboradores, 2026b (English)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "English",
+        "qualifier_is_known": false,
+        "raw": "Colectivo Piezo y Colaboradores, 2026b (English)",
+        "year": 2026
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2026e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2026a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "other",
+            "href": "../history/Memoria-de-campaña-Codisera-2025.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Colectivo Piezo y Colaboradores, 2026a",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "other",
+            "href": "../history/Codisera-Campaign-2025-English-translation.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Colectivo Piezo y Colaboradores, 2026b (English)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2026a (Easter logbook) ; Colectivo Piezo y Colaboradores, 2026a ; Colectivo Piezo y Colaboradores, 2026b (English)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground pictures",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2026a (Easter logbook) ; Colectivo Piezo y Colaboradores, 2026a ; Colectivo Piezo y Colaboradores, 2026b (English) Entrance picture : Underground pictures : Video : Detailed survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "S Vega",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 522.0,
+        "datum": "ETRS89",
+        "easting": 452571,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2977836,
+        "longitude": -3.5847223,
+        "northing": 4794050,
+        "raw": "30T 452571 4794050",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "prose",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": {
+          "extra_value_m": null,
+          "relation": "included_in",
+          "system_name": null,
+          "target_names": [
+            "Coquisera"
+          ],
+          "target_sites": [
+            39
+          ]
+        },
+        "raw": "included in Coquisera # 0039",
+        "unit_stated": true,
+        "value_m": null
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "42m",
+        "unit_stated": true,
+        "value_m": 42.0
+      }
+    ],
+    "raw": "S Vega 30T 452571 4794050 (Datum: ETRS89. Accuracy code: G ) Altitude 522m Length included in Coquisera # 0039 Depth 42m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "cp1252_fallback",
+        "detail": "not valid UTF-8; decoded as CP1252",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "no_body_tag",
+        "detail": "document has no <BODY> tag",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "measure_prose",
+        "detail": "length is prose: 'included in Coquisera # 0039'",
+        "excerpt": null,
+        "field_path": "header.quantities.length",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "citation_qualifier_unknown",
+        "detail": "qualifier 'English' is not in the known vocabulary",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 2579,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "15584bea98bd5763155676090fdb0ebe1e0990c5ae11e255775b37a7cd81a9e7",
+    "encoding_used": "cp1252",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 5557
+  },
+  "site_number": 5557,
+  "title": {
+    "aliases": [],
+    "name": "Siete Pozos",
+    "name_sort": "siete pozos",
+    "raw": "5557: Siete Pozos",
+    "separator": "colon",
+    "site_number": 5557,
+    "site_type": null
+  },
+  "updated": []
+}

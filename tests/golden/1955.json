@@ -1,0 +1,262 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A hole near to Reñada originally excavated around 5/8/94. Two small chambers with old stal. Also see site 0384 ."
+      }
+    ],
+    "char_count": 112,
+    "cross_refs": [
+      {
+        "context": "site 0384",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0384.htm",
+        "kind": "hyperlink",
+        "link_text": "site 0384",
+        "target_site": 384
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": 5,
+        "kind": "dmy",
+        "month": 8,
+        "raw": "5/8/94",
+        "season": null,
+        "year": 1994
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:a9981449523b266b (155 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A hole near to Reñada originally excavated around 5/8/94. Two small chambers with old stal. Also see site 0384 ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2003s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2003c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2003c (summer logbook)",
+        "year": 2003
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2003-spel-05.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2005",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2005",
+        "year": 2005
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2003s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2003c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2003-spel-05.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2005",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2003c (summer logbook) ; Corrin Juan, 2005"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2003c (summer logbook) ; Corrin Juan, 2005 Entrance pictures : Underground picture(s) : Video : Line survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "South Vega",
+    "coordinates": [],
+    "duplicate_labels": [],
+    "field_order": [],
+    "quantities": [],
+    "raw": "South Vega VN???????? Altitude ???m 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "title_tag_order_swapped",
+        "detail": "heading nests <B><BIG> rather than <BIG><B>",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "title_space_separator",
+        "detail": "heading separates the number and name with a space, not a colon",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "coord_missing",
+        "detail": "no coordinates",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "info"
+      }
+    ],
+    "byte_size": 1159,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 0.85,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "header": [
+        "-0.15 no coordinates"
+      ]
+    },
+    "content_sha256": "850161f9b88ea38e6a1b4b6780018c0e0e5602b890d8ab648af7848e4c426f30",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 1955
+  },
+  "site_number": 1955,
+  "title": {
+    "aliases": [],
+    "name": "cave",
+    "name_sort": "cave",
+    "raw": "1955 cave",
+    "separator": "space",
+    "site_number": 1955,
+    "site_type": "cave"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2006-02-01",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "1st February 2006"
+    }
+  ]
+}

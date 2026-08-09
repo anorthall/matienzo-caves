@@ -1,0 +1,285 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "to come"
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The entrance is hidden amongst the limestone outcrops and descends immediately to around 8m. Bolt placed and backed up around natural features. \"It keeps going and has a small dog leg in the shaft which requires an additional bolt placement for a deviation cord. Drops into a chamber with a pool of water. Still going routes off.\""
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The shaft was explored in July 2025 - photos were taken but there is no log book entry."
+      }
+    ],
+    "char_count": 428,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 7,
+        "raw": "July 2025",
+        "season": null,
+        "year": 2025
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:86562287f3f672a3 (479 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "to come\n\nThe entrance is hidden amongst the limestone outcrops and descends immediately to around 8m. Bolt placed and backed up around natural features. \"It keeps going and has a small dog leg in the shaft which requires an additional bolt placement for a deviation cord. Drops into a chamber with a pool of water. Still going routes off.\"\n\nThe shaft was explored in July 2025 - photos were taken but there is no log book entry."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon., anon.",
+        "authors": [
+          "anon., anon."
+        ],
+        "disambiguator": "e",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018e (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Christmas logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., anon., 2018e (Christmas logbook)",
+        "year": 2018
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2018c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2018e (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., anon., 2018e (Christmas logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/4950-2018c.htm",
+            "is_range": true,
+            "target_site": 4950,
+            "text": "December 2018",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/4950-2025s.htm",
+            "is_range": true,
+            "target_site": 4950,
+            "text": "July 2025",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "December 2018 : July 2025"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground pictures",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/4950-2018c.htm",
+            "is_range": true,
+            "target_site": 4950,
+            "text": "December 2018",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/4950-2025s.htm",
+            "is_range": true,
+            "target_site": 4950,
+            "text": "July 2025",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "December 2018 : July 2025"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/IUOvWOI9MN4",
+            "is_range": false,
+            "target_site": null,
+            "text": "December 2018",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "December 2018 (YouTube)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "References : anon., anon., 2018e (Christmas logbook) Entrance pictures : December 2018 : July 2025 Underground pictures : December 2018 : July 2025 Video : December 2018 (YouTube) Detailed survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "S Vega",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 590.0,
+        "datum": "ETRS89",
+        "easting": 451668,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2977802,
+        "longitude": -3.5958548,
+        "northing": 4794056,
+        "raw": "30T 451668 4794056",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "8m",
+        "unit_stated": true,
+        "value_m": 8.0
+      }
+    ],
+    "raw": "S Vega 30T 451668 4794056 (Datum: ETRS89. Accuracy code: G ) Altitude 590m Depth 8m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "no_body_tag",
+        "detail": "document has no <BODY> tag",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      }
+    ],
+    "byte_size": 2293,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "bb69063bedcf55de672e9c2d3d6a3aa62d0c1ac78915ff1d913a6e6560bf5223",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 4950
+  },
+  "site_number": 4950,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "4950: shaft",
+    "separator": "colon",
+    "site_number": 4950,
+    "site_type": "shaft"
+  },
+  "updated": []
+}

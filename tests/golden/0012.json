@@ -1,0 +1,1095 @@
+{
+  "body": {
+    "bat_observations": [
+      {
+        "date": "2023-04-09",
+        "date_raw": "9/4/2023",
+        "fields": {
+          "Bat remains (number)": "yes (1)",
+          "Date": "9/4/2023",
+          "Evidence of occupation": "feeding remains; droppings",
+          "Species identified name (number)": "-"
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The large 15m x 8m entrance soon diminishes to a 3m x 2m passage and then closes down in crawls. Some extension work was carried out during 1997 and remains to be completed. A suggestion was made during the Easter 2006 trip that digging below the false floor may produce results. Further pushing occurred at Easter 2025 when an estimated 5m extra was entered on the left."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Black markings in the cave, including dots in a semi-circle, are described and discussed in Smith Peter, 1998b (survey), Muñoz Emilio et al, 1995 and Ruiz Cobo Jesús and Smith Peter et al, 2001 . The developing Acanto web site (by the Federación de Asociaciones para la defensa del Patrimonio Cultural y Natural de Cantabria ) has a section on Arte Rupestre esquemático-abstracto ."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Spider and bug collecting was carried out during the Easter 2014 expedition along with temperature and humidity readings."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A drone flight towards the entrance at Easter 2019 appeared to show no other nearby entrances."
+      },
+      {
+        "index": 4,
+        "kind": "section_heading",
+        "section_index": 0,
+        "text": "Bat information"
+      },
+      {
+        "index": 5,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Date: 9/4/2023"
+      },
+      {
+        "index": 6,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Evidence of occupation: feeding remains; droppings"
+      },
+      {
+        "index": 7,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Bat remains (number): yes (1)"
+      },
+      {
+        "index": 8,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Species identified name (number): -"
+      },
+      {
+        "index": 9,
+        "kind": "paragraph",
+        "section_index": 0,
+        "text": "Photos from visit"
+      }
+    ],
+    "char_count": 1145,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": 9,
+        "kind": "dmy",
+        "month": 4,
+        "raw": "9/4/2023",
+        "season": null,
+        "year": 2023
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2006",
+        "season": "Easter",
+        "year": 2006
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2025",
+        "season": "Easter",
+        "year": 2025
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2014",
+        "season": "Easter",
+        "year": 2014
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2019",
+        "season": "Easter",
+        "year": 2019
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1997",
+        "season": null,
+        "year": 1997
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1995",
+        "season": null,
+        "year": 1995
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2001",
+        "season": null,
+        "year": 2001
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:29cf56ec2f72552d (1506 chars)",
+    "sections": [
+      {
+        "block_first": 4,
+        "block_last": 9,
+        "canonical": "bat_information",
+        "heading": "Bat information",
+        "heading_kind": "bold",
+        "index": 0
+      }
+    ],
+    "tables": [],
+    "text": "The large 15m x 8m entrance soon diminishes to a 3m x 2m passage and then closes down in crawls. Some extension work was carried out during 1997 and remains to be completed. A suggestion was made during the Easter 2006 trip that digging below the false floor may produce results. Further pushing occurred at Easter 2025 when an estimated 5m extra was entered on the left.\n\nBlack markings in the cave, including dots in a semi-circle, are described and discussed in Smith Peter, 1998b (survey), Muñoz Emilio et al, 1995 and Ruiz Cobo Jesús and Smith Peter et al, 2001 . The developing Acanto web site (by the Federación de Asociaciones para la defensa del Patrimonio Cultural y Natural de Cantabria ) has a section on Arte Rupestre esquemático-abstracto .\n\nSpider and bug collecting was carried out during the Easter 2014 expedition along with temperature and humidity readings.\n\nA drone flight towards the entrance at Easter 2019 appeared to show no other nearby entrances.\n\nBat information\n\nDate: 9/4/2023\n\nEvidence of occupation: feeding remains; droppings\n\nBat remains (number): yes (1)\n\nSpecies identified name (number): -\n\nPhotos from visit"
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "Fernández Gutiérrez et al",
+        "authors": [
+          "Fernández Gutiérrez"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "photo",
+        "qualifier_is_known": true,
+        "raw": "Fernández Gutiérrez et al, 1966 (photo)",
+        "year": 1966
+      },
+      {
+        "attachments": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0012-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "author_raw": "Kendal Caving Club and Manchester University Speleological Society",
+        "authors": [
+          "Kendal Caving Club",
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Kendal Caving Club and Manchester University Speleological Society, 1975 ( survey )",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1986s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1986 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1986 (logbook)",
+        "year": 1986
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1989s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1989 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1989 (logbook)",
+        "year": 1989
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1992s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1992b (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 5,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1992b (logbook)",
+        "year": 1992
+      },
+      {
+        "attachments": [],
+        "author_raw": "Muñoz Emilio et al",
+        "authors": [
+          "Muñoz Emilio"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1995-ec-botin.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Muñoz Emilio et al, 1995",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Muñoz Emilio et al, 1995",
+        "year": 1995
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1997s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1997b (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 7,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1997b (logbook)",
+        "year": 1997
+      },
+      {
+        "attachments": [],
+        "author_raw": "Smith Peter",
+        "authors": [
+          "Smith Peter"
+        ],
+        "disambiguator": "b",
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1998-dp-acdps.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter, 1998b",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 8,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Smith Peter, 1998b (survey)",
+        "year": 1998
+      },
+      {
+        "attachments": [],
+        "author_raw": "Smith Peter and Ruiz Cobo Jesús",
+        "authors": [
+          "Smith Peter",
+          "Ruiz Cobo Jesús"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1999-fz-sautuola.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter and Ruiz Cobo Jesús, 1999",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 9,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Smith Peter and Ruiz Cobo Jesús, 1999",
+        "year": 1999
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo Jesús and Smith Peter et al",
+        "authors": [
+          "Ruiz Cobo Jesús",
+          "Smith Peter"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 10,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Ruiz Cobo Jesús and Smith Peter et al, 2001",
+        "year": 2001
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 11,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2006b (Easter logbook)",
+        "year": 2006
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2006-spel-09.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2007",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 12,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2007",
+        "year": 2007
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo Jesús et al",
+        "authors": [
+          "Ruiz Cobo Jesús"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [],
+        "ordinal": 13,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Ruiz Cobo Jesús et al, 2008 (survey)",
+        "year": 2008
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2014e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2014b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 14,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2014b (Easter logbook)",
+        "year": 2014
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2019e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2019b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 15,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2019b (Easter logbook)",
+        "year": 2019
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 16,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2023b (Easter logbook)",
+        "year": 2023
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2025e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2025a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 17,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2025a (Easter logbook)",
+        "year": 2025
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0012-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1986s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1986 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1989s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1989 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1992s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1992b (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1995-ec-botin.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Muñoz Emilio et al, 1995",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1997s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1997b (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1998-dp-acdps.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter, 1998b",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1999-fz-sautuola.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter and Ruiz Cobo Jesús, 1999",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2006-spel-09.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2007",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2014e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2014b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2019e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2019b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2025e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2025a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Fernández Gutiérrez et al, 1966 (photo); Kendal Caving Club and Manchester University Speleological Society, 1975 ( survey ); Corrin J S and Smith P, 1981 ; anon., 1986 (logbook) ; anon., 1989 (logbook) ; anon., 1992b (logbook) ; Muñoz Emilio et al, 1995 ; anon., 1997b (logbook) ; Smith Peter, 1998b (survey); Smith Peter and Ruiz Cobo Jesús, 1999 ; Ruiz Cobo Jesús and Smith Peter et al, 2001; anon., 2006b (Easter logbook) ; Corrin Juan, 2007 ; Ruiz Cobo Jesús et al, 2008 (survey); anon., 2014b (Easter logbook) ; anon., 2019b (Easter logbook) ; anon., 2023b (Easter logbook) ; anon., 2025a (Easter logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0012.htm",
+            "is_range": false,
+            "target_site": 12,
+            "text": "1997 and 2006",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0012-2023e.htm",
+            "is_range": true,
+            "target_site": 12,
+            "text": "2023",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0012-25-01.htm",
+            "is_range": false,
+            "target_site": 12,
+            "text": "2025",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "1997 and 2006 : 2023 : 2025"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/vuBIgAcpFgY",
+            "is_range": false,
+            "target_site": null,
+            "text": "drone flight to entrance",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "drone flight to entrance (YouTube, Easter 2019)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground pictures",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0012.htm",
+            "is_range": false,
+            "target_site": 12,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "yes"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0012-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "low res",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0012-1975.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "high res",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 4,
+        "text": "from 1975: low res high res : Major extension to Risco April 2025 (in hand)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "References : Fernández Gutiérrez et al, 1966 (photo); Kendal Caving Club and Manchester University Speleological Society, 1975 ( survey ); Corrin J S and Smith P, 1981 ; anon., 1986 (logbook) ; anon., 1989 (logbook) ; anon., 1992b (logbook) ; Muñoz Emilio et al, 1995 ; anon., 1997b (logbook) ; Smith Peter, 1998b (survey); Smith Peter and Ruiz Cobo Jesús, 1999 ; Ruiz Cobo Jesús and Smith Peter et al, 2001; anon., 2006b (Easter logbook) ; Corrin Juan, 2007 ; Ruiz Cobo Jesús et al, 2008 (survey); anon., 2014b (Easter logbook) ; anon., 2019b (Easter logbook) ; anon., 2023b (Easter logbook) ; anon., 2025a (Easter logbook) Entrance pictures : 1997 and 2006 : 2023 : 2025 Video : drone flight to entrance (YouTube, Easter 2019) Underground pictures : yes Detailed Survey : from 1975: low res high res : Major extension to Risco April 2025 (in hand) Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Ozana",
+    "coordinates": [
+      {
+        "accuracy_code": "A",
+        "altitude_m": 425.0,
+        "datum": "ETRS89",
+        "easting": 454548,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3074681,
+        "longitude": -3.5604381,
+        "northing": 4795112,
+        "raw": "30T 454548 4795112",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "85m",
+        "unit_stated": true,
+        "value_m": 85.0
+      }
+    ],
+    "raw": "Ozana 30T 454548 4795112 (Datum: ETRS89. Accuracy code: A ) Altitude 425m Length 85m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "xref_self_reference",
+        "detail": "link to its own page: '../ugpics/0012-2023e-bats.htm'",
+        "excerpt": null,
+        "field_path": "body.cross_refs",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 5677,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "c9d16ec04decf6d9f80222b5dd13ca44d9f98a895760db19e9add66b05f718de",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 12
+  },
+  "site_number": 12,
+  "title": {
+    "aliases": [
+      {
+        "kind": "spanish_alt",
+        "site_number": null,
+        "text": "Concejo, Cueva del"
+      }
+    ],
+    "name": "Concebo, Cueva del",
+    "name_sort": "cueva del concebo",
+    "raw": "0012: Concebo, Cueva del (Concejo, Cueva del)",
+    "separator": "colon",
+    "site_number": 12,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1998-02-13",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "13 February 1998"
+    },
+    {
+      "attribution": null,
+      "date": "1999-02-19",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "19th February 1999"
+    },
+    {
+      "attribution": null,
+      "date": "2001-02-03",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "3rd February"
+    },
+    {
+      "attribution": null,
+      "date": "2001-10-26",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "26th October 2001"
+    },
+    {
+      "attribution": null,
+      "date": "2002-06-03",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "3rd"
+    },
+    {
+      "attribution": null,
+      "date": "2002-06-07",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "7th June 2002"
+    },
+    {
+      "attribution": null,
+      "date": "2003-11-05",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "5th November 2003"
+    },
+    {
+      "attribution": null,
+      "date": "2006-05-13",
+      "end_date": null,
+      "group_index": 5,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "13th May 2006"
+    },
+    {
+      "attribution": null,
+      "date": "2008-12-19",
+      "end_date": null,
+      "group_index": 6,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "19th December 2008"
+    },
+    {
+      "attribution": null,
+      "date": "2014-05-14",
+      "end_date": null,
+      "group_index": 7,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "14th May 2014"
+    },
+    {
+      "attribution": null,
+      "date": "2019-05-11",
+      "end_date": null,
+      "group_index": 8,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "11th May 2019"
+    },
+    {
+      "attribution": null,
+      "date": "2023-05-06",
+      "end_date": null,
+      "group_index": 9,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "6th May 2023"
+    },
+    {
+      "attribution": null,
+      "date": "2025-05-04",
+      "end_date": null,
+      "group_index": 10,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "4th May 2025"
+    }
+  ]
+}

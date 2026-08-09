@@ -1,0 +1,517 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Probably first descended in 1983 but no account was written up. A wire belay marked NMCC was found at the bottom in 1999."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A 10m pitch / assisted climb down in an obvious shaft with a whitebeam tree leads immediately to a 31m pitch head, partialy blocked by boulders. Landing on the floor, the way on is down a narrow 3m pitch / climb whilst to the left and right there are two small side branches that quickly end. A squeeze through a rift leads to an 6m shaft followed by a 3m climb."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The cave ends at a narrow S-bend which was passed in 2006 to a 3m pitch into a blind chamber."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The site carries an alternating draught and is rigged mostly on 8mm stainless studs. 40m of rope from the entrance shaft Y-hang will reach the floor above the squeeze."
+      }
+    ],
+    "char_count": 749,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1983",
+        "season": null,
+        "year": 1983
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1999",
+        "season": null,
+        "year": 1999
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2006",
+        "season": null,
+        "year": 2006
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:533ef36d4a305b29 (768 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Probably first descended in 1983 but no account was written up. A wire belay marked NMCC was found at the bottom in 1999.\n\nA 10m pitch / assisted climb down in an obvious shaft with a whitebeam tree leads immediately to a 31m pitch head, partialy blocked by boulders. Landing on the floor, the way on is down a narrow 3m pitch / climb whilst to the left and right there are two small side branches that quickly end. A squeeze through a rift leads to an 6m shaft followed by a 3m climb.\n\nThe cave ends at a narrow S-bend which was passed in 2006 to a 3m pitch into a blind chamber.\n\nThe site carries an alternating draught and is rigged mostly on 8mm stainless studs. 40m of rope from the entrance shaft Y-hang will reach the floor above the squeeze."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1983s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1983b (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1983b (logbook)",
+        "year": 1983
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1999s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1999c (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1999c (logbook)",
+        "year": 1999
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1999-c_c-87.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2000",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2000",
+        "year": 2000
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "Easter & summer",
+        "qualifier_is_known": true,
+        "raw": "anon., 2005b ( Easter & summer )",
+        "year": 2005
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2006d (summer logbook)",
+        "year": 2006
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1983s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1983b (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1999s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1999c (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1999-c_c-87.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2000",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1983b (logbook) ; anon., 1999c (logbook) ; Corrin Juan, 2000 ; anon., 2005b ( Easter & summer ); anon., 2006d (summer logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0484.htm",
+            "is_range": false,
+            "target_site": 484,
+            "text": "distant",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0484a.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "close up",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "distant close up"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0484.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "1:500 projected section",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0484plan.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "1:500 plan",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0484-2006.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "2006 combined survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "1:500 projected section 1:500 plan 2006 combined survey (pdf)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0484.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "yes (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)"
+      }
+    ],
+    "raw": "Reference : anon., 1983b (logbook) ; anon., 1999c (logbook) ; Corrin Juan, 2000 ; anon., 2005b ( Easter & summer ); anon., 2006d (summer logbook) Entrance picture : distant close up Underground picture(s) : Detailed Survey : 1:500 projected section 1:500 plan 2006 combined survey (pdf) Line Survey : On area survey : Survex file : yes (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "S Vega",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 603.0,
+        "datum": "ETRS89",
+        "easting": 450020,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2967091,
+        "longitude": -3.6161611,
+        "northing": 4793949,
+        "raw": "30T 450020 4793949",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "80m",
+        "unit_stated": true,
+        "value_m": 80.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "58.6m",
+        "unit_stated": true,
+        "value_m": 58.6
+      }
+    ],
+    "raw": "S Vega 30T 450020 4793949 (Datum: ETRS89. Accuracy code: G ) Altitude 603m Length 80m Depth 58.6m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "citation_split_anchors",
+        "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 3267,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "32ee37ab9fe2487f16290a4a45b4909995e0dc6a952e06fadfefdef79f3071db",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 484
+  },
+  "site_number": 484,
+  "title": {
+    "aliases": [],
+    "name": "Zorro, Torca del",
+    "name_sort": "torca del zorro",
+    "raw": "0484: Zorro, Torca del",
+    "separator": "colon",
+    "site_number": 484,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1999-12-17",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "17th December 1999"
+    },
+    {
+      "attribution": null,
+      "date": "2000-06-03",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "3rd June 2000"
+    },
+    {
+      "attribution": null,
+      "date": "2001-01-21",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "21st January 2001"
+    },
+    {
+      "attribution": null,
+      "date": "2005-04-24",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "24th April 2005"
+    },
+    {
+      "attribution": null,
+      "date": "2006-10-01",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "1st October 2006"
+    }
+  ]
+}

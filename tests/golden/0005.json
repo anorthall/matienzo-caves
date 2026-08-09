@@ -1,0 +1,851 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A through trip is described from the bottom entrance resurgence, called Cueva de Esquileña ( site 4271 )."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Optical brightener poured into the stream in the final chamber of the Orillón system was strongly detected at the Esquileña resurgence (November 2015 and January 2016). Detectors at the eastern resurgence ( site 4272 ) in the Mortiro depression that feeds water into the top entrance also tested clearly positive after a repeat test in January 2016. The details of the tests are found here . ( Results seen on cotton wool in chicken wire: negative and positive.)"
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The survey in Actividades Regionales. Exploraciones en Cantabria (anon., 1993a) is a copy of the reference survey in Report of the British Expedition to Matienzo (Kendal Caving Club and Manchester University Speleological Society, 1975) . Valero Enrique y Soriano Ángel, 2007 reports the length as 800m."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Link to entry in the Cave Diving Sump Index ."
+      }
+    ],
+    "char_count": 921,
+    "cross_refs": [
+      {
+        "context": "site 4271",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "4271.htm",
+        "kind": "hyperlink",
+        "link_text": "site 4271",
+        "target_site": 4271
+      },
+      {
+        "context": "Orillón system",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1162.htm",
+        "kind": "hyperlink",
+        "link_text": "Orillón system",
+        "target_site": 1162
+      },
+      {
+        "context": "site 4272",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "4272.htm",
+        "kind": "hyperlink",
+        "link_text": "site 4272",
+        "target_site": 4272
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 11,
+        "raw": "November 2015",
+        "season": null,
+        "year": 2015
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 1,
+        "raw": "January 2016",
+        "season": null,
+        "year": 2016
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 1,
+        "raw": "January 2016",
+        "season": null,
+        "year": 2016
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1975",
+        "season": null,
+        "year": 1975
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2007",
+        "season": null,
+        "year": 2007
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:e69777a5152be4bd (1355 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A through trip is described from the bottom entrance resurgence, called Cueva de Esquileña ( site 4271 ).\n\nOptical brightener poured into the stream in the final chamber of the Orillón system was strongly detected at the Esquileña resurgence (November 2015 and January 2016). Detectors at the eastern resurgence ( site 4272 ) in the Mortiro depression that feeds water into the top entrance also tested clearly positive after a repeat test in January 2016. The details of the tests are found here . ( Results seen on cotton wool in chicken wire: negative and positive.)\n\nThe survey in Actividades Regionales. Exploraciones en Cantabria (anon., 1993a) is a copy of the reference survey in Report of the British Expedition to Matienzo (Kendal Caving Club and Manchester University Speleological Society, 1975) . Valero Enrique y Soriano Ángel, 2007 reports the length as 800m.\n\nLink to entry in the Cave Diving Sump Index ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1974b (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1974b (logbook)",
+        "year": 1974
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1974-matienzo-nspain.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1974a",
+            "unquoted_in_source": true
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "anon., 1974a",
+        "year": 1974
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "Easter and summer logbooks",
+        "qualifier_is_known": true,
+        "raw": "anon., 1975b ( Easter and summer logbooks)",
+        "year": 1975
+      },
+      {
+        "attachments": [
+          {
+            "bucket": "survey_image",
+            "href": "./surveys/0005-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": true
+          }
+        ],
+        "author_raw": "Kendal Caving Club and Manchester University Speleological Society",
+        "authors": [
+          "Kendal Caving Club",
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": true
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Kendal Caving Club and Manchester University Speleological Society, 1975 ( survey )",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Fernández Gutiérrez J C",
+        "authors": [
+          "Fernández Gutiérrez J C"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1975-e1-cuadernos.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez J C, 1975",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Fernández Gutiérrez J C, 1975",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Manchester University Speleological Society",
+        "authors": [
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1982-aa-cuadernos.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Manchester University Speleological Society, 1982",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 5,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Manchester University Speleological Society, 1982 (survey)",
+        "year": 1982
+      },
+      {
+        "attachments": [],
+        "author_raw": "Mills L D J",
+        "authors": [
+          "Mills L D J"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratransmills.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Mills L D J, 1981",
+            "unquoted_in_source": true
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Mills L D J, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": true
+          }
+        ],
+        "ordinal": 7,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/bv-1993-ogarriocaves.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1993a",
+            "unquoted_in_source": true
+          }
+        ],
+        "ordinal": 8,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "anon., 1993a (survey)",
+        "year": 1993
+      },
+      {
+        "attachments": [],
+        "author_raw": "Asociación Espeleológica Conquense Lobetum",
+        "authors": [
+          "Asociación Espeleológica Conquense Lobetum"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/BVc-1995qry-OgarrioCaves.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Asociación Espeleológica Conquense Lobetum, 1995?",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 9,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Asociación Espeleológica Conquense Lobetum, 1995?",
+        "year": 1995
+      },
+      {
+        "attachments": [],
+        "author_raw": "Valero Enrique y Soriano Ángel",
+        "authors": [
+          "Valero Enrique y Soriano Ángel"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2007-fe-bce16.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Valero Enrique y Soriano Ángel, 2007",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 10,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Valero Enrique y Soriano Ángel, 2007",
+        "year": 2007
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2015a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2015d (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 11,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2015d (autumn logbook)",
+        "year": 2015
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 12,
+        "qualifier": "January, February logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2016a (January, February logbook)",
+        "year": 2016
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1974b (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1974-matienzo-nspain.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1974a",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "survey_image",
+            "href": "./surveys/0005-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1975-e1-cuadernos.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez J C, 1975",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1982-aa-cuadernos.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Manchester University Speleological Society, 1982",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratransmills.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Mills L D J, 1981",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/bv-1993-ogarriocaves.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1993a",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/BVc-1995qry-OgarrioCaves.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Asociación Espeleológica Conquense Lobetum, 1995?",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2007-fe-bce16.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Valero Enrique y Soriano Ángel, 2007",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2015a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2015d (autumn logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1974b (logbook) ; anon., 1974a ; anon., 1975b ( Easter and summer logbooks); Kendal Caving Club and Manchester University Speleological Society, 1975 ( survey ); Fernández Gutiérrez J C, 1975 ; Manchester University Speleological Society, 1982 (survey); Mills L D J, 1981 ; Corrin J S and Smith P, 1981 ; anon., 1993a (survey); Asociación Espeleológica Conquense Lobetum, 1995? ; Valero Enrique y Soriano Ángel, 2007 ; anon., 2015d (autumn logbook) ; anon., 2016a (January, February logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0005.htm",
+            "is_range": false,
+            "target_site": 5,
+            "text": "yes",
+            "unquoted_in_source": true
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0005-1975.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "hi res",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0005-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "low res",
+            "unquoted_in_source": true
+          }
+        ],
+        "order": 3,
+        "text": "hi res low res"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0005.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "yes",
+            "unquoted_in_source": true
+          },
+          {
+            "bucket": "survey_3d",
+            "href": "./surveys/0002-3603-0005-0023.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "with Coverón (part), CEZ and Orillón",
+            "unquoted_in_source": true
+          }
+        ],
+        "order": 6,
+        "text": "yes (coordinates taken from paper 1975 survey then adjusted for GPS'd entrance positions) : with Coverón (part), CEZ and Orillón"
+      }
+    ],
+    "raw": "References : anon., 1974b (logbook) ; anon., 1974a ; anon., 1975b ( Easter and summer logbooks); Kendal Caving Club and Manchester University Speleological Society, 1975 ( survey ); Fernández Gutiérrez J C, 1975 ; Manchester University Speleological Society, 1982 (survey); Mills L D J, 1981 ; Corrin J S and Smith P, 1981 ; anon., 1993a (survey); Asociación Espeleológica Conquense Lobetum, 1995? ; Valero Enrique y Soriano Ángel, 2007 ; anon., 2015d (autumn logbook) ; anon., 2016a (January, February logbook) Entrance picture : yes Underground picture(s) : Detailed Survey : hi res low res Line Survey : On area survey : Survex file : yes (coordinates taken from paper 1975 survey then adjusted for GPS'd entrance positions) : with Coverón (part), CEZ and Orillón",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Riva",
+    "coordinates": [
+      {
+        "accuracy_code": "A",
+        "altitude_m": 155.0,
+        "datum": "ETRS89",
+        "easting": 454605,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2900394,
+        "longitude": -3.5595755,
+        "northing": 4793176,
+        "raw": "30T 454605 4793176",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "770m",
+        "unit_stated": true,
+        "value_m": 770.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "18m",
+        "unit_stated": true,
+        "value_m": 18.0
+      }
+    ],
+    "raw": "Riva 30T 454605 4793176 (Datum: ETRS89. Accuracy code: A ) Altitude 155m Length 770m Depth 18m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "citation_split_anchors",
+        "detail": "citation 'anon., 1975b ( Easter and summer logbooks)' spans 2 anchors",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 5056,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "14665b35f429454f30cc69ead0d31b072821265a7c8648e25985eb2fc7874476",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 5
+  },
+  "site_number": 5,
+  "title": {
+    "aliases": [
+      {
+        "kind": "entrance_qualifier",
+        "site_number": null,
+        "text": "top entrance"
+      },
+      {
+        "kind": "system_name",
+        "site_number": null,
+        "text": "Mortiro-Esquileña, Sistema"
+      }
+    ],
+    "name": "Mortiro, Cueva del",
+    "name_sort": "cueva del mortiro",
+    "raw": "0005: Mortiro, Cueva del (top entrance) (Mortiro-Esquileña, Sistema)",
+    "separator": "colon",
+    "site_number": 5,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2003-11-05",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "5th November 2003"
+    },
+    {
+      "attribution": null,
+      "date": "2007-10-31",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "31st October 2007"
+    },
+    {
+      "attribution": null,
+      "date": "2015-12-04",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "4th"
+    },
+    {
+      "attribution": null,
+      "date": "2015-12-08",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "8th December 2015"
+    },
+    {
+      "attribution": null,
+      "date": "2016-02-09",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "9th February 2016"
+    },
+    {
+      "attribution": null,
+      "date": "2026-01-23",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "23rd January 2026"
+    }
+  ]
+}

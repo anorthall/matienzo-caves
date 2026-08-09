@@ -1,0 +1,361 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A covered shaft above site 1219 . Some boulders were removed for exploration; care should be taken around the shaft top as most of the 5-6m long, 2m wide shaft appears to be capped and covered with vegetation."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Ten metres down the shaft divides into three and reunites another 10m down. The shaft then drops 25m to a rocky floor, 3 x 6m with lots of dog bones. One tight rift at the base is 3m deep, another is 6\" wide and continuing. The double barrels from a shot gun were removed from the bottom."
+      }
+    ],
+    "char_count": 499,
+    "cross_refs": [
+      {
+        "context": "site 1219",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1219.htm",
+        "kind": "hyperlink",
+        "link_text": "site 1219",
+        "target_site": 1219
+      }
+    ],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:03eff33f21766f08 (540 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A covered shaft above site 1219 . Some boulders were removed for exploration; care should be taken around the shaft top as most of the 5-6m long, 2m wide shaft appears to be capped and covered with vegetation.\n\nTen metres down the shaft divides into three and reunites another 10m down. The shaft then drops 25m to a rocky floor, 3 x 6m with lots of dog bones. One tight rift at the base is 3m deep, another is 6\" wide and continuing. The double barrels from a shot gun were removed from the bottom."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter & summer",
+        "qualifier_is_known": true,
+        "raw": "anon., 2005b ( Easter & summer )",
+        "year": 2005
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "a",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2005-spel-07.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2006a",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2006a",
+        "year": 2006
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2005-spel-07.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2006a",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2005b ( Easter & summer ); Corrin Juan, 2006a"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/2287.htm",
+            "is_range": false,
+            "target_site": 2287,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/2287.htm",
+            "is_range": false,
+            "target_site": 2287,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "yes"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_file",
+            "href": "../videos/1219-2287-jc-01.wmv",
+            "is_range": false,
+            "target_site": null,
+            "text": "site 1219 with 2287",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/2287.wmv",
+            "is_range": false,
+            "target_site": null,
+            "text": "42Mb wmv file",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/2287a.wmv",
+            "is_range": false,
+            "target_site": null,
+            "text": "2Mb wmv file",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "site 1219 with 2287 42Mb wmv file 2Mb wmv file"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/2287sketch.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "sketch",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 4,
+        "text": "sketch"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2005b ( Easter & summer ); Corrin Juan, 2006a Entrance pictures : yes Underground picture : yes Video : site 1219 with 2287 42Mb wmv file 2Mb wmv file Detailed Survey : sketch Line survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "S Vega",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 658.0,
+        "datum": "ETRS89",
+        "easting": 450636,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2969929,
+        "longitude": -3.6085698,
+        "northing": 4793976,
+        "raw": "30T 450636 4793976",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "60m",
+        "unit_stated": true,
+        "value_m": 60.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "45m",
+        "unit_stated": true,
+        "value_m": 45.0
+      }
+    ],
+    "raw": "S Vega 30T 450636 4793976 (Datum: ETRS89. Accuracy code: G ) Altitude 658m Length 60m Depth 45m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "citation_split_anchors",
+        "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 2501,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "cff983cab511b92dcfb4658a61e514810f6fed74f4ccb567139d54747afe3b80",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 2287
+  },
+  "site_number": 2287,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "2287: shaft",
+    "separator": "colon",
+    "site_number": 2287,
+    "site_type": "shaft"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2005-10-16",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "16th October 2005"
+    }
+  ]
+}

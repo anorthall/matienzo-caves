@@ -1,0 +1,302 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A shaft with a good rattle and a sandstone wedge which has been removed to show another block at -4m with a plumbline dropping to -9m. Undescended."
+      }
+    ],
+    "char_count": 147,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:937f6c3d11d03ccc (162 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A shaft with a good rattle and a sandstone wedge which has been removed to show another block at -4m with a plumbline dropping to -9m. Undescended."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter & summer",
+        "qualifier_is_known": true,
+        "raw": "anon., 2005b ( Easter & summer )",
+        "year": 2005
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2006b (Easter logbook)",
+        "year": 2006
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2005s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2005b ( Easter & summer ); anon., 2006b (Easter logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/2324.htm",
+            "is_range": false,
+            "target_site": 2324,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2005b ( Easter & summer ); anon., 2006b (Easter logbook) Entrance picture : yes Underground picture(s) : Video : Detailed Survey : Line survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "EL Naso",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 436.0,
+        "datum": "ETRS89",
+        "easting": 450781,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3200889,
+        "longitude": -3.607012,
+        "northing": 4796540,
+        "raw": "30T 450781 4796540",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "3m",
+        "unit_stated": true,
+        "value_m": 3.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "9m",
+        "unit_stated": true,
+        "value_m": 9.0
+      }
+    ],
+    "raw": "EL Naso 30T 450781 4796540 (Datum: ETRS89. Accuracy code: G ) Altitude 436m Length 3m Depth 9m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "citation_split_anchors",
+        "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 1893,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "fdba5fbc78ce0bf04f63ccf16da80f18ed790dd4de87d642afa161fbbc821b54",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 2324
+  },
+  "site_number": 2324,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "2324: shaft",
+    "separator": "colon",
+    "site_number": 2324,
+    "site_type": "shaft"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2006-05-20",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "20th May 2006"
+    }
+  ]
+}

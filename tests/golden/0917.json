@@ -1,0 +1,342 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A 12m deep fenced, choked shaft."
+      }
+    ],
+    "char_count": 32,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:64623414d9f5c129 (47 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A 12m deep fenced, choked shaft."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1993e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1993c (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1993c (Easter logbook)",
+        "year": 1993
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2004e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2004b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2004b (Easter logbook)",
+        "year": 2004
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2004s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2004d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2004d (summer logbook)",
+        "year": 2004
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1993e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1993c (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2004e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2004b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2004s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2004d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1993c (Easter logbook) ; anon., 2004b (Easter logbook) ; anon., 2004d (summer logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_video",
+        "label_raw": "Entrance videos",
+        "links": [
+          {
+            "bucket": "video_file",
+            "href": "../videos/0917-jc-01.mpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "Andy Pringle descending 1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/0917-jc-02.mpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "2",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "Andy Pringle descending 1 2"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 1993c (Easter logbook) ; anon., 2004b (Easter logbook) ; anon., 2004d (summer logbook) Entrance videos : Andy Pringle descending 1 2 Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Cobadal",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 316.0,
+        "datum": "ETRS89",
+        "easting": 448746,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.328939,
+        "longitude": -3.6322011,
+        "northing": 4797538,
+        "raw": "30T 448746 4797538",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      },
+      {
+        "accuracy_code": null,
+        "altitude_m": null,
+        "datum": null,
+        "easting": 448778,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3294184,
+        "longitude": -3.6318114,
+        "northing": 4797591,
+        "raw": "30T 448778 4797591",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "12m",
+        "unit_stated": true,
+        "value_m": 12.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "12m",
+        "unit_stated": true,
+        "value_m": 12.0
+      }
+    ],
+    "raw": "Cobadal 30T 448746 4797538 (Datum: ETRS89. Accuracy code: G ) Altitude 316m [Originally: VN48889780 Alt. 325m; ETRS89: 30T 448778 4797591] Length 12m Depth 12m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "coord_multiple",
+        "detail": "2 coordinates — a multi-entrance site",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 1967,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "d4d72d693925aab7cf81b8bb3fa2dbe4cea30ed1366caee68216bb260749b38b",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 917
+  },
+  "site_number": 917,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "0917: shaft",
+    "separator": "colon",
+    "site_number": 917,
+    "site_type": "shaft"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2004-05-03",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "3rd May"
+    },
+    {
+      "attribution": null,
+      "date": "2004-10-13",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "13th October 2004"
+    }
+  ]
+}

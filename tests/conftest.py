@@ -16,6 +16,15 @@ FIXTURES = Path(__file__).parent / "fixtures"
 GOLDEN = Path(__file__).parent / "golden"
 
 
+def pytest_addoption(parser: pytest.Parser) -> None:
+    parser.addoption(
+        "--update-goldens",
+        action="store_true",
+        default=False,
+        help="Rewrite tests/golden/*.json from current parser output.",
+    )
+
+
 @pytest.fixture
 def fixture_path() -> Callable[[int], Path]:
     """Resolve a frozen fixture page by site number."""

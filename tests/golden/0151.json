@@ -1,0 +1,529 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A stooping sized entrance slopes down the right and quickly chokes in smaller grovels. There appears to be no or little draught. A small extension was excavated in 2007 and the cave was thoroughly examined, pushed and surveyed to a length of 41m (from 29m) in the summer, 2023."
+      }
+    ],
+    "char_count": 277,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "summer",
+        "season": "summer",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2007",
+        "season": null,
+        "year": 2007
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2023",
+        "season": null,
+        "year": 2023
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:b23d57625f18ce74 (287 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A stooping sized entrance slopes down the right and quickly chokes in smaller grovels. There appears to be no or little draught. A small extension was excavated in 2007 and the cave was thoroughly examined, pushed and surveyed to a length of 41m (from 29m) in the summer, 2023."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": null,
+        "authors": [],
+        "disambiguator": null,
+        "kind": "provenance",
+        "links": [],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "material in file",
+        "year": null
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1998s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1998d (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1998d (logbook)",
+        "year": 1998
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "d",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2007s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2007d (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2007d (summer logbook)",
+        "year": 2007
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "a",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2007-spel-10-11.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2007a",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2007a",
+        "year": 2007
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 5,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2023c (summer logbook)",
+        "year": 2023
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "e",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024e (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": "autumn logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024e (autumn logbook)",
+        "year": 2024
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1998s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1998d (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2007s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2007d (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2007-spel-10-11.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2007a",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024a-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024e (autumn logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Corrin J S and Smith P, 1981 ; material in file; anon., 1998d (logbook) ; anon., 2007d (summer logbook) ; Corrin Juan, 2007a ; anon., 2023c (summer logbook) ; anon., 2024e (autumn logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0151.htm",
+            "is_range": false,
+            "target_site": 151,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0151-2023s.htm",
+            "is_range": true,
+            "target_site": 151,
+            "text": "2023",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "2023"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/m4ZkT6I2Nyo",
+            "is_range": false,
+            "target_site": null,
+            "text": "Investigations 2023",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "Investigations 2023 (YouTube)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0151.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "1:500",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0151.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Redrawn with addition, 2007",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0151-2023.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer 2023",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 4,
+        "text": "1:500 before 2007 : Redrawn with addition, 2007 : summer 2023"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "References : Corrin J S and Smith P, 1981 ; material in file; anon., 1998d (logbook) ; anon., 2007d (summer logbook) ; Corrin Juan, 2007a ; anon., 2023c (summer logbook) ; anon., 2024e (autumn logbook) Entrance picture : yes Underground picture(s) : 2023 Video: Investigations 2023 (YouTube) Detailed Survey : 1:500 before 2007 : Redrawn with addition, 2007 : summer 2023 Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "La Secada",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 180.0,
+        "datum": "ETRS89",
+        "easting": 451488,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3275542,
+        "longitude": -3.5983659,
+        "northing": 4797364,
+        "raw": "30T 451488 4797364",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "41m",
+        "unit_stated": true,
+        "value_m": 41.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "5m",
+        "unit_stated": true,
+        "value_m": 5.0
+      }
+    ],
+    "raw": "La Secada 30T 451488 4797364 (Datum: ETRS89. Accuracy code: G ) Altitude 180m Length 41m Depth 5m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "stray_small_in_header",
+        "detail": "2 </SMALL> tags close the header info line",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 2767,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "98079ed49ce757460631276add0a01713c0972b6089291dd8ca74d17739741cd",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 151
+  },
+  "site_number": 151,
+  "title": {
+    "aliases": [],
+    "name": "Anío, Cueva del",
+    "name_sort": "cueva del anio",
+    "raw": "0151: Anío, Cueva del",
+    "separator": "colon",
+    "site_number": 151,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1998-08-30",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "30th August 1998"
+    },
+    {
+      "attribution": null,
+      "date": "2007-10-01",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "1st October 2007"
+    },
+    {
+      "attribution": null,
+      "date": "2023-09-14",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "14th September"
+    },
+    {
+      "attribution": null,
+      "date": "2023-11-26",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "26th November 2023"
+    }
+  ]
+}

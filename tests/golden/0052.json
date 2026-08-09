@@ -1,0 +1,554 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The entrance lies about 350m northwest of the El Castro summit. A 7.5m entrance pitch, rigged from the lip on the south side, drops into a large, descending, 100m x 30m chamber with formations. The Spéléo-Club de Dijon have also explored the site (August 1988) and named it Cueva Bornea (SCD2004); the local name is Muesa."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The cave is apparently developed along the fault seen in site 1745 , Torca de Portillero de Tocornal. The smaller passage marked on the French survey may be worth digging. The cave may have been extended in 2004 through a decorated crawl for 10m just to the east of that passage."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The 36m depth is from the top of the depression, according to the French survey, although the British one shows a depth of 45m."
+      }
+    ],
+    "char_count": 732,
+    "cross_refs": [
+      {
+        "context": "site 1745",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1745.htm",
+        "kind": "hyperlink",
+        "link_text": "site 1745",
+        "target_site": 1745
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 8,
+        "raw": "August 1988",
+        "season": null,
+        "year": 1988
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2004",
+        "season": null,
+        "year": 2004
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:222a5c80534475a1 (804 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "The entrance lies about 350m northwest of the El Castro summit. A 7.5m entrance pitch, rigged from the lip on the south side, drops into a large, descending, 100m x 30m chamber with formations. The Spéléo-Club de Dijon have also explored the site (August 1988) and named it Cueva Bornea (SCD2004); the local name is Muesa.\n\nThe cave is apparently developed along the fault seen in site 1745 , Torca de Portillero de Tocornal. The smaller passage marked on the French survey may be worth digging. The cave may have been extended in 2004 through a decorated crawl for 10m just to the east of that passage.\n\nThe 36m depth is from the top of the depression, according to the French survey, although the British one shows a depth of 45m."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": null,
+        "authors": [],
+        "disambiguator": null,
+        "kind": "provenance",
+        "links": [],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "material in file",
+        "year": null
+      },
+      {
+        "attachments": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0052french.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "author_raw": "Degouve de Nuncques Patrick et Simonnot Guy",
+        "authors": [
+          "Degouve de Nuncques Patrick",
+          "Simonnot Guy"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1989-en-patrickguy.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Degouve de Nuncques Patrick et Simonnot Guy, 1989",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Degouve de Nuncques Patrick et Simonnot Guy, 1989 ( survey )",
+        "year": 1989
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2004-spel-06.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2006",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2006",
+        "year": 2006
+      },
+      {
+        "attachments": [],
+        "author_raw": "Simonnot G",
+        "authors": [
+          "Simonnot G"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 4,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Simonnot G, 2016",
+        "year": 2016
+      },
+      {
+        "attachments": [],
+        "author_raw": "Simonnot G",
+        "authors": [
+          "Simonnot G"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 5,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Simonnot G, 2018",
+        "year": 2018
+      },
+      {
+        "attachments": [],
+        "author_raw": "Simonnot G",
+        "authors": [
+          "Simonnot G"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "misc_doc",
+            "href": "../miscdocs/Simonnot-G-2022.htm",
+            "is_range": false,
+            "target_site": 2022,
+            "text": "Simonnot G, 2022",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Simonnot G, 2022",
+        "year": 2022
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1989-en-patrickguy.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Degouve de Nuncques Patrick et Simonnot Guy, 1989",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0052french.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2004-spel-06.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2006",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "misc_doc",
+            "href": "../miscdocs/Simonnot-G-2022.htm",
+            "is_range": false,
+            "target_site": 2022,
+            "text": "Simonnot G, 2022",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Corrin J S and Smith P, 1981 ; material in file; Degouve de Nuncques Patrick et Simonnot Guy, 1989 ( survey ); Corrin Juan, 2006 ; Simonnot G, 2016; Simonnot G, 2018; Simonnot G, 2022"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0052.htm",
+            "is_range": false,
+            "target_site": 52,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_file",
+            "href": "../videos/0052-jc-01.mpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "descent of entrance pitch",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/0052-jc-02.mpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "main chamber",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/0052-jc-03.mpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "decorated crawl",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "video_file",
+            "href": "../videos/0052-jc-04.mpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "ascending entrance pitch",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "descent of entrance pitch main chamber decorated crawl ascending entrance pitch"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0052.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "1:1000",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0052french.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "plan and section",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 4,
+        "text": "1:1000 (British: this is 180deg out and requires altering) plan and section (French)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0052.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 7,
+        "text": "yes (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)"
+      }
+    ],
+    "raw": "References: Corrin J S and Smith P, 1981 ; material in file; Degouve de Nuncques Patrick et Simonnot Guy, 1989 ( survey ); Corrin Juan, 2006 ; Simonnot G, 2016; Simonnot G, 2018; Simonnot G, 2022 Entrance pictures : yes Underground picture(s): Video: descent of entrance pitch main chamber decorated crawl ascending entrance pitch Detailed Survey : 1:1000 (British: this is 180deg out and requires altering) plan and section (French) Line Survey : On area survey : Survex file : yes (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Arredondo",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 560.0,
+        "datum": "ETRS89",
+        "easting": 451306,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2919042,
+        "longitude": -3.6002598,
+        "northing": 4793406,
+        "raw": "30T 451306 4793406",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "120m",
+        "unit_stated": true,
+        "value_m": 120.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "36m",
+        "unit_stated": true,
+        "value_m": 36.0
+      }
+    ],
+    "raw": "Arredondo 30T 451306 4793406 (Datum: ETRS89. Accuracy code: G ) Altitude 560m Length 120m Depth 36m"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 3482,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "da416cd522c01724377b2279d89e769ac1557eb28c7278afd55268c720f80d21",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 52
+  },
+  "site_number": 52,
+  "title": {
+    "aliases": [
+      {
+        "kind": "spanish_alt",
+        "site_number": null,
+        "text": "Bornea, Cueva"
+      },
+      {
+        "kind": "french_ref",
+        "site_number": null,
+        "text": "2004 (French: SCD)"
+      }
+    ],
+    "name": "Muesa, Torca de",
+    "name_sort": "torca de muesa",
+    "raw": "0052: Muesa, Torca de (Bornea, Cueva) (2004 (French: SCD))",
+    "separator": "colon",
+    "site_number": 52,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2002-05-11",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "11th May 2002"
+    },
+    {
+      "attribution": null,
+      "date": "2004-11-02",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "2nd November 2004"
+    },
+    {
+      "attribution": null,
+      "date": "2016-02-09",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "9th February 2016"
+    },
+    {
+      "attribution": null,
+      "date": "2018-09-21",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "21st September 2018"
+    },
+    {
+      "attribution": null,
+      "date": "2022-11-14",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "14th November 2022"
+    }
+  ]
+}

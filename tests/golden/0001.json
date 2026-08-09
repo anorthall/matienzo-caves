@@ -1,0 +1,392 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A shaft with a window into a second shaft. Both choke at about the same level."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "At Easter 2009, a possible sighting and re-exploration has the depth at 13.4m with a window 4m up leading to a river passage. This is unlikely to be Sima del Burro. The grid reference is 30T 0453878 4794181 (Eur79). A few metres away is an \"unrecorded shaft\" at 30T 0453874 4794184 (Eur79) with an estimated depth of 25m. It has the sound of water and is presumed to link to the first hole."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "These hole(s) are out of the current permit area."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Construction of the svx file from the survey gave a length of 94m (previously 50m) ."
+      }
+    ],
+    "char_count": 607,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2009",
+        "season": "Easter",
+        "year": 2009
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:5cfe7ad5bb81e913 (649 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A shaft with a window into a second shaft. Both choke at about the same level.\n\nAt Easter 2009, a possible sighting and re-exploration has the depth at 13.4m with a window 4m up leading to a river passage. This is unlikely to be Sima del Burro. The grid reference is 30T 0453878 4794181 (Eur79). A few metres away is an \"unrecorded shaft\" at 30T 0453874 4794184 (Eur79) with an estimated depth of 25m. It has the sound of water and is presumed to link to the first hole.\n\nThese hole(s) are out of the current permit area.\n\nConstruction of the svx file from the survey gave a length of 94m (previously 50m) ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0001-1964.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "author_raw": "Fernández Gutiérrez et al",
+        "authors": [
+          "Fernández Gutiérrez"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Fernández Gutiérrez et al, 1966 ( survey )",
+        "year": 1966
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2009a (Easter logbook)",
+        "year": 2009
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0001-1964.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2009e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2009a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Fernández Gutiérrez et al, 1966 ( survey ); Corrin J S and Smith P, 1981 ; anon., 2009a (Easter logbook)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0001-1964.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0001-RCN.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "reconstructed March 2021",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_other",
+            "href": "../surveys/0001-svx-reconstruction-notes.txt",
+            "is_range": false,
+            "target_site": null,
+            "text": "Reconstruction notes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "reconstructed March 2021 ( Reconstruction notes )"
+      }
+    ],
+    "raw": "References : Fernández Gutiérrez et al, 1966 ( survey ); Corrin J S and Smith P, 1981 ; anon., 2009a (Easter logbook) Entrance picture : Underground picture(s) : Detailed Survey : yes Line Survey : On area survey : Survex file : reconstructed March 2021 ( Reconstruction notes )",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Riva",
+    "coordinates": [
+      {
+        "accuracy_code": "U",
+        "altitude_m": 365.0,
+        "datum": "ETRS89",
+        "easting": 453898,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.2982353,
+        "longitude": -3.5683668,
+        "northing": 4794091,
+        "raw": "30T 453898 4794091",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "94m",
+        "unit_stated": true,
+        "value_m": 94.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "50m",
+        "unit_stated": true,
+        "value_m": 50.0
+      }
+    ],
+    "raw": "Riva 30T 453898 4794091 (Datum: ETRS89. Accuracy code: U ) Altitude 365m Length 94m Depth 50m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "stray_small_in_header",
+        "detail": "2 </SMALL> tags close the header info line",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 2692,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "25d03badd637e6916911c4069d13ad73365c91e925781b24a5f5166d06af95f4",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 1
+  },
+  "site_number": 1,
+  "title": {
+    "aliases": [],
+    "name": "Burro, Sima del",
+    "name_sort": "sima del burro",
+    "raw": "0001: Burro, Sima del",
+    "separator": "colon",
+    "site_number": 1,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2003-11-05",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "5th November 2003"
+    },
+    {
+      "attribution": null,
+      "date": "2009-05-03",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "3rd May 2009"
+    },
+    {
+      "attribution": null,
+      "date": "2021-03-31",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "31st March 2021"
+    }
+  ]
+}

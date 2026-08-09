@@ -1,0 +1,724 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The old grid reference was ETRS89: 30T 451918 4797801. The cave was first explored at Easter 1997."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A walk-in entrance in the wood to a roomy chamber where Germán used to keep a couple of cows. At the back, down where the slurry drained away, is an excavated hole where bronze age pottery was discovered (out of context). A short squeeze enters a decorated 12m long chamber to a further squeeze to a view across a large, calcited pit."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A walk around the right of the pit leads to a breakdown area which characterises the rest of the cave. Large and small blocks are manoeuvred around until a large chamber is reached, with giant boulders. A clamber up the right ends at a drippy area on top of the blocks. A climb down to west chokes. There are many fossils in breakdown throughout the cave."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Was the site completely finished at Easter?"
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The pottery was part of a 26cm pot with finger impressions on the rim and it has been compared to pottery found in site 2139 . (Smith P, Corrin J and Ruiz Cobo J, 2008)."
+      },
+      {
+        "index": 5,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The cave was entered again in January 2024 when photos were taken and videos near the end. Further discoveries \"will probably be at the far end in the area of large breakdown and could prove to be ‘exciting’!\" Site 1488 is just to the north of the final chamber."
+      }
+    ],
+    "char_count": 1271,
+    "cross_refs": [
+      {
+        "context": "site 2139",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "2139.htm",
+        "kind": "hyperlink",
+        "link_text": "site 2139",
+        "target_site": 2139
+      },
+      {
+        "context": "Site 1488",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "1488.htm",
+        "kind": "hyperlink",
+        "link_text": "Site 1488",
+        "target_site": 1488
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 1997",
+        "season": "Easter",
+        "year": 1997
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "Easter",
+        "season": "Easter",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 1,
+        "raw": "January 2024",
+        "season": null,
+        "year": 2024
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2008",
+        "season": null,
+        "year": 2008
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:7979c67662f15c81 (1418 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "The old grid reference was ETRS89: 30T 451918 4797801. The cave was first explored at Easter 1997.\n\nA walk-in entrance in the wood to a roomy chamber where Germán used to keep a couple of cows. At the back, down where the slurry drained away, is an excavated hole where bronze age pottery was discovered (out of context). A short squeeze enters a decorated 12m long chamber to a further squeeze to a view across a large, calcited pit.\n\nA walk around the right of the pit leads to a breakdown area which characterises the rest of the cave. Large and small blocks are manoeuvred around until a large chamber is reached, with giant boulders. A clamber up the right ends at a drippy area on top of the blocks. A climb down to west chokes. There are many fossils in breakdown throughout the cave.\n\nWas the site completely finished at Easter?\n\nThe pottery was part of a 26cm pot with finger impressions on the rim and it has been compared to pottery found in site 2139 . (Smith P, Corrin J and Ruiz Cobo J, 2008).\n\nThe cave was entered again in January 2024 when photos were taken and videos near the end. Further discoveries \"will probably be at the far end in the area of large breakdown and could prove to be ‘exciting’!\" Site 1488 is just to the north of the final chamber."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1997e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1997a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1997a (Easter logbook)",
+        "year": 1997
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1997-C_C-79.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1998",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 1998",
+        "year": 1998
+      },
+      {
+        "attachments": [],
+        "author_raw": "Smith Peter and Ruiz Cobo Jesús",
+        "authors": [
+          "Smith Peter",
+          "Ruiz Cobo Jesús"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1999-fz-sautuola.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter and Ruiz Cobo Jesús, 1999",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Smith Peter and Ruiz Cobo Jesús, 1999",
+        "year": 1999
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo Jesús and Smith Peter et al",
+        "authors": [
+          "Ruiz Cobo Jesús",
+          "Smith Peter"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 3,
+        "qualifier": "includes a line drawing",
+        "qualifier_is_known": false,
+        "raw": "Ruiz Cobo Jesús and Smith Peter et al, 2001 (includes a line drawing)",
+        "year": 2001
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo Jesús and Smith Peter",
+        "authors": [
+          "Ruiz Cobo Jesús",
+          "Smith Peter"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2003a-0065-er.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Ruiz Cobo Jesús and Smith Peter, 2003",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Ruiz Cobo Jesús and Smith Peter, 2003",
+        "year": 2003
+      },
+      {
+        "attachments": [],
+        "author_raw": "Smith P, Corrin J and Ruiz Cobo J",
+        "authors": [
+          "Smith P, Corrin J",
+          "Ruiz Cobo J"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2008-fg-wpengelly.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith P, Corrin J and Ruiz Cobo J, 2008",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 5,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Smith P, Corrin J and Ruiz Cobo J, 2008",
+        "year": 2008
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo Jesús et al",
+        "authors": [
+          "Ruiz Cobo Jesús"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [],
+        "ordinal": 6,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Ruiz Cobo Jesús et al, 2008 (survey)",
+        "year": 2008
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2014e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2014b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 7,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2014b (Easter logbook)",
+        "year": 2014
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "e",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023e (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 8,
+        "qualifier": "Christmas logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2023e (Christmas logbook)",
+        "year": 2023
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 9,
+        "qualifier": "January, February logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024a (January, February logbook)",
+        "year": 2024
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1997e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1997a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1997-C_C-79.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 1998",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1999-fz-sautuola.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter and Ruiz Cobo Jesús, 1999",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2003a-0065-er.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Ruiz Cobo Jesús and Smith Peter, 2003",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2008-fg-wpengelly.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith P, Corrin J and Ruiz Cobo J, 2008",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2014e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2014b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2023c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2023e (Christmas logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1997a (Easter logbook) ; Corrin Juan, 1998 ; Smith Peter and Ruiz Cobo Jesús, 1999 ; Ruiz Cobo Jesús and Smith Peter et al, 2001 (includes a line drawing); Ruiz Cobo Jesús and Smith Peter, 2003 ; Smith P, Corrin J and Ruiz Cobo J, 2008 ; Ruiz Cobo Jesús et al, 2008 (survey); anon., 2014b (Easter logbook) ; anon., 2023e (Christmas logbook) ; anon., 2024a (January, February logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/1232.htm",
+            "is_range": false,
+            "target_site": 1232,
+            "text": "1997 and 2024",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "1997 and 2024"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/1232a.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "entrance squeeze",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/1232b.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "stal 1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/1232c.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "stal 2",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/1232d.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "flowstone",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/1232-2023c.htm",
+            "is_range": true,
+            "target_site": 1232,
+            "text": "January 2024",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "Easter 1997 - entrance squeeze stal 1 stal 2 flowstone : January 2024"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [
+          {
+            "bucket": "video_external",
+            "href": "https://youtu.be/qbiP3_PIaRA",
+            "is_range": false,
+            "target_site": null,
+            "text": "Investigations January 2024",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "Investigations January 2024 (YouTube)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/1232.gif",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter 1997",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 4,
+        "text": "Easter 1997"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/1232.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "1997",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 7,
+        "text": "1997 (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)"
+      }
+    ],
+    "raw": "Reference : anon., 1997a (Easter logbook) ; Corrin Juan, 1998 ; Smith Peter and Ruiz Cobo Jesús, 1999 ; Ruiz Cobo Jesús and Smith Peter et al, 2001 (includes a line drawing); Ruiz Cobo Jesús and Smith Peter, 2003 ; Smith P, Corrin J and Ruiz Cobo J, 2008 ; Ruiz Cobo Jesús et al, 2008 (survey); anon., 2014b (Easter logbook) ; anon., 2023e (Christmas logbook) ; anon., 2024a (January, February logbook) Entrance pictures : 1997 and 2024 Underground picture(s) : Easter 1997 - entrance squeeze stal 1 stal 2 flowstone : January 2024 Video : Investigations January 2024 (YouTube) Detailed Survey : Easter 1997 Line Survey : On area survey : Survex file : 1997 (Amended magnetic declination December 2013 to align with Eur79 grid and coordinates altered to fit ETRS89 datum, April 2014.)",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "La Secada",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 217.0,
+        "datum": "ETRS89",
+        "easting": 451947,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3314464,
+        "longitude": -3.5927423,
+        "northing": 4797793,
+        "raw": "30T 451947 4797793",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "109m",
+        "unit_stated": true,
+        "value_m": 109.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "17m",
+        "unit_stated": true,
+        "value_m": 17.0
+      }
+    ],
+    "raw": "La Secada 30T 451947 4797793 (Datum: ETRS89. Accuracy code: G ) Altitude 217m Length 109m Depth 17m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "cp1252_fallback",
+        "detail": "not valid UTF-8; decoded as CP1252",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "citation_qualifier_unknown",
+        "detail": "qualifier 'includes a line drawing' is not in the known vocabulary",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 4571,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "d0b52246b9ce8a07bfaecb96f71c437f54c9e5670fdc7e51c4847bd4d896f667",
+    "encoding_used": "cp1252",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 1232
+  },
+  "site_number": 1232,
+  "title": {
+    "aliases": [],
+    "name": "Germán, Cueva de",
+    "name_sort": "cueva de german",
+    "raw": "1232: Germán, Cueva de",
+    "separator": "colon",
+    "site_number": 1232,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2001-10-27",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "27th October 2001"
+    },
+    {
+      "attribution": null,
+      "date": "2008-12-23",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "23rd December 2008"
+    },
+    {
+      "attribution": null,
+      "date": "2014-05-22",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "22nd May 2014"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-06",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "6th"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-29",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": true,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "29th"
+    },
+    {
+      "attribution": null,
+      "date": "2024-01-30",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "30th January 2024"
+    }
+  ]
+}

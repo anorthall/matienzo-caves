@@ -1,0 +1,338 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Originally described as an undescended pitch of about 20m depth with the entrance lying on an open limestone exposure."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The 2m diameter hole is on flat ground between depressions and is a 17m deep, blind shaft. There is well worn green paint on the entrance that may include a '3'."
+      }
+    ],
+    "char_count": 281,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:e02ff9b59bd2d807 (299 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Originally described as an undescended pitch of about 20m depth with the entrance lying on an open limestone exposure.\n\nThe 2m diameter hole is on flat ground between depressions and is a 17m deep, blind shaft. There is well worn green paint on the entrance that may include a '3'."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1982s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1982 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1982 (logbook)",
+        "year": 1982
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J",
+        "authors": [
+          "Corrin J"
+        ],
+        "disambiguator": "c",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981and1982matienzoexpeditions.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1983c",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J, 1983c",
+        "year": 1983
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2004e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2004b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2004b (Easter logbook)",
+        "year": 2004
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1982s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1982 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981and1982matienzoexpeditions.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1983c",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2004e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2004b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1982 (logbook) ; Corrin J, 1983c ; anon., 2004b (Easter logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0420a.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "close-up",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0420b.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "closer",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "close-up , closer"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "References : anon., 1982 (logbook) ; Corrin J, 1983c ; anon., 2004b (Easter logbook) Entrance picture : close-up , closer Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Mullir",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 571.0,
+        "datum": "ETRS89",
+        "easting": 455992,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3101381,
+        "longitude": -3.5426569,
+        "northing": 4795399,
+        "raw": "30T 455992 4795399",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      },
+      {
+        "accuracy_code": null,
+        "altitude_m": null,
+        "datum": null,
+        "easting": 456048,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3098893,
+        "longitude": -3.5419642,
+        "northing": 4795371,
+        "raw": "30T 456048 4795371",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "17m",
+        "unit_stated": true,
+        "value_m": 17.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "17m",
+        "unit_stated": true,
+        "value_m": 17.0
+      }
+    ],
+    "raw": "Mullir 30T 455992 4795399 (Datum: ETRS89. Accuracy code: G ) Altitude 571m [Originally: VN56159558 Alt. 571m; ETRS89: 30T 456048 4795371 ] Length 17m Depth 17m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "coord_multiple",
+        "detail": "2 coordinates — a multi-entrance site",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 2139,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "d3972c87d52fd1f5a748940f6a5a8bfb1e5821755cce5a679528ce773645849a",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 420
+  },
+  "site_number": 420,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "0420: shaft",
+    "separator": "colon",
+    "site_number": 420,
+    "site_type": "shaft"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2004-05-02",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "2nd May 2004"
+    }
+  ]
+}

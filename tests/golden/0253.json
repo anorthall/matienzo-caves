@@ -1,0 +1,496 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Two strongly draughting holes found above the radio location point in the Gorilla Walk , Cueva Hoyuca (107) . One was a sloping rift which became too tight after 5m; the other chokes at a depth of 6m or 10m? (See L92)."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "During the Easter and summer 2002 expeditions, the sloping rift was excavated when its position above the newly discovered Windy Inlet in Cueva Hoyuca was recognised. Entry was gained to a small series of passages that have yet to be surveyed."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A tight slot drops into a crawl over debris to breakdown passage with climbs up that don't go. A T-junction is met with a climb down into a streamway. Downstream draughts slightly and leads to a second T-junction through a short, awkward, sideways crawl. To the left, there is no draught and it becomes too silty to continue. Downstream to the right meets a 50 x 20cm slot that draughts slightly."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Upstream at the first T-junction is awkward going that quickly becomes too narrow. It may take the main draught."
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "[At Easter 2007, the deep depression below this site was molephoned ( site 2691 ) above the final aven climb in Windy Inlet . A passable connection, Giant Panda , was eventually excavated through and connected to the Gorilla Walk ]."
+      }
+    ],
+    "char_count": 1209,
+    "cross_refs": [
+      {
+        "context": "Cueva Hoyuca (107)",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0107.htm",
+        "kind": "hyperlink",
+        "link_text": "Cueva Hoyuca (107)",
+        "target_site": 107
+      },
+      {
+        "context": "site 2691",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "2691.htm",
+        "kind": "hyperlink",
+        "link_text": "site 2691",
+        "target_site": 2691
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "Easter",
+        "season": "Easter",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "summer 2002",
+        "season": "summer",
+        "year": 2002
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2007",
+        "season": "Easter",
+        "year": 2007
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:0e0de80adfdc322f (1333 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Two strongly draughting holes found above the radio location point in the Gorilla Walk , Cueva Hoyuca (107) . One was a sloping rift which became too tight after 5m; the other chokes at a depth of 6m or 10m? (See L92).\n\nDuring the Easter and summer 2002 expeditions, the sloping rift was excavated when its position above the newly discovered Windy Inlet in Cueva Hoyuca was recognised. Entry was gained to a small series of passages that have yet to be surveyed.\n\nA tight slot drops into a crawl over debris to breakdown passage with climbs up that don't go. A T-junction is met with a climb down into a streamway. Downstream draughts slightly and leads to a second T-junction through a short, awkward, sideways crawl. To the left, there is no draught and it becomes too silty to continue. Downstream to the right meets a 50 x 20cm slot that draughts slightly.\n\nUpstream at the first T-junction is awkward going that quickly becomes too narrow. It may take the main draught.\n\n[At Easter 2007, the deep depression below this site was molephoned ( site 2691 ) above the final aven climb in Windy Inlet . A passable connection, Giant Panda , was eventually excavated through and connected to the Gorilla Walk ]."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1979s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1979 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1979 (logbook)",
+        "year": 1979
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1981s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1981a (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1981a (logbook)",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J",
+        "authors": [
+          "Corrin J"
+        ],
+        "disambiguator": "c",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981and1982matienzoexpeditions.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1983c",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J, 1983c",
+        "year": 1983
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1992s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1992b (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1992b (logbook)",
+        "year": 1992
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2002e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2002a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2002a (Easter logbook)",
+        "year": 2002
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [],
+        "ordinal": 5,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "anon., 2002b (summer logbook",
+        "year": 2002
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": "b",
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2002-spel-03.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2003b",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2003b",
+        "year": 2003
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1979s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1979 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1981s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1981a (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981and1982matienzoexpeditions.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J, 1983c",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1992s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1992b (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2002e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2002a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2002-spel-03.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2003b",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1979 (logbook) ; anon., 1981a (logbook) ; Corrin J, 1983c ; anon., 1992b (logbook) ; anon., 2002a (Easter logbook) ; anon., 2002b (summer logbook; Corrin Juan, 2003b"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "References : anon., 1979 (logbook) ; anon., 1981a (logbook) ; Corrin J, 1983c ; anon., 1992b (logbook) ; anon., 2002a (Easter logbook) ; anon., 2002b (summer logbook; Corrin Juan, 2003b Entrance picture : Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Riaño",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 229.0,
+        "datum": "ETRS89",
+        "easting": 452563,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3496018,
+        "longitude": -3.5853182,
+        "northing": 4799805,
+        "raw": "30T 452563 4799805",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "circa",
+        "parts": [],
+        "prose": null,
+        "raw": "c100m",
+        "unit_stated": true,
+        "value_m": 100.0
+      },
+      {
+        "kind": "compound",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "uncertain",
+        "parts": [
+          5.0,
+          6.0
+        ],
+        "prose": null,
+        "raw": "5 & 6m?",
+        "unit_stated": true,
+        "value_m": 11.0
+      }
+    ],
+    "raw": "Riaño 30T 452563 4799805 (Datum: ETRS89. Accuracy code: G ) Altitude 229m Length c100m Depth 5 & 6m?"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 3418,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "f4c0c70ee70731e284cfd9f0f6ca937f65d5b30f68d4b316b183c536be51f671",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 253
+  },
+  "site_number": 253,
+  "title": {
+    "aliases": [],
+    "name": "shafts - 2",
+    "name_sort": "shafts - 2",
+    "raw": "0253: shafts - 2",
+    "separator": "colon",
+    "site_number": 253,
+    "site_type": "shafts"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2002-10-26",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "26th October 2002"
+    },
+    {
+      "attribution": null,
+      "date": "2007-05-06",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "6th May 2007"
+    },
+    {
+      "attribution": null,
+      "date": "2012-06-09",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "9th June 2012"
+    }
+  ]
+}

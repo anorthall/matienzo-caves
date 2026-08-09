@@ -1,0 +1,244 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "An unsurveyed cave in \"space behind cliff slip\"."
+      }
+    ],
+    "char_count": 48,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:8ea335104780a3bb (56 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "An unsurveyed cave in \"space behind cliff slip\"."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2006b (Easter logbook)",
+        "year": 2006
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2006b (Easter logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/2410.htm",
+            "is_range": false,
+            "target_site": 2410,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2006b (Easter logbook) Entrance picture : yes Underground picture(s) : Video : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Cobadal",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 416.0,
+        "datum": "ETRS89",
+        "easting": 449073,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3271514,
+        "longitude": -3.6281493,
+        "northing": 4797337,
+        "raw": "30T 449073 4797337",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      },
+      {
+        "accuracy_code": null,
+        "altitude_m": null,
+        "datum": null,
+        "easting": 449064,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.327637,
+        "longitude": -3.6282653,
+        "northing": 4797391,
+        "raw": "30T 449064 4797391",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "35m",
+        "unit_stated": true,
+        "value_m": 35.0
+      }
+    ],
+    "raw": "Cobadal 30T 449073 4797337 (Datum: ETRS89. Accuracy code: G ) Altitude 416m and ETRS89: 30T 449064 4797391 Length 35m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "coord_multiple",
+        "detail": "2 coordinates — a multi-entrance site",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 1606,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "61f630669be4aaedee1634f8002a0c4368dd0202cb781ff90b21f5c7b71e0604",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 2410
+  },
+  "site_number": 2410,
+  "title": {
+    "aliases": [],
+    "name": "caves",
+    "name_sort": "caves",
+    "raw": "2410: caves",
+    "separator": "colon",
+    "site_number": 2410,
+    "site_type": "caves"
+  },
+  "updated": []
+}

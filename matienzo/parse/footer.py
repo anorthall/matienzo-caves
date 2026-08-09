@@ -22,7 +22,7 @@ import re
 
 from matienzo.anomaly import AnomalyCode, AnomalyRecorder, ConfidenceScorer
 from matienzo.htmlutil import iter_anchors, strip_tags
-from matienzo.models import Footer, FooterField
+from matienzo.models import CitationKind, Footer, FooterField
 from matienzo.parse.citations import parse_citations
 from matienzo.parse.links import make_link
 
@@ -87,6 +87,7 @@ def parse_footer(raw_html: str, recorder: AnomalyRecorder, confidence: Confidenc
     """Turn the footer markup into a `Footer`."""
     footer = Footer(raw=strip_tags(raw_html))
     labels = list(FIELD_LABEL_RE.finditer(raw_html))
+    unknown_labels: list[str] = []
 
     if not labels:
         recorder.add(
@@ -106,12 +107,12 @@ def parse_footer(raw_html: str, recorder: AnomalyRecorder, confidence: Confidenc
         is_known = slug is not None
         if not is_known:
             slug = _slugify(label_raw)
+            unknown_labels.append(label_raw)
             recorder.add(
                 AnomalyCode.FOOTER_LABEL_UNKNOWN,
                 f"unrecognised footer label {label_raw!r}",
                 field_path="footer.fields",
             )
-            confidence.deduct("footer", 0.05, f"unknown label {label_raw!r}")
 
         value_text = strip_tags(value_html)
         field = FooterField(
@@ -139,11 +140,24 @@ def parse_footer(raw_html: str, recorder: AnomalyRecorder, confidence: Confidenc
         )
         confidence.deduct("footer", 0.7, "no Reference field")
 
-    for citation in footer.citations:
-        if citation.kind.value == "unparsed":
-            confidence.deduct("footer", 0.05, "unparsed citation")
+    # Both of these are per-occurrence problems on a page that may have very
+    # many occurrences, so the total is capped. Uncapped, `0733` — Vallina, whose
+    # footer groups photo links under year headings like `2026 Easter`, and whose
+    # 114 citations all parse — scored 0.00 and looked like the worst page in the
+    # corpus. Confidence is meant to rank pages for review; a measure that a
+    # healthy page can bottom out on cannot do that.
+    _deduct_capped(confidence, len(unknown_labels), 0.03, 0.15, "unrecognised footer labels")
+    unparsed = sum(1 for c in footer.citations if c.kind is CitationKind.UNPARSED)
+    _deduct_capped(confidence, unparsed, 0.05, 0.25, "unparsed citations")
 
     return footer
+
+
+def _deduct_capped(
+    confidence: ConfidenceScorer, count: int, each: float, cap: float, reason: str
+) -> None:
+    if count:
+        confidence.deduct("footer", min(count * each, cap), f"{count} {reason}")
 
 
 def _normalise(label: str) -> str:

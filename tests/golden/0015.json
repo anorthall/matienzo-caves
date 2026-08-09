@@ -1,0 +1,268 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Small shelter."
+      }
+    ],
+    "char_count": 14,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:0a65e193191bbaae (23 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Small shelter."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "? Fernández Gutiérrez et al",
+        "authors": [
+          "? Fernández Gutiérrez"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "? Fernández Gutiérrez et al, 1966",
+        "year": 1966
+      },
+      {
+        "attachments": [],
+        "author_raw": "Kendal Caving Club and Manchester University Speleological Society",
+        "authors": [
+          "Kendal Caving Club",
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "? Fernández Gutiérrez et al, 1966 ; Kendal Caving Club and Manchester University Speleological Society, 1975 ; Corrin J S and Smith P, 1981"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "References : ? Fernández Gutiérrez et al, 1966 ; Kendal Caving Club and Manchester University Speleological Society, 1975 ; Corrin J S and Smith P, 1981 Entrance picture : Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "El Sedo",
+    "coordinates": [
+      {
+        "accuracy_code": "M",
+        "altitude_m": 197.0,
+        "datum": "ETRS89",
+        "easting": 453318,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3126062,
+        "longitude": -3.5756529,
+        "northing": 4795691,
+        "raw": "30T 453318 4795691",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "10m",
+        "unit_stated": true,
+        "value_m": 10.0
+      }
+    ],
+    "raw": "El Sedo 30T 453318 4795691 (Datum: ETRS89. Accuracy code: M ) Altitude 197m Length 10m"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 1726,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "40c0dc16e49f28a9bd1905029432fb71a6018800176d1cdd0250a59fdfd35e72",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 15
+  },
+  "site_number": 15,
+  "title": {
+    "aliases": [],
+    "name": "Refugio de la Guerra",
+    "name_sort": "refugio de la guerra",
+    "raw": "0015: Refugio de la Guerra",
+    "separator": "colon",
+    "site_number": 15,
+    "site_type": null
+  },
+  "updated": []
+}

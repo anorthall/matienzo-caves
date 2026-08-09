@@ -1,0 +1,207 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Choked pit with a small side chamber. [Originally had grid ref. 449678 4795571 with an old card index query to check 2km north]"
+      }
+    ],
+    "char_count": 127,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:88cea8c001f95dc8 (159 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Choked pit with a small side chamber. [Originally had grid ref. 449678 4795571 with an old card index query to check 2km north]"
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": null,
+        "authors": [],
+        "disambiguator": null,
+        "kind": "provenance",
+        "links": [],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "pers comm., (P Smith)",
+        "year": null
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [],
+        "order": 0,
+        "text": "pers comm., (P Smith)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : pers comm., (P Smith) Entrance picture : Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Bosmartín",
+    "coordinates": [
+      {
+        "accuracy_code": "M",
+        "altitude_m": 446.0,
+        "datum": "ETRS89",
+        "easting": 449678,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3292991,
+        "longitude": -3.6207089,
+        "northing": 4797571,
+        "raw": "30T 449678 4797571",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "6m",
+        "unit_stated": true,
+        "value_m": 6.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "6m",
+        "unit_stated": true,
+        "value_m": 6.0
+      }
+    ],
+    "raw": "Bosmartín 30T 449678 4797571 (Datum: ETRS89. Accuracy code: M ) Altitude 446m Length 6m Depth 6m"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 1309,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "379f3f6f7efe852a7b5e095d04991dc84789819a374b0a91e69dbf952cc30f94",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 788
+  },
+  "site_number": 788,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "0788: shaft",
+    "separator": "colon",
+    "site_number": 788,
+    "site_type": "shaft"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2025-02-02",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "2nd Febraury 2025"
+    }
+  ]
+}

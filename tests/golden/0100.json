@@ -1,0 +1,610 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The entrance slope is a pile of festering rubbish. This leads to two circular halls, one of which contains a 7m blind pot. Routes become too low after splitting into two parallel passages. The site was resurveyed in 2021 to obtain the X, Y, Z information and an updated description by Simon Cornhill and Diane Arthurs follows:"
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Accessed down the gentle, brambled slope to the entrance of a steeper, large rubbish slope which continued deep into the cave. The way on is at the end of the entrance chamber through the boulders. The way on passes through a large chamber with sloping sides and deep pits. The 2 areas drawn on the survey which looked to continue unknown were small low chambers which closed up. The way on to the North East passages is through a low crawl at the top of the chamber. This continues low for 10m before opening up into a stooping passage. The south west end closes down with large boulders and blocks fallen out of the ceiling. Heading North East the way on is through a squeeze up into the higher level."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The end of the North East passage and the parallel passage end in bouldery breakdown. No draught in the cave. Bones scattered throughout along with guano. A fat rat was spotted on the top of the rubbish heap. Photos taken at various areas in the cave."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "In 1994, both prehistoric and medieval pottery were found in the passage before the first circular hall. These and black markings are described in Smith 1998b and summarised in Ruiz Cobo Jesús and Muñoz Fernández Emilio et al, 2009 and Ruiz Cobo J and Muñoz Fernández E, 2013 ."
+      }
+    ],
+    "char_count": 1563,
+    "cross_refs": [],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2021",
+        "season": null,
+        "year": 2021
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1994",
+        "season": null,
+        "year": 1994
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2009",
+        "season": null,
+        "year": 2009
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2013",
+        "season": null,
+        "year": 2013
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [
+      {
+        "confidence": 0.8,
+        "evidence": "by_pattern",
+        "name_canonical": null,
+        "name_raw": "Simon Cornhill"
+      },
+      {
+        "confidence": 0.8,
+        "evidence": "by_pattern",
+        "name_canonical": null,
+        "name_raw": "Diane Arthurs"
+      }
+    ],
+    "raw_html": "sha256:085fab0364dab49d (1706 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "The entrance slope is a pile of festering rubbish. This leads to two circular halls, one of which contains a 7m blind pot. Routes become too low after splitting into two parallel passages. The site was resurveyed in 2021 to obtain the X, Y, Z information and an updated description by Simon Cornhill and Diane Arthurs follows:\n\nAccessed down the gentle, brambled slope to the entrance of a steeper, large rubbish slope which continued deep into the cave. The way on is at the end of the entrance chamber through the boulders. The way on passes through a large chamber with sloping sides and deep pits. The 2 areas drawn on the survey which looked to continue unknown were small low chambers which closed up. The way on to the North East passages is through a low crawl at the top of the chamber. This continues low for 10m before opening up into a stooping passage. The south west end closes down with large boulders and blocks fallen out of the ceiling. Heading North East the way on is through a squeeze up into the higher level.\n\nThe end of the North East passage and the parallel passage end in bouldery breakdown. No draught in the cave. Bones scattered throughout along with guano. A fat rat was spotted on the top of the rubbish heap. Photos taken at various areas in the cave.\n\nIn 1994, both prehistoric and medieval pottery were found in the passage before the first circular hall. These and black markings are described in Smith 1998b and summarised in Ruiz Cobo Jesús and Muñoz Fernández Emilio et al, 2009 and Ruiz Cobo J and Muñoz Fernández E, 2013 ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": null,
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1976s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1976 (logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1976 (logbook)",
+        "year": 1976
+      },
+      {
+        "attachments": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0100-1976-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "author_raw": "Cope J et al",
+        "authors": [
+          "Cope J"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1976-muss-j8.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Cope J et al, 1976",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Cope J et al, 1976 ( survey )",
+        "year": 1976
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": null,
+        "authors": [],
+        "disambiguator": null,
+        "kind": "provenance",
+        "links": [],
+        "ordinal": 3,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "material in file",
+        "year": null
+      },
+      {
+        "attachments": [],
+        "author_raw": "Smith Peter",
+        "authors": [
+          "Smith Peter"
+        ],
+        "disambiguator": "b",
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1998-dp-acdps.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter, 1998b",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Smith Peter, 1998b (survey)",
+        "year": 1998
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo Jesús and Muñoz Fernández Emilio et al",
+        "authors": [
+          "Ruiz Cobo Jesús",
+          "Muñoz Fernández Emilio"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 5,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Ruiz Cobo Jesús and Muñoz Fernández Emilio et al, 2009",
+        "year": 2009
+      },
+      {
+        "attachments": [],
+        "author_raw": "Ruiz Cobo J and Muñoz Fernández E",
+        "authors": [
+          "Ruiz Cobo J",
+          "Muñoz Fernández E"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 6,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Ruiz Cobo J and Muñoz Fernández E, 2013",
+        "year": 2013
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2021s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2021c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 7,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2021c (summer logbook)",
+        "year": 2021
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2021s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2021c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 8,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2021c (summer logbook)",
+        "year": 2021
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1976s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1976 (logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1976-muss-j8.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Cope J et al, 1976",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0100-1976-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1998-dp-acdps.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Smith Peter, 1998b",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2021s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2021c (summer logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2021s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2021c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1976 (logbook) ; Cope J et al, 1976 ( survey ); Corrin J S and Smith P, 1981 ; material in file; Smith Peter, 1998b (survey); Ruiz Cobo Jesús and Muñoz Fernández Emilio et al, 2009; Ruiz Cobo J and Muñoz Fernández E, 2013; anon., 2021c (summer logbook) ; anon., 2021c (summer logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0100-2021s.htm",
+            "is_range": true,
+            "target_site": 100,
+            "text": "summer 2021",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "summer 2021"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground pictures",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0100-2021s.htm",
+            "is_range": true,
+            "target_site": 100,
+            "text": "summer 2021",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "summer 2021"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0100-1976-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "low res",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0100-1976.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "high res",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0100-centreline overlay.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "with 2021 overlaid centre line",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "from 1976: low res high res : with 2021 overlaid centre line"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0100.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer 2021",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/4valleys-full.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "on 4 Valleys survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "summer 2021 : on 4 Valleys survey"
+      }
+    ],
+    "raw": "References : anon., 1976 (logbook) ; Cope J et al, 1976 ( survey ); Corrin J S and Smith P, 1981 ; material in file; Smith Peter, 1998b (survey); Ruiz Cobo Jesús and Muñoz Fernández Emilio et al, 2009; Ruiz Cobo J and Muñoz Fernández E, 2013; anon., 2021c (summer logbook) ; anon., 2021c (summer logbook) Entrance pictures : summer 2021 Underground pictures : summer 2021 Detailed Survey : from 1976: low res high res : with 2021 overlaid centre line Line Survey : On area survey : Survex file : summer 2021 : on 4 Valleys survey",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Riaño",
+    "coordinates": [
+      {
+        "accuracy_code": "M",
+        "altitude_m": 153.0,
+        "datum": "ETRS89",
+        "easting": 451438,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3538158,
+        "longitude": -3.5992409,
+        "northing": 4800281,
+        "raw": "30T 451438 4800281",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "182m",
+        "unit_stated": true,
+        "value_m": 182.0
+      }
+    ],
+    "raw": "Riaño 30T 451438 4800281 (Datum: ETRS89. Accuracy code: M ) Altitude 153m Length 182m"
+  },
+  "provenance": {
+    "anomalies": [],
+    "byte_size": 4613,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "4b24624b36bd6b8b4b818f18538d1c439ce726364b48d051596f73a33c1dded5",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 100
+  },
+  "site_number": 100,
+  "title": {
+    "aliases": [
+      {
+        "kind": "spanish_alt",
+        "site_number": null,
+        "text": "Basura, Cueva de"
+      }
+    ],
+    "name": "Canes, Torca de los",
+    "name_sort": "torca de los canes",
+    "raw": "0100: Canes, Torca de los (Basura, Cueva de)",
+    "separator": "colon",
+    "site_number": 100,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "1999-02-19",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "19th February 1999"
+    },
+    {
+      "attribution": null,
+      "date": "2003-11-08",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "8th November 2003"
+    },
+    {
+      "attribution": null,
+      "date": "2009-05-16",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "16th May 2009"
+    },
+    {
+      "attribution": null,
+      "date": "2016-02-19",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "19th February 2016"
+    },
+    {
+      "attribution": null,
+      "date": "2021-09-05",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "5th September 2021"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A blind, 8m deep drop."
+      }
+    ],
+    "char_count": 22,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:919693bea1246f1b (31 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A blind, 8m deep drop."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1993e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1993c (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1993c (Easter logbook)",
+        "year": 1993
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1993e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1993c (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1993c (Easter logbook)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 1993c (Easter logbook) Entrance picture : Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "?",
+    "coordinates": [],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "8m",
+        "unit_stated": true,
+        "value_m": 8.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "8m 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search",
+        "unit_stated": true,
+        "value_m": 8.0
+      }
+    ],
+    "raw": "? Length 8m Depth 8m 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "coord_missing",
+        "detail": "no coordinates",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "info"
+      }
+    ],
+    "byte_size": 920,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 0.85,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "header": [
+        "-0.15 no coordinates"
+      ]
+    },
+    "content_sha256": "9578fe1f64b80bba2a03a0abec8e367278d8e47506601b7b9d0a78e10f1d875f",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 914
+  },
+  "site_number": 914,
+  "title": {
+    "aliases": [],
+    "name": "shaft",
+    "name_sort": "shaft",
+    "raw": "0914: shaft",
+    "separator": "colon",
+    "site_number": 914,
+    "site_type": "shaft"
+  },
+  "updated": []
+}

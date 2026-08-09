@@ -1,0 +1,222 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A 4m long cave which closes down at the base of a large open rift. This site is immediately north of site 2624 ."
+      }
+    ],
+    "char_count": 112,
+    "cross_refs": [
+      {
+        "context": "site 2624",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "2624.htm",
+        "kind": "hyperlink",
+        "link_text": "site 2624",
+        "target_site": 2624
+      }
+    ],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:ebbd0c53d4b30ea8 (143 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A 4m long cave which closes down at the base of a large open rift. This site is immediately north of site 2624 ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2007e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2007b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2007b (Easter logbook)",
+        "year": 2007
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2007e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2007b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2007b (Easter logbook)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance pictures",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground pictures",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2007b (Easter logbook) Entrance pictures : Underground pictures : Video : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Alisas",
+    "coordinates": [
+      {
+        "accuracy_code": null,
+        "altitude_m": null,
+        "datum": null,
+        "easting": null,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": null,
+        "longitude": null,
+        "northing": null,
+        "raw": "30T 04- 47-",
+        "system": "placeholder",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [],
+    "quantities": [],
+    "raw": "Alisas 30T 04- 47- Length 4m 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "title_space_separator",
+        "detail": "heading separates the number and name with a space, not a colon",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "coord_placeholder",
+        "detail": "unrecorded coordinate '30T 04- 47-'",
+        "excerpt": null,
+        "field_path": "header.coordinates",
+        "severity": "info"
+      }
+    ],
+    "byte_size": 1043,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "f71d8c5c4e4b1d083a1e79bf401f9467f1b9a8ea9f213cb3f2104db584fbe204",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 2674
+  },
+  "site_number": 2674,
+  "title": {
+    "aliases": [],
+    "name": "cave",
+    "name_sort": "cave",
+    "raw": "2674 cave",
+    "separator": "space",
+    "site_number": 2674,
+    "site_type": "cave"
+  },
+  "updated": []
+}

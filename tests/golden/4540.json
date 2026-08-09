@@ -1,0 +1,89 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [],
+    "char_count": 0,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:030594896f52abe8 (5 chars)",
+    "sections": [],
+    "tables": [],
+    "text": ""
+  },
+  "footer": null,
+  "header": null,
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "footer_boundary_not_found",
+        "detail": "no <B>Reference…</B> block",
+        "excerpt": null,
+        "field_path": "footer",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "no_header_small",
+        "detail": "no <SMALL> info line between the heading and the footer",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "no_body_tag",
+        "detail": "document has no <BODY> tag",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "body_empty",
+        "detail": "description is empty",
+        "excerpt": null,
+        "field_path": "body",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 236,
+    "confidence": {
+      "body": 0.8,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "body": [
+        "-0.2 empty description"
+      ]
+    },
+    "content_sha256": "11046b516960e55022e5149af6c80f3efcdac93a9547d61d04607ac021df48b7",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": false,
+      "footer": false,
+      "header": false,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 4540
+  },
+  "site_number": 4540,
+  "title": {
+    "aliases": [],
+    "name": "reserved",
+    "name_sort": "reserved",
+    "raw": "4540: reserved",
+    "separator": "colon",
+    "site_number": 4540,
+    "site_type": null
+  },
+  "updated": []
+}

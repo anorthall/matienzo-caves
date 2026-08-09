@@ -1,0 +1,302 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "The entrance is in the depression at the downstream end of Cueva de Jivero 2 (0017) , about 5m up on the true left hand side. Hands and knees progress leads to an excavated stal choke into a small stalled-up chamber with no way on, although the site draughts."
+      }
+    ],
+    "char_count": 259,
+    "cross_refs": [
+      {
+        "context": "Cueva de Jivero 2 (0017)",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0017.htm",
+        "kind": "hyperlink",
+        "link_text": "Cueva de Jivero 2 (0017)",
+        "target_site": 17
+      }
+    ],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:c8698ddbf9e3930c (295 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "The entrance is in the depression at the downstream end of Cueva de Jivero 2 (0017) , about 5m up on the true left hand side. Hands and knees progress leads to an excavated stal choke into a small stalled-up chamber with no way on, although the site draughts."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1996e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1996a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1996a (Easter logbook)",
+        "year": 1996
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "January, February logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2024a (January, February logbook)",
+        "year": 2024
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1996e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1996a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2024jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2024a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 1996a (Easter logbook) ; anon., 2024a (January, February logbook)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/1111-2023c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "December 2023",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "December 2023 (with Jivero 2)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/1111.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "December 2023",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "December 2023"
+      }
+    ],
+    "raw": "Reference : anon., 1996a (Easter logbook) ; anon., 2024a (January, February logbook) Entrance picture : Underground picture(s) : Detailed Survey : December 2023 (with Jivero 2) Line Survey : On area survey : Survex file : December 2023",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Ozana",
+    "coordinates": [
+      {
+        "accuracy_code": "G",
+        "altitude_m": 245.0,
+        "datum": "ETRS89",
+        "easting": 453684,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3052904,
+        "longitude": -3.5710711,
+        "northing": 4794876,
+        "raw": "30T 453684 4794876",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length",
+      "depth"
+    ],
+    "quantities": [
+      {
+        "kind": "numeric",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "17m",
+        "unit_stated": true,
+        "value_m": 17.0
+      },
+      {
+        "kind": "numeric",
+        "label": "depth",
+        "label_raw": "Depth",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": null,
+        "raw": "1m",
+        "unit_stated": true,
+        "value_m": 1.0
+      }
+    ],
+    "raw": "Ozana 30T 453684 4794876 (Datum: ETRS89. Accuracy code: G ) Altitude 245m Length 17m Depth 1m"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "missing_body_close",
+        "detail": "document has no </BODY> tag",
+        "excerpt": null,
+        "field_path": null,
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 1851,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "f1eddcc99e92894d1098e6876f9584c4c889ffa0c8af08eaf0a119bc0f390480",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 1111
+  },
+  "site_number": 1111,
+  "title": {
+    "aliases": [
+      {
+        "kind": "spanish_alt",
+        "site_number": null,
+        "text": "Jivero 2½"
+      }
+    ],
+    "name": "cave",
+    "name_sort": "cave",
+    "raw": "1111: cave (Jivero 2½)",
+    "separator": "colon",
+    "site_number": 1111,
+    "site_type": "cave"
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2024-02-10",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "10th February 2024"
+    }
+  ]
+}

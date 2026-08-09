@@ -1,0 +1,981 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Walking and wading to a sump. The choke above draughts strongly. The site was dived and linked to cave 0246 at Easter 2000 through a 27m long sump between boulders. The underwater passage starts off 1m wide and 2m high and then enlarges."
+      },
+      {
+        "index": 1,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "J. Notenboom (AX) found the following fauna in 1984: Pseudoniphargus, Echinogammarus/Gammarus (Amphipoda ocul. jov.), Cyclopoidea, Prosobranchia/Hydrobioidea, Bivalvia/Sphaeriidae, Insecta, Oligochaeta, Nematoda, Hirudinea."
+      },
+      {
+        "index": 2,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "At Easter, 2015, cotton wool detectors in this resurgence gave a positive result when the optical brightening agent Leucophor was put into the sink at 3886 ."
+      },
+      {
+        "index": 3,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "During an optical brightener test from site 3884 , detectors were placed here from 13th February 2016 and checked over the next few days in rising and falling flood conditions. The result was positive. The optical brightener came through at the resurgence between 48 and 72 hours later. (The full details can be found here .)"
+      },
+      {
+        "index": 4,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Link to entry in the Cave Diving Sump Index ."
+      }
+    ],
+    "char_count": 995,
+    "cross_refs": [
+      {
+        "context": "cave 0246",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0246.htm",
+        "kind": "hyperlink",
+        "link_text": "cave 0246",
+        "target_site": 246
+      },
+      {
+        "context": "3886",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "3886.htm",
+        "kind": "hyperlink",
+        "link_text": "3886",
+        "target_site": 3886
+      },
+      {
+        "context": "site 3884",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "3884.htm",
+        "kind": "hyperlink",
+        "link_text": "site 3884",
+        "target_site": 3884
+      }
+    ],
+    "dates": [
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season_year",
+        "month": null,
+        "raw": "Easter 2000",
+        "season": "Easter",
+        "year": 2000
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "season",
+        "month": null,
+        "raw": "Easter",
+        "season": "Easter",
+        "year": null
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "month_year",
+        "month": 2,
+        "raw": "February 2016",
+        "season": null,
+        "year": 2016
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "1984",
+        "season": null,
+        "year": 1984
+      },
+      {
+        "batch_code": null,
+        "day": null,
+        "kind": "year",
+        "month": null,
+        "raw": "2015",
+        "season": null,
+        "year": 2015
+      }
+    ],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:52d9c1d779f4543a (1233 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Walking and wading to a sump. The choke above draughts strongly. The site was dived and linked to cave 0246 at Easter 2000 through a 27m long sump between boulders. The underwater passage starts off 1m wide and 2m high and then enlarges.\n\nJ. Notenboom (AX) found the following fauna in 1984: Pseudoniphargus, Echinogammarus/Gammarus (Amphipoda ocul. jov.), Cyclopoidea, Prosobranchia/Hydrobioidea, Bivalvia/Sphaeriidae, Insecta, Oligochaeta, Nematoda, Hirudinea.\n\nAt Easter, 2015, cotton wool detectors in this resurgence gave a positive result when the optical brightening agent Leucophor was put into the sink at 3886 .\n\nDuring an optical brightener test from site 3884 , detectors were placed here from 13th February 2016 and checked over the next few days in rising and falling flood conditions. The result was positive. The optical brightener came through at the resurgence between 48 and 72 hours later. (The full details can be found here .)\n\nLink to entry in the Cave Diving Sump Index ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0016-1965-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          }
+        ],
+        "author_raw": "Fernández Gutiérrez et al",
+        "authors": [
+          "Fernández Gutiérrez"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Fernández Gutiérrez et al, 1966 ( survey )",
+        "year": 1966
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": "Easter and summer logbooks",
+        "qualifier_is_known": true,
+        "raw": "anon., 1975b ( Easter and summer logbooks)",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Kendal Caving Club and Manchester University Speleological Society",
+        "authors": [
+          "Kendal Caving Club",
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 2,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Kendal Caving Club and Manchester University Speleological Society, 1975 (survey)",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Manchester University Speleological Society",
+        "authors": [
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1982-aa-cuadernos.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Manchester University Speleological Society, 1982",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 3,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Manchester University Speleological Society, 1982 (survey)",
+        "year": 1982
+      },
+      {
+        "attachments": [],
+        "author_raw": "Cox G",
+        "authors": [
+          "Cox G"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1973-bm-bsa.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Cox G, 1973",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 4,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Cox G, 1973",
+        "year": 1973
+      },
+      {
+        "attachments": [],
+        "author_raw": "Mills L D J",
+        "authors": [
+          "Mills L D J"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratransmills.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Mills L D J, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 5,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Mills L D J, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "Mills L D J and Waltham A C",
+        "authors": [
+          "Mills L D J",
+          "Waltham A C"
+        ],
+        "disambiguator": null,
+        "kind": "survey",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-millswaltham.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Mills L D J and Waltham A C, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 6,
+        "qualifier": "survey",
+        "qualifier_is_known": true,
+        "raw": "Mills L D J and Waltham A C, 1981 (survey)",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 7,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      },
+      {
+        "attachments": [],
+        "author_raw": "Notenboom J and Meijers I",
+        "authors": [
+          "Notenboom J",
+          "Meijers I"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [],
+        "ordinal": 8,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Notenboom J and Meijers I, 1985",
+        "year": 1985
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1997c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1997c (Christmas logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 9,
+        "qualifier": "Christmas logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 1997c (Christmas logbook)",
+        "year": 1997
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2000e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2000b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 10,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2000b (Easter logbook)",
+        "year": 2000
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2001e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2001a (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 11,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2001a (Easter logbook)",
+        "year": 2001
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin Juan",
+        "authors": [
+          "Corrin Juan"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2000-c_c-89.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2001",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 12,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin Juan, 2001",
+        "year": 2001
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2015e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2015b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 13,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2015b (Easter logbook)",
+        "year": 2015
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "a",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016a (January, February logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 14,
+        "qualifier": "January, February logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2016a (January, February logbook)",
+        "year": 2016
+      },
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "c",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2017s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2017c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 15,
+        "qualifier": "summer logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2017c (summer logbook)",
+        "year": 2017
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/a-lower.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Fernández Gutiérrez et al, 1966",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0016-1965-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "survey",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Easter",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1975s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "summer",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1982-aa-cuadernos.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Manchester University Speleological Society, 1982",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1973-bm-bsa.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Cox G, 1973",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratransmills.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Mills L D J, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-millswaltham.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Mills L D J and Waltham A C, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/1997c-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 1997c (Christmas logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2000e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2000b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2001e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2001a (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/2000-c_c-89.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin Juan, 2001",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2015e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2015b (Easter logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2016jf-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2016a (January, February logbook)",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2017s-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2017c (summer logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Fernández Gutiérrez et al, 1966 ( survey ); anon., 1975b ( Easter and summer logbooks); Kendal Caving Club and Manchester University Speleological Society, 1975 (survey); Manchester University Speleological Society, 1982 (survey); Cox G, 1973 ; Mills L D J, 1981 ; Mills L D J and Waltham A C, 1981 (survey); Corrin J S and Smith P, 1981 ; Notenboom J and Meijers I, 1985; anon., 1997c (Christmas logbook) ; anon., 2000b (Easter logbook) ; anon., 2001a (Easter logbook) ; Corrin Juan, 2001 ; anon., 2015b (Easter logbook) ; anon., 2016a (January, February logbook) ; anon., 2017c (summer logbook)"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [
+          {
+            "bucket": "entrance_pics",
+            "href": "../entpics/0016.htm",
+            "is_range": false,
+            "target_site": 16,
+            "text": "yes",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 1,
+        "text": "yes"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0016a.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "passage with diver 1",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "underground_pics",
+            "href": "../ugpics/0016b.htm",
+            "is_range": false,
+            "target_site": null,
+            "text": "2",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 2,
+        "text": "passage with diver 1 2"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0016-1965-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "low res",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0016-1965.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "high res",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_pdf",
+            "href": "../surveys/0016.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Resurvey 2015",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 3,
+        "text": "from 1965 - low res high res : Resurvey 2015"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0025area-1975-low.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "low res",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_image",
+            "href": "../surveys/0025area-1975.jpg",
+            "is_range": false,
+            "target_site": null,
+            "text": "high res",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 5,
+        "text": "1975 Ozana area map. Not a lot of detail. low res high res"
+      },
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/0016.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "yes",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "survey_3d",
+            "href": "../surveys/Jivero 1 feeders.3d",
+            "is_range": false,
+            "target_site": null,
+            "text": "hydrological system",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 6,
+        "text": "yes : hydrological system"
+      }
+    ],
+    "raw": "References : Fernández Gutiérrez et al, 1966 ( survey ); anon., 1975b ( Easter and summer logbooks); Kendal Caving Club and Manchester University Speleological Society, 1975 (survey); Manchester University Speleological Society, 1982 (survey); Cox G, 1973 ; Mills L D J, 1981 ; Mills L D J and Waltham A C, 1981 (survey); Corrin J S and Smith P, 1981 ; Notenboom J and Meijers I, 1985; anon., 1997c (Christmas logbook) ; anon., 2000b (Easter logbook) ; anon., 2001a (Easter logbook) ; Corrin Juan, 2001 ; anon., 2015b (Easter logbook) ; anon., 2016a (January, February logbook) ; anon., 2017c (summer logbook) Entrance picture : yes Underground picture(s) : passage with diver 1 2 Detailed Survey : from 1965 - low res high res : Resurvey 2015 Line Survey : On area survey : 1975 Ozana area map. Not a lot of detail. low res high res Survex file : yes : hydrological system",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Ozana",
+    "coordinates": [
+      {
+        "accuracy_code": "M",
+        "altitude_m": 254.0,
+        "datum": "ETRS89",
+        "easting": 453628,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": 43.3029909,
+        "longitude": -3.5717401,
+        "northing": 4794621,
+        "raw": "30T 453628 4794621",
+        "system": "utm",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [
+      "length"
+    ],
+    "quantities": [
+      {
+        "kind": "prose",
+        "label": "length",
+        "label_raw": "Length",
+        "max_m": null,
+        "min_m": null,
+        "modifier": "exact",
+        "parts": [],
+        "prose": {
+          "extra_value_m": null,
+          "relation": "included_in",
+          "system_name": null,
+          "target_names": [],
+          "target_sites": [
+            246
+          ]
+        },
+        "raw": "(61m included in the length of 0246 )",
+        "unit_stated": true,
+        "value_m": null
+      }
+    ],
+    "raw": "Ozana 30T 453628 4794621 (Datum: ETRS89. Accuracy code: M ) Altitude 254m Length (61m included in the length of 0246 )"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "measure_prose",
+        "detail": "length is prose: '(61m included in the length of 0246 )'",
+        "excerpt": null,
+        "field_path": "header.quantities.length",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "citation_split_anchors",
+        "detail": "citation 'anon., 1975b ( Easter and summer logbooks)' spans 2 anchors",
+        "excerpt": null,
+        "field_path": "footer.citations",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 5235,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "f6c5fb366f008c1de7d29b499275bd40680b4d0f3cb27c392552ffbf5e2b359d",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": true,
+      "title": true,
+      "updated": true
+    },
+    "site_number": 16
+  },
+  "site_number": 16,
+  "title": {
+    "aliases": [],
+    "name": "Jivero 1, Cueva de",
+    "name_sort": "cueva de jivero 1",
+    "raw": "0016: Jivero 1, Cueva de",
+    "separator": "colon",
+    "site_number": 16,
+    "site_type": null
+  },
+  "updated": [
+    {
+      "attribution": null,
+      "date": "2000-05-06",
+      "end_date": null,
+      "group_index": 0,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "6th May 2000"
+    },
+    {
+      "attribution": null,
+      "date": "2003-11-06",
+      "end_date": null,
+      "group_index": 1,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "November 6th 2003"
+    },
+    {
+      "attribution": null,
+      "date": "2015-05-14",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": true,
+      "precision": "day",
+      "raw": "14th May"
+    },
+    {
+      "attribution": null,
+      "date": "2015-07-17",
+      "end_date": null,
+      "group_index": 2,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "17th July 2015"
+    },
+    {
+      "attribution": null,
+      "date": "2016-02-21",
+      "end_date": null,
+      "group_index": 3,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "21st February 2016"
+    },
+    {
+      "attribution": null,
+      "date": "2017-08-28",
+      "end_date": null,
+      "group_index": 4,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "28th August 2017"
+    },
+    {
+      "attribution": null,
+      "date": "2021-05-25",
+      "end_date": null,
+      "group_index": 5,
+      "inferred_month": false,
+      "inferred_year": false,
+      "precision": "day",
+      "raw": "25th May 2021"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "Shafts pin pointed and given their own numbers. See sites 0515 , 0516 , 0517 , 0518 , 0519 , 0520 , 0521 ."
+      }
+    ],
+    "char_count": 106,
+    "cross_refs": [
+      {
+        "context": "0515",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0515.htm",
+        "kind": "hyperlink",
+        "link_text": "0515",
+        "target_site": 515
+      },
+      {
+        "context": "0516",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0516.htm",
+        "kind": "hyperlink",
+        "link_text": "0516",
+        "target_site": 516
+      },
+      {
+        "context": "0517",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0517.htm",
+        "kind": "hyperlink",
+        "link_text": "0517",
+        "target_site": 517
+      },
+      {
+        "context": "0518",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0518.htm",
+        "kind": "hyperlink",
+        "link_text": "0518",
+        "target_site": 518
+      },
+      {
+        "context": "0519",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0519.htm",
+        "kind": "hyperlink",
+        "link_text": "0519",
+        "target_site": 519
+      },
+      {
+        "context": "0520",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0520.htm",
+        "kind": "hyperlink",
+        "link_text": "0520",
+        "target_site": 520
+      },
+      {
+        "context": "0521",
+        "fragment": null,
+        "from_zone": "body",
+        "href": "0521.htm",
+        "kind": "hyperlink",
+        "link_text": "0521",
+        "target_site": 521
+      }
+    ],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:9d8484f83b21c6af (287 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "Shafts pin pointed and given their own numbers. See sites 0515 , 0516 , 0517 , 0518 , 0519 , 0520 , 0521 ."
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "Kendal Caving Club and Manchester University Speleological Society",
+        "authors": [
+          "Kendal Caving Club",
+          "Manchester University Speleological Society"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+        "year": 1975
+      },
+      {
+        "attachments": [],
+        "author_raw": "Corrin J S and Smith P",
+        "authors": [
+          "Corrin J S",
+          "Smith P"
+        ],
+        "disambiguator": null,
+        "kind": "publication",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 1,
+        "qualifier": null,
+        "qualifier_is_known": false,
+        "raw": "Corrin J S and Smith P, 1981",
+        "year": 1981
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "References",
+        "links": [
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/c.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Kendal Caving Club and Manchester University Speleological Society, 1975",
+            "unquoted_in_source": false
+          },
+          {
+            "bucket": "scanned_pub",
+            "href": "../history/scanned-pubs/pdfs/1981-bcratrans-corrinsmith.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "Corrin J S and Smith P, 1981",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "Kendal Caving Club and Manchester University Speleological Society, 1975 ; Corrin J S and Smith P, 1981"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 6,
+        "text": ""
+      }
+    ],
+    "raw": "References : Kendal Caving Club and Manchester University Speleological Society, 1975 ; Corrin J S and Smith P, 1981 Entrance picture : Underground picture(s) : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "References"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Ozana",
+    "coordinates": [],
+    "duplicate_labels": [],
+    "field_order": [],
+    "quantities": [],
+    "raw": "Ozana approx Alt. 380m 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "title_space_separator",
+        "detail": "heading separates the number and name with a space, not a colon",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "coord_missing",
+        "detail": "no coordinates",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "info"
+      }
+    ],
+    "byte_size": 1323,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 0.85,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "header": [
+        "-0.15 no coordinates"
+      ]
+    },
+    "content_sha256": "67809ffa4fe64ec60eea2bf517cf5b22f4eef9341fd85f4b9a79c79e5c1c501d",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 7
+  },
+  "site_number": 7,
+  "title": {
+    "aliases": [],
+    "name": "West Ozana Pots",
+    "name_sort": "west ozana pots",
+    "raw": "0007 West Ozana Pots",
+    "separator": "space",
+    "site_number": 7,
+    "site_type": null
+  },
+  "updated": []
+}

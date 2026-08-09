@@ -187,7 +187,7 @@ def _parse_token(
 
     if match := NUMERIC_RE.match(token):
         day, month, year = (int(g) for g in match.groups())
-        entry.date = _make_date(year + 2000 if year < 100 else year, month, day)
+        entry.date = _make_date(_expand_year(year), month, day)
         entry.precision = DatePrecision.DAY
         return entry if entry.date else _unparsed(entry, raw, recorder)
 
@@ -251,6 +251,18 @@ def _find_month(token: str) -> int | None:
 def _lookup(word: str) -> int | None:
     candidate = word.lower()
     return MONTHS.get(MONTH_TYPOS.get(candidate, candidate))
+
+
+#: Two-digit years pivot here, matching `parse.body`. Nothing in the update
+#: history predates 1998, but a blanket `+2000` would silently turn a typo like
+#: `1/2/98` into 2098 rather than failing visibly.
+TWO_DIGIT_YEAR_PIVOT = 50
+
+
+def _expand_year(year: int) -> int:
+    if year >= 100:
+        return year
+    return year + (2000 if year < TWO_DIGIT_YEAR_PIVOT else 1900)
 
 
 def _make_date(year: int, month: int, day: int) -> dt.date | None:

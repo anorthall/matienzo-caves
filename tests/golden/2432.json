@@ -1,0 +1,212 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "A diggable tube, draughting in, in a rock outcrop on the west side of the gulley and a rift opening to the left. No grid reference, Lank?"
+      }
+    ],
+    "char_count": 137,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": false,
+    "people": [],
+    "raw_html": "sha256:61448bf888eae5d6 (146 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "A diggable tube, draughting in, in a rock outcrop on the west side of the gulley and a rift opening to the left. No grid reference, Lank?"
+  },
+  "footer": {
+    "citations": [
+      {
+        "attachments": [],
+        "author_raw": "anon.",
+        "authors": [
+          "anon."
+        ],
+        "disambiguator": "b",
+        "kind": "logbook",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "ordinal": 0,
+        "qualifier": "Easter logbook",
+        "qualifier_is_known": true,
+        "raw": "anon., 2006b (Easter logbook)",
+        "year": 2006
+      }
+    ],
+    "fields": [
+      {
+        "is_empty": false,
+        "is_known_label": true,
+        "label": "references",
+        "label_raw": "Reference",
+        "links": [
+          {
+            "bucket": "logbook_pdf",
+            "href": "../logbook/logbook-pdfs/2006e-complete-log.pdf",
+            "is_range": false,
+            "target_site": null,
+            "text": "anon., 2006b (Easter logbook)",
+            "unquoted_in_source": false
+          }
+        ],
+        "order": 0,
+        "text": "anon., 2006b (Easter logbook)"
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "entrance_pictures",
+        "label_raw": "Entrance picture",
+        "links": [],
+        "order": 1,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "underground_pictures",
+        "label_raw": "Underground picture(s)",
+        "links": [],
+        "order": 2,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "video",
+        "label_raw": "Video",
+        "links": [],
+        "order": 3,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "detailed_survey",
+        "label_raw": "Detailed Survey",
+        "links": [],
+        "order": 4,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "line_survey",
+        "label_raw": "Line Survey",
+        "links": [],
+        "order": 5,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "on_area_survey",
+        "label_raw": "On area survey",
+        "links": [],
+        "order": 6,
+        "text": ""
+      },
+      {
+        "is_empty": true,
+        "is_known_label": true,
+        "label": "survex_file",
+        "label_raw": "Survex file",
+        "links": [],
+        "order": 7,
+        "text": ""
+      }
+    ],
+    "raw": "Reference : anon., 2006b (Easter logbook) Entrance picture : Underground picture(s) : Video : Detailed Survey : Line Survey : On area survey : Survex file :",
+    "reference_label": "Reference"
+  },
+  "header": {
+    "area_canonical": null,
+    "area_raw": "Solórzano",
+    "coordinates": [
+      {
+        "accuracy_code": null,
+        "altitude_m": null,
+        "datum": null,
+        "easting": null,
+        "entrance_site_number": null,
+        "label": null,
+        "latitude": null,
+        "longitude": null,
+        "northing": null,
+        "raw": "30T ??",
+        "system": "placeholder",
+        "vn_ref": null,
+        "zone": "30T"
+      }
+    ],
+    "duplicate_labels": [],
+    "field_order": [],
+    "quantities": [],
+    "raw": "Solórzano 30T ?? 1) code=titles[1].textContent.substring(5,9); else code=document.title.substring(5,9); window.location.href='../logbook.php?code=' + code; return false;\" target=\"_blank\">Logbook search"
+  },
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "title_space_separator",
+        "detail": "heading separates the number and name with a space, not a colon",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "info"
+      },
+      {
+        "char_offset": null,
+        "code": "coord_placeholder",
+        "detail": "unrecorded coordinate '30T ??'",
+        "excerpt": null,
+        "field_path": "header.coordinates",
+        "severity": "info"
+      }
+    ],
+    "byte_size": 1040,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 1.0,
+      "updated": 1.0
+    },
+    "confidence_reasons": {},
+    "content_sha256": "6c2ee573242f31a99e9f044646b8ffe0015b120a9eb425aeb7d48d65a2ebdfda",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": true,
+      "header": true,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 2432
+  },
+  "site_number": 2432,
+  "title": {
+    "aliases": [],
+    "name": "dig",
+    "name_sort": "dig",
+    "raw": "2432 dig",
+    "separator": "space",
+    "site_number": 2432,
+    "site_type": "dig"
+  },
+  "updated": []
+}

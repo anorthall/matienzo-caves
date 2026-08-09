@@ -1,0 +1,88 @@
+{
+  "body": {
+    "bat_observations": [],
+    "blocks": [
+      {
+        "index": 0,
+        "kind": "paragraph",
+        "section_index": null,
+        "text": "To be re-allocated"
+      }
+    ],
+    "char_count": 18,
+    "cross_refs": [],
+    "dates": [],
+    "editorial_notes": [],
+    "is_minimal": true,
+    "people": [],
+    "raw_html": "sha256:46af53b38fcfdfd5 (23 chars)",
+    "sections": [],
+    "tables": [],
+    "text": "To be re-allocated"
+  },
+  "footer": null,
+  "header": null,
+  "provenance": {
+    "anomalies": [
+      {
+        "char_offset": null,
+        "code": "footer_boundary_not_found",
+        "detail": "no <B>Reference…</B> block",
+        "excerpt": null,
+        "field_path": "footer",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "no_header_small",
+        "detail": "no <SMALL> info line between the heading and the footer",
+        "excerpt": null,
+        "field_path": "header",
+        "severity": "warn"
+      },
+      {
+        "char_offset": null,
+        "code": "title_name_empty",
+        "detail": "heading has a number but no name ('-')",
+        "excerpt": null,
+        "field_path": "title",
+        "severity": "warn"
+      }
+    ],
+    "byte_size": 210,
+    "confidence": {
+      "body": 1.0,
+      "footer": 1.0,
+      "header": 1.0,
+      "title": 0.6,
+      "updated": 1.0
+    },
+    "confidence_reasons": {
+      "title": [
+        "-0.4 heading has no name"
+      ]
+    },
+    "content_sha256": "6b2bd625cb8a226f2e470f51d158642da3bd4c6bc7d97533044de39bb25aa5bb",
+    "encoding_used": "utf-8",
+    "segments_found": {
+      "body": true,
+      "footer": false,
+      "header": false,
+      "modal": false,
+      "title": true,
+      "updated": false
+    },
+    "site_number": 249
+  },
+  "site_number": 249,
+  "title": {
+    "aliases": [],
+    "name": "-",
+    "name_sort": "-",
+    "raw": "0249: -",
+    "separator": "colon",
+    "site_number": 249,
+    "site_type": null
+  },
+  "updated": []
+}
