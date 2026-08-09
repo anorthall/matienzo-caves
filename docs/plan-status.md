@@ -108,11 +108,23 @@ useful outputs of a prose measurement are `relation`, `target_sites` and
 `system_name`, all of which are checked — so it is not urgent, but it should
 either be tightened or dropped.
 
+### 6 · The onnxruntime risk is discharged
+
+The plan's most likely install failure was fastembed's dependency on
+onnxruntime, historically slow to ship wheels for a new CPython minor. Probed
+in an isolated 3.13 venv: `fastembed==0.8.0` and `onnxruntime==1.28.0` resolve
+cleanly, as does `sqlite-vec==0.1.9`. Pinning `.python-version` to 3.13 was
+enough; no fallback interpreter is needed.
+
 ## Revised estimate
 
-Roughly **4–6 days** remaining, against the original 10.5–14 total. Phases 0–3
-came in under estimate, largely because segmentation held: every later parser
-could assume clean boundaries rather than re-deriving them.
+Roughly **2–3 days** remaining, against the original 10.5–14 total. Phases 0–5
+came in well under estimate, largely because segmentation held: every later
+parser could assume clean boundaries rather than re-deriving them.
+
+What is left is genuinely separable. Phase 6 adds semantic retrieval alongside
+working keyword search; Phase 7 is an adapter over a search API that already
+exists. Neither changes anything already built.
 
 ## Amendments that came out of phases 2 and 3
 
