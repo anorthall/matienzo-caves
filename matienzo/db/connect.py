@@ -16,6 +16,7 @@ from pathlib import Path
 from matienzo import config
 
 SCHEMA_PATH = Path(__file__).parent / "schema.sql"
+SEARCH_SCHEMA_PATH = Path(__file__).parent / "search_schema.sql"
 
 
 def connect(path: Path | None = None, *, read_only: bool = False) -> sqlite3.Connection:
@@ -38,7 +39,13 @@ def connect(path: Path | None = None, *, read_only: bool = False) -> sqlite3.Con
 
 
 def create_schema(connection: sqlite3.Connection) -> None:
+    """Create the relational schema and the search tables.
+
+    They live in separate files because re-chunking and re-indexing does not
+    require re-parsing; keeping them apart makes that separation obvious.
+    """
     connection.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
+    connection.executescript(SEARCH_SCHEMA_PATH.read_text(encoding="utf-8"))
 
 
 @contextmanager

@@ -36,14 +36,26 @@ def small_db(tmp_path_factory: pytest.TempPathFactory) -> sqlite3.Connection:
 
 
 class TestSchema:
-    def test_every_table_is_strict(self, small_db: sqlite3.Connection) -> None:
+    def test_every_ordinary_table_is_strict(self, small_db: sqlite3.Connection) -> None:
         """A type error should surface at write time, not as a baffling
-        comparison result months later."""
+        comparison result months later.
+
+        FTS5 tables are exempt: neither a virtual table nor the shadow tables it
+        creates can be declared STRICT.
+        """
         rows = small_db.execute(
             "SELECT name, sql FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%'"
         ).fetchall()
         assert rows
-        lax = [r["name"] for r in rows if "STRICT" not in (r["sql"] or "").upper()]
+
+        virtual = {r["name"] for r in rows if (r["sql"] or "").upper().startswith("CREATE VIRTUAL")}
+        lax = [
+            r["name"]
+            for r in rows
+            if r["name"] not in virtual
+            and not any(r["name"].startswith(f"{v}_") for v in virtual)
+            and "STRICT" not in (r["sql"] or "").upper()
+        ]
         assert lax == []
 
     def test_foreign_keys_are_enforced(self, small_db: sqlite3.Connection) -> None:

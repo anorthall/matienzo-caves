@@ -52,10 +52,31 @@ uv run matienzo stats
 uv run matienzo audit --diff
 ```
 
-Inspect a single page at any stage of the pipeline:
+Search it:
+
+```bash
+uv run matienzo search "optical brightener"
+```
+
+```bash
+uv run matienzo search shaft --area vega --min-depth 250
+```
+
+```bash
+uv run matienzo show 1930
+uv run matienzo nearby 105 --radius 300
+uv run matienzo graph 107
+```
+
+Accents are folded, so `riano` finds `Riaño` and `fernandez` finds
+`Fernández`. Add `--passages` to see the matching paragraphs rather than a list
+of caves.
+
+Inspect a single page at any stage of the pipeline, or triage the parse:
 
 ```bash
 uv run matienzo parse 1930
+uv run matienzo review
 ```
 
 ## Development

@@ -23,6 +23,7 @@ from pathlib import Path
 from matienzo import config
 from matienzo import overrides as overrides_module
 from matienzo.anomaly import Severity
+from matienzo.chunk import chunk_site
 from matienzo.models import Coordinate, ParsedSite, Quantity, QuantityKind, ResourceLink
 from matienzo.normalise import areas as areas_vocab
 from matienzo.parse import parse_page
@@ -75,6 +76,7 @@ def build(connection: sqlite3.Connection, paths: Iterable[Path] | None = None) -
 
     _resolve_cross_references(connection)
     _count_usage(connection)
+    _index_for_search(connection, records)
 
     connection.execute(
         "UPDATE build SET finished_at = ? WHERE build_id = ?",
@@ -632,6 +634,45 @@ def _insert_links(
             )
             for link in links
         ],
+    )
+
+
+def _index_for_search(connection: sqlite3.Connection, records: list[ParsedSite]) -> None:
+    """Build the chunk table and the document-level search indexes."""
+    for record in records:
+        for chunk in chunk_site(record):
+            connection.execute(
+                "INSERT INTO chunk (site_number, ordinal, kind, section_heading,"
+                " block_first, block_last, text, n_chars, content_sha256)"
+                " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (
+                    chunk.site_number,
+                    chunk.ordinal,
+                    chunk.kind,
+                    chunk.section_heading,
+                    chunk.block_first,
+                    chunk.block_last,
+                    chunk.text,
+                    len(chunk.text),
+                    chunk.content_sha256,
+                ),
+            )
+
+    connection.execute(
+        "INSERT INTO site_fts (site_number, name, aliases, area, body_text, footer_text)"
+        " SELECT s.site_number, coalesce(s.name, ''),"
+        "        coalesce((SELECT group_concat(text, ' ') FROM site_alias al"
+        "                  WHERE al.site_number = s.site_number), ''),"
+        "        coalesce(a.name, ''), s.body_text, coalesce(s.footer_raw, '')"
+        " FROM site s LEFT JOIN area a ON a.area_id = s.area_id"
+    )
+    connection.execute(
+        "INSERT INTO name_fts (site_number, name)"
+        " SELECT s.site_number,"
+        "        coalesce(s.name, '') || ' ' || coalesce(s.name_sort, '') || ' ' ||"
+        "        coalesce((SELECT group_concat(text || ' ' || text_sort, ' ')"
+        "                  FROM site_alias al WHERE al.site_number = s.site_number), '')"
+        " FROM site s"
     )
 
 

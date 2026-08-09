@@ -11,12 +11,12 @@ checkpoint is met or an assumption turns out to be wrong.
 | 1 · Segmentation | 1 day | **Done** | `matienzo segment --audit` → title on 5,557; 3 stubs lack a header; 0 leaks |
 | 2 · Parsers + models | 3–4 days | **Done** | `matienzo parse --audit` → 5,557 records, 1 error (a known upstream typo) |
 | 3 · Schema + load | 2 days | **Done** | `matienzo build` → 25 MB in 4.3 s, reproducible; `matienzo stats` |
-| 4 · Review queue | 1–2 days | Next | anomaly/confidence infrastructure already exists |
-| 5 · Chunking + FTS + CLI | 1 day | Not started | |
-| 6 · Embeddings + hybrid | 1–2 days | Not started | |
+| 4 · Review queue | 1–2 days | **Done** | `matienzo review`; overrides; 0 error-severity anomalies |
+| 5 · Chunking + FTS + CLI | 1 day | **Done** | `matienzo search / show / nearby / graph`; 13,280 chunks |
+| 6 · Embeddings + hybrid | 1–2 days | Next | |
 | 7 · MCP server | 1 day | Not started | |
 
-411 tests pass; `ruff check` clean.
+461 tests pass; `ruff check` clean.
 
 ### What the database contains
 

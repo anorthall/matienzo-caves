@@ -13,6 +13,7 @@ from rich.table import Table
 
 from matienzo import __version__, config
 from matienzo import overrides as overrides_module
+from matienzo import search as search_module
 from matienzo.anomaly import AnomalyRecorder, Severity
 from matienzo.db import audit as db_audit
 from matienzo.db import load as db_load
@@ -749,6 +750,241 @@ def _review_list(
         wanted,
     ).fetchone()[0]
     console.print(f"[dim]{total:,} pages carry an anomaly at {severity} or above.[/dim]")
+
+
+@app.command
+def search(
+    query: str,
+    *,
+    passages: bool = False,
+    area: str | None = None,
+    site_type: str | None = None,
+    min_length: float | None = None,
+    min_depth: float | None = None,
+    has_survey: bool = False,
+    limit: int = 15,
+    db: Path | None = None,
+) -> None:
+    """Search the corpus.
+
+    Parameters
+    ----------
+    query
+        Words to look for. Accents are ignored, so `riano` finds `Riaño`.
+    passages
+        Show matching paragraphs rather than ranked sites.
+    area
+        Restrict to an area, matched loosely: `--area vega`.
+    site_type
+        Restrict to `shaft`, `cave`, `dig`, …
+    min_length
+        Only sites at least this long, in metres.
+    min_depth
+        Only sites at least this deep, in metres.
+    has_survey
+        Only sites with a survey attached.
+    limit
+        How many results to show.
+    db
+        Search this database instead of the default.
+    """
+    connection = _open(db)
+    filters = search_module.Filters(
+        area=area,
+        site_type=site_type,
+        min_length_m=min_length,
+        min_depth_m=min_depth,
+        has_survey=has_survey or None,
+    )
+    try:
+        if passages:
+            found = search_module.search_passages(connection, query, filters=filters, limit=limit)
+            if not found:
+                console.print("[yellow]No matches.[/yellow]")
+                return
+            for passage in found:
+                heading = f" — {passage.section_heading}" if passage.section_heading else ""
+                console.print(
+                    f"[bold]{passage.site_number:04d}[/bold] "
+                    f"{passage.site_name or ''}{heading}  [dim]({passage.kind})[/dim]"
+                )
+                console.print(f"  {passage.snippet or passage.text[:300]}\n")
+            return
+
+        hits = search_module.search_sites(connection, query, filters=filters, limit=limit)
+        if not hits:
+            console.print("[yellow]No matches.[/yellow]")
+            return
+        _hit_table(f"Sites matching {query!r}", hits)
+    finally:
+        connection.close()
+
+
+@app.command
+def show(site: int, *, db: Path | None = None) -> None:
+    """Show everything known about one site.
+
+    Parameters
+    ----------
+    site
+        Site number.
+    db
+        Read this database instead of the default.
+    """
+    connection = _open(db)
+    try:
+        row = connection.execute(
+            "SELECT * FROM site_summary WHERE site_number = ?", (site,)
+        ).fetchone()
+        if row is None:
+            console.print(f"[red]Site {site:04d} is not in the database.[/red]")
+            raise SystemExit(1)
+
+        console.print(f"[bold]{site:04d}[/bold] {row['name'] or ''}")
+        facts = [
+            ("area", row["area"]),
+            ("type", row["site_type"]),
+            ("length", f"{row['length_m']:,.0f} m" if row["length_m"] else None),
+            ("depth", f"{row['depth_m']:,.0f} m" if row["depth_m"] else None),
+            ("altitude", f"{row['altitude_m']:,.0f} m" if row["altitude_m"] else None),
+            (
+                "position",
+                f"{row['latitude']:.5f}, {row['longitude']:.5f}" if row["latitude"] else None,
+            ),
+            ("updated", f"{row['update_count']} times, last {row['updated_last']}"),
+        ]
+        for label, value in facts:
+            if value:
+                console.print(f"  [dim]{label}:[/dim] {value}")
+
+        aliases = connection.execute(
+            "SELECT text, kind FROM site_alias WHERE site_number = ? ORDER BY ordinal", (site,)
+        ).fetchall()
+        if aliases:
+            console.print(
+                "  [dim]also known as:[/dim] "
+                + "; ".join(f"{a['text']} ({a['kind']})" for a in aliases)
+            )
+
+        for member in connection.execute(
+            "SELECT cs.name, m.relation FROM system_member m"
+            " JOIN cave_system cs USING (system_id) WHERE m.site_number = ?",
+            (site,),
+        ):
+            console.print(f"  [dim]system:[/dim] {member['name']} ({member['relation']})")
+
+        body = connection.execute(
+            "SELECT body_text FROM site WHERE site_number = ?", (site,)
+        ).fetchone()["body_text"]
+        if body:
+            console.print(f"\n{body}\n")
+
+        citations = connection.execute(
+            "SELECT c.raw FROM site_citation sc JOIN citation c USING (citation_id)"
+            " WHERE sc.site_number = ? ORDER BY sc.ordinal",
+            (site,),
+        ).fetchall()
+        if citations:
+            console.print("[bold]References[/bold]")
+            for citation in citations[:20]:
+                console.print(f"  {citation['raw']}")
+
+        refs = connection.execute(
+            "SELECT to_site, kind FROM xref WHERE from_site = ? ORDER BY to_site", (site,)
+        ).fetchall()
+        if refs:
+            console.print(
+                "\n[dim]refers to:[/dim] " + ", ".join(f"{r['to_site']:04d}" for r in refs)
+            )
+    finally:
+        connection.close()
+
+
+@app.command
+def nearby(site: int, *, radius: float = 500.0, limit: int = 20, db: Path | None = None) -> None:
+    """List sites within a radius of another, in metres.
+
+    Parameters
+    ----------
+    site
+        Site number to search around.
+    radius
+        Radius in metres.
+    limit
+        How many results to show.
+    db
+        Read this database instead of the default.
+    """
+    connection = _open(db)
+    try:
+        hits = search_module.nearby(connection, site, radius_m=radius, limit=limit)
+        if not hits:
+            console.print(f"[yellow]Nothing within {radius:.0f} m of {site:04d}.[/yellow]")
+            return
+        _hit_table(f"Within {radius:.0f} m of {site:04d}", hits)
+    finally:
+        connection.close()
+
+
+@app.command
+def graph(site: int, *, depth: int = 1, db: Path | None = None) -> None:
+    """Show a site's cross-reference neighbourhood.
+
+    Parameters
+    ----------
+    site
+        Site number at the centre.
+    depth
+        How many hops to follow.
+    db
+        Read this database instead of the default.
+    """
+    connection = _open(db)
+    try:
+        neighbourhood = search_module.neighbourhood(connection, site, depth=depth)
+        if not neighbourhood.get(site):
+            console.print(f"[yellow]Site {site:04d} has no cross-references.[/yellow]")
+            return
+        for source, targets in neighbourhood.items():
+            name = connection.execute(
+                "SELECT name FROM site WHERE site_number = ?", (source,)
+            ).fetchone()
+            label = (name["name"] if name else None) or ""
+            console.print(f"[bold]{source:04d}[/bold] {label}")
+            console.print("  " + ", ".join(f"{t:04d}" for t in targets))
+    finally:
+        connection.close()
+
+
+def _open(db: Path | None) -> sqlite3.Connection:
+    path = db or config.DB_PATH
+    if not path.exists():
+        console.print(f"[red]No database at {path}. Run `matienzo build`.[/red]")
+        raise SystemExit(1)
+    return connect(path, read_only=True)
+
+
+def _hit_table(title: str, hits: list[search_module.SiteHit], score_header: str = "score") -> None:
+    table = Table(title=title, title_justify="left")
+    # No snippet column. This table answers "which caves"; `--passages` answers
+    # "show me the text". Carrying both made every column collapse at the 80
+    # columns rich assumes when output is not a terminal.
+    table.add_column("site", no_wrap=True)
+    table.add_column("name", max_width=30, overflow="ellipsis")
+    table.add_column("area", max_width=14, overflow="ellipsis")
+    table.add_column("type", max_width=10, overflow="ellipsis")
+    table.add_column("length", justify="right", no_wrap=True)
+    table.add_column("depth", justify="right", no_wrap=True)
+    for hit in hits:
+        table.add_row(
+            f"{hit.site_number:04d}",
+            hit.name or "",
+            hit.area or "",
+            hit.site_type or "",
+            f"{hit.length_m:,.0f} m" if hit.length_m else "",
+            f"{hit.depth_m:,.0f} m" if hit.depth_m else "",
+        )
+    console.print(table)
 
 
 def _fmt_sites(sites: list[int]) -> str:

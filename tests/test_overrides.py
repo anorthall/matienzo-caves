@@ -65,9 +65,7 @@ class TestApply:
         assert outcome is not None
         assert outcome.status is overrides.OverrideStatus.ACTIVE
 
-    def test_a_nested_list_element_is_corrected(
-        self, record: ParsedSite, tmp_path: Path
-    ) -> None:
+    def test_a_nested_list_element_is_corrected(self, record: ParsedSite, tmp_path: Path) -> None:
         write_override(
             tmp_path,
             record,
@@ -86,8 +84,7 @@ class TestApply:
         write_override(
             tmp_path,
             record,
-            '[[fix]]\nfield_path = "site_number"\nvalue = "not a number"\n'
-            'rationale = "test"\n',
+            '[[fix]]\nfield_path = "site_number"\nvalue = "not a number"\nrationale = "test"\n',
         )
         loaded = overrides.load_all(tmp_path)
         with pytest.raises(Exception, match="site_number"):
@@ -108,7 +105,7 @@ class TestStaleness:
         path = tmp_path / "0001.toml"
         path.write_text(
             "site = 1\n"
-            'applies_to_sha256 = "0000000000000000000000000000000000000000000000000000000000000000"\n'
+            f'applies_to_sha256 = "{"0" * 64}"\n'
             'author = "test"\n\n'
             '[[fix]]\nfield_path = "header.area_raw"\nvalue = "Wrong"\nrationale = "x"\n',
             encoding="utf-8",
