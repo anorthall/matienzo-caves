@@ -90,13 +90,19 @@ def parse_title(
         return None
 
     if int(match.group("number")) != site_number:
+        # A warning rather than an error: nothing is lost. The filename is
+        # authoritative and is what the record uses, so a page headed `5254:` in
+        # `5255.htm` still produces a correct record — it is the *source* that is
+        # wrong, and the anomaly exists to say so. Grading it as an error would
+        # mean the corpus can never reach a clean audit without editing upstream.
         recorder.add(
             AnomalyCode.TITLE_NUMBER_MISMATCH,
-            f"heading says {match.group('number')} but the file is {site_number:04d}",
-            severity=Severity.ERROR,
+            f"heading says {match.group('number')} but the file is {site_number:04d}; "
+            f"using the filename",
+            severity=Severity.WARN,
             field_path="title",
         )
-        confidence.deduct("title", 0.6, "heading number disagrees with the filename")
+        confidence.deduct("title", 0.3, "heading number disagrees with the filename")
 
     separator = "colon" if match.group("sep") == ":" else "space"
     if separator == "space":

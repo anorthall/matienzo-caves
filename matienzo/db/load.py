@@ -16,10 +16,12 @@ import datetime as dt
 import json
 import sqlite3
 import subprocess
+import warnings
 from collections.abc import Iterable, Iterator
 from pathlib import Path
 
 from matienzo import config
+from matienzo import overrides as overrides_module
 from matienzo.anomaly import Severity
 from matienzo.models import Coordinate, ParsedSite, Quantity, QuantityKind, ResourceLink
 from matienzo.normalise import areas as areas_vocab
@@ -50,7 +52,16 @@ def build(connection: sqlite3.Connection, paths: Iterable[Path] | None = None) -
     vocabulary = areas_vocab.load()
     _insert_areas(connection, vocabulary)
 
-    records = [parse_page(path) for path in pages]
+    overrides = overrides_module.load_all()
+    records: list[ParsedSite] = []
+    applied: list[overrides_module.Applied] = []
+    for path in pages:
+        record = parse_page(path)
+        record, outcome = overrides_module.apply(record, overrides.get(record.site_number))
+        if outcome is not None:
+            applied.append(outcome)
+        records.append(record)
+    _report_overrides(applied)
 
     unmapped = areas_vocab.unmapped(
         {r.header.area_raw for r in records if r.header and r.header.area_raw}, vocabulary
@@ -70,6 +81,27 @@ def build(connection: sqlite3.Connection, paths: Iterable[Path] | None = None) -
         (_now(), build_id),
     )
     return build_id
+
+
+def _report_overrides(applied: list[overrides_module.Applied]) -> None:
+    """Warn about overrides that no longer apply.
+
+    A stale override means the upstream page changed under a correction someone
+    made deliberately. That needs a human to look again, so it must not pass
+    silently — but it also must not stop a build, or a single upstream edit
+    would block every rebuild until someone had time to review it.
+    """
+    for outcome in applied:
+        if outcome.status is overrides_module.OverrideStatus.STALE:
+            warnings.warn(
+                f"override {outcome.override.path.name} not applied: {outcome.detail}",
+                stacklevel=2,
+            )
+        elif outcome.status is overrides_module.OverrideStatus.SUPERSEDED:
+            warnings.warn(
+                f"override {outcome.override.path.name} is now redundant: {outcome.detail}",
+                stacklevel=2,
+            )
 
 
 def _now() -> str:

@@ -12,6 +12,7 @@ from rich.console import Console
 from rich.table import Table
 
 from matienzo import __version__, config
+from matienzo import overrides as overrides_module
 from matienzo.anomaly import AnomalyRecorder, Severity
 from matienzo.db import audit as db_audit
 from matienzo.db import load as db_load
@@ -609,6 +610,145 @@ def audit(*, db: Path | None = None, diff: bool = False) -> None:
         console.print("\n[dim]Run `matienzo build` to bring the database up to date.[/dim]")
     finally:
         connection.close()
+
+
+@app.command
+def review(
+    site: int | None = None,
+    *,
+    code: str | None = None,
+    severity: str = "warn",
+    limit: int = 30,
+    db: Path | None = None,
+) -> None:
+    """List pages needing review, or show one in detail.
+
+    Ranked by how badly the parse degraded, not by anomaly count: a page with
+    twenty routine warnings is healthier than one with a single lost section.
+
+    Parameters
+    ----------
+    site
+        Show this page's anomalies and the source behind them.
+    code
+        List only pages carrying this anomaly code.
+    severity
+        Minimum severity to list: info, warn or error.
+    limit
+        How many pages to list.
+    db
+        Read this database instead of the default.
+    """
+    path = db or config.DB_PATH
+    if not path.exists():
+        console.print(f"[red]No database at {path}. Run `matienzo build`.[/red]")
+        raise SystemExit(1)
+
+    connection = connect(path, read_only=True)
+    try:
+        if site is not None:
+            _review_one(connection, site)
+        else:
+            _review_list(connection, code, severity, limit)
+    finally:
+        connection.close()
+
+
+def _review_one(connection: sqlite3.Connection, site: int) -> None:
+    row = connection.execute(
+        "SELECT p.confidence, p.min_confidence, p.anomaly_count, p.max_severity, s.name"
+        " FROM parse_run p JOIN site s USING (site_number) WHERE p.site_number = ?",
+        (site,),
+    ).fetchone()
+    if row is None:
+        console.print(f"[red]Site {site:04d} is not in the database.[/red]")
+        raise SystemExit(1)
+
+    console.print(f"[bold]{site:04d}[/bold] {row['name'] or ''}")
+    console.print(f"  confidence: {row['confidence']}")
+    for anomaly in connection.execute(
+        "SELECT code, severity, detail, field_path, excerpt FROM anomaly"
+        " WHERE site_number = ? ORDER BY severity DESC, code",
+        (site,),
+    ):
+        colour = {"error": "red", "warn": "yellow", "info": "dim"}[anomaly["severity"]]
+        console.print(
+            f"  [{colour}]{anomaly['severity']:5}[/{colour}] {anomaly['code']}  {anomaly['detail']}"
+        )
+        if anomaly["excerpt"]:
+            console.print(f"        [dim]{anomaly['excerpt'][:160]}[/dim]")
+
+    override = overrides_module.load_all().get(site)
+    if override is None:
+        console.print(f"\n[dim]To correct this page, add data/overrides/{site:04d}.toml:[/dim]")
+        record = parse_page(config.page_path(site))
+        console.print(
+            f"[dim]  site = {site}\n"
+            f'  applies_to_sha256 = "{record.provenance.content_sha256}"\n'
+            f'  author = "you"\n\n'
+            f"  [[fix]]\n"
+            f'  field_path = "header.area_raw"\n'
+            f'  value = "..."\n'
+            f'  rationale = "..."[/dim]'
+        )
+    else:
+        console.print(f"\n[dim]Override:[/dim] {override.path.name} by {override.author}")
+        for fix in override.fixes:
+            console.print(f"  {fix.field_path} = {fix.value!r}  [dim]{fix.rationale}[/dim]")
+
+
+def _review_list(
+    connection: sqlite3.Connection, code: str | None, severity: str, limit: int
+) -> None:
+    ranks = {"info": 0, "warn": 1, "error": 2}
+    if severity not in ranks:
+        console.print(f"[red]--severity must be one of: {', '.join(ranks)}[/red]")
+        raise SystemExit(2)
+
+    wanted = [name for name, rank in ranks.items() if rank >= ranks[severity]]
+    placeholders = ",".join("?" * len(wanted))
+    params: list[object] = list(wanted)
+    filter_sql = ""
+    if code is not None:
+        filter_sql = " AND a.code = ?"
+        params.append(code)
+
+    rows = connection.execute(
+        f"SELECT s.site_number, s.name, p.min_confidence,"
+        f" count(*) AS hits, group_concat(DISTINCT a.code) AS codes"
+        f" FROM anomaly a JOIN site s USING (site_number)"
+        f" JOIN parse_run p USING (site_number)"
+        f" WHERE a.severity IN ({placeholders}){filter_sql}"
+        f" GROUP BY s.site_number"
+        f" ORDER BY p.min_confidence ASC, hits DESC LIMIT ?",
+        (*params, limit),
+    ).fetchall()
+
+    if not rows:
+        console.print("[green]Nothing to review at that severity.[/green]")
+        return
+
+    table = Table(title="Review queue", title_justify="left")
+    table.add_column("site")
+    table.add_column("name", max_width=26, overflow="ellipsis")
+    table.add_column("conf", justify="right")
+    table.add_column("n", justify="right")
+    table.add_column("codes", overflow="fold")
+    for row in rows:
+        table.add_row(
+            f"{row['site_number']:04d}",
+            row["name"] or "",
+            f"{row['min_confidence']:.2f}",
+            str(row["hits"]),
+            row["codes"],
+        )
+    console.print(table)
+
+    total = connection.execute(
+        f"SELECT count(DISTINCT site_number) FROM anomaly WHERE severity IN ({placeholders})",
+        wanted,
+    ).fetchone()[0]
+    console.print(f"[dim]{total:,} pages carry an anomaly at {severity} or above.[/dim]")
 
 
 def _fmt_sites(sites: list[int]) -> str:

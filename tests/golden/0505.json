@@ -126,7 +126,7 @@
   },
   "header": {
     "area_canonical": null,
-    "area_raw": null,
+    "area_raw": "La Gatuna",
     "coordinates": [],
     "duplicate_labels": [],
     "field_order": [],
@@ -145,14 +145,6 @@
       },
       {
         "char_offset": null,
-        "code": "area_missing",
-        "detail": "no bolded area name",
-        "excerpt": null,
-        "field_path": "header",
-        "severity": "warn"
-      },
-      {
-        "char_offset": null,
         "code": "coord_missing",
         "detail": "no coordinates",
         "excerpt": null,
@@ -164,13 +156,12 @@
     "confidence": {
       "body": 1.0,
       "footer": 1.0,
-      "header": 0.55,
+      "header": 0.85,
       "title": 1.0,
       "updated": 1.0
     },
     "confidence_reasons": {
       "header": [
-        "-0.3 no area name",
         "-0.15 no coordinates"
       ]
     },

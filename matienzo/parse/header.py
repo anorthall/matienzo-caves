@@ -185,18 +185,44 @@ def _trim_boilerplate(raw_html: str) -> str:
     return raw_html[: match.start()] if match else raw_html
 
 
-def _parse_area(raw_html: str) -> str | None:
-    """The area name is the first bolded run in the info line.
+#: An area name in a `<B>` that is never closed — `<SMALL><B>La Secada<BR>`.
+UNCLOSED_BOLD_RE = re.compile(r"<b\b[^>]*>\s*([^<]{2,40}?)\s*(?=<)", re.IGNORECASE)
 
-    It is bolded exactly like the measurement labels, so the only thing
-    distinguishing it is that it comes first and is not a known label.
+#: What follows an unbolded area name on the older pages: a grid reference or a
+#: measurement label. Used to find where the name ends.
+AREA_TERMINATOR_RE = re.compile(
+    r"\b(?:\d{2}[A-Z]\s+\d|VN[\d?]|Alt\b|Altitude\b|Length\b|Depth\b|Height\b)",
+    re.IGNORECASE,
+)
+
+
+def _parse_area(raw_html: str) -> str | None:
+    """The area name, which opens the info line.
+
+    Normally it is the first bolded run — bolded exactly like the measurement
+    labels, so the only thing distinguishing it is that it comes first and is
+    not a known label. Six older pages break that: two never bold the name at
+    all (`<SMALL>La Gatuna? VN???????? Alt. ???m`) and one opens `<B>` and never
+    closes it. Both are recognisable, so they are read rather than left blank.
     """
     for match in LABEL_RE.finditer(raw_html):
         label = unescape(match.group("label")).strip()
         if label.lower().rstrip(":") in MEASUREMENT_LABELS:
-            return None  # a measurement came first, so there is no area
+            break  # a measurement came first, so there is no bolded area
         return label or None
-    return None
+
+    if match := UNCLOSED_BOLD_RE.search(raw_html):
+        candidate = unescape(match.group(1)).strip()
+        if candidate and candidate.lower().rstrip(":") not in MEASUREMENT_LABELS:
+            return candidate
+
+    # Unbolded: take the leading text up to the grid reference or first label.
+    leading = strip_tags(re.sub(r"^\s*<SMALL\b[^>]*>", "", raw_html, flags=re.IGNORECASE))
+    if terminator := AREA_TERMINATOR_RE.search(leading):
+        leading = leading[: terminator.start()]
+    # A trailing `?` means the recorder was unsure of the area, not part of it.
+    candidate = leading.strip().rstrip("?").strip()
+    return candidate if 2 <= len(candidate) <= 40 else None
 
 
 def _parse_coordinates(raw_html: str, recorder: AnomalyRecorder) -> list[Coordinate]:
