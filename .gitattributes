@@ -3,3 +3,21 @@
 # bytes (CP1252 curly quotes, CRLF line endings, raw UTF-8). Any normalisation
 # git applied here would silently change the thing under test.
 tests/fixtures/*.htm -text -diff
+
+# The corpus is committed as ordinary git objects, deliberately. It was briefly
+# put behind git-lfs; that never took effect, because `pages/` with a trailing
+# slash matches no file path and .gitattributes only ever consults file paths.
+# Repairing it to `pages/**` would have made things worse, not better:
+#
+#   plain git, packed   3.5 MiB      (25 MB of near-identical HTML deltas well)
+#   git-lfs            ~23 MB        (LFS stores blobs undeltified and
+#                                     uncompressed) + 5,557 pointer files
+#
+# LFS earns its place for large binaries that do not delta. This is 5,557 small,
+# highly repetitive text files — the opposite case. Committing them plainly also
+# keeps `git diff` and `git log -p` working on the source data, and drops the
+# git-lfs prerequisite for anyone cloning.
+#
+# The corpus must not be line-ending-normalised, for the same reason as the
+# fixtures above: parsed records are keyed by the SHA-256 of the source bytes.
+pages/*.htm -text

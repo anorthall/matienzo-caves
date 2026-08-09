@@ -8,10 +8,3 @@ __pycache__/
 matienzo.db
 matienzo.db-wal
 matienzo.db-shm
-
-# The scraped corpus (~5,557 files, 23 MB). Not committed: re-fetch it with
-#   uv run download_htm.py
-# Frozen copies of every page the tests assert on live in tests/fixtures/, so
-# the unit suite runs without it. The whole-corpus checks marked `slow` do need
-# it, and will fail loudly rather than silently skip if it is absent.
-pages/
