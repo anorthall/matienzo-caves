@@ -16,8 +16,6 @@ checkpoint is met or an assumption turns out to be wrong.
 | 6 · Embeddings + hybrid | 1–2 days | Not started | |
 | 7 · MCP server | 1 day | Not started | |
 
-133 tests pass; `ruff check` clean; ~3,400 lines across `matienzo/` and `tests/`.
-
 411 tests pass; `ruff check` clean.
 
 ### What the database contains
@@ -101,26 +99,36 @@ asserted as exact sets so that a *new* occurrence fails rather than hiding:
 
 Both want a `data/overrides/*.toml` entry in Phase 4.
 
-### 5 · Known weak spot to fix in 2c
+### 5 · Known weak spot, still open
 
 `parse/header.py::_parse_prose` extracts `target_names` with a loose
-capitalised-word regex that has not been validated against the corpus. It is the
-least trustworthy code in the package. The body parser needs proper cave-name
-recognition anyway; do both together and drop the regex.
+capitalised-word regex that has not been validated against the corpus. It is
+still the least trustworthy code in the package. Nothing depends on it — the
+useful outputs of a prose measurement are `relation`, `target_sites` and
+`system_name`, all of which are checked — so it is not urgent, but it should
+either be tightened or dropped.
 
 ## Revised estimate
 
-Roughly **8–11 days** remaining, against the original 10.5–14 total. Phases 0
-and 1 ran to estimate.
+Roughly **4–6 days** remaining, against the original 10.5–14 total. Phases 0–3
+came in under estimate, largely because segmentation held: every later parser
+could assume clean boundaries rather than re-deriving them.
 
-## Open decision: ship an interim metadata database?
+## Amendments that came out of phases 2 and 3
 
-Title and header parsing alone already yield site number, name, aliases, area,
-per-entrance coordinates with lat/lon, altitudes, and measurements — enough to
-answer "where are the caves", "how deep", "which system does this belong to" and
-to draw a map. That is a genuinely useful artefact and it is available now, a
-week before the full pipeline.
+**Confidence deductions for repeated per-item problems must be capped.** Vallina
+(`0733`) parses perfectly — 114 citations, all resolved — but groups its footer
+photo links under year headings, and an uncapped −0.05 per unrecognised label
+drove it to 0.00, ranking it the worst page in the corpus. A score a healthy
+page can bottom out on cannot rank pages for review.
 
-Bringing a cut-down Phase 3 forward would ship that value early, at the cost of
-one schema migration when descriptions and citations arrive. Deferring keeps the
-schema settled but leaves everything unusable until Phase 2c lands. Not decided.
+**The threshold numbers are now real.** Derived from the finished parsers over
+the whole corpus and asserted in `tests/test_db.py::TestFullCorpus`: 5,557
+sites, 7,051 update dates, 752 distinct citations used 14,661 times, 2,378
+cross-references. Amendment 1 is discharged.
+
+**Site numbers and years are the same shape.** Not anticipated by the plan.
+`site 2073` is not a date and `sites … 2035, 2036 and 2037` are not years, so
+cross-reference spans are claimed before the date scan and bare years are
+bounded to 1900–2030. Numbers inside that range with no cue word remain
+genuinely ambiguous; that is a property of the source, not of the parser.
