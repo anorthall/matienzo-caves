@@ -3,6 +3,9 @@
 from __future__ import annotations
 
 import collections
+import sqlite3
+import time
+from pathlib import Path
 
 import cyclopts
 from rich.console import Console
@@ -10,6 +13,10 @@ from rich.table import Table
 
 from matienzo import __version__, config
 from matienzo.anomaly import AnomalyRecorder, Severity
+from matienzo.db import audit as db_audit
+from matienzo.db import load as db_load
+from matienzo.db import queries
+from matienzo.db.connect import connect, fresh_database
 from matienzo.decode import Encoding, read_document
 from matienzo.htmlutil import strip_tags
 from matienzo.models import ParsedSite
@@ -430,6 +437,178 @@ def _parse_audit() -> None:
         raise SystemExit(1)
 
     console.print("\n[green]No error-severity anomalies.[/green]")
+
+
+@app.command
+def build(*, out: Path | None = None) -> None:
+    """Rebuild `matienzo.db` from pages/ and data/.
+
+    Always starts from an empty file. The database is derived, so there is no
+    migration path to get wrong — deleting it is a supported recovery.
+
+    Parameters
+    ----------
+    out
+        Write to this path instead of the default `matienzo.db`.
+    """
+    target = out or config.DB_PATH
+    started = time.monotonic()
+
+    try:
+        with fresh_database(target) as connection:
+            build_id = db_load.build(connection)
+    except db_load.UnmappedAreasError as error:
+        console.print(f"[red]{error}[/red]")
+        raise SystemExit(1) from error
+
+    elapsed = time.monotonic() - started
+    size = target.stat().st_size / 1_000_000
+    console.print(
+        f"[green]Built[/green] {target.name} (build {build_id}, {size:.1f} MB, {elapsed:.1f}s)"
+    )
+
+
+@app.command
+def stats(*, db: Path | None = None, top: int = 10) -> None:
+    """Summarise what is in the database.
+
+    Parameters
+    ----------
+    db
+        Read this database instead of the default.
+    top
+        How many rows to show in each ranked table.
+    """
+    path = db or config.DB_PATH
+    if not path.exists():
+        console.print(f"[red]No database at {path}. Run `matienzo build`.[/red]")
+        raise SystemExit(1)
+
+    connection = connect(path, read_only=True)
+    try:
+        table = Table(title="Contents", title_justify="left", box=None)
+        table.add_column("")
+        table.add_column("", justify="right")
+        for label, sql in queries.STATS.items():
+            table.add_row(label, f"{queries.scalar(connection, sql):,}")
+        console.print(table)
+
+        _ranked(connection, queries.LONGEST, top, "Longest caves", ("site", "name", "area", "m"))
+        _ranked(connection, queries.DEEPEST, top, "Deepest caves", ("site", "name", "area", "m"))
+        _ranked(
+            connection,
+            queries.BY_AREA,
+            top,
+            "Busiest areas",
+            ("area", "sites", "total length", "deepest"),
+        )
+        _ranked(
+            connection,
+            queries.HUBS,
+            top,
+            "Most referenced sites",
+            ("site", "name", "area", "refs in", "refs out"),
+        )
+        _ranked(
+            connection,
+            queries.MOST_CITED,
+            top,
+            "Most cited works",
+            ("citation", "year", "kind", "sites"),
+        )
+
+        systems = queries.rows(connection, queries.SYSTEMS)
+        if systems:
+            console.print("\n[bold]Cave systems[/bold]")
+            for row in systems:
+                console.print(f"  {row['members']:>3}  {row['name']}")
+    finally:
+        connection.close()
+
+
+def _ranked(connection: object, sql: str, limit: int, title: str, headers: tuple[str, ...]) -> None:
+
+    assert isinstance(connection, sqlite3.Connection)
+    results = queries.rows(connection, sql, limit)
+    if not results:
+        return
+    table = Table(title=title, title_justify="left")
+    for index, header in enumerate(headers):
+        table.add_column(header, justify="right" if index else "left")
+    for row in results:
+        cells = []
+        for value in tuple(row):
+            if isinstance(value, float):
+                cells.append(f"{value:,.0f}")
+            elif value is None:
+                cells.append("—")
+            else:
+                cells.append(str(value))
+        table.add_row(*cells)
+    console.print()
+    console.print(table)
+
+
+@app.command
+def audit(*, db: Path | None = None, diff: bool = False) -> None:
+    """Check the database against the corpus and report its health.
+
+    Parameters
+    ----------
+    db
+        Audit this database instead of the default.
+    diff
+        Also compare `pages/` against the bytes the database was built from,
+        and re-parse anything that changed.
+    """
+    path = db or config.DB_PATH
+    if not path.exists():
+        console.print(f"[red]No database at {path}. Run `matienzo build`.[/red]")
+        raise SystemExit(1)
+
+    connection = connect(path, read_only=True)
+    try:
+        report = db_audit.audit(connection)
+
+        table = Table(title="Database", title_justify="left", box=None)
+        table.add_column("")
+        table.add_column("", justify="right")
+        for name, value in report.metrics.items():
+            table.add_row(name, f"{value:,}")
+        console.print(table)
+
+        if report.metrics["errors"]:
+            console.print(
+                f"\n[yellow]{report.metrics['errors']} error-severity "
+                f"anomalies await an override (see `matienzo review`).[/yellow]"
+            )
+            for row in connection.execute(
+                "SELECT site_number, code, detail FROM anomaly WHERE severity = 'error'"
+                " ORDER BY site_number LIMIT 20"
+            ):
+                console.print(f"  {row['site_number']:04d}  {row['code']}: {row['detail']}")
+
+        if not diff:
+            console.print("\n[dim]Pass --diff to compare against the corpus on disk.[/dim]")
+            return
+
+        if not report.changes:
+            console.print("\n[green]Corpus unchanged since this database was built.[/green]")
+            return
+
+        console.print(f"\n[bold]{len(report.changes)} page(s) differ from the build[/bold]")
+        for change in report.changes[:40]:
+            console.print(f"  {change.site_number:04d}  {change.kind:9} {change.detail}")
+
+        findings = db_audit.reparse_changed(report.changes)
+        flagged = {site: notes for site, notes in findings.items() if notes}
+        if flagged:
+            console.print("\n[yellow]Re-parsing those pages raises:[/yellow]")
+            for site_number, notes in list(flagged.items())[:20]:
+                console.print(f"  {site_number:04d}  {'; '.join(sorted(set(notes)))}")
+        console.print("\n[dim]Run `matienzo build` to bring the database up to date.[/dim]")
+    finally:
+        connection.close()
 
 
 def _fmt_sites(sites: list[int]) -> str:

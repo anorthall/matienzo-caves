@@ -9,26 +9,27 @@ checkpoint is met or an assumption turns out to be wrong.
 | --- | --- | --- | --- |
 | 0 · Skeleton + decode | ½ day | **Done** | `matienzo decode --audit` → 5,507 ASCII / 32 UTF-8 / 18 CP1252, 0 errors |
 | 1 · Segmentation | 1 day | **Done** | `matienzo segment --audit` → title on 5,557; 3 stubs lack a header; 0 leaks |
-| 2 · Parsers + models | 3–4 days | **~40%** | title + header done; footer, updated, body outstanding |
-| 3 · Schema + load | 2 days | Not started | |
-| 4 · Review queue | 1–2 days | Not started | anomaly/confidence infrastructure already exists |
+| 2 · Parsers + models | 3–4 days | **Done** | `matienzo parse --audit` → 5,557 records, 1 error (a known upstream typo) |
+| 3 · Schema + load | 2 days | **Done** | `matienzo build` → 25 MB in 4.3 s, reproducible; `matienzo stats` |
+| 4 · Review queue | 1–2 days | Next | anomaly/confidence infrastructure already exists |
 | 5 · Chunking + FTS + CLI | 1 day | Not started | |
 | 6 · Embeddings + hybrid | 1–2 days | Not started | |
 | 7 · MCP server | 1 day | Not started | |
 
 133 tests pass; `ruff check` clean; ~3,400 lines across `matienzo/` and `tests/`.
 
-### Phase 2 detail
+411 tests pass; `ruff check` clean.
 
-| Parser | State | Notes |
-| --- | --- | --- |
-| `parse/title.py` | Done, 25 tests | 5,557/5,557 parse. Nested-paren alias scan, de-inverted sort keys. |
-| `parse/header.py` | Done, 30 tests | 5,482 pages with coordinates + lat/lon; 3,568 numeric lengths (64%); 61 prose lengths decomposed into system membership. |
-| `parse/footer.py` | **Not written** | Citations, resource links, the `;`-vs-entity trap, split anchors. |
-| `parse/updated.py` | **Not written** | Segmented already; dates not parsed. |
-| `parse/body.py` | **Not written** | The hard one — see risks. |
-| `ParsedSite` assembly | **Not written** | Models defined; nothing composes them yet. |
-| Golden files | **Not written** | 66 fixtures copied to `tests/fixtures/`; goldens need a complete `ParsedSite`. |
+### What the database contains
+
+5,557 sites · 81 areas · 5,502 coordinates · 6,774 measurements (62 of them
+prose) · 7,051 update dates · 12,089 description blocks · 139 sections ·
+752 distinct citations used 14,661 times · 163 authors · 2,378
+cross-references · 9 cave systems with 25 memberships · 80 people from 283
+evidence-gated mentions · 38,501 resource links.
+
+One error-severity anomaly remains: the upstream `5254`/`5255` heading typo,
+which wants an override in Phase 4.
 
 ## Verdict: the plan holds, with amendments
 

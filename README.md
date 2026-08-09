@@ -47,7 +47,15 @@ uv run matienzo decode --audit
 ```
 
 ```bash
-uv run matienzo segment --audit
+uv run matienzo build
+uv run matienzo stats
+uv run matienzo audit --diff
+```
+
+Inspect a single page at any stage of the pipeline:
+
+```bash
+uv run matienzo parse 1930
 ```
 
 ## Development

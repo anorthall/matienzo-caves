@@ -1,0 +1,96 @@
+# Canonical area names and the spellings the corpus uses for them.
+#
+# Generated from the corpus, then hand-checked. Case and accent variants
+# are folded automatically by the normaliser and are not listed here;
+# only spellings that folding cannot resolve need an entry.
+#
+# `matienzo build` fails if the corpus contains an area spelling that maps
+# to nothing here, so a new one shows up as a build error rather than as a
+# silently fragmented area.
+
+[canonical]
+"Alisas" = { slug = "alisas", variants = [] }
+"Arnilla" = { slug = "arnilla", variants = [] }
+"Arredondo" = { slug = "arredondo", variants = [] }
+"Arronte" = { slug = "arronte", variants = [] }
+"Barrio La Mina" = { slug = "barrio-la-mina", variants = ["Barrio la Mina"] }
+"Barrio de Arriba" = { slug = "barrio-de-arriba", variants = [] }
+"Barrio de Carrales" = { slug = "barrio-de-carrales", variants = [] }
+"Barrio de los Urros" = { slug = "barrio-de-los-urros", variants = [] }
+"Beranga" = { slug = "beranga", variants = [] }
+"Bosmartín" = { slug = "bosmartin", variants = [] }
+"Bustablado" = { slug = "bustablado", variants = [] }
+"Caburrao" = { slug = "caburrao", variants = [] }
+"Campo la Cruz" = { slug = "campo-la-cruz", variants = [] }
+"Camposdelante" = { slug = "camposdelante", variants = [] }
+"Cierrolinos" = { slug = "cierrolinos", variants = [] }
+"Cobadal" = { slug = "cobadal", variants = [] }
+"Coterón las Llanas" = { slug = "coteron-las-llanas", variants = ["Coteron las Llanas"] }
+"Cruz Llorada" = { slug = "cruz-llorada", variants = [] }
+"Cubija" = { slug = "cubija", variants = [] }
+"Cubillas" = { slug = "cubillas", variants = [] }
+"El Camino" = { slug = "el-camino", variants = [] }
+"El Naso" = { slug = "el-naso", variants = ["EL Naso", "Enaso"] }
+"El Rincón" = { slug = "el-rincon", variants = [] }
+"El Sedo" = { slug = "el-sedo", variants = [] }
+"El Somo" = { slug = "el-somo", variants = [] }
+"El Suto" = { slug = "el-suto", variants = [] }
+"Entrambasaguas" = { slug = "entrambasaguas", variants = [] }
+"Fresnedo" = { slug = "fresnedo", variants = [] }
+"Fuente las Varas" = { slug = "fuente-las-varas", variants = [] }
+"Fuentecil" = { slug = "fuentecil", variants = [] }
+"Garma de los Trillos" = { slug = "garma-de-los-trillos", variants = [] }
+"Garzón" = { slug = "garzon", variants = [] }
+"Garzón, Solórzano" = { slug = "garzon-solorzano", variants = [] }
+"Hazas de Cesto (east)" = { slug = "hazas-de-cesto-east", variants = [] }
+"Hazas de Cesto (west)" = { slug = "hazas-de-cesto-west", variants = [] }
+"Hornedo" = { slug = "hornedo", variants = [] }
+"Hoznayo" = { slug = "hoznayo", variants = [] }
+"Ideopuerta" = { slug = "ideopuerta", variants = [] }
+"La Azuela" = { slug = "la-azuela", variants = [] }
+"La Cavada" = { slug = "la-cavada", variants = [] }
+"La Colina" = { slug = "la-colina", variants = [] }
+"La Collada" = { slug = "la-collada", variants = [] }
+"La Estrada (Anero)" = { slug = "la-estrada-anero", variants = [] }
+"La Garma" = { slug = "la-garma", variants = ["Las Garma"] }
+"La Gatuna" = { slug = "la-gatuna", variants = [] }
+"La Helguera" = { slug = "la-helguera", variants = [] }
+"La Rasa" = { slug = "la-rasa", variants = [] }
+"La Ruela" = { slug = "la-ruela", variants = [] }
+"La Secada" = { slug = "la-secada", variants = [] }
+"La Vega" = { slug = "la-vega", variants = [] }
+"Las Calzadillas" = { slug = "las-calzadillas", variants = [] }
+"Las Piqueras" = { slug = "las-piqueras", variants = [] }
+"Llaneces" = { slug = "llaneces", variants = [] }
+"Llueva" = { slug = "llueva", variants = [] }
+"Mentera" = { slug = "mentera", variants = [] }
+"Moncobe" = { slug = "moncobe", variants = [] }
+"Monte Llusa" = { slug = "monte-llusa", variants = [] }
+"Monte Vizmaya" = { slug = "monte-vizmaya", variants = [] }
+"Muela" = { slug = "muela", variants = [] }
+"Mullir" = { slug = "mullir", variants = [] }
+"N Vega" = { slug = "n-vega", variants = [] }
+"Navajeda" = { slug = "navajeda", variants = [] }
+"Ogarrio" = { slug = "ogarrio", variants = [] }
+"Ozana" = { slug = "ozana", variants = [] }
+"Piluca" = { slug = "piluca", variants = [] }
+"Quebraduras" = { slug = "quebraduras", variants = [] }
+"Rada" = { slug = "rada", variants = [] }
+"Riaño" = { slug = "riano", variants = [] }
+"Riolastras" = { slug = "riolastras", variants = [] }
+"Riva" = { slug = "riva", variants = [] }
+"S Vega" = { slug = "s-vega", variants = ["South Vega"] }
+"San Antonio" = { slug = "san-antonio", variants = ["San Ant8nio"] }
+"San Mames" = { slug = "san-mames", variants = [] }
+"San Miguel" = { slug = "san-miguel", variants = [] }
+"San Pantaleón de Aras" = { slug = "san-pantaleon-de-aras", variants = [] }
+"Secadura" = { slug = "secadura", variants = [] }
+"Seldesuto" = { slug = "seldesuto", variants = [] }
+"Solórzano" = { slug = "solorzano", variants = [] }
+"Trillos" = { slug = "trillos", variants = [] }
+"Villanueva" = { slug = "villanueva", variants = [] }
+"Villaverde de Pontones" = { slug = "villaverde-de-pontones", variants = [] }
+
+[unknown]
+# Pages whose area is written as a literal question mark.
+markers = ["?"]
