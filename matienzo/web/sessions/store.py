@@ -129,9 +129,23 @@ def connect(path: Path) -> sqlite3.Connection:
 
     Unlike the corpus database there is no rebuild-from-source option here, so
     the schema is written with `IF NOT EXISTS` and applied on every open.
+
+    `check_same_thread=False` because a connection here legitimately *migrates*
+    between threads, which is not the same as being *shared* by them. A sync
+    generator dependency is run by FastAPI through `contextmanager_in_threadpool`:
+    the open, the endpoint body and the close each get whichever pool thread is
+    free at the time, and sqlite3's default check rejects the second one. Only
+    one thread ever touches a given connection, and only ever in sequence — the
+    check was asserting something stronger than the invariant this code has.
+
+    What keeps that invariant true is the *per-request* scoping in
+    `routes.deps.open_sessions`, not the flag: two requests never meet on one
+    connection because they never get the same one. Handing a single connection
+    to concurrent requests would still be wrong, and this flag would no longer
+    say so, which is why that rule lives at the point connections are handed out.
     """
     path.parent.mkdir(parents=True, exist_ok=True)
-    connection = sqlite3.connect(path, isolation_level=None)
+    connection = sqlite3.connect(path, isolation_level=None, check_same_thread=False)
     connection.row_factory = sqlite3.Row
     _migrate(connection)
     connection.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))

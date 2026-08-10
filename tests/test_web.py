@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import sqlite3
 from collections.abc import Iterator
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from types import TracebackType
 from typing import Any
@@ -161,6 +162,23 @@ class TestHealth:
 
     def test_health_reports_the_budget(self, client: TestClient) -> None:
         assert client.get("/healthz").json()["budget"]["remaining_pct"] == 100
+
+    def test_health_survives_being_asked_by_several_callers_at_once(
+        self, client: TestClient
+    ) -> None:
+        """`sessions_of` is a sync generator dependency, so FastAPI runs its
+        setup, the endpoint body and its teardown on three different threadpool
+        threads. A connection opened with sqlite3's default thread check raises
+        the moment it crosses one of those boundaries.
+
+        One request at a time hides it, because an idle pool hands back the
+        thread it just used. This asserts on the case the SPA actually produces:
+        it asks for health and for the thread list from the same effect.
+        """
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            responses = [pool.submit(client.get, "/healthz") for _ in range(40)]
+            codes = {response.result().status_code for response in responses}
+        assert codes == {200}
 
 
 class TestSearch:
