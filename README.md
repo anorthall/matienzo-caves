@@ -8,7 +8,7 @@ queryable SQLite database with full-text and semantic search.
 
 | Path | What it is |
 | --- | --- |
-| `pages/` | The scraped corpus, 5,557 pages. Source of truth, committed byte-exactly. |
+| `data/pages/` | The scraped corpus, 5,557 pages. Source of truth, committed byte-exactly. |
 | `data/vocab/` | Hand-curated canonical names (areas, authors, systems). |
 | `data/overrides/` | Per-site corrections applied to parser output. |
 | `matienzo/` | The pipeline: decode → parse → normalise → load → chunk → embed → search. |
@@ -18,13 +18,13 @@ queryable SQLite database with full-text and semantic search.
 | `docs/plan-status.md` | What is built, what is not, and how the plan has changed. |
 | `matienzo.db` | Derived. Delete it any time; `matienzo build` rebuilds it. |
 
-`pages/` and `data/` are the only sources of truth. The database is a disposable
+`data/` is the only source of truth. The database is a disposable
 artefact — which is why corrections live in `data/overrides/*.toml` rather than
 as database writes, and so survive a rebuild.
 
 ## The corpus
 
-`pages/` is committed, so a clone has everything needed to reproduce a build.
+`data/pages/` is committed, so a clone has everything needed to reproduce a build.
 It is stored with `-text` in `.gitattributes` so git never normalises line
 endings: 5,556 of the 5,557 pages use CRLF, every parsed record is keyed by the
 SHA-256 of its source bytes, and override staleness is decided by comparing

@@ -211,7 +211,7 @@ def main() -> None:
         default="https://www.matienzocaves.org.uk/descrip/",
         help="Directory URL the pages live under (default: %(default)s)",
     )
-    parser.add_argument("-o", "--out-dir", type=Path, default=Path("pages"))
+    parser.add_argument("-o", "--out-dir", type=Path, default=Path("data/pages"))
     parser.add_argument("--start", type=int, default=1)
     parser.add_argument("--end", type=int, default=5557)
     parser.add_argument(

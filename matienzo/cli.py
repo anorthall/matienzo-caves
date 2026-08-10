@@ -445,7 +445,7 @@ def _parse_audit() -> None:
 
 @app.command
 def build(*, out: Path | None = None) -> None:
-    """Rebuild `matienzo.db` from pages/ and data/.
+    """Rebuild `matienzo.db` from data/pages/ and data/.
 
     Always starts from an empty file. The database is derived, so there is no
     migration path to get wrong — deleting it is a supported recovery.
@@ -576,7 +576,7 @@ def audit(*, db: Path | None = None, diff: bool = False) -> None:
     db
         Audit this database instead of the default.
     diff
-        Also compare `pages/` against the bytes the database was built from,
+        Also compare `data/pages/` against the bytes the database was built from,
         and re-parse anything that changed.
     """
     path = db or config.DB_PATH

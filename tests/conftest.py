@@ -2,7 +2,7 @@
 
 `tests/fixtures/` holds frozen copies of nominated pages so that byte-level
 assertions stay stable even after a re-scrape. Tests that deliberately measure
-the *live* corpus read from `pages/` instead and are marked `slow`.
+the *live* corpus read from `data/pages/` instead and are marked `slow`.
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ def fixture_path() -> Callable[[int], Path]:
     def _resolve(site_number: int) -> Path:
         path = FIXTURES / f"{site_number:04d}.htm"
         if not path.exists():
-            pytest.fail(f"missing fixture {path.name} — copy it from pages/")
+            pytest.fail(f"missing fixture {path.name} — copy it from data/pages/")
         return path
 
     return _resolve

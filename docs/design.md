@@ -1,4 +1,4 @@
-I verified the corpus and the local toolchain before designing. Key confirmations: `pages/` holds **5,288** `.htm` files (269 numbers in 0001–5557 are absent — the site 404s them), and both the Homebrew CPython 3.14.6 and uv-managed CPythons on this machine ship `sqlite3` with `enable_load_extension` **available**, FTS5, the `trigram` tokenizer, and R*Tree. That last fact is load-bearing for the vector-search recommendation below.
+I verified the corpus and the local toolchain before designing. Key confirmations: `data/pages/` holds **5,288** `.htm` files (269 numbers in 0001–5557 are absent — the site 404s them), and both the Homebrew CPython 3.14.6 and uv-managed CPythons on this machine ship `sqlite3` with `enable_load_extension` **available**, FTS5, the `trigram` tokenizer, and R*Tree. That last fact is load-bearing for the vector-search recommendation below.
 
 ---
 
@@ -6,7 +6,7 @@ I verified the corpus and the local toolchain before designing. Key confirmation
 
 ## 0. Governing principle
 
-**`pages/` and a small hand-curated `data/` tree are the only sources of truth. `matienzo.db` is a disposable derived artifact that can be deleted and rebuilt from scratch at any time in a couple of minutes.**
+**The `data/` tree — the scraped corpus in `data/pages/` plus a small hand-curated set of vocabularies and overrides — is the only source of truth. `matienzo.db` is a disposable derived artifact that can be deleted and rebuilt from scratch at any time in a couple of minutes.**
 
 Every design decision below follows from that. It is what makes the review queue tractable (§5), what makes re-scraping safe (§6), and what lets you throw away and redo the embedding layer without touching parse work.
 
@@ -27,8 +27,8 @@ Every design decision below follows from that. It is what makes the review queue
 ├── .python-version           # 3.13  (see §8 risk on onnxruntime)
 ├── README.md
 ├── download_htm.py           # unchanged PEP-723 script
-├── pages/                    # 5288 .htm — COMMITTED (see §8)
-├── data/                     # hand-curated source of truth, committed
+├── data/                     # source of truth, committed
+│   ├── pages/                # 5288 .htm — COMMITTED (see §8)
 │   ├── vocab/
 │   │   ├── areas.toml        # canonical area -> variants/mojibake
 │   │   ├── authors.toml      # "Corrin J S" -> "Corrin, Juan"
@@ -1068,7 +1068,7 @@ Also: keep the golden `ParsedSite` JSONs *and* a `tests/golden/corpus-digest.txt
 Each phase ends with something you can look at and use. Do not proceed to the next phase before its checkpoint is genuinely satisfying — especially phase 2, where the temptation to rush to embeddings is strongest.
 
 **Phase 0 — Project skeleton (half a day).**
-`pyproject.toml` (uv, `>=3.13`), `matienzo/` package, `cli.py` with `matienzo --version`, ruff + pytest wired, `decode.py` complete with its own tests (utf-8 → cp1252 fallback → entity unescape → mojibake repair → NFC). Commit `pages/`.
+`pyproject.toml` (uv, `>=3.13`), `matienzo/` package, `cli.py` with `matienzo --version`, ruff + pytest wired, `decode.py` complete with its own tests (utf-8 → cp1252 fallback → entity unescape → mojibake repair → NFC). Commit `data/pages/`.
 *Checkpoint:* `matienzo decode 0039 | head` prints correct `Riaño`; `matienzo decode --audit` reports exactly 15 utf-8 files, 4 cp1252 files, 2 repaired mojibake files. **You now have provably correct text for the whole corpus** — everything downstream rests on this, so it is worth over-testing.
 
 **Phase 1 — Segmentation (1 day).**
@@ -1115,7 +1115,7 @@ FastMCP wrapper, `.mcp.json` for the repo, read-only `sql` tool with guards.
 
 **Open questions for you**
 
-1. **Commit `pages/`?** 23 MB, ~5,300 files, effectively immutable. I'd commit it: the DB is derived, the site could change or vanish, and reproducibility of the corpus is worth 23 MB. But it makes `git log --stat` noisy after a re-scrape. (Alternative: commit it once on a `corpus` branch/tag and gitignore thereafter — I'd rather not; it complicates the audit diff.)
+1. **Commit the corpus?** 23 MB, ~5,300 files, effectively immutable. I'd commit it: the DB is derived, the site could change or vanish, and reproducibility of the corpus is worth 23 MB. But it makes `git log --stat` noisy after a re-scrape. (Alternative: commit it once on a `corpus` branch/tag and gitignore thereafter — I'd rather not; it complicates the audit diff.)
 2. **Scope beyond `descrip/`?** The footer links point at 5,521 logbook PDFs, 2,311 scanned publications, 1,830 entrance-picture pages, 1,178 underground-picture pages. The gallery pages (`entpics/`, `ugpics/`) are the same kind of legacy HTML and would give you photo captions — high-value, low-cost, and they'd make the "picture" footer fields actually resolvable. The PDFs are a much bigger project. Do you want `entpics`/`ugpics` in scope for v1's schema (I'd design `resource_link.target_site` to accommodate it now either way, which the DDL above does), or strictly `descrip/`?
 3. **`.3d` Survex files (474 links).** Parsing those would give real 3-D geometry, passage lengths, and station names — a genuinely different tier of data and an excellent cross-check on the `length_m` column. Out of scope for v1, but if it's ever in scope the `coordinate`/`quantity` design should probably anticipate a `survey_station` table. Worth deciding now or explicitly deferring?
 4. **Cave systems: derived-only, or curated?** The prose Length values give you membership for ~30 sites, but the *real* system rosters (Four Valleys, South Vega, Cubija) are larger and are documented elsewhere on the site. Are you content with "what the pages say", or do you want `data/vocab/systems.toml` to carry hand-curated rosters too? The schema supports both; it's an editorial call about what `matienzo.db` claims to be.

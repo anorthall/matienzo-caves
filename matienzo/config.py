@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import Final
 
 REPO_ROOT: Final = Path(__file__).resolve().parent.parent
-PAGES_DIR: Final = REPO_ROOT / "pages"
 DATA_DIR: Final = REPO_ROOT / "data"
+PAGES_DIR: Final = DATA_DIR / "pages"
 VOCAB_DIR: Final = DATA_DIR / "vocab"
 OVERRIDES_DIR: Final = DATA_DIR / "overrides"
 DB_PATH: Final = REPO_ROOT / "matienzo.db"
@@ -25,7 +25,7 @@ def page_path(site_number: int) -> Path:
 
 
 class CorpusMissingError(RuntimeError):
-    """`pages/` is absent or empty.
+    """`data/pages/` is absent or empty.
 
     Raised rather than returning an empty list, so that a missing corpus fails
     loudly instead of every audit reporting a cheerful "0 pages" and exiting

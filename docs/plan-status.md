@@ -73,7 +73,7 @@ them into one checkpoint means the risky work has no independent gate.
 
 ### 3 · Move the corpus audit-diff forward into Phase 3
 
-`pages/` is committed byte-exactly, which settles the plan's open question. The
+`data/pages/` is committed byte-exactly, which settles the plan's open question. The
 `-text` attribute is load-bearing, not cosmetic: 5,556 of the 5,557 pages use
 CRLF, and a global `core.autocrlf=input` silently stripped it on the first
 attempt to commit them. Since every parsed record is keyed by the SHA-256 of its
