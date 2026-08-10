@@ -26,8 +26,8 @@ prose) · 7,051 update dates · 12,089 description blocks · 139 sections ·
 cross-references · 9 cave systems with 25 memberships · 80 people from 283
 evidence-gated mentions · 38,501 resource links.
 
-One error-severity anomaly remains: the upstream `5254`/`5255` heading typo,
-which wants an override in Phase 4.
+Plus 13,280 search chunks, each with a 384-dimension embedding. Zero
+error-severity anomalies.
 
 ## Verdict: the plan holds, with amendments
 
@@ -97,7 +97,12 @@ asserted as exact sets so that a *new* occurrence fails rather than hiding:
   filename both say 5255. The filename wins.
 - `4968`'s northing of 4,901,207 puts it 96 km north of every other site.
 
-Both want a `data/overrides/*.toml` entry in Phase 4.
+Neither turned out to want an override. `5255` already parses correctly —
+the parser trusts the filename — so the anomaly was regraded from error to
+warning: the *source* is wrong, not the data, and grading it fatal would mean
+the corpus could never reach a clean audit without editing someone else's
+website. `4968` is flagged and left as it stands. The override mechanism is
+built and tested; it simply has no work to do yet, which is the right outcome.
 
 ### 5 · Known weak spot, still open
 
@@ -116,17 +121,14 @@ in an isolated 3.13 venv: `fastembed==0.8.0` and `onnxruntime==1.28.0` resolve
 cleanly, as does `sqlite-vec==0.1.9`. Pinning `.python-version` to 3.13 was
 enough; no fallback interpreter is needed.
 
-## Revised estimate
+## Outcome against the estimate
 
-Roughly **2–3 days** remaining, against the original 10.5–14 total. Phases 0–5
-came in well under estimate, largely because segmentation held: every later
-parser could assume clean boundaries rather than re-deriving them.
+All seven phases are complete, against an original estimate of 10.5–14 days.
+The largest single reason is that segmentation held: every later parser could
+assume clean boundaries instead of re-deriving them, and no phase after 1 had
+to revisit them.
 
-What is left is genuinely separable. Phase 6 adds semantic retrieval alongside
-working keyword search; Phase 7 is an adapter over a search API that already
-exists. Neither changes anything already built.
-
-## Amendments that came out of phases 2 and 3
+## Amendments that came out of phases 2 to 6
 
 **Confidence deductions for repeated per-item problems must be capped.** Vallina
 (`0733`) parses perfectly — 114 citations, all resolved — but groups its footer
@@ -144,3 +146,27 @@ cross-references. Amendment 1 is discharged.
 cross-reference spans are claimed before the date scan and bare years are
 bounded to 1900–2030. Numbers inside that range with no cue word remain
 genuinely ambiguous; that is a property of the source, not of the parser.
+
+**Build the evaluation harness before trusting the retrieval.** Phase 6's eval
+immediately found a bug that had been sitting in Phase 5's keyword search since
+it shipped: terms were joined by juxtaposition, which FTS5 reads as AND, so
+every multi-word descriptive query matched nothing and keyword search scored 0%
+on that whole class. Nothing in the Phase 5 checkpoint would have caught it —
+the name lookups it tested all worked.
+
+**The eval also caught its own ground truth.** The first descriptive queries
+were things any of hundreds of sites answer, so correct retrievals scored as
+misses. Worth stating plainly because the failure mode is seductive: a bad
+score looks like a system problem, and the instinct is to tune the system.
+
+**Measure before weighting a fusion.** Down-weighting the keyword retriever
+looked obviously right and was not: recall@5 was identical at every weighting
+tried, and recall@10 was best at parity. On a 28-query set those differences
+are noise, and shipping a tuned constant would have been fitting the eval.
+
+**Caching embeddings inside the artefact they cache is not caching.** The
+design said vectors were cached by chunk content hash so a rebuild would only
+re-embed what changed — but the cache lived in `matienzo.db`, which
+`matienzo build` replaces wholesale, so every rebuild threw all 13,280 away and
+cost a five-minute re-embed. `matienzo build` now reads the old file's vectors
+out before replacing it and restores the ones whose chunk text is unchanged.

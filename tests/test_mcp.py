@@ -132,6 +132,23 @@ class TestAgainstTheDatabase:
         assert record["systems"][0]["name"] == "Four Valleys System"
 
     def test_search_sites_ranks_a_distinctive_paraphrase(self, server: Any) -> None:
+        """Needs a fully embedded database — a paraphrase is exactly what
+        keyword search alone cannot resolve. Skips rather than failing when the
+        vectors are absent or partial, so a missing `matienzo embed` reads as
+        "not measured" instead of "retrieval is broken"."""
+        from matienzo.db.connect import connect
+
+        connection = connect(config.DB_PATH, read_only=True)
+        try:
+            embedded = connection.execute("SELECT count(*) FROM chunk_vec").fetchone()[0]
+            chunks = connection.execute("SELECT count(*) FROM chunk").fetchone()[0]
+        except Exception:
+            pytest.skip("no vector table; run `matienzo embed`")
+        finally:
+            connection.close()
+        if embedded < chunks:
+            pytest.skip(f"only {embedded:,}/{chunks:,} chunks embedded")
+
         hits = call(server, "search_sites", query="hole blocked by a tractor tyre", limit=3)
         assert hits[0]["site_number"] == 5005
 

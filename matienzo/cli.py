@@ -458,9 +458,17 @@ def build(*, out: Path | None = None) -> None:
     target = out or config.DB_PATH
     started = time.monotonic()
 
+    # Read the old file's vectors out before it is replaced. Embeddings are
+    # cached by chunk content hash, but the cache lives inside the database, so
+    # without this every rebuild would throw them away and cost a five-minute
+    # re-embed for chunks that mostly did not change.
+    cached_vectors = embed_module.export_vectors(target)
+    restored = 0
+
     try:
         with fresh_database(target) as connection:
             build_id = db_load.build(connection)
+            restored = embed_module.import_vectors(connection, cached_vectors)
     except db_load.UnmappedAreasError as error:
         console.print(f"[red]{error}[/red]")
         raise SystemExit(1) from error
@@ -470,6 +478,12 @@ def build(*, out: Path | None = None) -> None:
     console.print(
         f"[green]Built[/green] {target.name} (build {build_id}, {size:.1f} MB, {elapsed:.1f}s)"
     )
+    if cached_vectors:
+        console.print(
+            f"[dim]Carried over {restored:,} of {len(cached_vectors):,} cached embeddings.[/dim]"
+        )
+        if restored < len(cached_vectors):
+            console.print("[dim]Run `matienzo embed` to fill the rest.[/dim]")
 
 
 @app.command

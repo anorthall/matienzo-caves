@@ -23,6 +23,7 @@ import struct
 from collections.abc import Iterable, Iterator, Sequence
 from dataclasses import dataclass
 from functools import cache
+from pathlib import Path
 from typing import Any
 
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
@@ -145,3 +146,53 @@ def is_available(connection: sqlite3.Connection) -> bool:
     except sqlite3.OperationalError:
         return False
     return bool(row and row[0])
+
+
+def export_vectors(path: Path) -> dict[str, bytes]:
+    """Read an existing database's vectors, keyed by chunk content hash.
+
+    Caching embeddings by content hash is only useful if the cache outlives the
+    thing it caches, and `matienzo build` replaces the database wholesale. Read
+    out first and the rebuild costs seconds instead of re-embedding 13,280
+    chunks that mostly did not change.
+    """
+    if not path.exists():
+        return {}
+
+    from matienzo.db.connect import connect
+
+    try:
+        connection = connect(path, read_only=True)
+    except sqlite3.Error:
+        return {}
+    try:
+        rows = connection.execute(
+            "SELECT c.content_sha256, v.embedding FROM chunk c"
+            " JOIN chunk_vec v ON v.chunk_id = c.chunk_id"
+        ).fetchall()
+    except sqlite3.Error:
+        # No vector table, or sqlite-vec is not installed. Nothing to carry.
+        return {}
+    finally:
+        connection.close()
+    return {row["content_sha256"]: row["embedding"] for row in rows}
+
+
+def import_vectors(connection: sqlite3.Connection, cached: dict[str, bytes]) -> int:
+    """Restore cached vectors for chunks whose text is unchanged."""
+    if not cached:
+        return 0
+
+    rows = connection.execute(
+        "SELECT chunk_id, site_number, kind, content_sha256 FROM chunk"
+    ).fetchall()
+    restorable = [
+        (row["chunk_id"], cached[row["content_sha256"]], row["site_number"], row["kind"])
+        for row in rows
+        if row["content_sha256"] in cached
+    ]
+    connection.executemany(
+        "INSERT INTO chunk_vec (chunk_id, embedding, site_number, kind) VALUES (?, ?, ?, ?)",
+        restorable,
+    )
+    return len(restorable)
