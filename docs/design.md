@@ -1148,16 +1148,129 @@ against the finished corpus and were wrong. Trust this section over the above.
 | 269 site numbers 404 / ~5,288 files | **All 5,557 pages exist.** No 404s. |
 | `<B><BIG>` tag swap in 2 files (`0505`, `1775`) | **3 files** — also `1955`. |
 | Files with no `<BODY>` tag: 34–132 | **1,813** (33% of the corpus). Normal texture, not an anomaly — segmentation anchors on `<BIG>`. |
-| Header ends at the first `</SMALL>` | Wrong on 8 pages. **The header ends at the `Area position` / `Site entrance in context` / `Logbook search` anchor run.** Seven pages split the info line across two `<SMALL>` blocks (`0061`, `0151`, `0417`, `0917`, `1452`, `2410`, `4950`); `0363` leaves the anchors outside any `<SMALL>`; `0420` puts a literal `]` between the two blocks. |
+| Header ends at the first `</SMALL>` | Wrong on 9 pages. **The header ends at the `Area position` / `Site entrance in context` / `Logbook search` anchor run.** Eight pages split the info line across more than one `<SMALL>` block (`0061`, `0151`, `0417`, `0420`, `0917`, `1452`, `2410`, `4950` — `0420` also puts a literal `]` between its two blocks, and `0917` has three); `0363` leaves the anchors outside any `<SMALL>` entirely. |
 | Body starts at the first `</small>` after `<BIG>` | Insufficient — see above. Also, the **footer must be located before the header**: `5528` has no info line, so its first `<SMALL>` *is* the footer. |
-| One true stub (`0249`) | **Three**: `0249` ("To be re-allocated"), `4540` ("reserved"), `5528` (no info line, empty body, footer only). |
+| One true stub (`0249`) | **Three pages are stub-like** — `0249` ("To be re-allocated"), `4540` ("reserved"), `5528` (no info line, empty body, footer only) — but `site.is_stub` counts **two**. The shipped definition is "no header *and* no footer", and `5528`'s only `<SMALL>` block is its footer, so it fails the second clause. Anyone counting stubs from the column gets 2, not 3. |
 | Updated line present in ~49–54% | **2,615 of 5,557 (47.1%).** |
 | Stray extra `</small>` in header: 19 files | **14 files.** |
-| `data-speak` TTS wrappers in 4 files | **5 files** (`0028`, `0841`, `2081`, `2366`, `4732`), with 6–44 wrappers each **inside the body**. Those pages must be read via the DOM. |
-| Largest page ~70 KB | **`2889.htm` is 162 KB** (134,983 visible body characters); `0733` is 155 KB. |
-| Minimal records (<70 chars): ~723 | **911.** |
+| `data-speak` TTS wrappers in 4 files | **5 files** (`0028`, `0841`, `2081`, `2366`, `4732`), with 7–45 wrappers each **inside the body**. Those pages must be read via the DOM. |
+| Largest page ~70 KB | **`2889.htm` is 162 KB** on disk; `0733` is 155 KB. The "134,983 visible body characters" first recorded here is a tag-strip of the whole document, not of the body segment: `site.body_chars` gives `2889` **104,081** and `0733` **106,957**, so `0733` has the largest parsed body even though `2889` is the larger file. |
+| Minimal records (<70 chars): ~723 | **1,220**, both by `site.is_minimal` and by `body_chars < 70`. The 911 first recorded here was itself wrong. |
 
 Counts still to be re-verified against the full corpus when Phase 2 lands:
 citation totals, distinct areas, cross-reference edge counts, and the
 measurement-value distributions. Treat every threshold in §6 as provisional
 until then.
+
+**Five counts have since been verified and frozen** in
+`tests/test_db.py::TestFullCorpus`: 5,557 sites, 7,051 update dates, 752 distinct
+citations used 14,661 times, and 2,378 cross-references. The area count of 81 is
+measured but not asserted by that test.
+
+**The §6 threshold table itself was never updated, and five of its twelve rows
+are now known wrong.** Read it as reconnaissance, not as a specification:
+
+| §6 threshold | Says | Actually |
+| --- | --- | --- |
+| distinct citation units | 700–720 | **752** |
+| total citation instances | 8,300–8,600 | **14,661** |
+| distinct areas after normalisation | 55–65 | **81** |
+| hyperlink xref edges | 1,240–1,270 | **2,227** |
+| files with ≥1 outbound xref | 63–69% | **25.1%** (1,396 sites) |
+
+The remaining seven hold: parsed area 99.91%, UTM 98.58%, altitude 98.45%,
+numeric length 64.24%, 151 plaintext xrefs, `&nbsp;` normalisation, and zero
+`error`-severity anomalies. The stale 700–720 figure also survives at §5 and in
+the `citation` DDL comment in §3.
+
+---
+
+# Where the build diverged from this design
+
+All seven phases in §7 shipped. The following parts of the document above
+describe a plan that the implementation deliberately did not follow; trust this
+section over them. `docs/plan-status.md` carries the reasoning.
+
+| Designed above | What was built |
+| --- | --- |
+| `requires-python = ">=3.13"`, `.python-version` pinned to 3.13 (§1, §7, risk 1) | **3.14.** The onnxruntime risk was probed in an isolated venv and discharged: `fastembed==0.8.0`, `onnxruntime==1.28.0` and `sqlite-vec==0.1.9` all resolve on 3.13 and 3.14, and the model runs on both. No fallback interpreter, no separate `[embed]` interpreter. |
+| `data/vocab/` holds areas, authors, qualifiers, systems and people (§1) | **`areas.toml` only.** Authors and qualifiers come from the citation grammar, systems from the prose `Quantity` relations, people from evidence-gated mentions. A curated file for those would be a second source of truth for something the parser already derives. |
+| `normalise/` holds areas, authors, people, systems, measures, geo (§1) | **`normalise/areas.py` only**, for the same reason. The §1 rule still holds where it applies: normalisers are the only consumers of `data/vocab/`, and the raw string is never destroyed. |
+| `data/overrides/` is committed at the Phase 4 checkpoint (§5, §7) | **The directory does not exist.** No site needs an override; the two known-bad upstream records were better served as anomalies. `overrides.py` and its tests exist and pass, and `load_all` reads a missing directory as empty. |
+| `matienzo.db` ~60–80 MB, built in under two minutes (§7) | **Not a divergence — the estimate was right.** 62.6 MB with vectors (41.6 MB without), built in ~4.3 s, plus about five minutes for a cold embed. Beware of reading the size mid-checkpoint: with a populated `-wal` the main file measures several MB short. |
+| `parse/header.py` yields `target_names` for prose measurements (§2) | **Dropped.** The capitalised-word regex stopped at lowercase Spanish articles (`Cueva del Risco` → `Cueva`), nothing read the field, and `relation` / `target_sites` / `system_name` already carry the useful content. |
+| Vector cache keyed by chunk content hash so a rebuild re-embeds only what changed (§4) | Correct in intent, wrong in location: the cache lived in `matienzo.db`, which `matienzo build` replaces wholesale. `build` now reads the previous file's vectors out before replacing it and restores the ones whose chunk text is unchanged. |
+
+### The schema that shipped is not the schema in §3
+
+The DDL sketch was followed in spirit and departed from in detail. Verified
+against `matienzo/db/schema.sql` and `search_schema.sql`:
+
+**Never built at all.** `coordinate_rtree`, `override`, `review_item`,
+`body_table_cell`, `system_variant`, `author_variant`, `build_metric`, and the
+`v_site_full` / `v_length_stats` views — replaced by the single `site_summary`
+view. `site.body_html` was never added either, so §3's "**store the body three
+ways**" is false: it is stored two ways.
+
+The R*Tree omission propagates. §4 describes `nearby_sites` as an R*Tree query
+and the document's opening line calls `sqlite3` shipping R*Tree "load-bearing
+for the vector-search recommendation". Nothing in the package uses R*Tree.
+`search.nearby` is a squared-distance scan over UTM eastings and northings,
+which is exact because those are already metres, and at 5,557 rows is not worth
+indexing.
+
+**Renamed.** `system` → `cave_system`; `site_update` → `update_date` with `date`
+→ `edited_on`; `citation.key` → `citation_key`; `site.primary_easting` /
+`primary_northing` → `easting` / `northing`; `xref.zone` → `from_zone`.
+
+**Dropped columns that §2 and §4 lean on.** `block.char_start` / `char_end`,
+`date_mention.char_offset` and `ordinal`, `quantity.ordinal` (§3's stated
+mechanism for keeping duplicate labels apart), `coordinate.is_placeholder`
+(folded into `coord_system`), `xref.char_offset` and therefore the `ux_xref`
+unique index, and `chunk.section_id` / `char_start` / `char_end` — which makes
+§4's claim that the MCP passage payload carries a **char span** wrong. The
+`list_citations` tool in §4 was never implemented; `corpus_stats` shipped in its
+place.
+
+### Further body figures that no correction covers
+
+| Claim | Where | Actually |
+| --- | --- | --- |
+| "expect ~22–28k chunks"; "at 25k rows the join is free" | §4 | **13,280.** `search_schema.sql` says "~13k" in its own comment. |
+| "8,448 near-identical strings" (footer citations) | §4 | **14,661** instances over 752 distinct works. |
+| "the known 234 split-anchor files" | §6 | **384** `citation_split_anchors` anomalies. |
+| "no coords (−0.15, expected for ~42 files)" | §5 | **72** `coord_missing` anomalies. |
+| "5,521 logbook PDFs, 2,311 scanned publications" | §8 | **20,599** `logbook_pdf` links over 183 distinct URLs; **5,587** `scanned_pub` links over 156. Neither reading matches. |
+| `~45` golden fixtures | §6 | **67.** |
+
+### The §1 layout tree is out of date beyond the vocab and normalise rows
+
+`download_htm.py` is at **`scripts/download_htm.py`**, not the repo root — the
+tree, the §1 recommendation to "leave `download_htm.py` exactly as it is", and
+the Critical Files list at the end all still give the old path.
+
+Shipped but missing from the tree: `matienzo/evaluate.py`, `matienzo/overrides.py`,
+`matienzo/parse/links.py`, `matienzo/db/audit.py`, `matienzo/db/search_schema.sql`,
+`data/eval/queries.toml`.
+
+Listed but never created: `tests/test_citations.py`, `tests/test_corpus.py` (the
+whole-corpus invariants live in `matienzo/db/audit.py` and `tests/test_db.py`),
+and `tests/golden/corpus-digest.txt`.
+
+### Open questions §8 still hasn't answered
+
+Questions 1 (commit `pages/`) and 6 (search ground truth) were settled by
+building — the corpus is committed byte-exactly with `-text`, and
+`data/eval/queries.toml` holds 28 queries. The rest are live editorial calls,
+deferred rather than decided:
+
+2. **`entpics/` / `ugpics/` in scope?** `resource_link` accommodates them:
+   6,186 of the 38,501 links point into those galleries, and nothing resolves
+   them today.
+3. **The `.3d` Survex links.** 824 of them, not the 474 the reconnaissance
+   counted on a partial corpus. Would give real geometry and an independent
+   cross-check on `length_m`.
+4. **Curated system rosters.** The DB currently claims only what the pages say —
+   9 systems from 25 memberships — by default rather than by decision.
+5. **Historical versions.** Currently a snapshot with `build` bookkeeping only.
+   Retrofitting temporality is expensive; the "no" has not been made deliberate.
