@@ -25,8 +25,12 @@ jobs:
       # environment would report missing-import errors rather than real ones, so
       # every extra is installed here: `mcp` in particular ships type
       # information that `matienzo/mcp_server.py` is checked against.
+      # `--frozen` installs uv.lock exactly as committed and never re-resolves,
+      # so CI tests the dependency set a contributor actually has. A pyproject
+      # edit that was never locked is caught by the `uv-lock` pre-commit hook
+      # below rather than by silently resolving something new here.
       - name: Sync the environment
-        run: uv sync --all-extras --dev
+        run: uv sync --frozen --all-extras --dev
 
       - name: Cache pre-commit hook environments
         uses: actions/cache@v6
