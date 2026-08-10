@@ -9,9 +9,14 @@ tests/fixtures/*.htm -text -diff
 # with a trailing slash, which matches no file path — .gitattributes only ever
 # consults file paths. Repairing it to `**` would have made things worse:
 #
-#   plain git, packed   3.5 MiB      (25 MB of near-identical HTML deltas well)
-#   git-lfs            ~23 MB        (LFS stores blobs undeltified and
+#   plain git, packed    9.0 MiB     (24.6 MiB of near-identical HTML deltas
+#                                     well: 11,113 blobs, ~2 versions of each
+#                                     page, from the autocrlf incident below)
+#   git-lfs             ~25 MB       (LFS stores blobs undeltified and
 #                                     uncompressed) + 5,557 pointer files
+#
+# Re-measured 2026-08-10 when the LFS question came up again; an earlier note
+# here claimed 3.5 MiB for the packed figure, which understated it.
 #
 # LFS earns its place for large binaries that do not delta. This is 5,557 small,
 # highly repetitive text files — the opposite case. Committing them plainly also
