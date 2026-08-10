@@ -1,10 +1,15 @@
-# `pages/` and `tests/fixtures/` are byte-exact copies of scraped HTML: CRLF
-# line endings, CP1252 bytes and all. Parsed records are keyed by the SHA-256 of
-# those bytes and the decode tests assert on them, so a whitespace-fixing hook
-# would not be a tidy-up — it would rewrite the source of truth and invalidate
-# every hash in the database. `tests/golden/` is generated, and belongs to its
-# generator rather than to a formatter. Nothing here may touch any of them.
-exclude: '^(pages/|tests/fixtures/|tests/golden/)'
+# `data/pages/` and `tests/fixtures/` are byte-exact copies of scraped HTML:
+# CRLF line endings, CP1252 bytes and all. Parsed records are keyed by the
+# SHA-256 of those bytes and the decode tests assert on them, so a
+# whitespace-fixing hook would not be a tidy-up — it would rewrite the source of
+# truth and invalidate every hash in the database. `tests/golden/` is generated,
+# and belongs to its generator rather than to a formatter. Nothing here may
+# touch any of them.
+#
+# The corpus moved from `pages/` to `data/pages/`. The old path is not kept as a
+# second pattern: it matches nothing now, and an exclude that silently protects
+# a directory that does not exist is the kind of thing nobody re-checks.
+exclude: '^(data/pages/|tests/fixtures/|tests/golden/)'
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit

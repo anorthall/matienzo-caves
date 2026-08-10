@@ -1245,6 +1245,11 @@ place.
 
 ### The §1 layout tree is out of date beyond the vocab and normalise rows
 
+The corpus is at **`data/pages/`**, not `pages/`. It moved so that `data/` is
+the single source-of-truth tree rather than one of two, which is what the
+governing principle in §0 always described. The `-text` attribute moved with it,
+and the pre-commit exclude names the new path.
+
 `download_htm.py` is at **`scripts/download_htm.py`**, not the repo root — the
 tree, the §1 recommendation to "leave `download_htm.py` exactly as it is", and
 the Critical Files list at the end all still give the old path.

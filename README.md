@@ -259,7 +259,7 @@ uv run pre-commit install
 uv run pre-commit run --all-files
 ```
 
-The config excludes `pages/`, `tests/fixtures/` and `tests/golden/`. The first
+The config excludes `data/pages/`, `tests/fixtures/` and `tests/golden/`. The first
 two are byte-exact scraped HTML whose SHA-256 keys every parsed record, so a
 whitespace-fixing hook would rewrite the source of truth; the third is
 generated. The mypy hook runs through `uv run` rather than in an isolated
