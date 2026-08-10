@@ -299,6 +299,51 @@ class TestAgent:
         assert len(tool_result_turns) == 1
         assert len(tool_result_turns[0]["content"]) == 2
 
+    def test_output_only_fields_are_never_replayed(self, fixture_db: Path, tmp_path: Path) -> None:
+        """Response blocks and request blocks are not the same shape. A text
+        block comes back as `ParsedTextBlock`, carrying `parsed_output`, which
+        the API rejects with a 400 on the way back in.
+
+        It takes two iterations to fire, because the second request is the first
+        one that replays an assistant turn — which is why a suite full of
+        single-turn scripts missed it entirely.
+        """
+        client, fake = agent_client(
+            fixture_db,
+            tmp_path,
+            [
+                fakes.call_tools(("corpus_stats", {}), preamble="Let me count."),
+                fakes.say("There are 5,557 sites."),
+            ],
+        )
+        with client:
+            ask(client, "how many sites?")
+
+        assert len(fake.calls) == 2, "the second request is the one that replays"
+        replayed = json.dumps(fake.messages_sent[1])
+        assert "parsed_output" not in replayed
+
+    def test_replayed_blocks_keep_the_fields_the_api_needs(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """The other half of the same fix: stripping must not take `id` off a
+        `tool_use` block, or the `tool_result` answering it is orphaned."""
+        client, fake = agent_client(
+            fixture_db,
+            tmp_path,
+            [fakes.call_tools(("corpus_stats", {})), fakes.say("Done.")],
+        )
+        with client:
+            ask(client, "?")
+
+        assistant = next(
+            m
+            for m in fake.messages_sent[1]
+            if m["role"] == "assistant" and any(b.get("type") == "tool_use" for b in m["content"])
+        )
+        tool_use = next(b for b in assistant["content"] if b["type"] == "tool_use")
+        assert {"type", "id", "name", "input"} <= set(tool_use)
+
     def test_a_failing_tool_is_reported_and_the_loop_continues(
         self, fixture_db: Path, tmp_path: Path
     ) -> None:

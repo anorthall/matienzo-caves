@@ -46,12 +46,26 @@ def usage(
     )
 
 
+def text_block(text: str) -> Any:
+    """A text block as the API actually returns one.
+
+    Deliberately the SDK's own `ParsedTextBlock` rather than a tidy dict. Real
+    response blocks carry `parsed_output`, an output-only field the API rejects
+    with a 400 if it is sent back — and a fake that hands back clean dicts
+    cannot catch that. It did not: the loop shipped replaying the field, and the
+    first two-turn conversation against the real API failed.
+    """
+    from anthropic.types import ParsedTextBlock
+
+    return ParsedTextBlock(type="text", text=text)
+
+
 @dataclass
 class Turn:
     """One scripted model response."""
 
     events: Sequence[Any] = field(default_factory=tuple)
-    content: Sequence[dict[str, Any]] = field(default_factory=tuple)
+    content: Sequence[Any] = field(default_factory=tuple)
     stop_reason: str = "end_turn"
     usage: SimpleNamespace = field(default_factory=usage)
 
@@ -61,16 +75,16 @@ def say(text: str, *, chunks: Sequence[str] | None = None) -> Turn:
     pieces = list(chunks) if chunks is not None else [text]
     return Turn(
         events=[text_delta(piece) for piece in pieces],
-        content=[{"type": "text", "text": text}],
+        content=[text_block(text)],
         stop_reason="end_turn",
     )
 
 
 def call_tools(*calls: tuple[str, dict[str, Any]], preamble: str = "") -> Turn:
     """A turn that asks for one or more tools."""
-    blocks: list[dict[str, Any]] = []
+    blocks: list[Any] = []
     if preamble:
-        blocks.append({"type": "text", "text": preamble})
+        blocks.append(text_block(preamble))
     blocks += [
         {"type": "tool_use", "id": f"toolu_{index}", "name": name, "input": arguments}
         for index, (name, arguments) in enumerate(calls)
@@ -94,7 +108,7 @@ def refuse() -> Turn:
 def pause() -> Turn:
     return Turn(
         events=[text_delta("working")],
-        content=[{"type": "text", "text": "working"}],
+        content=[text_block("working")],
         stop_reason="pause_turn",
     )
 

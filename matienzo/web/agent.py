@@ -23,6 +23,7 @@ import sqlite3
 from collections.abc import AsyncIterator
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
+from functools import cache
 from typing import Any, Final
 
 import anyio
@@ -299,19 +300,71 @@ def _usage_of(final: Any) -> budget.Usage:
     )
 
 
-def _as_dict(block: Any) -> dict[str, Any]:
-    """Content blocks as plain dicts, so they can be stored and replayed.
+@cache
+def _input_fields() -> dict[str, frozenset[str]]:
+    """Which keys each block type is allowed to carry *on the way in*.
 
-    Round-tripping through the SDK's own serialisation rather than picking
-    fields out: thinking blocks in particular are rejected by the API if they
-    come back modified, and "modified" includes a field we did not know to keep.
+    Response blocks and request blocks are not the same shape, and the
+    difference is not cosmetic. A `text` block comes back as the SDK's
+    `ParsedTextBlock`, which carries `parsed_output` — a field that exists only
+    on output and that the API rejects with a 400 if you send it back.
+
+    Derived from the SDK's own `*BlockParam` TypedDicts rather than from a list
+    of fields to strip. Those types *are* the input schema, so this keeps
+    working when the SDK adds an output-only field we have never heard of —
+    which is exactly how this was found.
     """
+    from anthropic.types import (
+        RedactedThinkingBlockParam,
+        TextBlockParam,
+        ThinkingBlockParam,
+        ToolResultBlockParam,
+        ToolUseBlockParam,
+    )
+
+    return {
+        "text": frozenset(TextBlockParam.__annotations__),
+        "tool_use": frozenset(ToolUseBlockParam.__annotations__),
+        "tool_result": frozenset(ToolResultBlockParam.__annotations__),
+        "thinking": frozenset(ThinkingBlockParam.__annotations__),
+        "redacted_thinking": frozenset(RedactedThinkingBlockParam.__annotations__),
+    }
+
+
+def _as_dict(block: Any) -> dict[str, Any]:
+    """One content block as a plain dict the API will accept back.
+
+    Two things happen here. The block is serialised through the SDK rather than
+    field-by-field, because a thinking block is rejected if it comes back
+    modified and "modified" includes dropping a field we did not know to keep.
+    Then output-only fields are removed, because sending one back is a 400 —
+    see `_input_fields`.
+
+    Block types we do not recognise pass through untouched. Guessing at the
+    shape of something new is worse than forwarding it: the API will say if it
+    is wrong, whereas a silent trim would not.
+    """
+    raw: dict[str, Any]
     if isinstance(block, dict):
-        return block
-    for method in ("model_dump", "to_dict", "dict"):
-        if callable(dump := getattr(block, method, None)):
-            return dict(dump())
-    return {"type": getattr(block, "type", "text"), "text": getattr(block, "text", "")}
+        raw = dict(block)
+    else:
+        for method in ("model_dump", "to_dict", "dict"):
+            if callable(dump := getattr(block, method, None)):
+                raw = dict(dump())
+                break
+        else:
+            raw = {
+                "type": getattr(block, "type", "text"),
+                "text": getattr(block, "text", ""),
+            }
+
+    allowed = _input_fields().get(str(raw.get("type")))
+    if allowed is None:
+        return raw
+    # `None` is dropped as well as unknown keys: the SDK fills absent optional
+    # fields with null, and `citations: null` is noise on every text block we
+    # ever replay.
+    return {key: value for key, value in raw.items() if key in allowed and value is not None}
 
 
 def _render(payload: Any) -> str:
