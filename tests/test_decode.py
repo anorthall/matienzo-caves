@@ -167,7 +167,7 @@ def test_provenance_is_recorded(fixture_path: Callable[[int], Path]) -> None:
 
 @pytest.mark.slow
 class TestWholeCorpus:
-    """Measured against the live `pages/` tree, so a re-scrape that changes the
+    """Measured against the live `data/pages/` tree, so a re-scrape that changes the
     encoding profile shows up as a failing test rather than silent drift."""
 
     def test_encoding_breakdown_matches_the_survey(self) -> None:

@@ -1,6 +1,6 @@
 """Compare the database against the corpus on disk.
 
-The upstream site is live and hand-edited, so `pages/` will drift from what the
+The upstream site is live and hand-edited, so `data/pages/` will drift from what the
 parsers were written against. Without this, a changed count after a re-scrape is
 indistinguishable from a parser regression — and the wrong diagnosis is the
 expensive one.

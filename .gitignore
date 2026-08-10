@@ -4,7 +4,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Derived. `matienzo build` regenerates it from pages/ + data/ in ~2 minutes.
+# Derived. `matienzo build` regenerates it from data/ in ~2 minutes.
 matienzo.db
 matienzo.db-wal
 matienzo.db-shm

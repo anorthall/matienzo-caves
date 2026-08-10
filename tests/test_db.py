@@ -221,7 +221,7 @@ class TestReproducibility:
 class TestAudit:
     def test_reports_a_clean_corpus(self, small_db: sqlite3.Connection) -> None:
         """The fixture database was built from tests/fixtures/, so every page in
-        pages/ that is not a fixture reads as new."""
+        data/pages/ that is not a fixture reads as new."""
         changes = db_audit.corpus_diff(small_db)
         assert all(c.kind == "new" for c in changes)
 
