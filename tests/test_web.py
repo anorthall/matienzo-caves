@@ -27,6 +27,7 @@ from matienzo.db import load as db_load
 from matienzo.db.connect import fresh_database
 from matienzo.web.app import create_app
 from matienzo.web.provenance import Ledger, MarkerScanner
+from matienzo.web.sessions import store
 from matienzo.web.settings import Settings
 from tests import fakes
 
@@ -257,6 +258,20 @@ class TestAgent:
         assert result["ok"] is True
         assert 1930 in result["site_numbers"]
 
+    def test_a_question_is_sent_to_the_model_exactly_once(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """The route persists the question before opening the stream, so the
+        history already contains it. Appending it again as well sent every
+        question twice — allowed by the API, which merges consecutive user
+        turns, so it cost tokens silently rather than erroring."""
+        client, fake = agent_client(fixture_db, tmp_path, [fakes.say("Once.")])
+        with client:
+            ask(client, "a distinctive question")
+
+        sent = json.dumps(fake.messages_sent[0])
+        assert sent.count("a distinctive question") == 1
+
     def test_every_tool_result_answers_a_tool_use_the_client_saw(
         self, fixture_db: Path, tmp_path: Path
     ) -> None:
@@ -343,6 +358,74 @@ class TestAgent:
         )
         tool_use = next(b for b in assistant["content"] if b["type"] == "tool_use")
         assert {"type", "id", "name", "input"} <= set(tool_use)
+
+    def test_a_poisoned_row_from_an_older_version_is_replayed_clean(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """The store keeps blocks verbatim, which is right for replay fidelity
+        and also means it hands back whatever past versions of this code wrote.
+
+        Rows containing `parsed_output` were written before `_as_dict` learned to
+        strip it, and they kept failing every later request in those
+        conversations long after the serialisation itself was fixed. Sanitising
+        at the API boundary is what makes the old rows harmless.
+        """
+        client, fake = agent_client(
+            fixture_db, tmp_path, [fakes.say("First answer."), fakes.say("Second answer.")]
+        )
+        with client:
+            # A real first exchange, so the session cookie is the one the portal
+            # itself issued rather than one a test invented.
+            ask(client, "first question")
+
+            sessions = store.connect(tmp_path / "sessions.db")
+            try:
+                session_id = sessions.execute("SELECT session_id FROM session").fetchone()[0]
+                # Re-poison it exactly as the pre-fix code did.
+                sessions.execute(
+                    "UPDATE block SET json = ? WHERE type = 'text' AND json LIKE '%First answer%'",
+                    (json.dumps({"type": "text", "text": "First answer.", "parsed_output": None}),),
+                )
+            finally:
+                sessions.close()
+
+            ask(client, "second question")
+
+        replayed = json.dumps(fake.messages_sent[1])
+        assert "First answer" in replayed, "the earlier turn was not replayed at all"
+        assert "parsed_output" not in replayed
+        assert session_id
+
+    def test_a_tool_exchange_survives_a_round_trip_through_storage(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """An assistant turn holding a `tool_use` must be followed by a user turn
+        holding the matching `tool_result`. Storing the assistant blocks alone
+        persists a conversation the API rejects on the next question."""
+        client, _ = agent_client(
+            fixture_db,
+            tmp_path,
+            [fakes.call_tools(("corpus_stats", {})), fakes.say("5,557 sites.")],
+        )
+        with client:
+            ask(client, "how many?")
+
+        sessions = store.connect(tmp_path / "sessions.db")
+        try:
+            session_id = sessions.execute("SELECT session_id FROM session").fetchone()[0]
+            replayed = store.history(sessions, session_id, model="claude-opus-5")
+        finally:
+            sessions.close()
+
+        asked = {b["id"] for m in replayed for b in m["content"] if b.get("type") == "tool_use"}
+        answered = {
+            b["tool_use_id"]
+            for m in replayed
+            for b in m["content"]
+            if b.get("type") == "tool_result"
+        }
+        assert asked, "the tool_use block was not persisted at all"
+        assert asked == answered, f"orphaned tool_use: asked {asked}, answered {answered}"
 
     def test_a_failing_tool_is_reported_and_the_loop_continues(
         self, fixture_db: Path, tmp_path: Path

@@ -129,8 +129,11 @@ async def _respond(
                 yield event
             return
 
+        # The question is already in the history: the route persisted it before
+        # opening the stream, so that a visitor who leaves mid-answer still has
+        # their question recorded. Appending it here as well sent every question
+        # to the model twice.
         messages = store.history(sessions, session_id, model=settings.model)
-        messages.append({"role": "user", "content": [{"type": "text", "text": question}]})
 
         async with limiter:
             with anyio.move_on_after(settings.request_timeout_seconds) as scope:
@@ -217,7 +220,9 @@ async def _search_only(
 
     answer.text = prompt.SEARCH_ONLY_ANSWER
     answer.stop_reason = "search_only"
-    answer.blocks = [{"type": "text", "text": prompt.SEARCH_ONLY_ANSWER}]
+    answer.turns = [
+        {"role": "assistant", "content": [{"type": "text", "text": prompt.SEARCH_ONLY_ANSWER}]}
+    ]
     yield stream.delta(prompt.SEARCH_ONLY_ANSWER)
     yield stream.event("citations", cited=[], unverified=[])
     yield stream.done(stop_reason="search_only")
@@ -226,24 +231,37 @@ async def _search_only(
 def _persist(
     sessions: Any, session_id: str, *, settings: Settings, answer: agent_module.Answer
 ) -> None:
-    """Write the assistant turn, including when the visitor has already gone.
+    """Write every turn the exchange produced, in order.
 
-    Tool turns are stored as their own user turns so that replay reproduces the
-    exact alternation the API validates — an assistant turn holding `tool_use`
-    followed by a user turn holding the matching `tool_result`.
+    Runs from the streaming generator's `finally`, because closing the tab
+    part-way through an answer is a normal way to leave rather than an error.
+
+    The alternation is the point. An assistant turn holding a `tool_use` has to
+    be followed by a user turn holding the matching `tool_result`, or the *next*
+    question in this session replays a conversation the API rejects outright. An
+    earlier version flattened all the assistant blocks into a single turn and
+    dropped the tool results altogether, which persisted precisely that.
     """
-    if not answer.blocks and not answer.tool_turns:
+    if not answer.turns:
         return
-    store.append_turn(
-        sessions,
-        session_id,
-        role="assistant",
-        blocks=answer.blocks,
-        model=settings.model,
-        stop_reason=answer.stop_reason,
-        cost_micros=answer.cost_micros,
-        sources=answer.sources,
-    )
+
+    last = len(answer.turns) - 1
+    for index, turn in enumerate(answer.turns):
+        role = str(turn["role"])
+        store.append_turn(
+            sessions,
+            session_id,
+            role=role,
+            blocks=turn["content"],
+            # The model is recorded on assistant turns only; replay uses it to
+            # decide whether thinking blocks may be sent back.
+            model=settings.model if role == "assistant" else None,
+            # Cost and outcome describe the exchange, so they go on its last turn
+            # rather than being repeated on every one.
+            stop_reason=answer.stop_reason if index == last else None,
+            cost_micros=answer.cost_micros if index == last else 0,
+            sources=answer.sources if index == last else (),
+        )
 
 
 async def _with_keepalive(events: AsyncIterator[sse.Event], interval: float) -> AsyncIterator[str]:

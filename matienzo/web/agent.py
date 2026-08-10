@@ -62,11 +62,16 @@ MAX_PAUSE_RESUMES: Final = 3
 class Answer:
     """What the loop produced, for the caller to persist."""
 
-    blocks: list[dict[str, Any]] = field(default_factory=list)
-    """The assistant turns, flattened. Stored verbatim so the conversation can be
-    replayed into a later request without reconstructing anything."""
+    turns: list[dict[str, Any]] = field(default_factory=list)
+    """Every turn the exchange produced, in order and with its role.
 
-    tool_turns: list[dict[str, Any]] = field(default_factory=list)
+    In order, and *not* flattened, because the alternation is load-bearing: an
+    assistant turn holding a `tool_use` must be followed by a user turn holding
+    the matching `tool_result`, or the next request is rejected. Storing the
+    assistant blocks alone would persist a conversation the API will not accept
+    back — which is exactly what the first version of this did.
+    """
+
     sources: list[Source] = field(default_factory=list)
     text: str = ""
     stop_reason: str = "end_turn"
@@ -121,7 +126,7 @@ async def run_agent(
                     tools=ANTHROPIC_TOOLS,
                     output_config={"effort": settings.effort},
                     thinking={"type": "adaptive", "display": "summarized"},
-                    messages=messages,
+                    messages=sanitise(messages),
                     betas=["server-side-fallback-2026-07-01"],
                     fallbacks="default",
                 ) as response:
@@ -166,8 +171,9 @@ async def run_agent(
                 return
 
             blocks = [_as_dict(block) for block in final.content]
-            answer.blocks.extend(blocks)
-            messages.append({"role": "assistant", "content": blocks})
+            assistant_turn = {"role": "assistant", "content": blocks}
+            answer.turns.append(assistant_turn)
+            messages.append(assistant_turn)
 
             if stop_reason == "pause_turn":
                 resumes += 1
@@ -244,7 +250,7 @@ async def run_agent(
                 ],
             }
             messages.append(tool_results)
-            answer.tool_turns.append(tool_results)
+            answer.turns.append(tool_results)
         else:
             answer.stop_reason = "iteration_limit"
             yield stream.error(
@@ -329,6 +335,31 @@ def _input_fields() -> dict[str, frozenset[str]]:
         "thinking": frozenset(ThinkingBlockParam.__annotations__),
         "redacted_thinking": frozenset(RedactedThinkingBlockParam.__annotations__),
     }
+
+
+def sanitise(messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Every message, with each block trimmed to what the API accepts on input.
+
+    Applied here, at the boundary, rather than only where blocks are created —
+    because blocks reach this point from two directions and only one of them is
+    ours. The loop's own blocks come from `_as_dict`; the rest are replayed out
+    of `sessions.db`, where they were written by whatever version of this code
+    was running at the time. A store that keeps blocks verbatim, which is the
+    right call for replay fidelity, is also a store that will hand back
+    yesterday's mistakes.
+
+    That is not hypothetical: rows written before `_as_dict` learned to strip
+    `parsed_output` sat in the database and kept failing every later request in
+    those conversations, long after the serialisation itself was fixed.
+    """
+    cleaned: list[dict[str, Any]] = []
+    for message in messages:
+        content = message.get("content")
+        if isinstance(content, list):
+            cleaned.append({**message, "content": [_as_dict(block) for block in content]})
+        else:
+            cleaned.append(message)
+    return cleaned
 
 
 def _as_dict(block: Any) -> dict[str, Any]:
