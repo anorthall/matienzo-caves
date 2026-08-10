@@ -109,7 +109,14 @@ export type PortalEvent =
   | DoneEvent
   | ErrorEvent;
 
-/** A tool call as the trail renders it: the request, then its outcome. */
+/**
+ * A tool call as the trail renders it: the request, then its outcome.
+ *
+ * `ok` is what says the outcome arrived. A replayed conversation has no elapsed
+ * time and no summary — neither is stored, because both are presentational and
+ * keeping them would mean a second copy of every tool payload in the database —
+ * so the trail cannot use their absence to mean "still running".
+ */
 export interface ToolStep {
   id: string;
   name: string;
@@ -131,10 +138,44 @@ export interface Exchange {
   id: number;
   question: string;
   answer: string;
-  mode: Mode;
   tools: ToolStep[];
   sources: Source[];
   notice: string | null;
   error: string | null;
   streaming: boolean;
+}
+
+/** One conversation, as the thread list shows it. */
+export interface Conversation {
+  id: string;
+  title: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+/**
+ * A stored conversation, read back.
+ *
+ * Mirrored from `matienzo/web/routes/conversations.py` for the same reason the
+ * event vocabulary above is: a hand-written mirror fails in `tsc` when the
+ * server changes shape.
+ */
+export interface TranscriptTool {
+  id: string;
+  name: string;
+  args: Record<string, unknown>;
+  ok: boolean | null;
+}
+
+export interface TranscriptExchange {
+  question: string;
+  answer: string;
+  tools: TranscriptTool[];
+  sources: Source[];
+}
+
+export interface ConversationDetail {
+  id: string;
+  title: string | null;
+  exchanges: TranscriptExchange[];
 }

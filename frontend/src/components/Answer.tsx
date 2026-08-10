@@ -47,7 +47,7 @@ function render(paragraph: string, known: Map<number, Source>) {
 
   MARKER.lastIndex = 0;
   for (let match = MARKER.exec(paragraph); match !== null; match = MARKER.exec(paragraph)) {
-    if (match.index > cursor) parts.push(paragraph.slice(cursor, match.index));
+    if (match.index > cursor) parts.push(...inline(paragraph.slice(cursor, match.index), cursor));
 
     const number = Number(match[1]);
     const source = known.get(number);
@@ -75,6 +75,45 @@ function render(paragraph: string, known: Map<number, Source>) {
     cursor = match.index + match[0].length;
   }
 
-  if (cursor < paragraph.length) parts.push(paragraph.slice(cursor));
+  if (cursor < paragraph.length) parts.push(...inline(paragraph.slice(cursor), cursor));
   return parts;
+}
+
+const BOLD = /\*\*([^*]+)\*\*/g;
+
+/**
+ * The light markdown the model actually emits, as text nodes.
+ *
+ * Applied to the runs *between* citation markers, never across one, so the
+ * marker pass above stays the only thing that decides what becomes a link.
+ * Nothing here can produce an anchor or an element from model output — it emits
+ * `strong` and `br` around text and nothing else — which is what keeps the
+ * provenance guarantee a property of this file rather than a hope.
+ *
+ * Emphasis and line breaks only. Answers arrive with `**site 675**` and
+ * newline-separated list items in them, and the alternative to handling those
+ * two is a markdown library parsing untrusted model output on a page whose
+ * whole claim is that it does not render what the model says as markup.
+ */
+function inline(text: string, offset: number): React.ReactNode[] {
+  const parts: React.ReactNode[] = [];
+  let cursor = 0;
+
+  BOLD.lastIndex = 0;
+  for (let match = BOLD.exec(text); match !== null; match = BOLD.exec(text)) {
+    if (match.index > cursor) parts.push(...lines(text.slice(cursor, match.index), offset + cursor));
+    parts.push(<strong key={`b${offset}-${match.index}`}>{match[1]}</strong>);
+    cursor = match.index + match[0].length;
+  }
+
+  if (cursor < text.length) parts.push(...lines(text.slice(cursor), offset + cursor));
+  return parts;
+}
+
+/** A run of text with its single newlines kept as line breaks. */
+function lines(text: string, offset: number): React.ReactNode[] {
+  const segments = text.split("\n");
+  return segments.flatMap((segment, index) =>
+    index === 0 ? [segment] : [<br key={`n${offset}-${index}`} />, segment],
+  );
 }

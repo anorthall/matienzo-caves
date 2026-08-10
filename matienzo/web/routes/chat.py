@@ -28,12 +28,14 @@ from matienzo.web import prompt, sse
 from matienzo.web.execute import Executor
 from matienzo.web.provenance import Ledger
 from matienzo.web.routes.deps import (
-    SESSION_COOKIE,
     Caller,
+    Visitor,
     executor_of,
+    issue,
     open_sessions,
     rate_limited_chat,
     settings_of,
+    visitor_of,
 )
 from matienzo.web.sessions import budget, store
 from matienzo.web.settings import Settings
@@ -47,17 +49,30 @@ FALLBACK_RESULTS = 8
 class ChatRequest(BaseModel):
     question: str = Field(min_length=1, max_length=2000)
 
+    conversation_id: str | None = Field(default=None, max_length=64)
+    """Which conversation to continue. Absent — or naming one this visitor does
+    not own — starts a new one; the id it actually got is on the `start` event,
+    which is how the SPA learns what a new conversation is called."""
+
 
 @router.post("/chat")
 async def post_chat(
     body: ChatRequest,
     request: Request,
     caller: Annotated[Caller, Depends(rate_limited_chat)],
+    visitor: Annotated[Visitor, Depends(visitor_of)],
     settings: Annotated[Settings, Depends(settings_of)],
     executor: Annotated[Executor, Depends(executor_of)],
 ) -> StreamingResponse:
     with open_sessions(request) as sessions:
-        session_id = store.ensure_session(sessions, caller.session_id, ip_hash=caller.ip_hash)
+        if visitor.minted:
+            store.adopt(sessions, caller.session_id, visitor.id)
+        session_id = store.ensure_session(
+            sessions,
+            body.conversation_id,
+            ip_hash=caller.ip_hash,
+            visitor_id=visitor.id,
+        )
         turn_id = store.append_turn(
             sessions,
             session_id,
@@ -81,14 +96,7 @@ async def post_chat(
         media_type="text/event-stream",
         headers=sse.STREAM_HEADERS,
     )
-    response.set_cookie(
-        SESSION_COOKIE,
-        session_id,
-        max_age=settings.session_ttl_days * 86_400,
-        httponly=True,
-        samesite="lax",
-        secure=True,
-    )
+    issue(response, visitor, settings=settings)
     return response
 
 

@@ -1,23 +1,39 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-import { RateLimited, ask } from "./api";
-import { Answer } from "./components/Answer";
-import { Sources } from "./components/Sources";
-import { ToolTrail } from "./components/ToolTrail";
-import type { Exchange, Mode, PortalEvent } from "./types";
+import {
+  RateLimited,
+  ask,
+  deleteConversation,
+  listConversations,
+  readConversation,
+} from "./api";
+import { Composer } from "./components/Composer";
+import { Exchange as ExchangeView } from "./components/Exchange";
+import { Sidebar } from "./components/Sidebar";
+import { SourcesPanel } from "./components/SourcesPanel";
+import type { Conversation, Exchange, Mode, PortalEvent, Source } from "./types";
 
 const OPENERS = [
-  "Which caves in Cobadal take water in wet weather?",
-  "What is the deepest shaft in the corpus?",
-  "Which sites did Corrin survey in 2003?",
-  "Are there caves used as animal shelters?",
+  { kicker: "Locate", text: "Which caves in Cobadal take water in wet weather?" },
+  { kicker: "Measure", text: "What is the deepest shaft in the corpus?" },
+  { kicker: "Trace", text: "What is the biggest resurgence in the area?" },
+  { kicker: "Find", text: "Are there caves used as animal shelters?" },
 ];
 
+/** Mirrors `store._title`, so an optimistic row reads the same as the stored
+ *  one and does not visibly rewrite itself a second later. */
+const TITLE_CHARS = 60;
+
 export default function App() {
+  const [conversations, setConversations] = useState<Conversation[]>([]);
+  const [activeId, setActiveId] = useState<string | null>(null);
   const [exchanges, setExchanges] = useState<Exchange[]>([]);
   const [question, setQuestion] = useState("");
   const [busy, setBusy] = useState(false);
   const [mode, setMode] = useState<Mode | null>(null);
+  const [navOpen, setNavOpen] = useState(false);
+  const [sourcesOpen, setSourcesOpen] = useState(false);
+
   const abort = useRef<AbortController | null>(null);
   const foot = useRef<HTMLDivElement>(null);
 
@@ -26,11 +42,76 @@ export default function App() {
       .then((r) => r.json())
       .then((body: { mode?: Mode }) => setMode(body.mode ?? null))
       .catch(() => setMode(null));
+    listConversations()
+      .then(setConversations)
+      .catch(() => setConversations([]));
   }, []);
 
   useEffect(() => {
     foot.current?.scrollIntoView({ behavior: "smooth", block: "end" });
   }, [exchanges]);
+
+  /** Stop a stream that is still arriving for a conversation we are leaving. */
+  const stop = useCallback(() => {
+    abort.current?.abort();
+    abort.current = null;
+  }, []);
+
+  const startNew = useCallback(() => {
+    stop();
+    setActiveId(null);
+    setExchanges([]);
+    setQuestion("");
+    setNavOpen(false);
+  }, [stop]);
+
+  const open = useCallback(
+    async (id: string) => {
+      stop();
+      setNavOpen(false);
+      setActiveId(id);
+      setExchanges([]);
+      try {
+        const detail = await readConversation(id);
+        setExchanges(
+          detail.exchanges.map((exchange, index) => ({
+            id: index,
+            question: exchange.question,
+            answer: exchange.answer,
+            // `ok: null` on the wire means no result was ever recorded. The
+            // trail reads `undefined` as still-running, and they are the same
+            // state, so the two spellings meet here.
+            tools: exchange.tools.map((tool) => ({
+              id: tool.id,
+              name: tool.name,
+              args: tool.args,
+              ok: tool.ok ?? undefined,
+            })),
+            sources: exchange.sources,
+            notice: null,
+            error: null,
+            streaming: false,
+          })),
+        );
+      } catch {
+        setExchanges([]);
+        setActiveId(null);
+      }
+    },
+    [stop],
+  );
+
+  const remove = useCallback(
+    async (id: string) => {
+      setConversations((current) => current.filter((c) => c.id !== id));
+      if (id === activeId) startNew();
+      await deleteConversation(id).catch(() => {
+        // It stays gone from the list either way; a failed delete surfaces on
+        // the next load rather than as a dialog over a chat.
+      });
+    },
+    [activeId, startNew],
+  );
 
   const submit = useCallback(
     async (asked: string) => {
@@ -38,6 +119,7 @@ export default function App() {
       if (text === "" || busy) return;
 
       const id = Date.now();
+      const continuing = activeId;
       setQuestion("");
       setBusy(true);
       setExchanges((current) => [
@@ -46,7 +128,6 @@ export default function App() {
           id,
           question: text,
           answer: "",
-          mode: mode ?? "agent",
           tools: [],
           sources: [],
           notice: null,
@@ -64,7 +145,25 @@ export default function App() {
       try {
         await ask(text, {
           signal: controller.signal,
-          onEvent: (event: PortalEvent) => update((e) => apply(e, event)),
+          conversationId: continuing,
+          onEvent: (event: PortalEvent) => {
+            // The server names a new conversation on `start`, and that is the
+            // only place the id ever comes from: the browser does not get to
+            // choose it, and asking without one is what creates it.
+            if (event.event === "start" && continuing === null) {
+              setActiveId(event.session_id);
+              setConversations((current) => [
+                {
+                  id: event.session_id,
+                  title: text.split(/\s+/).join(" ").slice(0, TITLE_CHARS),
+                  created_at: new Date().toISOString(),
+                  updated_at: new Date().toISOString(),
+                },
+                ...current,
+              ]);
+            }
+            update((e) => apply(e, event));
+          },
         });
       } catch (error) {
         const message =
@@ -76,121 +175,168 @@ export default function App() {
         update((e) => ({ ...e, error: message, streaming: false }));
       } finally {
         update((e) => ({ ...e, streaming: false }));
-        abort.current = null;
+        if (abort.current === controller) abort.current = null;
         setBusy(false);
       }
     },
-    [busy, mode],
+    [activeId, busy],
   );
 
+  const consulted = dedupe(exchanges);
+  const title =
+    conversations.find((c) => c.id === activeId)?.title ?? (activeId ? "Untitled" : "New chat");
+
   return (
-    <div className="shell">
-      <header className="masthead">
-        <div className="masthead__mark">
-          <span className="masthead__depth">−</span>
-          <span className="masthead__rule" />
-        </div>
-        <div>
-          <h1 className="masthead__title">Matienzo</h1>
-          <p className="masthead__sub">
-            5,557 cave and shaft descriptions from the Matienzo depression, Cantabria
-          </p>
-        </div>
+    <div
+      className="shell"
+      data-nav={navOpen ? "open" : "shut"}
+      data-sources={sourcesOpen ? "open" : "shut"}
+    >
+      <div
+        className="scrim"
+        onClick={() => {
+          setNavOpen(false);
+          setSourcesOpen(false);
+        }}
+      />
+
+      <Sidebar
+        conversations={conversations}
+        activeId={activeId}
+        drafting={activeId === null && exchanges.length > 0}
+        busy={busy}
+        onNew={startNew}
+        onOpen={(id) => void open(id)}
+        onDelete={(id) => void remove(id)}
+        onClose={() => setNavOpen(false)}
+      />
+
+      <main className="main">
+        <header className="topbar">
+          <button
+            type="button"
+            className="icon-button drawer-toggle"
+            onClick={() => setNavOpen(true)}
+            aria-label="Open conversations"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+          <h1 className="topbar__title">{title}</h1>
+          <button
+            type="button"
+            className="sources-toggle"
+            aria-expanded={sourcesOpen}
+            onClick={() => setSourcesOpen((current) => !current)}
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+            Sites
+            <span className="sources-toggle__count">{consulted.length}</span>
+          </button>
+        </header>
+
         {mode === "search_only" ? (
           <p className="banner" role="status">
             Answering is unavailable — showing matching sites only.
           </p>
         ) : null}
-      </header>
 
-      <main className="stream">
-        {exchanges.length === 0 ? (
-          <section className="opening">
-            <p className="opening__lede">
-              Ask about a cave, a description you half remember, or something the whole
-              corpus would have to be counted to answer.
-            </p>
-            <ul className="opening__examples">
-              {OPENERS.map((opener) => (
-                <li key={opener}>
-                  <button type="button" onClick={() => void submit(opener)} disabled={busy}>
-                    {opener}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ) : null}
-
-        {exchanges.map((exchange) => (
-          <article key={exchange.id} className="exchange">
-            <h2 className="exchange__question">{exchange.question}</h2>
-            <ToolTrail steps={exchange.tools} thinking={exchange.streaming} />
-            {exchange.notice ? (
-              <p className="notice" role="status">
-                {exchange.notice}
-              </p>
+        <div className="stream">
+          <div className="stream__column">
+            {exchanges.length === 0 ? (
+              <section className="opening">
+                <h2 className="opening__title">Ask the archive</h2>
+                <p className="opening__lede">
+                  5,557 cave and shaft descriptions from the Matienzo depression, Cantabria.
+                  Answers are drawn from the corpus and returned with the sites they came
+                  from. Start with a prompt, or ask your own.
+                </p>
+                <ul className="opening__examples">
+                  {OPENERS.map((opener) => (
+                    <li key={opener.text}>
+                      <button
+                        type="button"
+                        className="preset"
+                        onClick={() => void submit(opener.text)}
+                        disabled={busy}
+                      >
+                        <div className="preset__kicker">{opener.kicker}</div>
+                        <div className="preset__text">{opener.text}</div>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </section>
             ) : null}
-            <div className="exchange__body">
-              <Answer
-                text={exchange.answer}
-                sources={exchange.sources}
-                streaming={exchange.streaming}
+
+            {exchanges.map((exchange) => (
+              <ExchangeView
+                key={exchange.id}
+                exchange={exchange}
+                onShowSources={() => setSourcesOpen(true)}
               />
-              <Sources sources={exchange.sources} />
-            </div>
-            {exchange.error ? (
-              <p className="failure" role="alert">
-                {exchange.error}
-              </p>
-            ) : null}
-          </article>
-        ))}
-        <div ref={foot} />
+            ))}
+            <div ref={foot} />
+          </div>
+        </div>
+
+        <Composer
+          value={question}
+          busy={busy}
+          onChange={setQuestion}
+          onSubmit={() => void submit(question)}
+        />
       </main>
 
-      <form
-        className="composer"
-        onSubmit={(event) => {
-          event.preventDefault();
-          void submit(question);
-        }}
-      >
-        <label className="visually-hidden" htmlFor="question">
-          Your question
-        </label>
-        <input
-          id="question"
-          autoComplete="off"
-          placeholder={busy ? "Looking…" : "Ask about the caves"}
-          value={question}
-          disabled={busy}
-          onChange={(event) => setQuestion(event.target.value)}
-        />
-        <button type="submit" disabled={busy || question.trim() === ""}>
-          Ask
-        </button>
-      </form>
-
-      <footer className="colophon">
-        <p>
-          Descriptions from{" "}
-          <a href="https://www.matienzocaves.org.uk/" target="_blank" rel="noreferrer noopener">
-            matienzocaves.org.uk
-          </a>
-          . Answers are generated and can be wrong — every citation links to the page it
-          came from. Questions are kept for 14 days.
-        </p>
-      </footer>
+      <SourcesPanel
+        sources={consulted}
+        open={sourcesOpen}
+        onClose={() => setSourcesOpen(false)}
+      />
     </div>
   );
+}
+
+/** Every site this conversation consulted, first mention winning.
+ *
+ *  Deduped across exchanges rather than per answer: the panel is a record of
+ *  what the corpus returned for the conversation, and a follow-up question
+ *  usually retrieves several of the same sites again. */
+function dedupe(exchanges: Exchange[]): Source[] {
+  const seen = new Map<number, Source>();
+  for (const exchange of exchanges) {
+    for (const source of exchange.sources) {
+      if (!seen.has(source.site_number)) seen.set(source.site_number, source);
+    }
+  }
+  return [...seen.values()];
 }
 
 /** Fold one server event into the exchange it belongs to. */
 function apply(exchange: Exchange, event: PortalEvent): Exchange {
   switch (event.event) {
-    case "start":
-      return { ...exchange, mode: event.mode };
     case "delta":
       return { ...exchange, answer: exchange.answer + event.text };
     case "tool_use":

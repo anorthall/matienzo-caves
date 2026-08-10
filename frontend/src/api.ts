@@ -11,11 +11,14 @@
  * carries the rest.
  */
 
-import type { PortalEvent } from "./types";
+import type { Conversation, ConversationDetail, PortalEvent } from "./types";
 
 export interface AskOptions {
   signal?: AbortSignal;
   onEvent: (event: PortalEvent) => void;
+  /** Which conversation to continue. Omitted, the server opens a new one and
+   *  names it on the `start` event. */
+  conversationId?: string | null;
 }
 
 export class RateLimited extends Error {
@@ -25,11 +28,36 @@ export class RateLimited extends Error {
   }
 }
 
-export async function ask(question: string, { signal, onEvent }: AskOptions): Promise<void> {
+export async function listConversations(): Promise<Conversation[]> {
+  const response = await fetch("/api/conversations");
+  if (!response.ok) throw new Error(`The portal returned ${response.status}.`);
+  return (await response.json()) as Conversation[];
+}
+
+export async function readConversation(id: string): Promise<ConversationDetail> {
+  const response = await fetch(`/api/conversations/${encodeURIComponent(id)}`);
+  if (!response.ok) throw new Error(`The portal returned ${response.status}.`);
+  return (await response.json()) as ConversationDetail;
+}
+
+export async function deleteConversation(id: string): Promise<void> {
+  const response = await fetch(`/api/conversations/${encodeURIComponent(id)}`, {
+    method: "DELETE",
+  });
+  // A 404 means it is already gone, which is the state the caller wanted.
+  if (!response.ok && response.status !== 404) {
+    throw new Error(`The portal returned ${response.status}.`);
+  }
+}
+
+export async function ask(
+  question: string,
+  { signal, onEvent, conversationId }: AskOptions,
+): Promise<void> {
   const response = await fetch("/api/chat", {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ question }),
+    body: JSON.stringify({ question, conversation_id: conversationId ?? null }),
     signal,
   });
 

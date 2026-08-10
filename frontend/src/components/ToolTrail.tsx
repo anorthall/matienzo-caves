@@ -26,7 +26,7 @@ interface Props {
 }
 
 export function ToolTrail({ steps, thinking }: Props) {
-  if (steps.length === 0 && !thinking) return null;
+  if (steps.length === 0) return null;
 
   return (
     <ol className="trail" aria-label="Search steps">
@@ -34,7 +34,10 @@ export function ToolTrail({ steps, thinking }: Props) {
         <li
           key={step.id}
           className={`trail__step${step.ok === false ? " trail__step--failed" : ""}${
-            step.summary === undefined ? " trail__step--running" : ""
+            // `ok` rather than `summary`: a replayed conversation has no
+            // summary for any step, and reading that as "still running" would
+            // leave every old trail blinking forever.
+            step.ok === undefined ? " trail__step--running" : ""
           }`}
         >
           <span className="trail__label">{LABELS[step.name] ?? step.name}</span>
@@ -45,7 +48,7 @@ export function ToolTrail({ steps, thinking }: Props) {
           {step.ms !== undefined ? <span className="trail__ms">{step.ms} ms</span> : null}
         </li>
       ))}
-      {thinking && steps.every((s) => s.summary !== undefined) ? (
+      {thinking && steps.every((s) => s.ok !== undefined) ? (
         <li className="trail__step trail__step--running">
           <span className="trail__label">Working</span>
         </li>

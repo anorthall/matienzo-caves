@@ -20,7 +20,7 @@ import json
 import secrets
 import sqlite3
 from collections.abc import Iterable, Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, field, replace
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any, Final
@@ -53,6 +53,77 @@ class Source:
     first_seen_tool: str
 
 
+@dataclass(frozen=True, slots=True)
+class Thread:
+    """One conversation, as the thread list shows it."""
+
+    session_id: str
+    title: str | None
+    created_at: str
+    last_seen_at: str
+
+
+@dataclass(frozen=True, slots=True)
+class ToolCall:
+    """A tool call as a replayed transcript can still account for it.
+
+    `ok` is `None` when no result was ever recorded — the visitor closed the tab
+    while the tool was running. The live stream distinguishes those two states
+    the same way, so the trail renders a replayed conversation without a second
+    code path.
+
+    Neither the elapsed time nor the result summary is stored: both are
+    presentational, and the alternative is writing a second copy of every tool
+    payload into the database to reproduce a line of grey text.
+    """
+
+    id: str
+    name: str
+    args: dict[str, Any]
+    ok: bool | None
+
+
+@dataclass(frozen=True, slots=True)
+class Exchange:
+    """One question and everything that answering it produced."""
+
+    question: str
+    answer: str
+    tools: list[ToolCall]
+    sources: list[Source]
+
+
+@dataclass(slots=True)
+class _Draft:
+    """An exchange under construction, while `transcript` walks the turns."""
+
+    question: str
+    answer: str = ""
+    tools: dict[str, ToolCall] = field(default_factory=dict)
+    turn_ids: list[int] = field(default_factory=list)
+
+    def absorb(self, turn_id: int, blocks: Sequence[dict[str, Any]]) -> None:
+        self.turn_ids.append(turn_id)
+        for block in blocks:
+            match block.get("type"):
+                case "text":
+                    self.answer += str(block.get("text", ""))
+                case "tool_use":
+                    call_id = str(block.get("id", ""))
+                    self.tools[call_id] = ToolCall(
+                        id=call_id,
+                        name=str(block.get("name", "")),
+                        args=dict(block.get("input") or {}),
+                        ok=None,
+                    )
+                case "tool_result":
+                    call_id = str(block.get("tool_use_id", ""))
+                    if (call := self.tools.get(call_id)) is not None:
+                        self.tools[call_id] = replace(call, ok=not block.get("is_error", False))
+                case _:
+                    pass  # `thinking` and anything the API adds later: not shown.
+
+
 def connect(path: Path) -> sqlite3.Connection:
     """Open the sessions database, creating it if absent.
 
@@ -62,8 +133,25 @@ def connect(path: Path) -> sqlite3.Connection:
     path.parent.mkdir(parents=True, exist_ok=True)
     connection = sqlite3.connect(path, isolation_level=None)
     connection.row_factory = sqlite3.Row
+    _migrate(connection)
     connection.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
     return connection
+
+
+def _migrate(connection: sqlite3.Connection) -> None:
+    """Bring an older database up to what the schema now declares.
+
+    Runs *before* the schema is applied, not after, and that order is the whole
+    point: the schema creates an index over `session.visitor_id`, which an older
+    file does not have yet. Applying the schema first fails on that index before
+    anything gets a chance to add the column.
+
+    A fresh file has no `session` table at all, so `table_info` comes back empty
+    and this does nothing — the schema below creates the column itself.
+    """
+    columns = {row["name"] for row in connection.execute("PRAGMA table_info(session)")}
+    if columns and "visitor_id" not in columns:
+        connection.execute("ALTER TABLE session ADD COLUMN visitor_id TEXT")
 
 
 def _now() -> str:
@@ -76,32 +164,155 @@ def new_session_id() -> str:
     return secrets.token_urlsafe(16)
 
 
+#: Visitor tokens are the same shape and for the same reason — they are the
+#: capability to read every conversation in a thread list.
+new_visitor_id = new_session_id
+
+
 def ensure_session(
-    connection: sqlite3.Connection, session_id: str | None, *, ip_hash: str | None = None
+    connection: sqlite3.Connection,
+    session_id: str | None,
+    *,
+    ip_hash: str | None = None,
+    visitor_id: str | None = None,
 ) -> str:
     """Return a live session id, creating or touching the row behind it.
 
-    An unknown id is treated as a new session rather than an error. Cookies
-    outlive the retention window, so "your session expired" is a routine event
-    and not one worth showing anybody.
+    An id that is unknown *or belongs to somebody else* is treated as a new
+    session rather than an error. Both are routine: cookies outlive the
+    retention window, and the conversation id now arrives in the request body
+    where anyone can put anything. Refusing would leak which ids exist; starting
+    a fresh conversation is the same answer for both cases.
     """
     now = _now()
     if session_id:
         row = connection.execute(
-            "SELECT session_id FROM session WHERE session_id = ?", (session_id,)
+            "SELECT session_id FROM session WHERE session_id = ?"
+            " AND (visitor_id IS ? OR visitor_id = ?)",
+            (session_id, visitor_id, visitor_id),
         ).fetchone()
         if row is not None:
             connection.execute(
-                "UPDATE session SET last_seen_at = ? WHERE session_id = ?", (now, session_id)
+                "UPDATE session SET last_seen_at = ?, visitor_id = coalesce(visitor_id, ?)"
+                " WHERE session_id = ?",
+                (now, visitor_id, session_id),
             )
             return session_id
 
     session_id = new_session_id()
     connection.execute(
-        "INSERT INTO session (session_id, created_at, last_seen_at, ip_hash) VALUES (?, ?, ?, ?)",
-        (session_id, now, now, ip_hash),
+        "INSERT INTO session (session_id, created_at, last_seen_at, ip_hash, visitor_id)"
+        " VALUES (?, ?, ?, ?, ?)",
+        (session_id, now, now, ip_hash, visitor_id),
     )
     return session_id
+
+
+def adopt(connection: sqlite3.Connection, session_id: str | None, visitor_id: str) -> None:
+    """Hand an unowned conversation to a visitor who is being issued a token.
+
+    Only matters once, on the deploy that introduced the thread list: everyone
+    mid-conversation at that moment holds the old per-conversation cookie and no
+    visitor token. Without this their history is still in the database and no
+    longer reachable, which reads as the portal having thrown it away.
+
+    Guarded on `visitor_id IS NULL`, so presenting somebody else's old cookie
+    claims nothing.
+    """
+    if not session_id:
+        return
+    connection.execute(
+        "UPDATE session SET visitor_id = ? WHERE session_id = ? AND visitor_id IS NULL",
+        (visitor_id, session_id),
+    )
+
+
+def threads(connection: sqlite3.Connection, visitor_id: str) -> list[Thread]:
+    """A visitor's conversations, most recent first.
+
+    Untitled conversations are excluded rather than shown blank: a session row
+    exists from the moment a question is accepted, and one whose first turn
+    never landed is not something anybody can open.
+    """
+    return [
+        Thread(
+            session_id=row["session_id"],
+            title=row["title"],
+            created_at=row["created_at"],
+            last_seen_at=row["last_seen_at"],
+        )
+        for row in connection.execute(
+            "SELECT session_id, title, created_at, last_seen_at FROM session"
+            " WHERE visitor_id = ? AND title IS NOT NULL ORDER BY last_seen_at DESC, rowid DESC",
+            (visitor_id,),
+        )
+    ]
+
+
+def owns(connection: sqlite3.Connection, session_id: str, visitor_id: str) -> bool:
+    return (
+        connection.execute(
+            "SELECT 1 FROM session WHERE session_id = ? AND visitor_id = ?",
+            (session_id, visitor_id),
+        ).fetchone()
+        is not None
+    )
+
+
+def delete_session(connection: sqlite3.Connection, session_id: str, visitor_id: str) -> bool:
+    """Delete one conversation, if it is this visitor's. Cascades to its turns."""
+    cursor = connection.execute(
+        "DELETE FROM session WHERE session_id = ? AND visitor_id = ?", (session_id, visitor_id)
+    )
+    return cursor.rowcount > 0
+
+
+def transcript(connection: sqlite3.Connection, session_id: str) -> list[Exchange]:
+    """Rebuild a conversation as the browser renders it.
+
+    Not `history` with a different return type. That one rebuilds the array the
+    *model* is sent — every block, verbatim, with tool payloads that run to
+    kilobytes — and it truncates. This one rebuilds what a *reader* sees, in
+    full: the question, the prose, which tools ran and whether they worked, and
+    the sites the corpus actually returned.
+
+    An exchange opens on a user turn made only of text. A user turn carrying
+    `tool_result` blocks is the second half of a tool call, so it continues the
+    exchange it belongs to rather than starting a new one — the same distinction
+    `_truncation_point` makes, for the same reason.
+    """
+    turns = connection.execute(
+        "SELECT turn_id, role FROM turn WHERE session_id = ? ORDER BY ordinal", (session_id,)
+    ).fetchall()
+
+    exchanges: list[_Draft] = []
+    for turn in turns:
+        blocks = [
+            json.loads(row["json"])
+            for row in connection.execute(
+                "SELECT json FROM block WHERE turn_id = ? ORDER BY ordinal", (turn["turn_id"],)
+            )
+        ]
+        if turn["role"] == "user" and blocks and all(b.get("type") == "text" for b in blocks):
+            exchanges.append(_Draft(question="".join(str(b.get("text", "")) for b in blocks)))
+            continue
+        if not exchanges:
+            continue  # An assistant turn with no question above it: unreachable, skip.
+        exchanges[-1].absorb(turn["turn_id"], blocks)
+
+    return [
+        Exchange(
+            question=draft.question,
+            answer=draft.answer,
+            tools=list(draft.tools.values()),
+            sources=[
+                source
+                for turn_id in draft.turn_ids
+                for source in sources_for_turn(connection, turn_id)
+            ],
+        )
+        for draft in exchanges
+    ]
 
 
 def append_turn(

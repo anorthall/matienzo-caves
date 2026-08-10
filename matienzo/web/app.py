@@ -31,7 +31,7 @@ from starlette.concurrency import run_in_threadpool
 
 from matienzo import __version__
 from matienzo.web.execute import Executor
-from matienzo.web.routes import chat, health, search, site
+from matienzo.web.routes import chat, conversations, health, search, site
 from matienzo.web.sessions import store
 from matienzo.web.settings import Settings
 
@@ -130,6 +130,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.include_router(search.router)
     app.include_router(site.router)
     app.include_router(chat.router)
+    app.include_router(conversations.router)
     _mount_spa(app)
 
     return app

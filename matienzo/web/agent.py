@@ -114,9 +114,6 @@ async def run_agent(
                 return
 
             scanner = MarkerScanner()
-            blocks: list[dict[str, Any]] = []
-            usage = budget.Usage()
-            stop_reason = "end_turn"
 
             try:
                 async with client.beta.messages.stream(
@@ -128,7 +125,6 @@ async def run_agent(
                     thinking={"type": "adaptive", "display": "summarized"},
                     messages=sanitise(messages),
                     betas=["server-side-fallback-2026-07-01"],
-                    fallbacks="default",
                 ) as response:
                     async for event in response:
                         for produced in _translate(event, stream, scanner):

@@ -17,14 +17,21 @@ from contextlib import contextmanager
 from dataclasses import dataclass
 from typing import Annotated, cast
 
-from fastapi import Depends, HTTPException, Request
+from fastapi import Depends, HTTPException, Request, Response
 
 from matienzo.web.execute import Executor
 from matienzo.web.sessions import budget, store
 from matienzo.web.settings import Settings
 
-#: The cookie holding the opaque session token.
+#: The cookie a single-conversation portal used to hold. Still read, never
+#: written: it is what `store.adopt` needs to hand a conversation started before
+#: the thread list existed to the visitor token that replaces it.
 SESSION_COOKIE = "matienzo_session"
+
+#: The cookie holding the opaque visitor token. One per browser, and the thing a
+#: thread list is scoped to. Conversation ids travel in the request instead,
+#: because a cookie can only name one conversation at a time.
+VISITOR_COOKIE = "matienzo_visitor"
 
 #: What one request of each kind costs against an address's bucket. A search is
 #: cheap for us, so it should not consume a whole question's worth of allowance.
@@ -82,6 +89,44 @@ def caller_of(request: Request) -> Caller:
     return Caller(
         ip_hash=budget.hash_ip(address, settings.ip_salt),
         session_id=request.cookies.get(SESSION_COOKIE),
+    )
+
+
+@dataclass(frozen=True, slots=True)
+class Visitor:
+    """Whose thread list this is."""
+
+    id: str
+    minted: bool
+    """Whether the token was invented for this request and still has to be sent
+    back. Kept as a flag rather than issuing the cookie here because a dependency
+    does not hold the response — see `issue`."""
+
+
+def visitor_of(request: Request) -> Visitor:
+    """Read the visitor token, inventing one if the browser has none.
+
+    Deliberately does no database work: a token names a visitor whether or not
+    any row mentions it yet, and the first conversation is what creates the first
+    row. A visitor who only ever reads an empty thread list writes nothing.
+    """
+    existing = request.cookies.get(VISITOR_COOKIE)
+    if existing:
+        return Visitor(id=existing, minted=False)
+    return Visitor(id=store.new_visitor_id(), minted=True)
+
+
+def issue(response: Response, visitor: Visitor, *, settings: Settings) -> None:
+    """Send a freshly minted visitor token back, if there is one to send."""
+    if not visitor.minted:
+        return
+    response.set_cookie(
+        VISITOR_COOKIE,
+        visitor.id,
+        max_age=settings.session_ttl_days * 86_400,
+        httponly=True,
+        samesite="lax",
+        secure=True,
     )
 
 

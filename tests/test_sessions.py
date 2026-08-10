@@ -152,6 +152,168 @@ class TestHistory:
         assert store.history(db, store.ensure_session(db, None), model="claude-opus-5") == []
 
 
+class TestThreads:
+    """Grouping conversations under a visitor, and reading one back."""
+
+    def test_a_visitors_conversations_are_theirs_alone(self, db: sqlite3.Connection) -> None:
+        mine = store.ensure_session(db, None, visitor_id="visitor-a")
+        theirs = store.ensure_session(db, None, visitor_id="visitor-b")
+        for session_id in (mine, theirs):
+            store.append_turn(db, session_id, role="user", blocks=[text("q")])
+
+        assert [t.session_id for t in store.threads(db, "visitor-a")] == [mine]
+        assert store.owns(db, mine, "visitor-a")
+        assert not store.owns(db, theirs, "visitor-a")
+
+    def test_continuing_somebody_elses_conversation_starts_a_new_one(
+        self, db: sqlite3.Connection
+    ) -> None:
+        """The id arrives in a request body now, not a cookie. Trusting it would
+        append one visitor's question to another visitor's history."""
+        theirs = store.ensure_session(db, None, visitor_id="visitor-b")
+        assert store.ensure_session(db, theirs, visitor_id="visitor-a") != theirs
+
+    def test_a_conversation_with_no_question_yet_is_not_listed(
+        self, db: sqlite3.Connection
+    ) -> None:
+        """A titleless row is one whose first turn never landed. There is
+        nothing behind it to open."""
+        store.ensure_session(db, None, visitor_id="visitor-a")
+        assert store.threads(db, "visitor-a") == []
+
+    def test_deleting_is_scoped_to_the_owner(self, db: sqlite3.Connection) -> None:
+        theirs = store.ensure_session(db, None, visitor_id="visitor-b")
+        store.append_turn(db, theirs, role="user", blocks=[text("q")])
+        assert not store.delete_session(db, theirs, "visitor-a")
+        assert store.delete_session(db, theirs, "visitor-b")
+
+    def test_adoption_only_claims_an_unowned_conversation(self, db: sqlite3.Connection) -> None:
+        orphan = store.ensure_session(db, None)
+        owned = store.ensure_session(db, None, visitor_id="visitor-b")
+        for session_id in (orphan, owned):
+            store.append_turn(db, session_id, role="user", blocks=[text("q")])
+
+        store.adopt(db, orphan, "visitor-a")
+        store.adopt(db, owned, "visitor-a")
+        assert [t.session_id for t in store.threads(db, "visitor-a")] == [orphan]
+
+
+class TestTranscript:
+    """Rebuilding what a reader saw, as opposed to what the model is sent."""
+
+    def test_a_tool_call_stays_inside_the_exchange_that_made_it(
+        self, db: sqlite3.Connection
+    ) -> None:
+        """A user turn of `tool_result` blocks is the second half of a tool call.
+        Reading it as a question splits one exchange into two, the second with a
+        wall of JSON where its question should be."""
+        session_id = store.ensure_session(db, None)
+        store.append_turn(db, session_id, role="user", blocks=[text("how many?")])
+        store.append_turn(
+            db,
+            session_id,
+            role="assistant",
+            blocks=[
+                text("Counting."),
+                {"type": "tool_use", "id": "toolu_1", "name": "corpus_stats", "input": {}},
+            ],
+            model="claude-opus-5",
+        )
+        store.append_turn(
+            db,
+            session_id,
+            role="user",
+            blocks=[{"type": "tool_result", "tool_use_id": "toolu_1", "content": "{}"}],
+        )
+        store.append_turn(
+            db, session_id, role="assistant", blocks=[text(" 5,557.")], model="claude-opus-5"
+        )
+
+        exchanges = store.transcript(db, session_id)
+        assert len(exchanges) == 1
+        assert exchanges[0].question == "how many?"
+        assert exchanges[0].answer == "Counting. 5,557."
+        assert [(c.name, c.ok) for c in exchanges[0].tools] == [("corpus_stats", True)]
+
+    def test_a_tool_that_never_reported_back_replays_as_unfinished(
+        self, db: sqlite3.Connection
+    ) -> None:
+        """Closing the tab mid-search is a normal way to leave. The trail shows
+        that step still running rather than claiming it succeeded."""
+        session_id = store.ensure_session(db, None)
+        store.append_turn(db, session_id, role="user", blocks=[text("q")])
+        store.append_turn(
+            db,
+            session_id,
+            role="assistant",
+            blocks=[{"type": "tool_use", "id": "toolu_1", "name": "sql", "input": {}}],
+            model="claude-opus-5",
+        )
+        assert store.transcript(db, session_id)[0].tools[0].ok is None
+
+    def test_a_failed_tool_replays_as_failed(self, db: sqlite3.Connection) -> None:
+        session_id = store.ensure_session(db, None)
+        store.append_turn(db, session_id, role="user", blocks=[text("q")])
+        store.append_turn(
+            db,
+            session_id,
+            role="assistant",
+            blocks=[{"type": "tool_use", "id": "toolu_1", "name": "sql", "input": {}}],
+            model="claude-opus-5",
+        )
+        store.append_turn(
+            db,
+            session_id,
+            role="user",
+            blocks=[
+                {
+                    "type": "tool_result",
+                    "tool_use_id": "toolu_1",
+                    "content": "boom",
+                    "is_error": True,
+                }
+            ],
+        )
+        assert store.transcript(db, session_id)[0].tools[0].ok is False
+
+    def test_thinking_blocks_are_not_part_of_the_answer(self, db: sqlite3.Connection) -> None:
+        session_id = store.ensure_session(db, None)
+        store.append_turn(db, session_id, role="user", blocks=[text("q")])
+        store.append_turn(
+            db,
+            session_id,
+            role="assistant",
+            blocks=[
+                {"type": "thinking", "thinking": "hmm", "signature": "sig"},
+                text("The answer."),
+            ],
+            model="claude-opus-5",
+        )
+        assert store.transcript(db, session_id)[0].answer == "The answer."
+
+
+class TestMigration:
+    def test_a_database_written_before_thread_lists_gains_the_column(self, tmp_path: Path) -> None:
+        """The schema declares an index over `session.visitor_id`, so applying it
+        to an older file fails on that index before anything can add the column.
+        The migration has to run first — this is the test that says so."""
+        path = tmp_path / "old.db"
+        legacy = sqlite3.connect(path, isolation_level=None)
+        legacy.executescript(
+            "CREATE TABLE session (session_id TEXT PRIMARY KEY, created_at TEXT NOT NULL,"
+            " last_seen_at TEXT NOT NULL, ip_hash TEXT, title TEXT) STRICT;"
+            " INSERT INTO session VALUES ('old', '2026-01-01', '2026-01-01', NULL, 'A question');"
+        )
+        legacy.close()
+
+        db = store.connect(path)
+        try:
+            store.adopt(db, "old", "visitor-a")
+            assert [t.session_id for t in store.threads(db, "visitor-a")] == ["old"]
+        finally:
+            db.close()
+
+
 class TestRetention:
     def test_old_sessions_are_pruned_with_their_turns(self, db: sqlite3.Connection) -> None:
         session_id = store.ensure_session(db, None)

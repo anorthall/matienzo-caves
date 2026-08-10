@@ -8,15 +8,26 @@
 PRAGMA journal_mode = WAL;
 PRAGMA foreign_keys = ON;
 
+-- A session is one conversation. `visitor_id` is what groups several of them
+-- into one person's thread list: the browser holds the visitor token, and the
+-- conversation ids travel in the request rather than in a cookie, because a
+-- cookie can only name one of them at a time.
+--
+-- It is nullable because rows written before the thread list existed have no
+-- visitor. Those are adopted on the owner's next visit (see store.adopt) and
+-- otherwise fall out of the list, which is the right way round: an unowned
+-- conversation is unreachable rather than everyone's.
 CREATE TABLE IF NOT EXISTS session (
   session_id   TEXT PRIMARY KEY,
   created_at   TEXT NOT NULL,
   last_seen_at TEXT NOT NULL,
   ip_hash      TEXT,               -- salted; the address itself is never stored
-  title        TEXT                -- the opening question, truncated, for a thread list
+  title        TEXT,               -- the opening question, truncated, for a thread list
+  visitor_id   TEXT                -- opaque; groups this visitor's conversations
 ) STRICT;
 
 CREATE INDEX IF NOT EXISTS ix_session_seen ON session (last_seen_at);
+CREATE INDEX IF NOT EXISTS ix_session_visitor ON session (visitor_id, last_seen_at);
 
 CREATE TABLE IF NOT EXISTS turn (
   turn_id     INTEGER PRIMARY KEY,

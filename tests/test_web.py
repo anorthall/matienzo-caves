@@ -126,8 +126,16 @@ def sse_events(response: Any) -> list[dict[str, Any]]:
     return events
 
 
-def ask(client: TestClient, question: str) -> list[dict[str, Any]]:
-    with client.stream("POST", "/api/chat", json={"question": question}) as response:
+def ask(
+    client: TestClient, question: str, *, conversation_id: str | None = None
+) -> list[dict[str, Any]]:
+    """One question. Without a conversation id it starts a new conversation —
+    continuity travels in the body now, not in a cookie, so a test that means to
+    ask a follow-up has to say which conversation it is following up on."""
+    body: dict[str, Any] = {"question": question}
+    if conversation_id is not None:
+        body["conversation_id"] = conversation_id
+    with client.stream("POST", "/api/chat", json=body) as response:
         assert response.status_code == 200
         assert response.headers["content-type"].startswith("text/event-stream")
         assert response.headers.get("x-accel-buffering") == "no", (
@@ -135,6 +143,11 @@ def ask(client: TestClient, question: str) -> list[dict[str, Any]]:
             "silently becomes one blob at the end"
         )
         return sse_events(response)
+
+
+def conversation_id(events: list[dict[str, Any]]) -> str:
+    """The conversation an exchange belonged to, as the SPA learns it."""
+    return str(next(e for e in events if e["event"] == "start")["session_id"])
 
 
 class TestHealth:
@@ -189,12 +202,35 @@ class TestSearchOnlyChat:
         assert "source" in names
         assert names.index("source") < names.index("delta")
 
-    def test_the_session_cookie_is_set_and_reused(self, client: TestClient) -> None:
+    def test_the_visitor_cookie_is_set_once_and_then_reused(self, client: TestClient) -> None:
         client.post("/api/chat", json={"question": "first"})
-        first = client.cookies.get("matienzo_session")
+        first = client.cookies.get("matienzo_visitor")
         assert first
         client.post("/api/chat", json={"question": "second"})
-        assert client.cookies.get("matienzo_session") == first
+        assert client.cookies.get("matienzo_visitor") == first
+
+    def test_two_questions_without_an_id_are_two_conversations(self, client: TestClient) -> None:
+        """The cookie used to make every question a follow-up. It names the
+        visitor now, not the conversation, so a thread list can hold more
+        than one."""
+        assert conversation_id(ask(client, "first")) != conversation_id(ask(client, "second"))
+
+    def test_a_conversation_is_continued_by_id(self, client: TestClient) -> None:
+        first = conversation_id(ask(client, "first"))
+        assert conversation_id(ask(client, "second", conversation_id=first)) == first
+
+    def test_another_visitors_conversation_is_not_joined(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """The id arrives in the request body, where anybody can put anything.
+        Continuing on it without an ownership check would append one visitor's
+        question to another's history — and replay it back to them."""
+        app = create_app(build_settings(fixture_db, tmp_path))
+        with TestClient(app, base_url="https://testserver") as owner:
+            theirs = conversation_id(ask(owner, "a private question"))
+        with TestClient(app, base_url="https://testserver") as stranger:
+            got = conversation_id(ask(stranger, "let me in", conversation_id=theirs))
+        assert got != theirs
 
 
 class TestStreamInvariants:
@@ -215,6 +251,128 @@ class TestStreamInvariants:
         seqs = [e["seq"] for e in ask(client, "shaft")]
         assert seqs == sorted(seqs)
         assert len(set(seqs)) == len(seqs)
+
+
+class TestConversations:
+    """The thread list. Every assertion here is either "this visitor sees their
+    own conversations" or "this visitor sees nothing of anybody else's"."""
+
+    def test_a_new_browser_gets_a_token_and_an_empty_list(self, client: TestClient) -> None:
+        response = client.get("/api/conversations")
+        assert response.status_code == 200
+        assert response.json() == []
+        assert client.cookies.get("matienzo_visitor")
+
+    def test_reading_the_list_alone_creates_no_conversation(self, client: TestClient) -> None:
+        """A token names a visitor whether or not a row mentions it. Writing one
+        per page load would fill the database with empty threads."""
+        client.get("/api/conversations")
+        assert client.get("/api/conversations").json() == []
+
+    def test_a_question_appears_in_the_list_under_its_own_words(self, client: TestClient) -> None:
+        started = conversation_id(ask(client, "Which caves in Cobadal take water?"))
+        listed = client.get("/api/conversations").json()
+        assert [c["id"] for c in listed] == [started]
+        assert listed[0]["title"] == "Which caves in Cobadal take water?"
+
+    def test_conversations_are_listed_newest_first(self, client: TestClient) -> None:
+        first = conversation_id(ask(client, "older"))
+        second = conversation_id(ask(client, "newer"))
+        assert [c["id"] for c in client.get("/api/conversations").json()] == [second, first]
+
+    def test_a_transcript_replays_the_question_the_answer_and_its_sources(
+        self, client: TestClient
+    ) -> None:
+        """What a reader saw, rebuilt from storage — without re-running the
+        searches that produced it."""
+        events = ask(client, "shaft")
+        streamed = "".join(e["text"] for e in events if e["event"] == "delta")
+        sites = [e["site_number"] for e in events if e["event"] == "source"]
+
+        body = client.get(f"/api/conversations/{conversation_id(events)}").json()
+        assert len(body["exchanges"]) == 1
+        exchange = body["exchanges"][0]
+        assert exchange["question"] == "shaft"
+        assert exchange["answer"] == streamed
+        assert [s["site_number"] for s in exchange["sources"]] == sites
+
+    def test_a_transcript_keeps_a_tool_call_inside_the_exchange_that_made_it(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """The user turn carrying a `tool_result` is the second half of a tool
+        call, not a new question. Reading it as one splits a single exchange into
+        two, the second with a wall of JSON where its question should be."""
+        client, _ = agent_client(
+            fixture_db,
+            tmp_path,
+            [fakes.call_tools(("corpus_stats", {})), fakes.say("5,557 sites.")],
+        )
+        with client:
+            asked = conversation_id(ask(client, "how many?"))
+            body = client.get(f"/api/conversations/{asked}").json()
+
+        assert len(body["exchanges"]) == 1, "the tool_result turn was read as a question"
+        exchange = body["exchanges"][0]
+        assert exchange["question"] == "how many?"
+        assert "5,557 sites." in exchange["answer"]
+        assert [(t["name"], t["ok"]) for t in exchange["tools"]] == [("corpus_stats", True)]
+
+    def test_another_visitors_conversation_is_a_404(self, fixture_db: Path, tmp_path: Path) -> None:
+        app = create_app(build_settings(fixture_db, tmp_path))
+        with TestClient(app, base_url="https://testserver") as owner:
+            theirs = conversation_id(ask(owner, "a private question"))
+
+            with TestClient(app, base_url="https://testserver") as stranger:
+                assert stranger.get(f"/api/conversations/{theirs}").status_code == 404
+                assert stranger.delete(f"/api/conversations/{theirs}").status_code == 404
+
+            assert owner.get(f"/api/conversations/{theirs}").status_code == 200, (
+                "the refused delete went through anyway"
+            )
+
+    def test_deleting_removes_it_from_the_list_and_from_storage(self, client: TestClient) -> None:
+        doomed = conversation_id(ask(client, "forget this"))
+        assert client.delete(f"/api/conversations/{doomed}").status_code == 204
+        assert client.get("/api/conversations").json() == []
+        assert client.get(f"/api/conversations/{doomed}").status_code == 404
+
+    def test_a_conversation_from_before_the_thread_list_is_adopted(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """Everyone mid-conversation on the deploy that added thread lists holds
+        the old per-conversation cookie and no visitor token. Their history is
+        still in the database; without adoption it is no longer reachable, which
+        reads as the portal having thrown it away."""
+        app = create_app(build_settings(fixture_db, tmp_path))
+        with TestClient(app, base_url="https://testserver") as client:
+            sessions = store.connect(tmp_path / "sessions.db")
+            try:
+                legacy = store.ensure_session(sessions, None)
+                store.append_turn(
+                    sessions, legacy, role="user", blocks=[{"type": "text", "text": "before"}]
+                )
+            finally:
+                sessions.close()
+
+            client.cookies.set("matienzo_session", legacy)
+            listed = client.get("/api/conversations").json()
+
+        assert [c["id"] for c in listed] == [legacy]
+
+    def test_somebody_elses_old_cookie_claims_nothing(
+        self, fixture_db: Path, tmp_path: Path
+    ) -> None:
+        """Adoption is guarded on the conversation being unowned. Without that,
+        presenting a stolen cookie once would transfer the conversation."""
+        app = create_app(build_settings(fixture_db, tmp_path))
+        with TestClient(app, base_url="https://testserver") as owner:
+            theirs = conversation_id(ask(owner, "a private question"))
+
+            with TestClient(app, base_url="https://testserver") as thief:
+                thief.cookies.set("matienzo_session", theirs)
+                assert thief.get("/api/conversations").json() == []
+
+            assert [c["id"] for c in owner.get("/api/conversations").json()] == [theirs]
 
 
 class TestRateLimit:
@@ -374,13 +532,12 @@ class TestAgent:
             fixture_db, tmp_path, [fakes.say("First answer."), fakes.say("Second answer.")]
         )
         with client:
-            # A real first exchange, so the session cookie is the one the portal
-            # itself issued rather than one a test invented.
-            ask(client, "first question")
+            # A real first exchange, so the conversation is the one the portal
+            # itself opened rather than one a test invented.
+            session_id = conversation_id(ask(client, "first question"))
 
             sessions = store.connect(tmp_path / "sessions.db")
             try:
-                session_id = sessions.execute("SELECT session_id FROM session").fetchone()[0]
                 # Re-poison it exactly as the pre-fix code did.
                 sessions.execute(
                     "UPDATE block SET json = ? WHERE type = 'text' AND json LIKE '%First answer%'",
@@ -389,7 +546,7 @@ class TestAgent:
             finally:
                 sessions.close()
 
-            ask(client, "second question")
+            ask(client, "second question", conversation_id=session_id)
 
         replayed = json.dumps(fake.messages_sent[1])
         assert "First answer" in replayed, "the earlier turn was not replayed at all"
