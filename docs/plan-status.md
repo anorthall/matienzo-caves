@@ -16,12 +16,13 @@ checkpoint is met or an assumption turns out to be wrong.
 | 6 · Embeddings + hybrid | 1–2 days | **Done** | `matienzo embed` / `evaluate`; hybrid wins at recall@1 and @10, ties at @5 |
 | 7 · MCP server | 1 day | **Done** | 8 tools over stdio; guarded read-only `sql` |
 
-501 tests pass; `ruff check` clean. **All seven phases are complete.**
+505 tests pass; `ruff check` and `mypy --strict` clean. **All seven phases
+are complete.**
 
-32 of those 501 skip themselves when `matienzo.db` is absent: 11 each in
+32 of those 505 skip themselves when `matienzo.db` is absent: 11 each in
 `test_hybrid.py` and `test_mcp.py`, 6 in `test_db.py` (including
 `TestFullCorpus`) and 4 in `test_search.py`. A clean checkout therefore reports
-`469 passed, 32 skipped`, which is not a failure but is also not full coverage.
+`473 passed, 32 skipped`, which is not a failure but is also not full coverage.
 Run `matienzo build` (and `matienzo embed` for the hybrid cases) before reading
 a green suite as complete.
 
