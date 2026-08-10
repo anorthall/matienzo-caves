@@ -1,0 +1,22 @@
+# The image builds the corpus, the model cache and the SPA itself. Copying a
+# local build in would make the image depend on whatever state the developer's
+# working tree happened to be in.
+matienzo.db*
+sessions.db*
+matienzo/web/static/
+frontend/node_modules/
+frontend/dist/
+
+.git/
+.github/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.idea/
+
+docs/
+tests/
+scripts/

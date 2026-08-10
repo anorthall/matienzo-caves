@@ -20,11 +20,13 @@ from __future__ import annotations
 import sqlite3
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Any
 
 import anyio
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from starlette.concurrency import run_in_threadpool
 
 from matienzo import __version__
@@ -128,8 +130,23 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.include_router(search.router)
     app.include_router(site.router)
     app.include_router(chat.router)
+    _mount_spa(app)
 
     return app
+
+
+def _mount_spa(app: FastAPI) -> None:
+    """Serve the built single-page app, if there is one.
+
+    Mounted last and only when present. A checkout that has never run
+    `just frontend-build` still serves the whole API — the portal is useful
+    without a front end, and refusing to start without one would make the
+    Python tests depend on a Node toolchain.
+    """
+    static = Path(__file__).parent / "static"
+    if not (static / "index.html").exists():
+        return
+    app.mount("/", StaticFiles(directory=static, html=True), name="spa")
 
 
 def main() -> None:

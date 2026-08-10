@@ -103,7 +103,14 @@ def agent_client(
 
 
 def sse_events(response: Any) -> list[dict[str, Any]]:
-    """Parse an SSE body into `(name, data)` dicts, ignoring heartbeats."""
+    """Parse an SSE body into `(name, data)` dicts, ignoring heartbeats.
+
+    Folding the `event:` line into the payload mirrors what `frontend/src/api.ts`
+    does, and the two have to keep agreeing. An earlier version of the browser
+    client switched on an `event` key it assumed was *in* the JSON — which it
+    never is — and every test here passed anyway, because this helper was quietly
+    supplying the field the client was missing.
+    """
     events: list[dict[str, Any]] = []
     name: str | None = None
     for line in response.iter_lines():
