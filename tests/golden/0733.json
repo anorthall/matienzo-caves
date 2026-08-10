@@ -9687,7 +9687,7 @@
         "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9695,7 +9695,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (line surve' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9703,7 +9703,7 @@
         "detail": "citation 'Memoria de Exploracion Vallina 2023 (with translation and an' spans 3 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9943,7 +9943,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-05.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9951,7 +9951,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-02.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9959,7 +9959,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-04.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9967,7 +9967,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-06.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9975,7 +9975,7 @@
         "detail": "link to its own page: '../ugpics/0733-2025s-01.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9983,7 +9983,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-02.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9991,7 +9991,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-04.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -9999,7 +9999,7 @@
         "detail": "link to its own page: '../ugpics/0733-2023e-06.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -10007,7 +10007,7 @@
         "detail": "link to its own page: '../ugpics/0733-2006summer.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -10015,7 +10015,7 @@
         "detail": "link to its own page: '../ugpics/0733-2006summer.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 155164,

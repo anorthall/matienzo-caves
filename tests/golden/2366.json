@@ -2674,7 +2674,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey and' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2690,7 +2690,7 @@
         "detail": "link to its own page: '../entpics/2366.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2698,7 +2698,7 @@
         "detail": "link to its own page: '../ugpics/2366-2007e-molep.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2706,7 +2706,7 @@
         "detail": "link to its own page: '../ugpics/2366-2006d.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2714,7 +2714,7 @@
         "detail": "link to its own page: '../ugpics/2366-2019s.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2722,7 +2722,7 @@
         "detail": "link to its own page: '../ugpics/2366-2007e-skullout.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2730,7 +2730,7 @@
         "detail": "link to its own page: '../miscpics/2366.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2738,7 +2738,7 @@
         "detail": "link to its own page: '../miscpics/2366.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 40464,

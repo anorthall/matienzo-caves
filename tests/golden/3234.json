@@ -5091,7 +5091,6 @@
           "extra_value_m": null,
           "relation": "part_of_system",
           "system_name": "Four Valleys System",
-          "target_names": [],
           "target_sites": [
             107
           ]
@@ -5125,7 +5124,6 @@
           "extra_value_m": null,
           "relation": "unparsed",
           "system_name": null,
-          "target_names": [],
           "target_sites": [
             3234
           ]
@@ -5161,7 +5159,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey and' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -5169,7 +5167,7 @@
         "detail": "link to its own page: '../miscpics/3234-2023e-01.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -5177,7 +5175,7 @@
         "detail": "link to its own page: '3234-2018e-note.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 92186,

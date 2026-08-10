@@ -1000,7 +1000,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey and' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 8818,

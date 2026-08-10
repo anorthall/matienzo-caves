@@ -4600,9 +4600,6 @@
           "extra_value_m": null,
           "relation": "part_of_system",
           "system_name": "Four Valleys System",
-          "target_names": [
-            "Cueva Hoyuca"
-          ],
           "target_sites": [
             107
           ]
@@ -4630,7 +4627,7 @@
         "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -4638,7 +4635,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (line surve' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -4662,7 +4659,7 @@
         "detail": "link to its own page: '../entpics/0081-2016e.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -4670,7 +4667,7 @@
         "detail": "link to its own page: '../entpics/0081-2014e.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 46623,

@@ -500,6 +500,11 @@ def _parse_prose(raw: str, value_html: str) -> ProseQuantity:
     if prose.relation is ProseRelation.ADDED_TO and (match := EMBEDDED_M_RE.search(raw)):
         prose.extra_value_m = float(match.group(1))
 
-    names = re.findall(r"\b(?:see|in|into)\s+((?:[A-Z][\w'’-]*\s*){1,4})", raw)
-    prose.target_names = [" ".join(n.split()) for n in names if len(n.strip()) > 2]
+    # A `target_names` field used to live here, scraping capitalised words after
+    # `see`/`in`/`into`. It was written and never read, and what it produced was
+    # wrong more often than right — the pattern stops at lowercase Spanish
+    # articles, so `Cueva del Risco` came out as `Cueva` and `Sistema de
+    # Colmenas-Escalón` as `Sistema`. Every prose measurement in the corpus
+    # already yields a relation, a target site number or a system name, so
+    # nothing was lost by dropping it.
     return prose

@@ -976,7 +976,7 @@
         "detail": "citation 'anon., 1975b ( Easter and summer logbooks)' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,

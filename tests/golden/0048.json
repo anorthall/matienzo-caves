@@ -6125,9 +6125,6 @@
           "extra_value_m": null,
           "relation": "part_of_system",
           "system_name": "South Vega System",
-          "target_names": [
-            "South Vega System"
-          ],
           "target_sites": [
             333
           ]
@@ -6168,7 +6165,7 @@
         "detail": "citation 'anon., 1975b ( Easter and summer logbooks)' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6176,7 +6173,7 @@
         "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6184,7 +6181,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (line surve' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6208,7 +6205,7 @@
         "detail": "link to its own page: '0048.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6216,7 +6213,7 @@
         "detail": "link to its own page: '../entpics/0048-am-2003-09.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6224,7 +6221,7 @@
         "detail": "link to its own page: '../ugpics/0048-2015e-OBA.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6232,7 +6229,7 @@
         "detail": "link to its own page: '../ugpics/0048-2017s-01.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6240,7 +6237,7 @@
         "detail": "link to its own page: '../ugpics/0048-2006.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6248,7 +6245,7 @@
         "detail": "link to its own page: '../ugpics/0048-2008a.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6256,7 +6253,7 @@
         "detail": "link to its own page: '../miscpics/0048-frog-2025s.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6264,7 +6261,7 @@
         "detail": "link to its own page: '../ugpics/0048-2019s-01.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6272,7 +6269,7 @@
         "detail": "link to its own page: '../miscpics/0048-bugs-2025s.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 58365,

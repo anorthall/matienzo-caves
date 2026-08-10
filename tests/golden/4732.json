@@ -1653,7 +1653,6 @@
           "extra_value_m": null,
           "relation": "part_of_system",
           "system_name": "Valleys System",
-          "target_names": [],
           "target_sites": [
             107
           ]

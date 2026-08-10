@@ -3260,7 +3260,7 @@
         "detail": "citation 'Kendal Caving Club and Manchester University Speleological S' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3284,7 +3284,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey and' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3300,7 +3300,7 @@
         "detail": "link to its own page: '0039.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3308,7 +3308,7 @@
         "detail": "link to its own page: '../miscpics/arch0039.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3316,7 +3316,7 @@
         "detail": "link to its own page: '../ugpics/0039-2016e.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 24723,

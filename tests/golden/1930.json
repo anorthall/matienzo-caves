@@ -2070,7 +2070,7 @@
         "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2094,7 +2094,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey)' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2102,7 +2102,7 @@
         "detail": "link to its own page: '../entpics/1930-2011e.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 26637,

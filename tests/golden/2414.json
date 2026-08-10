@@ -1134,7 +1134,7 @@
         "detail": "link to its own page: '2414-old.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 14878,

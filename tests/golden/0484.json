@@ -428,7 +428,7 @@
         "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 3267,

@@ -94,7 +94,6 @@ class ProseQuantity(BaseModel):
 
     relation: ProseRelation = ProseRelation.UNPARSED
     target_sites: list[SiteNumber] = Field(default_factory=list)
-    target_names: list[str] = Field(default_factory=list)
     system_name: str | None = None
     extra_value_m: float | None = None
     """`(870m added to Risco)` — a number that belongs to *another* site."""

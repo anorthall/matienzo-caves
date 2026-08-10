@@ -122,6 +122,14 @@ KNOWN_TEXTURE: frozenset[AnomalyCode] = frozenset(
         # A third of the corpus (1,813 pages) opens with `<p>` and never emits
         # `<BODY>`. Segmentation anchors on `<BIG>`, so this costs us nothing.
         AnomalyCode.NO_BODY_TAG,
+        # These two are the *designed* handling of a known corpus pattern, not a
+        # degraded value. `anon., 2005b (<a>Easter</a> & <a>summer</a>)` is one
+        # citation with two links and is recorded as one; a page linking to its
+        # own number is dropped so the graph stays usable. Between them they were
+        # 529 of 890 warnings — 59% of the review queue was work already done
+        # correctly, which is how a queue stops being read.
+        AnomalyCode.CITATION_SPLIT_ANCHORS,
+        AnomalyCode.XREF_SELF_REFERENCE,
     }
 )
 

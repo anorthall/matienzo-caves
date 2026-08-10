@@ -2385,7 +2385,7 @@
         "detail": "citation 'anon., 2005b ( Easter & summer )' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -2393,7 +2393,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey and' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 40769,

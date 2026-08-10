@@ -7636,7 +7636,7 @@
         "detail": "citation 'anon., 1975b ( Easter and summer logbooks)' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7652,7 +7652,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (line surve' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7676,7 +7676,7 @@
         "detail": "link to its own page: '../entpics/0107.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7684,7 +7684,7 @@
         "detail": "link to its own page: '../ugpics/0107-2010s.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7692,7 +7692,7 @@
         "detail": "link to its own page: '../science/Breakdown/0107-jc-2025a-RoofBreakdown.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7700,7 +7700,7 @@
         "detail": "link to its own page: '../ugpics/0107-2011s.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 104262,

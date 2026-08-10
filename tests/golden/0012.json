@@ -920,7 +920,7 @@
         "detail": "link to its own page: '../ugpics/0012-2023e-bats.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 5677,

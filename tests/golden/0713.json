@@ -3826,7 +3826,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (survey)' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3834,7 +3834,7 @@
         "detail": "link to its own page: '../ugpics/0713-2010e.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3842,7 +3842,7 @@
         "detail": "link to its own page: '../ugpics/0713-2009s-middle.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -3850,7 +3850,7 @@
         "detail": "link to its own page: '../ugpics/0713-2013s.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 50576,

@@ -6967,7 +6967,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (line surve' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -6999,7 +6999,7 @@
         "detail": "link to its own page: '../miscpics/2889-cons-rest.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7007,7 +7007,7 @@
         "detail": "link to its own page: '../ugpics/2889-2018jf.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -7015,7 +7015,7 @@
         "detail": "link to its own page: '../ugpics/2889-2018e.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 161970,

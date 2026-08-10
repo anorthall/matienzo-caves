@@ -8,3 +8,6 @@ __pycache__/
 matienzo.db
 matienzo.db-wal
 matienzo.db-shm
+
+# JetBrains IDE
+.idea/

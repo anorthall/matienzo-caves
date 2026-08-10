@@ -117,9 +117,10 @@ either be tightened or dropped.
 
 The plan's most likely install failure was fastembed's dependency on
 onnxruntime, historically slow to ship wheels for a new CPython minor. Probed
-in an isolated 3.13 venv: `fastembed==0.8.0` and `onnxruntime==1.28.0` resolve
-cleanly, as does `sqlite-vec==0.1.9`. Pinning `.python-version` to 3.13 was
-enough; no fallback interpreter is needed.
+in an isolated venv: `fastembed==0.8.0` and `onnxruntime==1.28.0` resolve
+cleanly on **both 3.13 and 3.14**, as does `sqlite-vec==0.1.9`, and the model
+runs on both. The project has since moved to 3.14 and nothing about the
+embedding stack needed changing, so no fallback interpreter is needed.
 
 ## Outcome against the estimate
 

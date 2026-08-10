@@ -4238,9 +4238,6 @@
           "extra_value_m": null,
           "relation": "traverse_of",
           "system_name": "Sistema de Cuatro Valles",
-          "target_names": [
-            "Cueva Hoyuca"
-          ],
           "target_sites": [
             107
           ]
@@ -4268,7 +4265,7 @@
         "detail": "citation 'León García José, 2010 ( Volume 1 and Volume 2 ) (line surve' spans 2 anchors",
         "excerpt": null,
         "field_path": "footer.citations",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -4284,7 +4281,7 @@
         "detail": "link to its own page: '../miscpics/0105-sc-2024a-draught.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -4292,7 +4289,7 @@
         "detail": "link to its own page: '../ugpics/0105-2019s-05.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       },
       {
         "char_offset": null,
@@ -4300,7 +4297,7 @@
         "detail": "link to its own page: '../ugpics/0105-2026e-01.htm'",
         "excerpt": null,
         "field_path": "body.cross_refs",
-        "severity": "warn"
+        "severity": "info"
       }
     ],
     "byte_size": 69941,
