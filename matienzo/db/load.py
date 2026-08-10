@@ -19,6 +19,7 @@ import subprocess
 import warnings
 from collections.abc import Iterable, Iterator
 from pathlib import Path
+from typing import Any
 
 from matienzo import config
 from matienzo import overrides as overrides_module
@@ -386,7 +387,7 @@ def _insert_header_parts(connection: sqlite3.Connection, record: ParsedSite) -> 
     )
 
     for quantity in record.header.quantities:
-        extra = {}
+        extra: dict[str, Any] = {}
         if quantity.parts:
             extra["parts"] = quantity.parts
         if quantity.prose is not None:
@@ -423,7 +424,7 @@ def _insert_system_membership(
     than a discarded string.
     """
     prose = quantity.prose
-    if not prose.system_name:
+    if prose is None or not prose.system_name:
         return
     connection.execute("INSERT OR IGNORE INTO cave_system (name) VALUES (?)", (prose.system_name,))
     row = connection.execute(

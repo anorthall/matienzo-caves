@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import tomllib
 from pathlib import Path
+from typing import Any
 
 import pytest
 
@@ -14,11 +15,11 @@ PYPROJECT = Path(__file__).parent.parent / "pyproject.toml"
 
 
 @pytest.fixture(scope="module")
-def config() -> dict:
+def config() -> dict[str, Any]:
     return tomllib.loads(PYPROJECT.read_text(encoding="utf-8"))
 
 
-def test_the_local_group_mirrors_the_optional_extras(config: dict) -> None:
+def test_the_local_group_mirrors_the_optional_extras(config: dict[str, Any]) -> None:
     """`[dependency-groups] local` exists only to keep the extras installed
     through a bare `uv run`, which re-syncs to the default set and has no
     `default-extras`. If the two lists drift, `uv run` quietly reverts to an
@@ -34,11 +35,11 @@ def test_the_local_group_mirrors_the_optional_extras(config: dict) -> None:
     )
 
 
-def test_the_local_group_is_installed_by_default(config: dict) -> None:
+def test_the_local_group_is_installed_by_default(config: dict[str, Any]) -> None:
     assert "local" in config["tool"]["uv"]["default-groups"]
 
 
-def test_the_pinned_interpreter_satisfies_the_declared_floor(config: dict) -> None:
+def test_the_pinned_interpreter_satisfies_the_declared_floor(config: dict[str, Any]) -> None:
     """`.python-version` drives what uv builds the venv with; `requires-python`
     is what consumers see. A venv below the floor fails at install time with a
     resolver error rather than anything explanatory."""
@@ -52,7 +53,7 @@ def test_the_pinned_interpreter_satisfies_the_declared_floor(config: dict) -> No
     )
 
 
-def test_the_console_scripts_point_at_real_entry_points(config: dict) -> None:
+def test_the_console_scripts_point_at_real_entry_points(config: dict[str, Any]) -> None:
     import importlib
 
     for target in config["project"]["scripts"].values():

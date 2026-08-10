@@ -25,7 +25,12 @@ matienzo = "matienzo.cli:main"
 matienzo-mcp = "matienzo.mcp_server:main"
 
 [dependency-groups]
-dev = ["pytest>=8.3", "ruff>=0.9"]
+dev = [
+    "mypy>=1.14",
+    "pre-commit>=4.0",
+    "pytest>=8.3",
+    "ruff>=0.9",
+]
 
 # Mirrors the `embed` and `mcp` extras, and exists only so that a bare
 # `uv run` keeps them installed. uv re-syncs the environment to the default
@@ -64,6 +69,20 @@ ignore = ["RUF001", "RUF002", "RUF003"]
 # Standalone PEP-723 scripts under scripts/ are kept working and unchanged
 # rather than restyled to the package's conventions.
 "scripts/*.py" = ["B904"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+files = ["matienzo", "tests"]
+# `scripts/download_htm.py` is a standalone PEP-723 script, deliberately kept
+# working and unchanged; it is not part of the package and is not type-checked.
+exclude = "^scripts/"
+
+[[tool.mypy.overrides]]
+# Third-party packages that ship no type information. Untyped imports are an
+# error under strict mode, so each one is named here rather than blanket-ignored.
+module = ["utm.*", "sqlite_vec.*", "fastembed.*"]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

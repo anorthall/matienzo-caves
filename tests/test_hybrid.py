@@ -9,6 +9,7 @@ hybrid looks exactly like one that works.
 from __future__ import annotations
 
 import sqlite3
+from pathlib import Path
 
 import pytest
 
@@ -85,7 +86,7 @@ class TestHybrid:
         skewed = search.search_hybrid(db, "shaft", limit=5, keyword_weight=0.1)
         assert skewed
 
-    def test_falls_back_when_there_are_no_vectors(self, tmp_path) -> None:
+    def test_falls_back_when_there_are_no_vectors(self, tmp_path: Path) -> None:
         """A database with chunks but no embeddings must still search."""
         from matienzo.db import load as db_load
         from matienzo.db.connect import fresh_database

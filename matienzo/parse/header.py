@@ -211,8 +211,8 @@ def _parse_area(raw_html: str) -> str | None:
             break  # a measurement came first, so there is no bolded area
         return label or None
 
-    if match := UNCLOSED_BOLD_RE.search(raw_html):
-        candidate = unescape(match.group(1)).strip()
+    if unclosed := UNCLOSED_BOLD_RE.search(raw_html):
+        candidate = unescape(unclosed.group(1)).strip()
         if candidate and candidate.lower().rstrip(":") not in MEASUREMENT_LABELS:
             return candidate
 
@@ -311,15 +311,15 @@ def _parse_fallback_coordinates(text: str, recorder: AnomalyRecorder) -> list[Co
             )
         )
 
-    if not found and (match := COORD_PLACEHOLDER_RE.search(text)):
+    if not found and (placeholder_match := COORD_PLACEHOLDER_RE.search(text)):
         recorder.add(
             AnomalyCode.COORD_PLACEHOLDER,
-            f"unrecorded coordinate {match.group(0).strip()!r}",
+            f"unrecorded coordinate {placeholder_match.group(0).strip()!r}",
             field_path="header.coordinates",
         )
         found.append(
             Coordinate(
-                raw=match.group(0).strip(),
+                raw=placeholder_match.group(0).strip(),
                 system=CoordSystem.PLACEHOLDER,
                 datum=datum.group("datum") if datum else None,
                 altitude_m=float(re.sub(r"[^\d.]", "", altitude.group("value")))

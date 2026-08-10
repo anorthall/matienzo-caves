@@ -1,0 +1,58 @@
+# `data/pages/` and `tests/fixtures/` are byte-exact copies of scraped HTML:
+# CRLF line endings, CP1252 bytes and all. Parsed records are keyed by the
+# SHA-256 of those bytes and the decode tests assert on them, so a
+# whitespace-fixing hook would not be a tidy-up — it would rewrite the source of
+# truth and invalidate every hash in the database. `tests/golden/` is generated,
+# and belongs to its generator rather than to a formatter. Nothing here may
+# touch any of them.
+#
+# The corpus moved from `pages/` to `data/pages/`. The old path is not kept as a
+# second pattern: it matches nothing now, and an exclude that silently protects
+# a directory that does not exist is the kind of thing nobody re-checks.
+exclude: '^(data/pages/|tests/fixtures/|tests/golden/)'
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Pinned to the ruff in the dev dependency group, so `pre-commit run` and
+    # `uv run ruff check` cannot disagree. Move both together.
+    rev: v0.16.2
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-added-large-files
+
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.12.1
+    hooks:
+      # `uv.lock` is committed and CI syncs from it; this catches a pyproject
+      # edit that was never locked.
+      - id: uv-lock
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy (strict)
+        # Deliberately `language: system` rather than a mirror hook in its own
+        # isolated environment. Strict mode is only meaningful against the real
+        # dependency set — pydantic ships a mypy-visible plugin surface, and mcp,
+        # lxml and cyclopts are all typed. An isolated hook would see none of
+        # them and would either fail on missing imports or silently degrade to
+        # checking almost nothing.
+        entry: uv run mypy
+        language: system
+        types: [python]
+        # mypy is a whole-program checker; handing it only the staged files
+        # changes what it concludes. `files` in pyproject.toml decides the scope.
+        pass_filenames: false
+        require_serial: true

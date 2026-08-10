@@ -103,10 +103,10 @@ def parse_footer(raw_html: str, recorder: AnomalyRecorder, confidence: Confidenc
         end = labels[order + 1].start() if order + 1 < len(labels) else len(raw_html)
         value_html = raw_html[match.end() : end]
 
-        slug = KNOWN_LABELS.get(_normalise(label_raw))
-        is_known = slug is not None
-        if not is_known:
-            slug = _slugify(label_raw)
+        known_slug = KNOWN_LABELS.get(_normalise(label_raw))
+        is_known = known_slug is not None
+        slug = known_slug if known_slug is not None else _slugify(label_raw)
+        if known_slug is None:
             unknown_labels.append(label_raw)
             recorder.add(
                 AnomalyCode.FOOTER_LABEL_UNKNOWN,
