@@ -1103,6 +1103,18 @@ FastMCP wrapper, `.mcp.json` for the repo, read-only `sql` tool with guards.
 
 ## 8. Risks and open questions
 
+> **Superseded in part.** Open questions 2–5 below were never answered — they
+> were deferred through all seven phases — and are now tracked as GitHub issues
+> #1–#4 under the *Data Complete* milestone. Question 2 ("scope beyond
+> `descrip/`?") turned out to be much larger than the entpics/ugpics choice it
+> poses here: the site also carries a 21,718-entry logbook index, 1,855 drawn
+> surveys, 49 annual expedition reports, a water-tracing dataset and a bilingual
+> sump index, none of which are mentioned anywhere in this document.
+> **[`docs/scope.md`](scope.md) is now the authority on what is in scope**, and
+> lists every part of the upstream site with a status. Read it before this
+> section. The counts below ("5,521 logbook PDFs", "474 `.3d` files") are link
+> instances from a partial scrape and are corrected there.
+
 **Risks**
 
 1. **onnxruntime wheel availability on your Python.** This machine's default is CPython **3.14.6**, and fastembed depends on onnxruntime, which is historically the slowest major package to ship wheels for a new CPython minor. Mitigation: pin `.python-version` to **3.13** for the project (still satisfies your `>=3.13` convention), or make `[embed]` a separate extra installed under its own interpreter. Verify with `uv add --dry-run fastembed` before phase 6 — I couldn't confirm current wheel coverage offline. This is the single most likely install-friction failure in the plan.

@@ -17,6 +17,7 @@ queryable SQLite database with full-text and semantic search.
 | `tests/fixtures/` | Frozen copies of the pages the tests assert on. Committed. |
 | `docs/design.md` | Corpus reconnaissance, the design it produced, and corrections. |
 | `docs/plan-status.md` | What is built, what is not, and how the plan has changed. |
+| `docs/scope.md` | What of the upstream site is in scope, what is out, and what is still undecided. |
 | `matienzo.db` | Derived. Delete it any time; `matienzo build` rebuilds it. |
 
 `data/` is the only source of truth. The database is a disposable
