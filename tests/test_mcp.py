@@ -17,6 +17,7 @@ from matienzo import config
 
 pytest.importorskip("mcp", reason="needs `uv sync --extra mcp`")
 
+from matienzo import tools as tool_registry
 from matienzo.mcp_server import FORBIDDEN_RE, READ_ONLY_RE, build_server
 
 EXPECTED_TOOLS = {
@@ -63,6 +64,26 @@ class TestToolSurface:
         reach for, so an undocumented one is effectively invisible."""
         for tool in tools(server):
             assert tool.description and len(tool.description) > 40, tool.name
+
+    def test_the_server_registers_exactly_the_shared_registry(self, server: Any) -> None:
+        assert {tool.name for tool in tools(server)} == set(tool_registry.BY_NAME)
+
+    def test_descriptions_come_from_the_shared_registry(self, server: Any) -> None:
+        """The whole point of extracting `matienzo.tools`. Two adapters giving an
+        agent different advice about the same tool is a failure nobody notices,
+        because both of them keep working."""
+        for tool in tools(server):
+            assert tool.description == tool_registry.BY_NAME[tool.name].description, tool.name
+
+    def test_the_derived_and_hand_written_schemas_agree(self, server: Any) -> None:
+        """The MCP SDK derives its schema from the wrapper signature while the
+        Anthropic API gets the registry's hand-written one. They are written
+        twice, so this is the check that they mean the same thing."""
+        for tool in tools(server):
+            spec = tool_registry.BY_NAME[tool.name]
+            derived = set(tool.input_schema.get("properties", {}))
+            declared = set(spec.input_schema["properties"])
+            assert derived == declared, tool.name
 
 
 class TestSqlGuard:
