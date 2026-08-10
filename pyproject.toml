@@ -19,10 +19,15 @@ dependencies = [
 [project.optional-dependencies]
 embed = ["fastembed>=0.5", "sqlite-vec>=0.1.6"]
 mcp = ["mcp>=1.2"]
+# The portal is the one part of the project that talks to the network, so it is
+# the one part that is optional. A core install stays offline: no API key, no
+# outbound calls, nothing to configure.
+web = ["fastapi>=0.115", "uvicorn[standard]>=0.34", "anthropic>=0.69"]
 
 [project.scripts]
 matienzo = "matienzo.cli:main"
 matienzo-mcp = "matienzo.mcp_server:main"
+matienzo-web = "matienzo.web.app:main"
 
 [dependency-groups]
 dev = [
@@ -43,6 +48,9 @@ local = [
     "fastembed>=0.5",
     "sqlite-vec>=0.1.6",
     "mcp>=1.2",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "anthropic>=0.69",
 ]
 
 [tool.uv]

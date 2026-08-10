@@ -1,5 +1,14 @@
-"""Paths and version stamps shared across the pipeline."""
+"""Paths and version stamps shared across the pipeline.
 
+The two database paths read the environment because a container mounts the
+corpus wherever its image layout puts it, which the repo layout cannot predict.
+They are still resolved once, at import, and still plain module constants — a
+typo in the environment then fails when the process starts rather than when the
+first query runs. The CLI's `--db` flag still wins over both, so precedence
+reads flag, then environment, then the repo default.
+"""
+
+import os
 from pathlib import Path
 from typing import Final
 
@@ -8,7 +17,15 @@ DATA_DIR: Final = REPO_ROOT / "data"
 PAGES_DIR: Final = DATA_DIR / "pages"
 VOCAB_DIR: Final = DATA_DIR / "vocab"
 OVERRIDES_DIR: Final = DATA_DIR / "overrides"
-DB_PATH: Final = REPO_ROOT / "matienzo.db"
+DB_PATH: Final = Path(os.environ.get("MATIENZO_DB") or REPO_ROOT / "matienzo.db")
+
+#: Conversations, rate-limit buckets and the spend ledger. Deliberately a
+#: separate file: it is the only thing the portal writes, which is what keeps
+#: `DB_PATH` open read-only everywhere and disposable in the way the build
+#: pipeline assumes.
+SESSIONS_DB_PATH: Final = Path(
+    os.environ.get("MATIENZO_SESSIONS_DB") or REPO_ROOT / "sessions.db"
+)
 
 # Bump when a parser change alters ParsedSite output. Golden files and the
 # `applies_to_sha256` staleness check both key off this.
