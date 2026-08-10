@@ -236,6 +236,22 @@ uv run matienzo review
 
 ## Development
 
+There is a `justfile`:
+
+```bash
+just lint
+```
+
+```bash
+just test
+```
+
+`just lint` runs `ruff check`, `ruff format --check` and `mypy` without touching
+a file; `just format` reformats in place; `just check` is lint plus tests.
+Every recipe goes through `uv run`, so they use the versions pinned in
+`uv.lock` — the same ones pre-commit and CI use. The underlying commands work
+directly too:
+
 ```bash
 uv run pytest
 ```
