@@ -11,6 +11,7 @@ from __future__ import annotations
 import sqlite3
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+from typing import Any
 
 import pytest
 
@@ -38,7 +39,7 @@ def settings(tmp_path: Path) -> Settings:
     )
 
 
-def text(value: str) -> dict[str, object]:
+def text(value: str) -> dict[str, Any]:
     return {"type": "text", "text": value}
 
 
@@ -57,15 +58,13 @@ class TestSessions:
     def test_the_first_question_becomes_the_title(self, db: sqlite3.Connection) -> None:
         session_id = store.ensure_session(db, None)
         store.append_turn(db, session_id, role="user", blocks=[text("Which caves flood?")])
-        row = db.execute(
-            "SELECT title FROM session WHERE session_id = ?", (session_id,)
-        ).fetchone()
+        row = db.execute("SELECT title FROM session WHERE session_id = ?", (session_id,)).fetchone()
         assert row["title"] == "Which caves flood?"
 
     def test_blocks_round_trip_verbatim(self, db: sqlite3.Connection) -> None:
         """The whole argument for storing the JSON rather than normalising it."""
         session_id = store.ensure_session(db, None)
-        blocks = [
+        blocks: list[dict[str, Any]] = [
             {"type": "text", "text": "Looking that up."},
             {"type": "tool_use", "id": "toolu_1", "name": "search_sites", "input": {"query": "x"}},
         ]
@@ -90,9 +89,7 @@ class TestHistory:
         messages = store.history(db, session_id, model="claude-opus-5", max_turns=5)
         assert messages[0]["role"] == "user"
 
-    def test_a_tool_call_is_never_split_across_the_boundary(
-        self, db: sqlite3.Connection
-    ) -> None:
+    def test_a_tool_call_is_never_split_across_the_boundary(self, db: sqlite3.Connection) -> None:
         """A user turn made of tool_result blocks is the second half of a tool
         call. Starting there orphans the tool_use that asked for it."""
         session_id = store.ensure_session(db, None)
@@ -199,9 +196,7 @@ class TestRateLimit:
         assert not refused.allowed
         assert refused.retry_after_seconds >= 1
 
-    def test_the_bucket_refills_with_time(
-        self, db: sqlite3.Connection, settings: Settings
-    ) -> None:
+    def test_the_bucket_refills_with_time(self, db: sqlite3.Connection, settings: Settings) -> None:
         ip = budget.hash_ip("1.2.3.4", settings.ip_salt)
         for _ in range(4):
             budget.check_rate(db, ip, settings=settings, now=1000.0)
@@ -238,8 +233,7 @@ class TestSpendCap:
         affordable = settings.daily_cap_micros // estimate
 
         granted = [
-            budget.reserve(db, settings=settings, now=NOON).granted
-            for _ in range(affordable + 3)
+            budget.reserve(db, settings=settings, now=NOON).granted for _ in range(affordable + 3)
         ]
         assert sum(granted) == affordable
 

@@ -16,7 +16,7 @@ descriptions — the only thing steering an agent's choice — have a single sou
 from __future__ import annotations
 
 import sqlite3
-from typing import Any
+from typing import Any, cast
 
 from matienzo import __version__, config, tools
 from matienzo.db.connect import connect
@@ -44,6 +44,12 @@ def _run(name: str, **arguments: Any) -> Any:
     Per-call rather than pooled: opening a local SQLite file costs tens of
     microseconds, and a connection outliving the call would have to answer for
     thread affinity that a stdio server has no reason to take on.
+
+    Returns `Any` because the registry holds eight handlers with eight different
+    result shapes. Each wrapper below casts to the shape the MCP SDK derives its
+    schema from — that cast is the seam between a hand-written signature and an
+    untyped registry, and `tests/test_mcp.py` comparing the two schemas is what
+    keeps it honest.
     """
     connection = _connect()
     try:
@@ -76,16 +82,19 @@ def build_server() -> Any:
         hybrid: bool = True,
         limit: int = 15,
     ) -> list[dict[str, Any]]:
-        return _run(
-            "search_sites",
-            query=query,
-            area=area,
-            site_type=site_type,
-            min_length_m=min_length_m,
-            min_depth_m=min_depth_m,
-            has_survey=has_survey,
-            hybrid=hybrid,
-            limit=limit,
+        return cast(
+            list[dict[str, Any]],
+            _run(
+                "search_sites",
+                query=query,
+                area=area,
+                site_type=site_type,
+                min_length_m=min_length_m,
+                min_depth_m=min_depth_m,
+                has_survey=has_survey,
+                hybrid=hybrid,
+                limit=limit,
+            ),
         )
 
     def search_passages(
@@ -94,35 +103,47 @@ def build_server() -> Any:
         hybrid: bool = True,
         limit: int = 10,
     ) -> list[dict[str, Any]]:
-        return _run(
-            "search_passages",
-            query=query,
-            site_number=site_number,
-            hybrid=hybrid,
-            limit=limit,
+        return cast(
+            list[dict[str, Any]],
+            _run(
+                "search_passages",
+                query=query,
+                site_number=site_number,
+                hybrid=hybrid,
+                limit=limit,
+            ),
         )
 
     def get_site(site_number: int, include_description: bool = True) -> dict[str, Any]:
-        return _run("get_site", site_number=site_number, include_description=include_description)
+        return cast(
+            dict[str, Any],
+            _run("get_site", site_number=site_number, include_description=include_description),
+        )
 
     def nearby_sites(
         site_number: int, radius_m: float = 500.0, limit: int = 20
     ) -> list[dict[str, Any]]:
-        return _run("nearby_sites", site_number=site_number, radius_m=radius_m, limit=limit)
+        return cast(
+            list[dict[str, Any]],
+            _run("nearby_sites", site_number=site_number, radius_m=radius_m, limit=limit),
+        )
 
     def site_graph(site_number: int, depth: int = 1) -> dict[str, Any]:
-        return _run("site_graph", site_number=site_number, depth=depth)
+        return cast(dict[str, Any], _run("site_graph", site_number=site_number, depth=depth))
 
     def find_by_citation(
         author: str | None = None, year: int | None = None, limit: int = 30
     ) -> list[dict[str, Any]]:
-        return _run("find_by_citation", author=author, year=year, limit=limit)
+        return cast(
+            list[dict[str, Any]],
+            _run("find_by_citation", author=author, year=year, limit=limit),
+        )
 
     def corpus_stats() -> dict[str, int]:
-        return _run("corpus_stats")
+        return cast(dict[str, int], _run("corpus_stats"))
 
     def sql(query: str) -> dict[str, Any]:
-        return _run("sql", query=query)
+        return cast(dict[str, Any], _run("sql", query=query))
 
     for fn in (
         search_sites,

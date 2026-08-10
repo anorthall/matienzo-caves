@@ -13,6 +13,7 @@ import json
 import sqlite3
 from collections.abc import Iterator
 from pathlib import Path
+from types import TracebackType
 from typing import Any
 
 import pytest
@@ -86,9 +87,14 @@ def agent_client(
                 await context.__aenter__()
                 app_.state.client = fake
 
-            async def __aexit__(self, *exc: object) -> None:
+            async def __aexit__(
+                self,
+                exc_type: type[BaseException] | None,
+                exc: BaseException | None,
+                traceback: TracebackType | None,
+            ) -> None:
                 app_.state.client = None
-                await context.__aexit__(*exc)
+                await context.__aexit__(exc_type, exc, traceback)
 
         return Wrapper()
 
@@ -143,9 +149,7 @@ class TestSearch:
         prefix = "https://www.matienzocaves.org.uk/"
         assert all(r["url"].startswith(prefix) for r in body["results"])
 
-    def test_whether_semantic_ranking_ran_is_reported_not_assumed(
-        self, client: TestClient
-    ) -> None:
+    def test_whether_semantic_ranking_ran_is_reported_not_assumed(self, client: TestClient) -> None:
         assert client.post("/api/search", json={"query": "shaft"}).json()["hybrid"] is False
 
     def test_an_empty_query_is_rejected(self, client: TestClient) -> None:
@@ -159,9 +163,7 @@ class TestSearch:
     def test_an_unknown_site_is_a_404(self, client: TestClient) -> None:
         assert client.get("/api/site/5000").status_code == 404
 
-    def test_an_out_of_range_site_is_rejected_before_the_query(
-        self, client: TestClient
-    ) -> None:
+    def test_an_out_of_range_site_is_rejected_before_the_query(self, client: TestClient) -> None:
         assert client.get("/api/site/99999").status_code == 422
 
 
@@ -208,14 +210,10 @@ class TestStreamInvariants:
 
 
 class TestRateLimit:
-    def test_the_limit_is_a_real_429_not_an_event(
-        self, fixture_db: Path, tmp_path: Path
-    ) -> None:
+    def test_the_limit_is_a_real_429_not_an_event(self, fixture_db: Path, tmp_path: Path) -> None:
         """Delivered as an SSE error inside a 200, every HTTP-level tool between
         us and the visitor sees success."""
-        app = create_app(
-            build_settings(fixture_db, tmp_path, rate_per_min=0.001, rate_burst=1.0)
-        )
+        app = create_app(build_settings(fixture_db, tmp_path, rate_per_min=0.001, rate_burst=1.0))
         with TestClient(app, base_url="https://testserver") as client:
             assert client.post("/api/chat", json={"question": "one"}).status_code == 200
             refused = client.post("/api/chat", json={"question": "two"})
@@ -224,12 +222,8 @@ class TestRateLimit:
 
 
 class TestAgent:
-    def test_a_plain_answer_streams_and_finishes(
-        self, fixture_db: Path, tmp_path: Path
-    ) -> None:
-        client, _ = agent_client(
-            fixture_db, tmp_path, [fakes.say("Cobadal floods in winter.")]
-        )
+    def test_a_plain_answer_streams_and_finishes(self, fixture_db: Path, tmp_path: Path) -> None:
+        client, _ = agent_client(fixture_db, tmp_path, [fakes.say("Cobadal floods in winter.")])
         with client:
             events = ask(client, "does Cobadal flood?")
         assert events[0]["mode"] == "agent"
@@ -238,9 +232,7 @@ class TestAgent:
         )
         assert events[-1]["event"] == "done"
 
-    def test_a_tool_call_runs_and_reports_back(
-        self, fixture_db: Path, tmp_path: Path
-    ) -> None:
+    def test_a_tool_call_runs_and_reports_back(self, fixture_db: Path, tmp_path: Path) -> None:
         client, _ = agent_client(
             fixture_db,
             tmp_path,
@@ -265,9 +257,7 @@ class TestAgent:
             fixture_db,
             tmp_path,
             [
-                fakes.call_tools(
-                    ("get_site", {"site_number": 1930}), ("corpus_stats", {})
-                ),
+                fakes.call_tools(("get_site", {"site_number": 1930}), ("corpus_stats", {})),
                 fakes.say("Done."),
             ],
         )
@@ -286,9 +276,7 @@ class TestAgent:
             fixture_db,
             tmp_path,
             [
-                fakes.call_tools(
-                    ("get_site", {"site_number": 1930}), ("corpus_stats", {})
-                ),
+                fakes.call_tools(("get_site", {"site_number": 1930}), ("corpus_stats", {})),
                 fakes.say("Done."),
             ],
         )
@@ -299,8 +287,7 @@ class TestAgent:
         tool_result_turns = [
             m
             for m in second_request
-            if m["role"] == "user"
-            and any(b.get("type") == "tool_result" for b in m["content"])
+            if m["role"] == "user" and any(b.get("type") == "tool_result" for b in m["content"])
         ]
         assert len(tool_result_turns) == 1
         assert len(tool_result_turns[0]["content"]) == 2
@@ -334,9 +321,7 @@ class TestAgent:
     def test_a_paused_turn_is_resumed_rather_than_truncating_the_answer(
         self, fixture_db: Path, tmp_path: Path
     ) -> None:
-        client, fake = agent_client(
-            fixture_db, tmp_path, [fakes.pause(), fakes.say("Finished.")]
-        )
+        client, fake = agent_client(fixture_db, tmp_path, [fakes.pause(), fakes.say("Finished.")])
         with client:
             events = ask(client, "?")
         assert len(fake.calls) == 2
@@ -363,7 +348,7 @@ class TestAgent:
         app = create_app(settings)
         fake = fakes.FakeAnthropic([], fail_with=RuntimeError("connection reset"))
         with TestClient(app, base_url="https://testserver") as client:
-            client.app.state.client = fake
+            app.state.client = fake
             events = ask(client, "?")
         assert events[-1]["event"] == "error"
         assert events[-1]["code"] == "upstream"
@@ -375,9 +360,7 @@ class TestBudgetInteraction:
     ) -> None:
         """The text already streamed is still a real answer, so this ends with
         `done`, not `error`."""
-        client, _ = agent_client(
-            fixture_db, tmp_path, [fakes.say("unused")], daily_cap_micros=1
-        )
+        client, _ = agent_client(fixture_db, tmp_path, [fakes.say("unused")], daily_cap_micros=1)
         with client:
             events = ask(client, "anything")
         names = [e["event"] for e in events]
@@ -385,9 +368,7 @@ class TestBudgetInteraction:
         assert next(e for e in events if e["event"] == "notice")["code"] == "daily_cap"
         assert events[-1]["event"] == "done"
 
-    def test_spend_is_recorded_against_the_day(
-        self, fixture_db: Path, tmp_path: Path
-    ) -> None:
+    def test_spend_is_recorded_against_the_day(self, fixture_db: Path, tmp_path: Path) -> None:
         client, _ = agent_client(fixture_db, tmp_path, [fakes.say("Hello.")])
         with client:
             ask(client, "hi")
@@ -403,9 +384,7 @@ class TestPromptCaching:
     ) -> None:
         """Anything varying in `tools` or `system` invalidates the cache on every
         request — not an error, just roughly triple the bill."""
-        client, fake = agent_client(
-            fixture_db, tmp_path, [fakes.say("one"), fakes.say("two")]
-        )
+        client, fake = agent_client(fixture_db, tmp_path, [fakes.say("one"), fakes.say("two")])
         with client:
             ask(client, "first")
             ask(client, "second")
@@ -448,9 +427,7 @@ class TestMarkerScanner:
 
 
 class TestLedger:
-    def test_an_uncited_marker_is_reported_as_unverified(
-        self, fixture_db: Path
-    ) -> None:
+    def test_an_uncited_marker_is_reported_as_unverified(self, fixture_db: Path) -> None:
         """A hallucinated citation must not become a live link to a 404 on
         somebody else's website."""
         from matienzo.db.connect import connect
@@ -465,9 +442,7 @@ class TestLedger:
         assert report.cited == (1930,)
         assert report.unverified == (9999,)
 
-    def test_a_site_is_announced_once_however_many_tools_return_it(
-        self, fixture_db: Path
-    ) -> None:
+    def test_a_site_is_announced_once_however_many_tools_return_it(self, fixture_db: Path) -> None:
         from matienzo.db.connect import connect
 
         connection = connect(fixture_db, read_only=True)

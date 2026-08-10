@@ -51,9 +51,7 @@ TERMINAL: Final[frozenset[str]] = frozenset({"done", "error"})
 #: Error codes the SPA is expected to recognise. `daily_cap` is deliberately not
 #: here — running out of budget mid-answer is delivered as a `notice` followed by
 #: a normal `done`, because the text already streamed is still a real answer.
-ErrorCode = Literal[
-    "rate_limited", "refusal", "iteration_limit", "timeout", "upstream", "internal"
-]
+ErrorCode = Literal["rate_limited", "refusal", "iteration_limit", "timeout", "upstream", "internal"]
 
 
 @dataclass(frozen=True, slots=True)
@@ -85,9 +83,7 @@ class Stream:
         return event
 
     def start(self, *, session_id: str, turn_id: int, mode: str, model: str | None) -> Event:
-        return self.event(
-            "start", session_id=session_id, turn_id=turn_id, mode=mode, model=model
-        )
+        return self.event("start", session_id=session_id, turn_id=turn_id, mode=mode, model=model)
 
     def delta(self, text: str) -> Event:
         return self.event("delta", text=text)

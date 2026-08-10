@@ -271,9 +271,7 @@ async def _run_one(
     )
 
 
-def _translate(
-    event: Any, stream: sse.Stream, scanner: Any
-) -> list[sse.Event]:
+def _translate(event: Any, stream: sse.Stream, scanner: Any) -> list[sse.Event]:
     """Map one SDK stream event onto zero or more of ours."""
     kind = getattr(event, "type", None)
 

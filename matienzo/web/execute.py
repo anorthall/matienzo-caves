@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import sqlite3
 import time
+from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any
 
@@ -124,14 +125,14 @@ class Executor:
     def open(self) -> sqlite3.Connection:
         return connect(self._settings.db_path, read_only=True)
 
-    async def read(self, fn: Any, *args: Any, **kwargs: Any) -> Any:
+    async def read[T](self, fn: Callable[..., T], *args: Any, **kwargs: Any) -> T:
         """Run an arbitrary read against the corpus on a worker thread.
 
         The search endpoints need this too — they are the same synchronous
         SQLite as the tools, just without a model asking for them.
         """
 
-        def call() -> Any:
+        def call() -> T:
             connection = self.open()
             try:
                 return fn(connection, *args, **kwargs)

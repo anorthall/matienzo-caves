@@ -377,7 +377,7 @@ REGISTRY: Final[tuple[ToolSpec, ...]] = (
         name="search_sites",
         description=(
             "Find caves by description or name, ranked.\n\n"
-            "Use this to answer \"which cave is this?\". `hybrid` fuses keyword and "
+            'Use this to answer "which cave is this?". `hybrid` fuses keyword and '
             "semantic ranking and is on by default; it falls back to keyword-only if "
             "the database has no embeddings."
         ),

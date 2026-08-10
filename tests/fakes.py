@@ -13,7 +13,7 @@ silently drifting away from what it claims to test.
 
 from __future__ import annotations
 
-from collections.abc import Iterator, Sequence
+from collections.abc import AsyncIterator, Iterator, Sequence
 from dataclasses import dataclass, field
 from types import SimpleNamespace
 from typing import Any
@@ -109,16 +109,12 @@ class _Stream:
     async def __aexit__(self, *exc: object) -> None:
         return None
 
-    async def __aiter__(self) -> Any:
-        for event in self._turn.events:
-            yield event
-
-    def __aiter__(self) -> Any:  # noqa: F811 - async generator, defined once
-        async def gen() -> Any:
+    def __aiter__(self) -> AsyncIterator[Any]:
+        async def events() -> AsyncIterator[Any]:
             for event in self._turn.events:
                 yield event
 
-        return gen()
+        return events()
 
     async def get_final_message(self) -> SimpleNamespace:
         return SimpleNamespace(

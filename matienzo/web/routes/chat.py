@@ -246,9 +246,7 @@ def _persist(
     )
 
 
-async def _with_keepalive(
-    events: AsyncIterator[sse.Event], interval: float
-) -> AsyncIterator[str]:
+async def _with_keepalive(events: AsyncIterator[sse.Event], interval: float) -> AsyncIterator[str]:
     """Encode events, emitting an SSE comment whenever the stream goes quiet.
 
     A multi-hop answer can spend twenty seconds inside tool calls with nothing to

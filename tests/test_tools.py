@@ -105,9 +105,7 @@ class TestSqlGuard:
     def test_writes_are_refused(self, corpus: sqlite3.Connection, query: str) -> None:
         assert "error" in tools.sql(corpus, query=query)
 
-    def test_a_write_smuggled_after_a_select_is_refused(
-        self, corpus: sqlite3.Connection
-    ) -> None:
+    def test_a_write_smuggled_after_a_select_is_refused(self, corpus: sqlite3.Connection) -> None:
         assert "error" in tools.sql(corpus, query="SELECT 1; DROP TABLE site")
 
     def test_reads_are_allowed(self, corpus: sqlite3.Connection) -> None:

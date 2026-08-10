@@ -23,9 +23,7 @@ DB_PATH: Final = Path(os.environ.get("MATIENZO_DB") or REPO_ROOT / "matienzo.db"
 #: separate file: it is the only thing the portal writes, which is what keeps
 #: `DB_PATH` open read-only everywhere and disposable in the way the build
 #: pipeline assumes.
-SESSIONS_DB_PATH: Final = Path(
-    os.environ.get("MATIENZO_SESSIONS_DB") or REPO_ROOT / "sessions.db"
-)
+SESSIONS_DB_PATH: Final = Path(os.environ.get("MATIENZO_SESSIONS_DB") or REPO_ROOT / "sessions.db")
 
 # Bump when a parser change alters ParsedSite output. Golden files and the
 # `applies_to_sha256` staleness check both key off this.

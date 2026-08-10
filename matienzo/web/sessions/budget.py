@@ -173,9 +173,7 @@ def reserve(
 
     connection.execute("BEGIN IMMEDIATE")
     try:
-        connection.execute(
-            "INSERT OR IGNORE INTO budget_day (day) VALUES (?)", (day,)
-        )
+        connection.execute("INSERT OR IGNORE INTO budget_day (day) VALUES (?)", (day,))
         row = connection.execute(
             "SELECT reserved_micros, spent_micros FROM budget_day WHERE day = ?", (day,)
         ).fetchone()

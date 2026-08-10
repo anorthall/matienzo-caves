@@ -124,9 +124,7 @@ class Ledger:
                 name=row["name"] if row else None,
                 area=row["area"] if row else None,
                 url=links.site_url(number),
-                excerpt=" ".join((row["body_text"] or "").split())[:EXCERPT_CHARS]
-                if row
-                else "",
+                excerpt=" ".join((row["body_text"] or "").split())[:EXCERPT_CHARS] if row else "",
                 first_seen_tool=tool,
             )
             self._sources[number] = source

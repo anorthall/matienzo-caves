@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-from typing import Final, Literal
+from typing import Any, Final, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
@@ -121,7 +121,7 @@ class Settings(BaseModel):
             value = env.get(name)
             return value.strip() or None if value else None
 
-        values: dict[str, object] = {}
+        values: dict[str, Any] = {}
         if (raw := get("MATIENZO_DB")) is not None:
             values["db_path"] = Path(raw)
         if (raw := get("MATIENZO_SESSIONS_DB")) is not None:

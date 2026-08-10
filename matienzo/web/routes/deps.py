@@ -15,7 +15,7 @@ import time
 from collections.abc import Iterator
 from contextlib import contextmanager
 from dataclasses import dataclass
-from typing import Annotated
+from typing import Annotated, cast
 
 from fastapi import Depends, HTTPException, Request
 
@@ -33,11 +33,11 @@ SEARCH_COST = 0.2
 
 
 def settings_of(request: Request) -> Settings:
-    return request.app.state.settings
+    return cast(Settings, request.app.state.settings)
 
 
 def executor_of(request: Request) -> Executor:
-    return request.app.state.executor
+    return cast(Executor, request.app.state.executor)
 
 
 @contextmanager
@@ -103,15 +103,11 @@ def _limit(request: Request, caller: Caller, cost: float) -> None:
         )
 
 
-def rate_limited_chat(
-    request: Request, caller: Annotated[Caller, Depends(caller_of)]
-) -> Caller:
+def rate_limited_chat(request: Request, caller: Annotated[Caller, Depends(caller_of)]) -> Caller:
     _limit(request, caller, CHAT_COST)
     return caller
 
 
-def rate_limited_search(
-    request: Request, caller: Annotated[Caller, Depends(caller_of)]
-) -> Caller:
+def rate_limited_search(request: Request, caller: Annotated[Caller, Depends(caller_of)]) -> Caller:
     _limit(request, caller, SEARCH_COST)
     return caller

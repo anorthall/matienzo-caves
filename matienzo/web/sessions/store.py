@@ -98,8 +98,7 @@ def ensure_session(
 
     session_id = new_session_id()
     connection.execute(
-        "INSERT INTO session (session_id, created_at, last_seen_at, ip_hash)"
-        " VALUES (?, ?, ?, ?)",
+        "INSERT INTO session (session_id, created_at, last_seen_at, ip_hash) VALUES (?, ?, ?, ?)",
         (session_id, now, now, ip_hash),
     )
     return session_id

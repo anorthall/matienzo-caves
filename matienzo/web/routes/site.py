@@ -21,9 +21,7 @@ router = APIRouter(prefix="/api")
 @router.get("/site/{site_number}", dependencies=[Depends(rate_limited_search)])
 async def get_site(
     executor: Annotated[Executor, Depends(executor_of)],
-    site_number: Annotated[
-        int, Path(ge=config.SITE_NUMBER_MIN, le=config.SITE_NUMBER_MAX)
-    ],
+    site_number: Annotated[int, Path(ge=config.SITE_NUMBER_MIN, le=config.SITE_NUMBER_MAX)],
     include_description: bool = True,
 ) -> dict[str, Any]:
     record = await executor.read(
