@@ -100,11 +100,16 @@ erDiagram
 
 Four columns deliberately carry no foreign key: `xref.to_site`,
 `site_alias.target_site`, `resource_link.target_site`, and `source_file`'s join
-to `site` — which is why the diagram draws that one as a dotted line. Site
-numbers are not dense, some being reserved or reallocated, and a reference to a
-number with no page is still a real reference, so those columns must be able to
-name one. In the current corpus every `xref` target does resolve, but the schema
-does not depend on that staying true.
+to `site` — which is why the diagram draws that one as a dotted line. A page may
+refer to a site number that has no page of its own, and that is still a real
+reference, so those columns must be able to name one.
+
+Worth knowing that this is currently defensive rather than load-bearing. The
+corpus numbers run 1 to 5,557 with **no gaps**, every `xref` target resolves,
+and `to_site_exists` is 1 on every row. Reserved and reallocated numbers do
+exist — `0249` says "to be re-allocated", `4540` says "reserved" — but they are
+present as pages rather than missing from the sequence. The schema does not
+assume that stays true, since the upstream site is still edited.
 
 There is one view. `site_summary` joins `site` to `area` and attaches citation
 and in/out-reference counts; it is what `matienzo stats` and most ad-hoc `sql`
