@@ -40,8 +40,8 @@ FUSION_POOL = 100
 #: Deliberately equal. Weighting the keyword side down looked promising — it is
 #: much the weaker retriever on descriptive queries — but a sweep over the eval
 #: set found recall@5 identical at every weighting from 0.3 to 1.0, recall@1
-#: moving by one or two queries out of 32, and recall@10 *best* at parity.
-#: Those are noise-sized differences on a 32-query set, so anything other than
+#: moving by one or two queries out of 28, and recall@10 *best* at parity.
+#: Those are noise-sized differences on a 28-query set, so anything other than
 #: 1.0 would be fitting the eval rather than the corpus. Exposed as parameters
 #: so a larger query set can revisit the question with real evidence.
 KEYWORD_WEIGHT = 1.0
@@ -270,7 +270,7 @@ def search_hybrid(
     keyword = search_passages(connection, query, filters=filters, limit=FUSION_POOL)
     try:
         vectors = search_vectors(connection, query, filters=filters, limit=FUSION_POOL)
-    except (sqlite3.OperationalError, ImportError):
+    except sqlite3.OperationalError, ImportError:
         vectors = []
 
     fused: dict[int, float] = {}
