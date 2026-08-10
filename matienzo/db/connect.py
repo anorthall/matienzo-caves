@@ -20,7 +20,12 @@ SEARCH_SCHEMA_PATH = Path(__file__).parent / "search_schema.sql"
 
 
 def connect(path: Path | None = None, *, read_only: bool = False) -> sqlite3.Connection:
-    """Open the database with the pragmas the schema assumes."""
+    """Open the database with the pragmas the schema assumes.
+
+    sqlite-vec is loaded when it is installed. It has to be, even for reads: the
+    `chunk_vec` virtual table cannot be opened — or dropped, or even described —
+    without the module that defines it.
+    """
     target = path or config.DB_PATH
     if read_only:
         connection = sqlite3.connect(f"file:{target}?mode=ro", uri=True)
@@ -28,6 +33,7 @@ def connect(path: Path | None = None, *, read_only: bool = False) -> sqlite3.Con
         connection = sqlite3.connect(target)
 
     connection.row_factory = sqlite3.Row
+    _load_vector_extension(connection)
     connection.execute("PRAGMA foreign_keys = ON")
     if not read_only:
         connection.execute("PRAGMA journal_mode = WAL")
@@ -36,6 +42,24 @@ def connect(path: Path | None = None, *, read_only: bool = False) -> sqlite3.Con
         # on a file that is rebuilt from source in two minutes.
         connection.execute("PRAGMA synchronous = NORMAL")
     return connection
+
+
+def _load_vector_extension(connection: sqlite3.Connection) -> None:
+    """Load sqlite-vec if present, ignoring its absence.
+
+    The parse and load path does not need vectors, so the core install must keep
+    working without the `embed` extra. `matienzo embed` and hybrid search raise
+    a clear error of their own when it is genuinely required.
+    """
+    try:
+        from matienzo.embed import load_extension
+    except ImportError:
+        return
+    try:
+        load_extension(connection)
+    except Exception:
+        # Absence is expected, not exceptional: the core install has no vectors.
+        return
 
 
 def create_schema(connection: sqlite3.Connection) -> None:

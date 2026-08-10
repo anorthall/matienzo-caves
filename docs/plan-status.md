@@ -13,10 +13,10 @@ checkpoint is met or an assumption turns out to be wrong.
 | 3 · Schema + load | 2 days | **Done** | `matienzo build` → 25 MB in 4.3 s, reproducible; `matienzo stats` |
 | 4 · Review queue | 1–2 days | **Done** | `matienzo review`; overrides; 0 error-severity anomalies |
 | 5 · Chunking + FTS + CLI | 1 day | **Done** | `matienzo search / show / nearby / graph`; 13,280 chunks |
-| 6 · Embeddings + hybrid | 1–2 days | Next | |
-| 7 · MCP server | 1 day | Not started | |
+| 6 · Embeddings + hybrid | 1–2 days | **Done** | `matienzo embed` / `evaluate`; hybrid beats both single strategies |
+| 7 · MCP server | 1 day | **Done** | 8 tools over stdio; guarded read-only `sql` |
 
-461 tests pass; `ruff check` clean.
+501 tests pass; `ruff check` clean. **All seven phases are complete.**
 
 ### What the database contains
 

@@ -72,6 +72,40 @@ Accents are folded, so `riano` finds `Riaño` and `fernandez` finds
 `Fernández`. Add `--passages` to see the matching paragraphs rather than a list
 of caves.
 
+## Semantic search
+
+Optional, and local — no API key, no network after the first model download.
+
+```bash
+uv sync --extra embed
+uv run matienzo embed
+```
+
+That takes about five minutes for the 13,280 chunks and is incremental
+afterwards: re-running only embeds what changed. Then `--hybrid` fuses keyword
+and semantic ranking, which is what makes a query work when you can describe a
+cave but not name it:
+
+```bash
+uv run matienzo search "hole blocked by a discarded tractor tyre" --hybrid
+```
+
+```bash
+uv run matienzo evaluate
+```
+
+`evaluate` scores keyword, vector and hybrid retrieval against
+`data/eval/queries.toml`.
+
+## Using it from Claude Code
+
+```bash
+uv sync --extra mcp --extra embed
+```
+
+`.mcp.json` registers a `matienzo` server exposing search, site lookup,
+geography, the cross-reference graph, and a guarded read-only `sql` tool.
+
 Inspect a single page at any stage of the pipeline, or triage the parse:
 
 ```bash

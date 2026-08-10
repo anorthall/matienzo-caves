@@ -58,3 +58,21 @@ CREATE VIRTUAL TABLE name_fts USING fts5(
   name,
   tokenize = "trigram"
 );
+
+-- Vectors live in the same file, so `scp matienzo.db` still moves everything.
+-- Created here but populated separately by `matienzo embed`: embedding is slow
+-- and optional, and a build should not require a 130 MB model download.
+--
+-- `sqlite-vec` rather than a faiss or numpy sidecar. At ~13k chunks a
+-- brute-force scan is single-digit milliseconds — faiss's indexing only starts
+-- paying at around 10^6 vectors — and a sidecar would mean a second file and a
+-- second consistency problem.
+--
+-- site_number and kind are auxiliary (+) columns so a filtered vector search
+-- can constrain candidates inside the KNN rather than after it.
+CREATE VIRTUAL TABLE chunk_vec USING vec0(
+  chunk_id INTEGER PRIMARY KEY,
+  embedding FLOAT[384],
+  +site_number INTEGER,
+  +kind TEXT
+);

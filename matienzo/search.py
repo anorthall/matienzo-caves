@@ -16,10 +16,36 @@ from __future__ import annotations
 
 import re
 import sqlite3
+import struct
 from dataclasses import dataclass, field
 
 #: How much a site's supporting passages count beyond its best one.
 SUPPORTING_WEIGHT = 0.3
+
+#: Reciprocal-rank-fusion constant. BM25 scores and cosine distances are on
+#: incomparable scales, and their distributions differ wildly across a corpus
+#: where a document may be one sentence or a hundred thousand characters. RRF
+#: fuses by *rank*, so it needs no normalisation and no per-query calibration.
+#: 60 is the value from the original paper and is not worth tuning here.
+RRF_K = 60
+
+#: How many candidates each retriever contributes before fusion. Much larger
+#: than any sensible `limit`: fusion can only reorder what it is given, so a
+#: document that neither retriever ranks highly on its own can still win on
+#: agreement — but only if both actually returned it.
+FUSION_POOL = 100
+
+#: Relative weight of each retriever in the fusion.
+#:
+#: Deliberately equal. Weighting the keyword side down looked promising — it is
+#: much the weaker retriever on descriptive queries — but a sweep over the eval
+#: set found recall@5 identical at every weighting from 0.3 to 1.0, recall@1
+#: moving by one or two queries out of 32, and recall@10 *best* at parity.
+#: Those are noise-sized differences on a 32-query set, so anything other than
+#: 1.0 would be fitting the eval rather than the corpus. Exposed as parameters
+#: so a larger query set can revisit the question with real evidence.
+KEYWORD_WEIGHT = 1.0
+VECTOR_WEIGHT = 1.0
 
 #: FTS5 operators that would otherwise make a plain user query a syntax error.
 FTS_SPECIAL_RE = re.compile(r'["*():^-]')
@@ -105,13 +131,20 @@ class Filters:
 
 
 def escape_query(query: str) -> str:
-    """Make a user's words safe for FTS5's query grammar.
+    """Turn a user's words into an FTS5 query.
 
     Every term is quoted rather than escaped: users type hyphens, apostrophes
     and brackets in cave names constantly, and each one is an operator to FTS5.
+
+    Terms are joined with `OR`, not by juxtaposition. FTS5 reads adjacent terms
+    as `AND`, so `cave used as a shelter for goats` demanded all seven words in
+    one passage and returned nothing at all — keyword search scored 0% on every
+    descriptive query until this changed. `OR` costs nothing in precision here
+    because BM25 already discounts common terms by inverse document frequency:
+    a passage matching only `cave` ranks far below one matching `goat shelter`.
     """
     terms = [t for t in FTS_SPECIAL_RE.sub(" ", query).split() if t]
-    return " ".join(f'"{t}"' for t in terms)
+    return " OR ".join(f'"{t}"' for t in terms)
 
 
 def search_passages(
@@ -161,6 +194,101 @@ def search_passages(
     ]
 
 
+def search_vectors(
+    connection: sqlite3.Connection,
+    query: str,
+    *,
+    filters: Filters | None = None,
+    limit: int = FUSION_POOL,
+) -> list[Passage]:
+    """Rank passages by embedding similarity.
+
+    Oversamples the KNN when filters are present: sqlite-vec applies `k` before
+    the join, so asking for exactly `limit` and then filtering would return far
+    fewer rows than requested — the same push-down problem `Filters` exists to
+    avoid, in a place where it cannot be pushed all the way down.
+    """
+    from matienzo import embed
+
+    vector = struct.pack(f"{embed.DIMENSIONS}f", *embed.embed_query(query))
+    constraint, params = (filters or Filters()).sql()
+    k = limit * (8 if constraint else 1)
+
+    rows = connection.execute(
+        f"""
+        WITH knn AS (
+            SELECT chunk_id, distance FROM chunk_vec
+            WHERE embedding MATCH ? AND k = ?
+        )
+        SELECT c.chunk_id, c.site_number, c.kind, c.section_heading, c.text,
+               s.name AS site_name, a.name AS area, knn.distance
+        FROM knn
+        JOIN chunk c ON c.chunk_id = knn.chunk_id
+        JOIN site  s ON s.site_number = c.site_number
+        LEFT JOIN area a ON a.area_id = s.area_id
+        WHERE 1 = 1{constraint}
+        ORDER BY knn.distance
+        LIMIT ?
+        """,
+        (vector, k, *params, limit),
+    ).fetchall()
+
+    return [
+        Passage(
+            chunk_id=row["chunk_id"],
+            site_number=row["site_number"],
+            site_name=row["site_name"],
+            area=row["area"],
+            kind=row["kind"],
+            section_heading=row["section_heading"],
+            text=row["text"],
+            # Cosine distance: smaller is closer, so invert for a score.
+            score=-float(row["distance"]),
+            snippet=" ".join(row["text"].split())[:200],
+        )
+        for row in rows
+    ]
+
+
+def search_hybrid(
+    connection: sqlite3.Connection,
+    query: str,
+    *,
+    filters: Filters | None = None,
+    limit: int = 20,
+    keyword_weight: float = KEYWORD_WEIGHT,
+    vector_weight: float = VECTOR_WEIGHT,
+) -> list[Passage]:
+    """Fuse keyword and vector rankings by reciprocal rank.
+
+    Both retrievers are first-class. Keyword search is better at exact names,
+    which is most of what people look for in this corpus; vector search is
+    better at descriptions of a thing whose name the reader does not know
+    ("a shaft that takes a lot of water in wet weather"). Fusing by rank lets
+    each win where it is strong without either's score scale mattering.
+    """
+    keyword = search_passages(connection, query, filters=filters, limit=FUSION_POOL)
+    try:
+        vectors = search_vectors(connection, query, filters=filters, limit=FUSION_POOL)
+    except (sqlite3.OperationalError, ImportError):
+        vectors = []
+
+    fused: dict[int, float] = {}
+    seen: dict[int, Passage] = {}
+    for ranking, weight in ((keyword, keyword_weight), (vectors, vector_weight)):
+        for rank, passage in enumerate(ranking, start=1):
+            fused[passage.chunk_id] = fused.get(passage.chunk_id, 0.0) + weight / (RRF_K + rank)
+            seen.setdefault(passage.chunk_id, passage)
+
+    ordered = sorted(fused.items(), key=lambda item: item[1], reverse=True)
+    results: list[Passage] = []
+    for chunk_id, score in ordered[:limit]:
+        passage = seen[chunk_id]
+        passage.score = score
+        results.append(passage)
+    return results
+
+
 def search_sites(
     connection: sqlite3.Connection,
     query: str,
@@ -168,6 +296,7 @@ def search_sites(
     filters: Filters | None = None,
     limit: int = 20,
     candidate_pool: int = 200,
+    hybrid: bool = False,
 ) -> list[SiteHit]:
     """Rank sites by aggregating their passage scores.
 
@@ -175,7 +304,11 @@ def search_sites(
     on all of its matching passages, so truncating before aggregation would
     order them by whichever passage happened to surface first.
     """
-    passages = search_passages(connection, query, filters=filters, limit=candidate_pool)
+    passages = (
+        search_hybrid(connection, query, filters=filters, limit=candidate_pool)
+        if hybrid
+        else search_passages(connection, query, filters=filters, limit=candidate_pool)
+    )
     if not passages:
         return _name_only_matches(connection, query, filters, limit)
 

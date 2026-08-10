@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "matienzo": {
+      "command": "uv",
+      "args": ["run", "--extra", "mcp", "--extra", "embed", "matienzo-mcp"],
+      "env": {}
+    }
+  }
+}

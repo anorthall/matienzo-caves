@@ -12,6 +12,8 @@ from rich.console import Console
 from rich.table import Table
 
 from matienzo import __version__, config
+from matienzo import embed as embed_module
+from matienzo import evaluate as evaluate_module
 from matienzo import overrides as overrides_module
 from matienzo import search as search_module
 from matienzo.anomaly import AnomalyRecorder, Severity
@@ -753,10 +755,135 @@ def _review_list(
 
 
 @app.command
+def embed(*, db: Path | None = None, batch: int = 256) -> None:
+    """Compute embeddings for any chunks that lack them.
+
+    Incremental: a chunk already carrying a vector is skipped, so re-running
+    after a parser change only touches what actually moved.
+
+    Parameters
+    ----------
+    db
+        Embed into this database instead of the default.
+    batch
+        Chunks per batch.
+    """
+    path = db or config.DB_PATH
+    if not path.exists():
+        console.print(f"[red]No database at {path}. Run `matienzo build`.[/red]")
+        raise SystemExit(1)
+
+    connection = connect(path)
+    try:
+        embed_module.load_extension(connection)
+        pending = embed_module.pending_chunks(connection)
+        if not pending:
+            total = connection.execute("SELECT count(*) FROM chunk_vec").fetchone()[0]
+            console.print(f"[green]All {total:,} chunks already embedded.[/green]")
+            return
+
+        console.print(f"Embedding {len(pending):,} chunk(s) with {embed_module.MODEL_NAME}…")
+        started = time.monotonic()
+        with console.status("") as status:
+            for done in embed_module.embed_pending(connection, pending, batch_size=batch):
+                rate = done / max(time.monotonic() - started, 1e-6)
+                status.update(f"{done:,}/{len(pending):,}  ({rate:.0f}/s)")
+        elapsed = time.monotonic() - started
+        console.print(
+            f"[green]Embedded[/green] {len(pending):,} chunks in {elapsed:.0f}s "
+            f"({len(pending) / elapsed:.0f}/s)"
+        )
+    except embed_module.EmbeddingsUnavailableError as error:
+        console.print(f"[red]{error}[/red]")
+        raise SystemExit(1) from error
+    finally:
+        connection.close()
+
+
+@app.command
+def evaluate(*, db: Path | None = None, at: int = 10) -> None:
+    """Score keyword, vector and hybrid retrieval against the eval query set.
+
+    The Phase 6 checkpoint. If hybrid does not beat both single strategies, the
+    chunking is wrong rather than the fusion.
+
+    Parameters
+    ----------
+    db
+        Evaluate against this database instead of the default.
+    at
+        The cut-off for the widest recall column.
+    """
+    connection = _open(db)
+    try:
+        if not embed_module.is_available(connection):
+            console.print("[red]No embeddings. Run `matienzo embed` first.[/red]")
+            raise SystemExit(1)
+
+        queries = evaluate_module.load_queries()
+        console.print(f"[dim]{len(queries)} queries[/dim]\n")
+
+        overall = evaluate_module.evaluate(connection, queries, at=at)
+        _eval_table("Overall", overall, at)
+
+        for kind, results in evaluate_module.by_kind(connection, queries).items():
+            _eval_table(kind, results, at)
+
+        _eval_verdict(overall, at)
+    finally:
+        connection.close()
+
+
+def _eval_verdict(results: dict[str, object], at: int) -> None:
+    """Say plainly whether fusion is earning its place.
+
+    Compared at every cut-off, not just one: hybrid can trail on recall@1 while
+    clearly winning on recall@10, and a verdict from a single number would call
+    that a failure.
+    """
+    hybrid = results["hybrid"]
+    singles = [results["keyword"], results["vector"]]
+    verdicts = []
+    for cut in (1, 5, at):
+        best_single = max(s.recall(cut) for s in singles)
+        if hybrid.recall(cut) > best_single:
+            verdicts.append(f"@{cut} better")
+        elif hybrid.recall(cut) == best_single:
+            verdicts.append(f"@{cut} level")
+        else:
+            verdicts.append(f"@{cut} worse")
+
+    console.print(f"\n[dim]Hybrid vs the best single strategy:[/dim] {', '.join(verdicts)}")
+    if all(v.endswith("worse") for v in verdicts):
+        console.print(
+            "[yellow]Hybrid loses at every cut-off. That points at the chunking,"
+            " not the fusion.[/yellow]"
+        )
+
+
+def _eval_table(title: str, results: dict[str, object], at: int) -> None:
+    table = Table(title=title, title_justify="left")
+    table.add_column("strategy")
+    table.add_column("recall@1", justify="right")
+    table.add_column("recall@5", justify="right")
+    table.add_column(f"recall@{at}", justify="right")
+    for name in ("keyword", "vector", "hybrid"):
+        result = results[name]
+        table.add_row(
+            name,
+            f"{result.recall(1):.0%}",
+            f"{result.recall(5):.0%}",
+            f"{result.recall(10):.0%}",
+        )
+    console.print(table)
+
+
+@app.command
 def search(
     query: str,
     *,
     passages: bool = False,
+    hybrid: bool = False,
     area: str | None = None,
     site_type: str | None = None,
     min_length: float | None = None,
@@ -773,6 +900,8 @@ def search(
         Words to look for. Accents are ignored, so `riano` finds `Riaño`.
     passages
         Show matching paragraphs rather than ranked sites.
+    hybrid
+        Fuse keyword and semantic rankings. Needs `matienzo embed` to have run.
     area
         Restrict to an area, matched loosely: `--area vega`.
     site_type
@@ -811,7 +940,9 @@ def search(
                 console.print(f"  {passage.snippet or passage.text[:300]}\n")
             return
 
-        hits = search_module.search_sites(connection, query, filters=filters, limit=limit)
+        hits = search_module.search_sites(
+            connection, query, filters=filters, limit=limit, hybrid=hybrid
+        )
         if not hits:
             console.print("[yellow]No matches.[/yellow]")
             return

@@ -1,0 +1,174 @@
+# Retrieval evaluation set.
+#
+# NOT expert-authored. Every expected answer here is verifiable against the
+# database, which makes this a fair test of *ranking* — does the right cave come
+# back near the top — but not of whether the corpus answers a caver's real
+# questions. Those are different things and only the first is measured here.
+#
+# `kind` groups queries by what they exercise, because the strategies differ by
+# kind and a single aggregate hides that. Keyword search should win on names;
+# semantic search should help where the reader describes a thing without naming
+# it.
+#
+# Verified by tests/test_evaluate.py: every `expect` site must exist and must
+# actually contain what the query asks about.
+
+# ---------------------------------------------------------------- names
+[[query]]
+query = "Cueva Hoyuca"
+expect = [107]
+kind = "name"
+
+[[query]]
+query = "Uzueka"
+expect = [107]
+kind = "name"
+note = "an alias, not the page's own name"
+
+[[query]]
+query = "Torca de Azpilicueta"
+expect = [333]
+kind = "name"
+
+[[query]]
+query = "Fuente Aguanaz"
+expect = [713]
+kind = "name"
+
+[[query]]
+query = "Cueva Vallina"
+expect = [733]
+kind = "name"
+
+[[query]]
+query = "Torca La Vaca"
+expect = [2889]
+kind = "name"
+
+[[query]]
+query = "Sima del Burro"
+expect = [1]
+kind = "name"
+note = "written `Burro, Sima del` on the page — head noun last"
+
+[[query]]
+query = "riano cueva"
+expect = [105]
+kind = "name"
+note = "unaccented; must still find Riaño"
+
+[[query]]
+query = "Renada"
+expect = [48]
+kind = "name"
+note = "unaccented Reñada"
+
+[[query]]
+query = "Toad in the Hole"
+expect = [258]
+kind = "name"
+note = "an English nickname recorded as an alias"
+
+[[query]]
+query = "Torca del Regaton"
+expect = [892]
+kind = "name"
+
+[[query]]
+query = "Cueva de Coquisera"
+expect = [39]
+kind = "name"
+
+# ---------------------------------------------------------- descriptions
+#
+# These are the least reliable scores in the set and deliberately narrow.
+#
+# A first attempt used queries like "sump dived to reach further passage" and
+# "entrance shaft descended on a ladder". Those score terribly and the score is
+# meaningless: hundreds of sites answer them equally well, so whichever handful
+# is listed here, a correct retrieval reads as a miss. Every query below instead
+# describes something distinctive enough that the answer set is genuinely small,
+# and is phrased to avoid being a literal keyword match.
+
+[[query]]
+query = "water tracing test using optical brightener detectors"
+expect = [713, 4271, 4272, 16, 8]
+kind = "description"
+
+[[query]]
+query = "cave known for goats sheltering in it"
+expect = [1915, 13]
+kind = "description"
+note = "1915 is literally named Goat Cave; 13's entrance acts as a goat shelter"
+
+[[query]]
+query = "bat roost with droppings and feeding remains"
+expect = [12, 13, 35, 40, 177, 263, 267, 423, 477, 613, 1537, 1538, 1539, 4004, 5208]
+kind = "description"
+note = "the pages carrying a Bat information block"
+
+[[query]]
+query = "hole blocked by a discarded tractor tyre"
+expect = [5005, 4398]
+kind = "description"
+
+[[query]]
+query = "shaft near beehives"
+expect = [1870, 2056, 3331]
+kind = "description"
+
+[[query]]
+query = "radon detector left underground for monitoring"
+expect = [48, 61, 75, 458]
+kind = "description"
+
+[[query]]
+query = "rubbish tip with dumped domestic appliances"
+expect = [3420, 4285, 3779]
+kind = "description"
+
+[[query]]
+query = "cave with prehistoric archaeological finds and human remains"
+expect = [4868, 65, 727, 13, 25, 28]
+kind = "description"
+
+# ------------------------------------------------------------- metadata
+[[query]]
+query = "deepest shafts in South Vega"
+expect = [675, 333, 1471, 36, 1338]
+kind = "metadata"
+
+[[query]]
+query = "longest cave in the Matienzo area"
+expect = [107, 733, 333]
+kind = "metadata"
+
+[[query]]
+query = "caves in the Riaño area"
+expect = [105, 106, 107, 575, 2904]
+kind = "metadata"
+
+[[query]]
+query = "sites in Cobadal"
+expect = [1930]
+kind = "metadata"
+
+[[query]]
+query = "part of the Four Valleys System"
+expect = [81, 105, 107, 114]
+kind = "metadata"
+
+[[query]]
+query = "part of the South Vega System"
+expect = [36, 40, 48, 333]
+kind = "metadata"
+
+[[query]]
+query = "shaft in Seldesuto"
+expect = [258]
+kind = "metadata"
+
+[[query]]
+query = "cave in Arredondo with a big depth"
+expect = [733, 5135, 1745]
+kind = "metadata"
