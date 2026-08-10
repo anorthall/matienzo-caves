@@ -1,0 +1,45 @@
+version: 2
+
+updates:
+  # The workflow pins `astral-sh/setup-uv@v9.0.0` to an exact tag rather than a
+  # moving major, because setup-uv publishes no `v9` ref. That pin only stays
+  # current if something bumps it, which is most of the reason this file exists.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # Covers `pyproject.toml` and `uv.lock` together. CI syncs with `--frozen`, so
+  # a bump that touched only the manifest would not be installed and the
+  # `uv-lock` pre-commit hook would fail; the uv ecosystem updates both.
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      # One PR for everything rather than a runtime/tooling split: `groups` only
+      # accepts `dependency-type: development` for bundler, composer, mix,
+      # maven, npm and pip, and `uv` is not on that list. Splitting would mean
+      # naming the five runtime packages in `patterns`, which is a second copy
+      # of the dependency list that nothing keeps in step with pyproject.toml.
+      python:
+        patterns: ["*"]
+
+  # `.pre-commit-config.yaml` pins hook revisions, which nothing else updates.
+  #
+  # Note the coupling this cannot express: the `ruff-pre-commit` rev is
+  # deliberately held equal to the ruff in the dev dependency group, so that
+  # `pre-commit run` and `uv run ruff check` cannot disagree. Dependabot treats
+  # the two as unrelated packages in unrelated ecosystems and will open two
+  # PRs — nothing fails if only one lands, the versions just drift apart
+  # silently. Land them together, or bump the sibling by hand before merging.
+  - package-ecosystem: pre-commit
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      hooks:
+        patterns: ["*"]
