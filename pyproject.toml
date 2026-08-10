@@ -4,6 +4,10 @@ version = "0.1.0"
 description = "Provide a useful, searchable interface to the Matienzo Caves Project's cave data"
 readme = "README.md"
 requires-python = ">=3.14"
+authors = [
+    { name = "Juan Corrin", email = "juancorrin@matienzo.org.uk" },
+    { name = "Andrew Northall", email = "andrew@northall.me.uk" },
+]
 dependencies = [
     "lxml>=5.3",
     "pydantic>=2.10",
