@@ -12,6 +12,7 @@ queryable SQLite database with full-text and semantic search.
 | `data/vocab/` | Hand-curated canonical names (areas, authors, systems). |
 | `data/overrides/` | Per-site corrections applied to parser output. |
 | `matienzo/` | The pipeline: decode → parse → normalise → load → chunk → embed → search. |
+| `scripts/` | Standalone PEP-723 scripts, run directly rather than imported. |
 | `tests/fixtures/` | Frozen copies of the pages the tests assert on. Committed. |
 | `docs/design.md` | Corpus reconnaissance, the design it produced, and corrections. |
 | `docs/plan-status.md` | What is built, what is not, and how the plan has changed. |
@@ -32,7 +33,7 @@ those hashes. Bytes that change between clones would make that provenance lie.
 To re-fetch from the live site:
 
 ```bash
-uv run download_htm.py
+uv run scripts/download_htm.py
 ```
 
 The site is hand-edited and still maintained, so a re-fetch may differ from what
