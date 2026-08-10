@@ -9,5 +9,19 @@ matienzo.db
 matienzo.db-wal
 matienzo.db-shm
 
+# The portal's own state: conversations, rate-limit buckets, the spend ledger.
+# Unlike matienzo.db this cannot be rebuilt from anything — it is just not ours
+# to commit.
+sessions.db
+sessions.db-wal
+sessions.db-shm
+
+# Derived. `just frontend-build` regenerates it from frontend/ in a second.
+matienzo/web/static/
+frontend/node_modules/
+
 # JetBrains IDE
 .idea/
+
+.env
+.envrc.local

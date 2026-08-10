@@ -234,6 +234,74 @@ uv run matienzo parse 1930
 uv run matienzo review
 ```
 
+## The web portal
+
+A public front end that answers conversational questions about the corpus.
+Claude drives the same eight tools the MCP server exposes, over several hops if
+it needs them, so "which caves in Cobadal take water in wet weather?" and "how
+many shafts are deeper than 50 m?" both work — the second by writing SQL rather
+than by counting search results.
+
+```bash
+just corpus
+just frontend-build
+just web
+```
+
+Answers stream to the browser, and so does everything behind them: which tools
+ran, and every site they returned. Citations are checked rather than trusted —
+the server records what the corpus actually returned, and the browser renders a
+citation as a link only if the site is in that set, so a marker naming anything
+else stays inert text instead of becoming a live link to a page that does not
+exist.
+
+`ANTHROPIC_API_KEY` enables answering. **Without it the portal still runs**, in
+search-only mode: real ranked results, no synthesis, and it says so. That is
+also what it degrades to when the daily spend cap is reached, which is why the
+mode is exposed permanently at `POST /api/search` rather than only on the day it
+is needed.
+
+### Configuration
+
+| Variable | Default | |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | — | absent ⇒ permanent search-only mode |
+| `MATIENZO_IP_SALT` | — | required for answering; rate limiting hashes client addresses with it |
+| `MATIENZO_DB` | `./matienzo.db` | the corpus, opened read-only |
+| `MATIENZO_SESSIONS_DB` | `./sessions.db` | conversations, rate limits, the spend ledger — the only thing written |
+| `MATIENZO_MODEL` | `claude-opus-5` | |
+| `MATIENZO_EFFORT` | `low` | |
+| `MATIENZO_DAILY_CAP_USD` | `5.00` | a hard ceiling; the portal degrades to search when it is reached |
+| `MATIENZO_RATE_PER_MIN` / `_BURST` | `6` / `4` | per-address token bucket |
+| `MATIENZO_TRUSTED_PROXY_HOPS` | `1` | how many of your own proxies sit in front |
+| `MATIENZO_SESSION_TTL_DAYS` | `14` | how long questions are kept |
+
+`sessions.db` is deliberately a separate file. `matienzo.db` stays read-only and
+disposable everywhere, which is what makes `matienzo build` safe to run whenever.
+
+### Deploying
+
+```bash
+just docker-build
+```
+
+The image bakes the corpus, the embedding model and the built SPA, so a running
+container needs no network access to answer. Two details are load-bearing and
+easy to lose: the corpus is checkpointed out of WAL mode before it is copied in
+(a read-only connection cannot create the `-shm` file a WAL database needs), and
+`deploy/nginx.conf` turns off `proxy_buffering` for `/api/chat` (nginx otherwise
+buffers the whole "stream" and delivers it in one piece at the end, with nothing
+in any log to say so).
+
+After deploying, check it from outside:
+
+```bash
+just smoke https://caves.example.org
+```
+
+That measures time-to-first-token, which is the only way to catch the buffering
+problem — the answer still arrives, correct and complete, just all at once.
+
 ## Development
 
 There is a `justfile`:
