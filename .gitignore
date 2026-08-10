@@ -22,3 +22,6 @@ frontend/node_modules/
 
 # JetBrains IDE
 .idea/
+
+.env
+.envrc.local
