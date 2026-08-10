@@ -233,7 +233,7 @@ class TestWholeCorpus:
     ) -> None:
         for site_number, header, _ in headers:
             for coordinate in header.coordinates:
-                if coordinate.latitude is None:
+                if coordinate.latitude is None or coordinate.longitude is None:
                     continue
                 assert 43.0 <= coordinate.latitude <= 43.6, site_number
                 assert -3.9 <= coordinate.longitude <= -3.2, site_number

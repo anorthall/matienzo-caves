@@ -186,8 +186,10 @@ def _parse_token(
     entry = UpdateDate(raw=raw, group_index=group_index, attribution=attribution)
 
     if match := NUMERIC_RE.match(token):
-        day, month, year = (int(g) for g in match.groups())
-        entry.date = _make_date(_expand_year(year), month, day)
+        # Distinct names from the inferred month/year below: a fully numeric date
+        # needs no context back-fill, so these three are always known.
+        numeric_day, numeric_month, numeric_year = (int(g) for g in match.groups())
+        entry.date = _make_date(_expand_year(numeric_year), numeric_month, numeric_day)
         entry.precision = DatePrecision.DAY
         return entry if entry.date else _unparsed(entry, raw, recorder)
 

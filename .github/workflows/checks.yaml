@@ -1,0 +1,36 @@
+name: checks
+
+on: push
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v9
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      # The mypy hook is `language: system` and runs `uv run mypy`, so it type-
+      # checks against whatever is installed. Strict mode against a half-synced
+      # environment would report missing-import errors rather than real ones, so
+      # every extra is installed here: `mcp` in particular ships type
+      # information that `matienzo/mcp_server.py` is checked against.
+      - name: Sync the environment
+        run: uv sync --all-extras --dev
+
+      - name: Cache pre-commit hook environments
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: Run pre-commit
+        run: uv run pre-commit run --all-files --show-diff-on-failure

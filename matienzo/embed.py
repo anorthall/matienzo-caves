@@ -93,7 +93,8 @@ def embed_texts(texts: Sequence[str]) -> list[list[float]]:
 
 def embed_query(query: str) -> list[float]:
     """Embed a search query, with the instruction prefix bge expects."""
-    return next(iter(_model().query_embed([query]))).tolist()
+    vector: list[float] = next(iter(_model().query_embed([query]))).tolist()
+    return vector
 
 
 def pending_chunks(connection: sqlite3.Connection) -> list[Pending]:

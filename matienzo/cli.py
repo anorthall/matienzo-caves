@@ -5,6 +5,7 @@ from __future__ import annotations
 import collections
 import sqlite3
 import time
+from collections.abc import Mapping
 from pathlib import Path
 
 import cyclopts
@@ -848,7 +849,7 @@ def evaluate(*, db: Path | None = None, at: int = 10) -> None:
         connection.close()
 
 
-def _eval_verdict(results: dict[str, object], at: int) -> None:
+def _eval_verdict(results: Mapping[str, evaluate_module.Result], at: int) -> None:
     """Say plainly whether fusion is earning its place.
 
     Compared at every cut-off, not just one: hybrid can trail on recall@1 while
@@ -875,7 +876,7 @@ def _eval_verdict(results: dict[str, object], at: int) -> None:
         )
 
 
-def _eval_table(title: str, results: dict[str, object], at: int) -> None:
+def _eval_table(title: str, results: Mapping[str, evaluate_module.Result], at: int) -> None:
     table = Table(title=title, title_justify="left")
     table.add_column("strategy")
     table.add_column("recall@1", justify="right")

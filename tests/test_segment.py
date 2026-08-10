@@ -31,8 +31,9 @@ def seg(fixture_path: Callable[[int], Path]) -> Callable[[int], Segments]:
 
 class TestTitle:
     def test_archetype(self, seg: Callable[[int], Segments]) -> None:
-        assert seg(1).title is not None
-        assert "0001: Burro, Sima del" in seg(1).title.text
+        title = seg(1).title
+        assert title is not None
+        assert "0001: Burro, Sima del" in title.text
 
     @pytest.mark.parametrize("site", [505, 1775, 1955])
     def test_swapped_tag_nesting_is_still_found(

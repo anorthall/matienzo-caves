@@ -288,7 +288,8 @@ def build_server() -> Any:
         """Find works in the bibliography and the sites that cite them."""
         connection = _connect()
         try:
-            clauses, params = [], []
+            clauses: list[str] = []
+            params: list[str | int] = []
             if author:
                 clauses.append("c.author_raw LIKE ?")
                 params.append(f"%{author}%")
