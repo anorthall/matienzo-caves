@@ -1,9 +1,9 @@
 [project]
-name = "matienzo"
+name = "matienzo-caves"
 version = "0.1.0"
-description = "Extract, structure and search the Matienzo Caves site descriptions"
+description = "Provide a useful, searchable interface to the Matienzo Caves Project's cave data"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "lxml>=5.3",
     "pydantic>=2.10",
@@ -32,7 +32,7 @@ packages = ["matienzo"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py313"
+target-version = "py314"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
