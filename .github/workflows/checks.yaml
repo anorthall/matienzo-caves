@@ -15,7 +15,7 @@ jobs:
       - name: Install uv
         # Pinned to an exact tag: setup-uv publishes no moving `v9`, so `@v9`
         # fails to resolve even though v9.0.0 is the current release.
-        uses: astral-sh/setup-uv@v9.0.0
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           enable-cache: true
           cache-dependency-glob: uv.lock
