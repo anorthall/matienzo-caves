@@ -27,9 +27,9 @@ matienzo-mcp = "matienzo.mcp_server:main"
 [dependency-groups]
 dev = [
     "mypy>=1.14",
-    "pre-commit>=4.0",
+    "pre-commit>=4.6.2",
     "pytest>=8.3",
-    "ruff>=0.9",
+    "ruff>=0.16.3",
 ]
 
 # Mirrors the `embed` and `mcp` extras, and exists only so that a bare
